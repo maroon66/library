@@ -1,0 +1,7 @@
+readme を読むと書式がわかる．
+
+helper を使って配列に対応する
+
+sample.txt が例
+
+./sigma -l -h < a.txt | ./helper > result.txt

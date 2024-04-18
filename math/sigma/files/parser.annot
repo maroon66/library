@@ -1,0 +1,5362 @@
+"parser.ml" 27 281 285 "parser.ml" 27 281 286
+type(
+  string -> unit
+)
+"parser.ml" 27 281 289 "parser.ml" 27 281 300
+type(
+  string -> unit
+)
+ident(
+  int_ref Stdlib.Parsing.parse_error "parsing.mli" 105 4150 4150 "parsing.mli" 105 4150 4182
+)
+"parser.mly" 4 342 346 "parser.mly" 4 342 350
+type(
+  Syntax.t list -> Syntax.t
+)
+ident(
+  def muls "parser.ml" 35 461 461 "parser.ml" 0 0 -1
+)
+"parser.mly" 5 362 366 "parser.mly" 5 362 368
+type(
+  Syntax.t
+)
+ident(
+  def hd "parser.mly" 5 362 378 "parser.mly" 5 362 421
+)
+"parser.mly" 5 362 372 "parser.mly" 5 362 374
+type(
+  Syntax.t list
+)
+ident(
+  def tl "parser.mly" 5 362 378 "parser.mly" 5 362 421
+)
+"parser.mly" 5 362 366 "parser.mly" 5 362 374
+type(
+  Syntax.t list
+)
+"parser.mly" 5 362 378 "parser.mly" 5 362 392
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) -> Syntax.t -> Syntax.t list -> Syntax.t
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"parser.mly" 5 362 398 "parser.mly" 5 362 399
+type(
+  Syntax.t
+)
+ident(
+  def a "parser.mly" 5 362 400 "parser.mly" 5 362 414
+)
+"parser.mly" 5 362 400 "parser.mly" 5 362 401
+type(
+  Syntax.t
+)
+ident(
+  def b "parser.mly" 5 362 405 "parser.mly" 5 362 414
+)
+"parser.mly" 5 362 409 "parser.mly" 5 362 410
+type(
+  Syntax.t
+)
+ident(
+  int_ref a "parser.mly" 5 362 398 "parser.mly" 5 362 399
+)
+"parser.mly" 5 362 412 "parser.mly" 5 362 413
+type(
+  Syntax.t
+)
+ident(
+  int_ref b "parser.mly" 5 362 400 "parser.mly" 5 362 401
+)
+"parser.mly" 5 362 405 "parser.mly" 5 362 414
+type(
+  Syntax.t
+)
+"parser.mly" 5 362 393 "parser.mly" 5 362 415
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+"parser.mly" 5 362 416 "parser.mly" 5 362 418
+type(
+  Syntax.t
+)
+ident(
+  int_ref hd "parser.mly" 5 362 366 "parser.mly" 5 362 368
+)
+"parser.mly" 5 362 419 "parser.mly" 5 362 421
+type(
+  Syntax.t list
+)
+ident(
+  int_ref tl "parser.mly" 5 362 372 "parser.mly" 5 362 374
+)
+"parser.mly" 5 362 378 "parser.mly" 5 362 421
+type(
+  Syntax.t
+)
+"parser.mly" 6 422 426 "parser.mly" 6 422 427
+type(
+  Syntax.t list
+)
+"parser.mly" 6 422 438 "parser.mly" 6 422 443
+type(
+  bool
+)
+"parser.mly" 6 422 431 "parser.mly" 6 422 443
+type(
+  Syntax.t
+)
+"parser.mly" 4 342 353 "parser.mly" 6 422 443
+type(
+  Syntax.t list -> Syntax.t
+)
+"parser.ml" 35 461 465 "parser.ml" 35 461 479
+type(
+  int array
+)
+ident(
+  def yytransl_const "parser.ml" 59 894 894 "parser.ml" 0 0 -1
+)
+"parser.ml" 36 485 487 "parser.ml" 36 485 490
+type(
+  int
+)
+"parser.ml" 37 505 507 "parser.ml" 37 505 510
+type(
+  int
+)
+"parser.ml" 38 525 527 "parser.ml" 38 525 530
+type(
+  int
+)
+"parser.ml" 39 547 549 "parser.ml" 39 547 552
+type(
+  int
+)
+"parser.ml" 40 569 571 "parser.ml" 40 569 574
+type(
+  int
+)
+"parser.ml" 41 586 588 "parser.ml" 41 586 591
+type(
+  int
+)
+"parser.ml" 42 604 606 "parser.ml" 42 604 609
+type(
+  int
+)
+"parser.ml" 43 623 625 "parser.ml" 43 623 628
+type(
+  int
+)
+"parser.ml" 44 640 642 "parser.ml" 44 640 645
+type(
+  int
+)
+"parser.ml" 45 657 659 "parser.ml" 45 657 662
+type(
+  int
+)
+"parser.ml" 46 674 676 "parser.ml" 46 674 679
+type(
+  int
+)
+"parser.ml" 47 698 700 "parser.ml" 47 698 703
+type(
+  int
+)
+"parser.ml" 48 725 727 "parser.ml" 48 725 730
+type(
+  int
+)
+"parser.ml" 49 743 745 "parser.ml" 49 743 748
+type(
+  int
+)
+"parser.ml" 50 764 766 "parser.ml" 50 764 769
+type(
+  int
+)
+"parser.ml" 51 783 785 "parser.ml" 51 783 788
+type(
+  int
+)
+"parser.ml" 52 800 802 "parser.ml" 52 800 805
+type(
+  int
+)
+"parser.ml" 53 819 821 "parser.ml" 53 819 824
+type(
+  int
+)
+"parser.ml" 54 836 838 "parser.ml" 54 836 841
+type(
+  int
+)
+"parser.ml" 55 852 854 "parser.ml" 55 852 857
+type(
+  int
+)
+"parser.ml" 56 868 872 "parser.ml" 56 868 873
+type(
+  int
+)
+"parser.ml" 57 885 889 "parser.ml" 57 885 890
+type(
+  int
+)
+"parser.ml" 35 461 482 "parser.ml" 57 885 892
+type(
+  int array
+)
+"parser.ml" 59 894 898 "parser.ml" 59 894 912
+type(
+  int array
+)
+ident(
+  def yytransl_block "parser.ml" 64 965 965 "parser.ml" 0 0 -1
+)
+"parser.ml" 60 918 920 "parser.ml" 60 918 923
+type(
+  int
+)
+"parser.ml" 61 937 939 "parser.ml" 61 937 942
+type(
+  int
+)
+"parser.ml" 62 956 960 "parser.ml" 62 956 961
+type(
+  int
+)
+"parser.ml" 59 894 915 "parser.ml" 62 956 963
+type(
+  int array
+)
+"parser.ml" 64 965 969 "parser.ml" 64 965 974
+type(
+  string
+)
+ident(
+  def yylhs "parser.ml" 72 1361 1361 "parser.ml" 0 0 -1
+)
+"parser.ml" 64 965 977 "parser.ml" 70 1318 1359
+type(
+  string
+)
+"parser.ml" 72 1361 1365 "parser.ml" 72 1361 1370
+type(
+  string
+)
+ident(
+  def yylen "parser.ml" 80 1757 1757 "parser.ml" 0 0 -1
+)
+"parser.ml" 72 1361 1373 "parser.ml" 78 1714 1755
+type(
+  string
+)
+"parser.ml" 80 1757 1761 "parser.ml" 80 1757 1769
+type(
+  string
+)
+ident(
+  def yydefred "parser.ml" 94 2536 2536 "parser.ml" 0 0 -1
+)
+"parser.ml" 80 1757 1772 "parser.ml" 92 2509 2534
+type(
+  string
+)
+"parser.ml" 94 2536 2540 "parser.ml" 94 2536 2547
+type(
+  string
+)
+ident(
+  def yydgoto "parser.ml" 97 2628 2628 "parser.ml" 0 0 -1
+)
+"parser.ml" 94 2536 2550 "parser.ml" 95 2561 2626
+type(
+  string
+)
+"parser.ml" 97 2628 2632 "parser.ml" 97 2628 2640
+type(
+  string
+)
+ident(
+  def yysindex "parser.ml" 111 3407 3407 "parser.ml" 0 0 -1
+)
+"parser.ml" 97 2628 2643 "parser.ml" 109 3380 3405
+type(
+  string
+)
+"parser.ml" 111 3407 3411 "parser.ml" 111 3407 3419
+type(
+  string
+)
+ident(
+  def yyrindex "parser.ml" 125 4186 4186 "parser.ml" 0 0 -1
+)
+"parser.ml" 111 3407 3422 "parser.ml" 123 4159 4184
+type(
+  string
+)
+"parser.ml" 125 4186 4190 "parser.ml" 125 4186 4198
+type(
+  string
+)
+ident(
+  def yygindex "parser.ml" 128 4279 4279 "parser.ml" 0 0 -1
+)
+"parser.ml" 125 4186 4201 "parser.ml" 126 4212 4277
+type(
+  string
+)
+"parser.ml" 128 4279 4283 "parser.ml" 128 4279 4294
+type(
+  int
+)
+ident(
+  def yytablesize "parser.ml" 129 4301 4301 "parser.ml" 0 0 -1
+)
+"parser.ml" 128 4279 4297 "parser.ml" 128 4279 4300
+type(
+  int
+)
+"parser.ml" 129 4301 4305 "parser.ml" 129 4301 4312
+type(
+  string
+)
+ident(
+  def yytable "parser.ml" 197 8675 8675 "parser.ml" 0 0 -1
+)
+"parser.ml" 129 4301 4315 "parser.ml" 195 8616 8673
+type(
+  string
+)
+"parser.ml" 197 8675 8679 "parser.ml" 197 8675 8686
+type(
+  string
+)
+ident(
+  def yycheck "parser.ml" 265 13049 13049 "parser.ml" 0 0 -1
+)
+"parser.ml" 197 8675 8689 "parser.ml" 263 12990 13047
+type(
+  string
+)
+"parser.ml" 265 13049 13053 "parser.ml" 265 13049 13066
+type(
+  string
+)
+ident(
+  def yynames_const "parser.ml" 289 13351 13351 "parser.ml" 0 0 -1
+)
+"parser.ml" 265 13049 13069 "parser.ml" 287 13346 13349
+type(
+  string
+)
+"parser.ml" 289 13351 13355 "parser.ml" 289 13351 13368
+type(
+  string
+)
+ident(
+  def yynames_block "parser.ml" 294 13405 13405 "parser.ml" 0 0 -1
+)
+"parser.ml" 289 13351 13371 "parser.ml" 292 13400 13403
+type(
+  string
+)
+"parser.ml" 294 13405 13409 "parser.ml" 294 13405 13414
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  def yyact "parser.ml" 635 25068 25068 "parser.ml" 0 0 -1
+)
+"parser.ml" 295 13420 13427 "parser.ml" 295 13420 13428
+type(
+  Parsing.parser_env
+)
+"parser.ml" 295 13420 13432 "parser.ml" 295 13420 13440
+type(
+  string -> Obj.t
+)
+ident(
+  int_ref Stdlib.failwith "stdlib.mli" 41 1919 1919 "stdlib.mli" 41 1919 1946
+)
+"parser.ml" 295 13420 13441 "parser.ml" 295 13420 13449
+type(
+  string
+)
+"parser.ml" 295 13420 13432 "parser.ml" 295 13420 13449
+type(
+  Obj.t
+)
+"parser.ml" 295 13420 13422 "parser.ml" 295 13420 13450
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 296 13451 13458 "parser.ml" 296 13451 13475
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 297 13479 13483 "parser.ml" 302 13639 13681
+)
+"parser.ml" 297 13479 13487 "parser.ml" 297 13479 13489
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 298 13541 13545 "parser.ml" 302 13639 13681
+)
+"parser.ml" 297 13479 13493 "parser.ml" 297 13479 13509
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 297 13479 13510 "parser.ml" 297 13479 13527
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 296 13451 13458 "parser.ml" 296 13451 13475
+)
+"parser.ml" 297 13479 13528 "parser.ml" 297 13479 13529
+type(
+  int
+)
+"parser.ml" 297 13479 13493 "parser.ml" 297 13479 13529
+type(
+  Syntax.t
+)
+"parser.ml" 298 13541 13545 "parser.ml" 298 13541 13553
+type(
+  Syntax.t * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 49 13573 13611 "parser.mly" 49 13573 13613
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 297 13479 13487 "parser.ml" 297 13479 13489
+)
+"parser.mly" 49 13573 13615 "parser.mly" 49 13573 13617
+type(
+  Syntax.t list
+)
+"parser.mly" 49 13573 13608 "parser.mly" 49 13573 13620
+type(
+  Syntax.t * Syntax.t list
+)
+"parser.ml" 298 13541 13545 "parser.ml" 302 13639 13681
+type(
+  Obj.t
+)
+"parser.ml" 297 13479 13483 "parser.ml" 302 13639 13681
+type(
+  Obj.t
+)
+"parser.ml" 296 13451 13453 "parser.ml" 302 13639 13682
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 303 13683 13690 "parser.ml" 303 13683 13707
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 304 13711 13715 "parser.ml" 310 13935 13977
+)
+"parser.ml" 304 13711 13719 "parser.ml" 304 13711 13721
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 305 13773 13777 "parser.ml" 310 13935 13977
+)
+"parser.ml" 304 13711 13725 "parser.ml" 304 13711 13741
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 304 13711 13742 "parser.ml" 304 13711 13759
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 303 13683 13690 "parser.ml" 303 13683 13707
+)
+"parser.ml" 304 13711 13760 "parser.ml" 304 13711 13761
+type(
+  int
+)
+"parser.ml" 304 13711 13725 "parser.ml" 304 13711 13761
+type(
+  Syntax.t
+)
+"parser.ml" 305 13773 13781 "parser.ml" 305 13773 13783
+type(
+  Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 306 13837 13841 "parser.ml" 310 13935 13977
+)
+"parser.ml" 305 13773 13787 "parser.ml" 305 13773 13803
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 305 13773 13804 "parser.ml" 305 13773 13821
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 303 13683 13690 "parser.ml" 303 13683 13707
+)
+"parser.ml" 305 13773 13822 "parser.ml" 305 13773 13823
+type(
+  int
+)
+"parser.ml" 305 13773 13787 "parser.ml" 305 13773 13823
+type(
+  Syntax.t list
+)
+"parser.ml" 306 13837 13841 "parser.ml" 306 13837 13849
+type(
+  Syntax.t * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 50 13869 13907 "parser.mly" 50 13869 13909
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 304 13711 13719 "parser.ml" 304 13711 13721
+)
+"parser.mly" 50 13869 13911 "parser.mly" 50 13869 13913
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 305 13773 13781 "parser.ml" 305 13773 13783
+)
+"parser.mly" 50 13869 13904 "parser.mly" 50 13869 13916
+type(
+  Syntax.t * Syntax.t list
+)
+"parser.ml" 306 13837 13841 "parser.ml" 310 13935 13977
+type(
+  Obj.t
+)
+"parser.ml" 305 13773 13777 "parser.ml" 310 13935 13977
+type(
+  Obj.t
+)
+"parser.ml" 304 13711 13715 "parser.ml" 310 13935 13977
+type(
+  Obj.t
+)
+"parser.ml" 303 13683 13685 "parser.ml" 310 13935 13978
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 311 13979 13986 "parser.ml" 311 13979 14003
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 312 14007 14011 "parser.ml" 317 14161 14183
+)
+"parser.ml" 312 14007 14015 "parser.ml" 312 14007 14017
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 313 14069 14073 "parser.ml" 317 14161 14183
+)
+"parser.ml" 312 14007 14021 "parser.ml" 312 14007 14037
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 312 14007 14038 "parser.ml" 312 14007 14055
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 311 13979 13986 "parser.ml" 311 13979 14003
+)
+"parser.ml" 312 14007 14056 "parser.ml" 312 14007 14057
+type(
+  int
+)
+"parser.ml" 312 14007 14021 "parser.ml" 312 14007 14057
+type(
+  Syntax.t
+)
+"parser.ml" 313 14069 14073 "parser.ml" 313 14069 14081
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 53 14101 14136 "parser.mly" 53 14101 14142
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 312 14007 14015 "parser.ml" 312 14007 14017
+)
+"parser.ml" 313 14069 14073 "parser.ml" 317 14161 14183
+type(
+  Obj.t
+)
+"parser.ml" 312 14007 14011 "parser.ml" 317 14161 14183
+type(
+  Obj.t
+)
+"parser.ml" 311 13979 13981 "parser.ml" 317 14161 14184
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 318 14185 14192 "parser.ml" 318 14185 14209
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 319 14213 14217 "parser.ml" 324 14371 14393
+)
+"parser.ml" 319 14213 14221 "parser.ml" 319 14213 14223
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 320 14275 14279 "parser.ml" 324 14371 14393
+)
+"parser.ml" 319 14213 14227 "parser.ml" 319 14213 14243
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 319 14213 14244 "parser.ml" 319 14213 14261
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 318 14185 14192 "parser.ml" 318 14185 14209
+)
+"parser.ml" 319 14213 14262 "parser.ml" 319 14213 14263
+type(
+  int
+)
+"parser.ml" 319 14213 14227 "parser.ml" 319 14213 14263
+type(
+  Syntax.t
+)
+"parser.ml" 320 14275 14279 "parser.ml" 320 14275 14287
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 54 14307 14344 "parser.mly" 54 14307 14347
+type(
+  Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.neg "syntax.ml" 13 184 188 "syntax.ml" 13 184 191
+)
+"parser.mly" 54 14307 14348 "parser.mly" 54 14307 14350
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 319 14213 14221 "parser.ml" 319 14213 14223
+)
+"parser.mly" 54 14307 14342 "parser.mly" 54 14307 14352
+type(
+  Syntax.t
+)
+"parser.ml" 320 14275 14279 "parser.ml" 324 14371 14393
+type(
+  Obj.t
+)
+"parser.ml" 319 14213 14217 "parser.ml" 324 14371 14393
+type(
+  Obj.t
+)
+"parser.ml" 318 14185 14187 "parser.ml" 324 14371 14394
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 325 14395 14402 "parser.ml" 325 14395 14419
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 326 14423 14427 "parser.ml" 332 14649 14671
+)
+"parser.ml" 326 14423 14431 "parser.ml" 326 14423 14433
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 327 14485 14489 "parser.ml" 332 14649 14671
+)
+"parser.ml" 326 14423 14437 "parser.ml" 326 14423 14453
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 326 14423 14454 "parser.ml" 326 14423 14471
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 325 14395 14402 "parser.ml" 325 14395 14419
+)
+"parser.ml" 326 14423 14472 "parser.ml" 326 14423 14473
+type(
+  int
+)
+"parser.ml" 326 14423 14437 "parser.ml" 326 14423 14473
+type(
+  Syntax.t
+)
+"parser.ml" 327 14485 14493 "parser.ml" 327 14485 14495
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 328 14548 14552 "parser.ml" 332 14649 14671
+)
+"parser.ml" 327 14485 14499 "parser.ml" 327 14485 14515
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 327 14485 14516 "parser.ml" 327 14485 14533
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 325 14395 14402 "parser.ml" 325 14395 14419
+)
+"parser.ml" 327 14485 14534 "parser.ml" 327 14485 14535
+type(
+  int
+)
+"parser.ml" 327 14485 14499 "parser.ml" 327 14485 14535
+type(
+  Syntax.t
+)
+"parser.ml" 328 14548 14552 "parser.ml" 328 14548 14560
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 55 14580 14621 "parser.mly" 55 14580 14623
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 326 14423 14431 "parser.ml" 326 14423 14433
+)
+"parser.mly" 55 14580 14625 "parser.mly" 55 14580 14627
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 327 14485 14493 "parser.ml" 327 14485 14495
+)
+"parser.mly" 55 14580 14615 "parser.mly" 55 14580 14630
+type(
+  Syntax.t
+)
+"parser.ml" 328 14548 14552 "parser.ml" 332 14649 14671
+type(
+  Obj.t
+)
+"parser.ml" 327 14485 14489 "parser.ml" 332 14649 14671
+type(
+  Obj.t
+)
+"parser.ml" 326 14423 14427 "parser.ml" 332 14649 14671
+type(
+  Obj.t
+)
+"parser.ml" 325 14395 14397 "parser.ml" 332 14649 14672
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 333 14673 14680 "parser.ml" 333 14673 14697
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 334 14701 14705 "parser.ml" 339 14855 14877
+)
+"parser.ml" 334 14701 14709 "parser.ml" 334 14701 14711
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 335 14763 14767 "parser.ml" 339 14855 14877
+)
+"parser.ml" 334 14701 14715 "parser.ml" 334 14701 14731
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 334 14701 14732 "parser.ml" 334 14701 14749
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 333 14673 14680 "parser.ml" 333 14673 14697
+)
+"parser.ml" 334 14701 14750 "parser.ml" 334 14701 14751
+type(
+  int
+)
+"parser.ml" 334 14701 14715 "parser.ml" 334 14701 14751
+type(
+  Syntax.t
+)
+"parser.ml" 335 14763 14767 "parser.ml" 335 14763 14775
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 56 14795 14830 "parser.mly" 56 14795 14836
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 334 14701 14709 "parser.ml" 334 14701 14711
+)
+"parser.ml" 335 14763 14767 "parser.ml" 339 14855 14877
+type(
+  Obj.t
+)
+"parser.ml" 334 14701 14705 "parser.ml" 339 14855 14877
+type(
+  Obj.t
+)
+"parser.ml" 333 14673 14675 "parser.ml" 339 14855 14878
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 340 14879 14886 "parser.ml" 340 14879 14903
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 341 14907 14911 "parser.ml" 346 15062 15084
+)
+"parser.ml" 341 14907 14915 "parser.ml" 341 14907 14917
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 342 14970 14974 "parser.ml" 346 15062 15084
+)
+"parser.ml" 341 14907 14921 "parser.ml" 341 14907 14937
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 341 14907 14938 "parser.ml" 341 14907 14955
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 340 14879 14886 "parser.ml" 340 14879 14903
+)
+"parser.ml" 341 14907 14956 "parser.ml" 341 14907 14957
+type(
+  int
+)
+"parser.ml" 341 14907 14921 "parser.ml" 341 14907 14957
+type(
+  Syntax.t
+)
+"parser.ml" 342 14970 14974 "parser.ml" 342 14970 14982
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 57 15002 15037 "parser.mly" 57 15002 15043
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 341 14907 14915 "parser.ml" 341 14907 14917
+)
+"parser.ml" 342 14970 14974 "parser.ml" 346 15062 15084
+type(
+  Obj.t
+)
+"parser.ml" 341 14907 14911 "parser.ml" 346 15062 15084
+type(
+  Obj.t
+)
+"parser.ml" 340 14879 14881 "parser.ml" 346 15062 15085
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 347 15086 15093 "parser.ml" 347 15086 15110
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 348 15114 15118 "parser.ml" 354 15341 15363
+)
+"parser.ml" 348 15114 15122 "parser.ml" 348 15114 15124
+type(
+  string
+)
+ident(
+  def _2 "parser.ml" 349 15178 15182 "parser.ml" 354 15341 15363
+)
+"parser.ml" 348 15114 15128 "parser.ml" 348 15114 15144
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 348 15114 15145 "parser.ml" 348 15114 15162
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 347 15086 15093 "parser.ml" 347 15086 15110
+)
+"parser.ml" 348 15114 15163 "parser.ml" 348 15114 15164
+type(
+  int
+)
+"parser.ml" 348 15114 15128 "parser.ml" 348 15114 15164
+type(
+  string
+)
+"parser.ml" 349 15178 15186 "parser.ml" 349 15178 15188
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 350 15240 15244 "parser.ml" 354 15341 15363
+)
+"parser.ml" 349 15178 15192 "parser.ml" 349 15178 15208
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 349 15178 15209 "parser.ml" 349 15178 15226
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 347 15086 15093 "parser.ml" 347 15086 15110
+)
+"parser.ml" 349 15178 15227 "parser.ml" 349 15178 15228
+type(
+  int
+)
+"parser.ml" 349 15178 15192 "parser.ml" 349 15178 15228
+type(
+  Syntax.t
+)
+"parser.ml" 350 15240 15244 "parser.ml" 350 15240 15252
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 58 15272 15313 "parser.mly" 58 15272 15315
+type(
+  string
+)
+ident(
+  int_ref _2 "parser.ml" 348 15114 15122 "parser.ml" 348 15114 15124
+)
+"parser.mly" 58 15272 15317 "parser.mly" 58 15272 15319
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 349 15178 15186 "parser.ml" 349 15178 15188
+)
+"parser.mly" 58 15272 15307 "parser.mly" 58 15272 15322
+type(
+  Syntax.t
+)
+"parser.ml" 350 15240 15244 "parser.ml" 354 15341 15363
+type(
+  Obj.t
+)
+"parser.ml" 349 15178 15182 "parser.ml" 354 15341 15363
+type(
+  Obj.t
+)
+"parser.ml" 348 15114 15118 "parser.ml" 354 15341 15363
+type(
+  Obj.t
+)
+"parser.ml" 347 15086 15088 "parser.ml" 354 15341 15364
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 355 15365 15372 "parser.ml" 355 15365 15389
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 356 15393 15397 "parser.ml" 362 15618 15640
+)
+"parser.ml" 356 15393 15401 "parser.ml" 356 15393 15403
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 357 15455 15459 "parser.ml" 362 15618 15640
+)
+"parser.ml" 356 15393 15407 "parser.ml" 356 15393 15423
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 356 15393 15424 "parser.ml" 356 15393 15441
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 355 15365 15372 "parser.ml" 355 15365 15389
+)
+"parser.ml" 356 15393 15442 "parser.ml" 356 15393 15443
+type(
+  int
+)
+"parser.ml" 356 15393 15407 "parser.ml" 356 15393 15443
+type(
+  Syntax.t
+)
+"parser.ml" 357 15455 15463 "parser.ml" 357 15455 15465
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 358 15517 15521 "parser.ml" 362 15618 15640
+)
+"parser.ml" 357 15455 15469 "parser.ml" 357 15455 15485
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 357 15455 15486 "parser.ml" 357 15455 15503
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 355 15365 15372 "parser.ml" 355 15365 15389
+)
+"parser.ml" 357 15455 15504 "parser.ml" 357 15455 15505
+type(
+  int
+)
+"parser.ml" 357 15455 15469 "parser.ml" 357 15455 15505
+type(
+  Syntax.t
+)
+"parser.ml" 358 15517 15521 "parser.ml" 358 15517 15529
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 59 15549 15590 "parser.mly" 59 15549 15592
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 356 15393 15401 "parser.ml" 356 15393 15403
+)
+"parser.mly" 59 15549 15594 "parser.mly" 59 15549 15596
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 357 15455 15463 "parser.ml" 357 15455 15465
+)
+"parser.mly" 59 15549 15584 "parser.mly" 59 15549 15599
+type(
+  Syntax.t
+)
+"parser.ml" 358 15517 15521 "parser.ml" 362 15618 15640
+type(
+  Obj.t
+)
+"parser.ml" 357 15455 15459 "parser.ml" 362 15618 15640
+type(
+  Obj.t
+)
+"parser.ml" 356 15393 15397 "parser.ml" 362 15618 15640
+type(
+  Obj.t
+)
+"parser.ml" 355 15365 15367 "parser.ml" 362 15618 15641
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 363 15642 15649 "parser.ml" 363 15642 15666
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 364 15670 15674 "parser.ml" 370 15893 15915
+)
+"parser.ml" 364 15670 15678 "parser.ml" 364 15670 15680
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 365 15732 15736 "parser.ml" 370 15893 15915
+)
+"parser.ml" 364 15670 15684 "parser.ml" 364 15670 15700
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 364 15670 15701 "parser.ml" 364 15670 15718
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 363 15642 15649 "parser.ml" 363 15642 15666
+)
+"parser.ml" 364 15670 15719 "parser.ml" 364 15670 15720
+type(
+  int
+)
+"parser.ml" 364 15670 15684 "parser.ml" 364 15670 15720
+type(
+  Syntax.t
+)
+"parser.ml" 365 15732 15740 "parser.ml" 365 15732 15742
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 366 15794 15798 "parser.ml" 370 15893 15915
+)
+"parser.ml" 365 15732 15746 "parser.ml" 365 15732 15762
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 365 15732 15763 "parser.ml" 365 15732 15780
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 363 15642 15649 "parser.ml" 363 15642 15666
+)
+"parser.ml" 365 15732 15781 "parser.ml" 365 15732 15782
+type(
+  int
+)
+"parser.ml" 365 15732 15746 "parser.ml" 365 15732 15782
+type(
+  Syntax.t
+)
+"parser.ml" 366 15794 15798 "parser.ml" 366 15794 15806
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 60 15826 15863 "parser.mly" 60 15826 15866
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.sub "syntax.ml" 14 214 218 "syntax.ml" 14 214 221
+)
+"parser.mly" 60 15826 15867 "parser.mly" 60 15826 15869
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 364 15670 15678 "parser.ml" 364 15670 15680
+)
+"parser.mly" 60 15826 15870 "parser.mly" 60 15826 15872
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 365 15732 15740 "parser.ml" 365 15732 15742
+)
+"parser.mly" 60 15826 15861 "parser.mly" 60 15826 15874
+type(
+  Syntax.t
+)
+"parser.ml" 366 15794 15798 "parser.ml" 370 15893 15915
+type(
+  Obj.t
+)
+"parser.ml" 365 15732 15736 "parser.ml" 370 15893 15915
+type(
+  Obj.t
+)
+"parser.ml" 364 15670 15674 "parser.ml" 370 15893 15915
+type(
+  Obj.t
+)
+"parser.ml" 363 15642 15644 "parser.ml" 370 15893 15916
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 371 15917 15924 "parser.ml" 371 15917 15941
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 372 15945 15949 "parser.ml" 378 16170 16192
+)
+"parser.ml" 372 15945 15953 "parser.ml" 372 15945 15955
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 373 16007 16011 "parser.ml" 378 16170 16192
+)
+"parser.ml" 372 15945 15959 "parser.ml" 372 15945 15975
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 372 15945 15976 "parser.ml" 372 15945 15993
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 371 15917 15924 "parser.ml" 371 15917 15941
+)
+"parser.ml" 372 15945 15994 "parser.ml" 372 15945 15995
+type(
+  int
+)
+"parser.ml" 372 15945 15959 "parser.ml" 372 15945 15995
+type(
+  Syntax.t
+)
+"parser.ml" 373 16007 16015 "parser.ml" 373 16007 16017
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 374 16069 16073 "parser.ml" 378 16170 16192
+)
+"parser.ml" 373 16007 16021 "parser.ml" 373 16007 16037
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 373 16007 16038 "parser.ml" 373 16007 16055
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 371 15917 15924 "parser.ml" 371 15917 15941
+)
+"parser.ml" 373 16007 16056 "parser.ml" 373 16007 16057
+type(
+  int
+)
+"parser.ml" 373 16007 16021 "parser.ml" 373 16007 16057
+type(
+  Syntax.t
+)
+"parser.ml" 374 16069 16073 "parser.ml" 374 16069 16081
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 61 16101 16142 "parser.mly" 61 16101 16144
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 372 15945 15953 "parser.ml" 372 15945 15955
+)
+"parser.mly" 61 16101 16146 "parser.mly" 61 16101 16148
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 373 16007 16015 "parser.ml" 373 16007 16017
+)
+"parser.mly" 61 16101 16136 "parser.mly" 61 16101 16151
+type(
+  Syntax.t
+)
+"parser.ml" 374 16069 16073 "parser.ml" 378 16170 16192
+type(
+  Obj.t
+)
+"parser.ml" 373 16007 16011 "parser.ml" 378 16170 16192
+type(
+  Obj.t
+)
+"parser.ml" 372 15945 15949 "parser.ml" 378 16170 16192
+type(
+  Obj.t
+)
+"parser.ml" 371 15917 15919 "parser.ml" 378 16170 16193
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 379 16194 16201 "parser.ml" 379 16194 16218
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 380 16222 16226 "parser.ml" 386 16446 16468
+)
+"parser.ml" 380 16222 16230 "parser.ml" 380 16222 16232
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 381 16284 16288 "parser.ml" 386 16446 16468
+)
+"parser.ml" 380 16222 16236 "parser.ml" 380 16222 16252
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 380 16222 16253 "parser.ml" 380 16222 16270
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 379 16194 16201 "parser.ml" 379 16194 16218
+)
+"parser.ml" 380 16222 16271 "parser.ml" 380 16222 16272
+type(
+  int
+)
+"parser.ml" 380 16222 16236 "parser.ml" 380 16222 16272
+type(
+  Syntax.t
+)
+"parser.ml" 381 16284 16292 "parser.ml" 381 16284 16294
+type(
+  int
+)
+ident(
+  def _3 "parser.ml" 382 16345 16349 "parser.ml" 386 16446 16468
+)
+"parser.ml" 381 16284 16298 "parser.ml" 381 16284 16314
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 381 16284 16315 "parser.ml" 381 16284 16332
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 379 16194 16201 "parser.ml" 379 16194 16218
+)
+"parser.ml" 381 16284 16333 "parser.ml" 381 16284 16334
+type(
+  int
+)
+"parser.ml" 381 16284 16298 "parser.ml" 381 16284 16334
+type(
+  int
+)
+"parser.ml" 382 16345 16349 "parser.ml" 382 16345 16357
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 62 16377 16418 "parser.mly" 62 16377 16420
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 380 16222 16230 "parser.ml" 380 16222 16232
+)
+"parser.mly" 62 16377 16422 "parser.mly" 62 16377 16424
+type(
+  int
+)
+ident(
+  int_ref _3 "parser.ml" 381 16284 16292 "parser.ml" 381 16284 16294
+)
+"parser.mly" 62 16377 16412 "parser.mly" 62 16377 16427
+type(
+  Syntax.t
+)
+"parser.ml" 382 16345 16349 "parser.ml" 386 16446 16468
+type(
+  Obj.t
+)
+"parser.ml" 381 16284 16288 "parser.ml" 386 16446 16468
+type(
+  Obj.t
+)
+"parser.ml" 380 16222 16226 "parser.ml" 386 16446 16468
+type(
+  Obj.t
+)
+"parser.ml" 379 16194 16196 "parser.ml" 386 16446 16469
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 387 16470 16477 "parser.ml" 387 16470 16494
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 388 16498 16502 "parser.ml" 394 16722 16744
+)
+"parser.ml" 388 16498 16506 "parser.ml" 388 16498 16508
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 389 16560 16564 "parser.ml" 394 16722 16744
+)
+"parser.ml" 388 16498 16512 "parser.ml" 388 16498 16528
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 388 16498 16529 "parser.ml" 388 16498 16546
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 387 16470 16477 "parser.ml" 387 16470 16494
+)
+"parser.ml" 388 16498 16547 "parser.ml" 388 16498 16548
+type(
+  int
+)
+"parser.ml" 388 16498 16512 "parser.ml" 388 16498 16548
+type(
+  Syntax.t
+)
+"parser.ml" 389 16560 16568 "parser.ml" 389 16560 16570
+type(
+  int
+)
+ident(
+  def _3 "parser.ml" 390 16621 16625 "parser.ml" 394 16722 16744
+)
+"parser.ml" 389 16560 16574 "parser.ml" 389 16560 16590
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 389 16560 16591 "parser.ml" 389 16560 16608
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 387 16470 16477 "parser.ml" 387 16470 16494
+)
+"parser.ml" 389 16560 16609 "parser.ml" 389 16560 16610
+type(
+  int
+)
+"parser.ml" 389 16560 16574 "parser.ml" 389 16560 16610
+type(
+  int
+)
+"parser.ml" 390 16621 16625 "parser.ml" 390 16621 16633
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 63 16653 16694 "parser.mly" 63 16653 16696
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 388 16498 16506 "parser.ml" 388 16498 16508
+)
+"parser.mly" 63 16653 16698 "parser.mly" 63 16653 16700
+type(
+  int
+)
+ident(
+  int_ref _3 "parser.ml" 389 16560 16568 "parser.ml" 389 16560 16570
+)
+"parser.mly" 63 16653 16688 "parser.mly" 63 16653 16703
+type(
+  Syntax.t
+)
+"parser.ml" 390 16621 16625 "parser.ml" 394 16722 16744
+type(
+  Obj.t
+)
+"parser.ml" 389 16560 16564 "parser.ml" 394 16722 16744
+type(
+  Obj.t
+)
+"parser.ml" 388 16498 16502 "parser.ml" 394 16722 16744
+type(
+  Obj.t
+)
+"parser.ml" 387 16470 16472 "parser.ml" 394 16722 16745
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 395 16746 16753 "parser.ml" 395 16746 16770
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 396 16774 16778 "parser.ml" 401 16934 16956
+)
+"parser.ml" 396 16774 16782 "parser.ml" 396 16774 16784
+type(
+  int
+)
+ident(
+  def _1 "parser.ml" 397 16835 16839 "parser.ml" 401 16934 16956
+)
+"parser.ml" 396 16774 16788 "parser.ml" 396 16774 16804
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 396 16774 16805 "parser.ml" 396 16774 16822
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 395 16746 16753 "parser.ml" 395 16746 16770
+)
+"parser.ml" 396 16774 16823 "parser.ml" 396 16774 16824
+type(
+  int
+)
+"parser.ml" 396 16774 16788 "parser.ml" 396 16774 16824
+type(
+  int
+)
+"parser.ml" 397 16835 16839 "parser.ml" 397 16835 16847
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 64 16867 16909 "parser.mly" 64 16867 16913
+type(
+  int
+)
+ident(
+  int_ref _1 "parser.ml" 396 16774 16782 "parser.ml" 396 16774 16784
+)
+"parser.mly" 64 16867 16902 "parser.mly" 64 16867 16915
+type(
+  Syntax.t
+)
+"parser.ml" 397 16835 16839 "parser.ml" 401 16934 16956
+type(
+  Obj.t
+)
+"parser.ml" 396 16774 16778 "parser.ml" 401 16934 16956
+type(
+  Obj.t
+)
+"parser.ml" 395 16746 16748 "parser.ml" 401 16934 16957
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 402 16958 16965 "parser.ml" 402 16958 16982
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 403 16986 16990 "parser.ml" 408 17147 17169
+)
+"parser.ml" 403 16986 16994 "parser.ml" 403 16986 16996
+type(
+  string
+)
+ident(
+  def _1 "parser.ml" 404 17050 17054 "parser.ml" 408 17147 17169
+)
+"parser.ml" 403 16986 17000 "parser.ml" 403 16986 17016
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 403 16986 17017 "parser.ml" 403 16986 17034
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 402 16958 16965 "parser.ml" 402 16958 16982
+)
+"parser.ml" 403 16986 17035 "parser.ml" 403 16986 17036
+type(
+  int
+)
+"parser.ml" 403 16986 17000 "parser.ml" 403 16986 17036
+type(
+  string
+)
+"parser.ml" 404 17050 17054 "parser.ml" 404 17050 17062
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 65 17082 17122 "parser.mly" 65 17082 17126
+type(
+  string
+)
+ident(
+  int_ref _1 "parser.ml" 403 16986 16994 "parser.ml" 403 16986 16996
+)
+"parser.mly" 65 17082 17117 "parser.mly" 65 17082 17128
+type(
+  Syntax.t
+)
+"parser.ml" 404 17050 17054 "parser.ml" 408 17147 17169
+type(
+  Obj.t
+)
+"parser.ml" 403 16986 16990 "parser.ml" 408 17147 17169
+type(
+  Obj.t
+)
+"parser.ml" 402 16958 16960 "parser.ml" 408 17147 17170
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 409 17171 17178 "parser.ml" 409 17171 17195
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 410 17199 17203 "parser.ml" 416 17426 17449
+)
+"parser.ml" 410 17199 17207 "parser.ml" 410 17199 17209
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 411 17262 17266 "parser.ml" 416 17426 17449
+)
+"parser.ml" 410 17199 17213 "parser.ml" 410 17199 17229
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 410 17199 17230 "parser.ml" 410 17199 17247
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 409 17171 17178 "parser.ml" 409 17171 17195
+)
+"parser.ml" 410 17199 17248 "parser.ml" 410 17199 17249
+type(
+  int
+)
+"parser.ml" 410 17199 17213 "parser.ml" 410 17199 17249
+type(
+  Syntax.t
+)
+"parser.ml" 411 17262 17270 "parser.ml" 411 17262 17272
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 412 17325 17329 "parser.ml" 416 17426 17449
+)
+"parser.ml" 411 17262 17276 "parser.ml" 411 17262 17292
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 411 17262 17293 "parser.ml" 411 17262 17310
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 409 17171 17178 "parser.ml" 409 17171 17195
+)
+"parser.ml" 411 17262 17311 "parser.ml" 411 17262 17312
+type(
+  int
+)
+"parser.ml" 411 17262 17276 "parser.ml" 411 17262 17312
+type(
+  Syntax.t
+)
+"parser.ml" 412 17325 17329 "parser.ml" 412 17325 17337
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 68 17357 17398 "parser.mly" 68 17357 17400
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 410 17199 17207 "parser.ml" 410 17199 17209
+)
+"parser.mly" 68 17357 17402 "parser.mly" 68 17357 17404
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 411 17262 17270 "parser.ml" 411 17262 17272
+)
+"parser.mly" 68 17357 17392 "parser.mly" 68 17357 17407
+type(
+  Syntax.t
+)
+"parser.ml" 412 17325 17329 "parser.ml" 416 17426 17449
+type(
+  Obj.t
+)
+"parser.ml" 411 17262 17266 "parser.ml" 416 17426 17449
+type(
+  Obj.t
+)
+"parser.ml" 410 17199 17203 "parser.ml" 416 17426 17449
+type(
+  Obj.t
+)
+"parser.ml" 409 17171 17173 "parser.ml" 416 17426 17450
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 417 17451 17458 "parser.ml" 417 17451 17475
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 418 17479 17483 "parser.ml" 423 17633 17656
+)
+"parser.ml" 418 17479 17487 "parser.ml" 418 17479 17489
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 419 17541 17545 "parser.ml" 423 17633 17656
+)
+"parser.ml" 418 17479 17493 "parser.ml" 418 17479 17509
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 418 17479 17510 "parser.ml" 418 17479 17527
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 417 17451 17458 "parser.ml" 417 17451 17475
+)
+"parser.ml" 418 17479 17528 "parser.ml" 418 17479 17529
+type(
+  int
+)
+"parser.ml" 418 17479 17493 "parser.ml" 418 17479 17529
+type(
+  Syntax.t
+)
+"parser.ml" 419 17541 17545 "parser.ml" 419 17541 17553
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 69 17573 17608 "parser.mly" 69 17573 17614
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 418 17479 17487 "parser.ml" 418 17479 17489
+)
+"parser.ml" 419 17541 17545 "parser.ml" 423 17633 17656
+type(
+  Obj.t
+)
+"parser.ml" 418 17479 17483 "parser.ml" 423 17633 17656
+type(
+  Obj.t
+)
+"parser.ml" 417 17451 17453 "parser.ml" 423 17633 17657
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 424 17658 17665 "parser.ml" 424 17658 17682
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 425 17686 17690 "parser.ml" 430 17841 17864
+)
+"parser.ml" 425 17686 17694 "parser.ml" 425 17686 17696
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 426 17749 17753 "parser.ml" 430 17841 17864
+)
+"parser.ml" 425 17686 17700 "parser.ml" 425 17686 17716
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 425 17686 17717 "parser.ml" 425 17686 17734
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 424 17658 17665 "parser.ml" 424 17658 17682
+)
+"parser.ml" 425 17686 17735 "parser.ml" 425 17686 17736
+type(
+  int
+)
+"parser.ml" 425 17686 17700 "parser.ml" 425 17686 17736
+type(
+  Syntax.t
+)
+"parser.ml" 426 17749 17753 "parser.ml" 426 17749 17761
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 70 17781 17816 "parser.mly" 70 17781 17822
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 425 17686 17694 "parser.ml" 425 17686 17696
+)
+"parser.ml" 426 17749 17753 "parser.ml" 430 17841 17864
+type(
+  Obj.t
+)
+"parser.ml" 425 17686 17690 "parser.ml" 430 17841 17864
+type(
+  Obj.t
+)
+"parser.ml" 424 17658 17660 "parser.ml" 430 17841 17865
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 431 17866 17873 "parser.ml" 431 17866 17890
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 432 17894 17898 "parser.ml" 438 18121 18144
+)
+"parser.ml" 432 17894 17902 "parser.ml" 432 17894 17904
+type(
+  string
+)
+ident(
+  def _2 "parser.ml" 433 17958 17962 "parser.ml" 438 18121 18144
+)
+"parser.ml" 432 17894 17908 "parser.ml" 432 17894 17924
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 432 17894 17925 "parser.ml" 432 17894 17942
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 431 17866 17873 "parser.ml" 431 17866 17890
+)
+"parser.ml" 432 17894 17943 "parser.ml" 432 17894 17944
+type(
+  int
+)
+"parser.ml" 432 17894 17908 "parser.ml" 432 17894 17944
+type(
+  string
+)
+"parser.ml" 433 17958 17966 "parser.ml" 433 17958 17968
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 434 18020 18024 "parser.ml" 438 18121 18144
+)
+"parser.ml" 433 17958 17972 "parser.ml" 433 17958 17988
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 433 17958 17989 "parser.ml" 433 17958 18006
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 431 17866 17873 "parser.ml" 431 17866 17890
+)
+"parser.ml" 433 17958 18007 "parser.ml" 433 17958 18008
+type(
+  int
+)
+"parser.ml" 433 17958 17972 "parser.ml" 433 17958 18008
+type(
+  Syntax.t
+)
+"parser.ml" 434 18020 18024 "parser.ml" 434 18020 18032
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 71 18052 18093 "parser.mly" 71 18052 18095
+type(
+  string
+)
+ident(
+  int_ref _2 "parser.ml" 432 17894 17902 "parser.ml" 432 17894 17904
+)
+"parser.mly" 71 18052 18097 "parser.mly" 71 18052 18099
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 433 17958 17966 "parser.ml" 433 17958 17968
+)
+"parser.mly" 71 18052 18087 "parser.mly" 71 18052 18102
+type(
+  Syntax.t
+)
+"parser.ml" 434 18020 18024 "parser.ml" 438 18121 18144
+type(
+  Obj.t
+)
+"parser.ml" 433 17958 17962 "parser.ml" 438 18121 18144
+type(
+  Obj.t
+)
+"parser.ml" 432 17894 17898 "parser.ml" 438 18121 18144
+type(
+  Obj.t
+)
+"parser.ml" 431 17866 17868 "parser.ml" 438 18121 18145
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 439 18146 18153 "parser.ml" 439 18146 18170
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 440 18174 18178 "parser.ml" 446 18400 18423
+)
+"parser.ml" 440 18174 18182 "parser.ml" 440 18174 18184
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 441 18237 18241 "parser.ml" 446 18400 18423
+)
+"parser.ml" 440 18174 18188 "parser.ml" 440 18174 18204
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 440 18174 18205 "parser.ml" 440 18174 18222
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 439 18146 18153 "parser.ml" 439 18146 18170
+)
+"parser.ml" 440 18174 18223 "parser.ml" 440 18174 18224
+type(
+  int
+)
+"parser.ml" 440 18174 18188 "parser.ml" 440 18174 18224
+type(
+  Syntax.t
+)
+"parser.ml" 441 18237 18245 "parser.ml" 441 18237 18247
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 442 18299 18303 "parser.ml" 446 18400 18423
+)
+"parser.ml" 441 18237 18251 "parser.ml" 441 18237 18267
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 441 18237 18268 "parser.ml" 441 18237 18285
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 439 18146 18153 "parser.ml" 439 18146 18170
+)
+"parser.ml" 441 18237 18286 "parser.ml" 441 18237 18287
+type(
+  int
+)
+"parser.ml" 441 18237 18251 "parser.ml" 441 18237 18287
+type(
+  Syntax.t
+)
+"parser.ml" 442 18299 18303 "parser.ml" 442 18299 18311
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 72 18331 18372 "parser.mly" 72 18331 18374
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 440 18174 18182 "parser.ml" 440 18174 18184
+)
+"parser.mly" 72 18331 18376 "parser.mly" 72 18331 18378
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 441 18237 18245 "parser.ml" 441 18237 18247
+)
+"parser.mly" 72 18331 18366 "parser.mly" 72 18331 18381
+type(
+  Syntax.t
+)
+"parser.ml" 442 18299 18303 "parser.ml" 446 18400 18423
+type(
+  Obj.t
+)
+"parser.ml" 441 18237 18241 "parser.ml" 446 18400 18423
+type(
+  Obj.t
+)
+"parser.ml" 440 18174 18178 "parser.ml" 446 18400 18423
+type(
+  Obj.t
+)
+"parser.ml" 439 18146 18148 "parser.ml" 446 18400 18424
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 447 18425 18432 "parser.ml" 447 18425 18449
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 448 18453 18457 "parser.ml" 454 18678 18701
+)
+"parser.ml" 448 18453 18461 "parser.ml" 448 18453 18463
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 449 18516 18520 "parser.ml" 454 18678 18701
+)
+"parser.ml" 448 18453 18467 "parser.ml" 448 18453 18483
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 448 18453 18484 "parser.ml" 448 18453 18501
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 447 18425 18432 "parser.ml" 447 18425 18449
+)
+"parser.ml" 448 18453 18502 "parser.ml" 448 18453 18503
+type(
+  int
+)
+"parser.ml" 448 18453 18467 "parser.ml" 448 18453 18503
+type(
+  Syntax.t
+)
+"parser.ml" 449 18516 18524 "parser.ml" 449 18516 18526
+type(
+  int
+)
+ident(
+  def _3 "parser.ml" 450 18577 18581 "parser.ml" 454 18678 18701
+)
+"parser.ml" 449 18516 18530 "parser.ml" 449 18516 18546
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 449 18516 18547 "parser.ml" 449 18516 18564
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 447 18425 18432 "parser.ml" 447 18425 18449
+)
+"parser.ml" 449 18516 18565 "parser.ml" 449 18516 18566
+type(
+  int
+)
+"parser.ml" 449 18516 18530 "parser.ml" 449 18516 18566
+type(
+  int
+)
+"parser.ml" 450 18577 18581 "parser.ml" 450 18577 18589
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 73 18609 18650 "parser.mly" 73 18609 18652
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 448 18453 18461 "parser.ml" 448 18453 18463
+)
+"parser.mly" 73 18609 18654 "parser.mly" 73 18609 18656
+type(
+  int
+)
+ident(
+  int_ref _3 "parser.ml" 449 18516 18524 "parser.ml" 449 18516 18526
+)
+"parser.mly" 73 18609 18644 "parser.mly" 73 18609 18659
+type(
+  Syntax.t
+)
+"parser.ml" 450 18577 18581 "parser.ml" 454 18678 18701
+type(
+  Obj.t
+)
+"parser.ml" 449 18516 18520 "parser.ml" 454 18678 18701
+type(
+  Obj.t
+)
+"parser.ml" 448 18453 18457 "parser.ml" 454 18678 18701
+type(
+  Obj.t
+)
+"parser.ml" 447 18425 18427 "parser.ml" 454 18678 18702
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 455 18703 18710 "parser.ml" 455 18703 18727
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 456 18731 18735 "parser.ml" 461 18891 18914
+)
+"parser.ml" 456 18731 18739 "parser.ml" 456 18731 18741
+type(
+  int
+)
+ident(
+  def _1 "parser.ml" 457 18792 18796 "parser.ml" 461 18891 18914
+)
+"parser.ml" 456 18731 18745 "parser.ml" 456 18731 18761
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 456 18731 18762 "parser.ml" 456 18731 18779
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 455 18703 18710 "parser.ml" 455 18703 18727
+)
+"parser.ml" 456 18731 18780 "parser.ml" 456 18731 18781
+type(
+  int
+)
+"parser.ml" 456 18731 18745 "parser.ml" 456 18731 18781
+type(
+  int
+)
+"parser.ml" 457 18792 18796 "parser.ml" 457 18792 18804
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 74 18824 18866 "parser.mly" 74 18824 18870
+type(
+  int
+)
+ident(
+  int_ref _1 "parser.ml" 456 18731 18739 "parser.ml" 456 18731 18741
+)
+"parser.mly" 74 18824 18859 "parser.mly" 74 18824 18872
+type(
+  Syntax.t
+)
+"parser.ml" 457 18792 18796 "parser.ml" 461 18891 18914
+type(
+  Obj.t
+)
+"parser.ml" 456 18731 18735 "parser.ml" 461 18891 18914
+type(
+  Obj.t
+)
+"parser.ml" 455 18703 18705 "parser.ml" 461 18891 18915
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 462 18916 18923 "parser.ml" 462 18916 18940
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 463 18944 18948 "parser.ml" 468 19105 19128
+)
+"parser.ml" 463 18944 18952 "parser.ml" 463 18944 18954
+type(
+  string
+)
+ident(
+  def _1 "parser.ml" 464 19008 19012 "parser.ml" 468 19105 19128
+)
+"parser.ml" 463 18944 18958 "parser.ml" 463 18944 18974
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 463 18944 18975 "parser.ml" 463 18944 18992
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 462 18916 18923 "parser.ml" 462 18916 18940
+)
+"parser.ml" 463 18944 18993 "parser.ml" 463 18944 18994
+type(
+  int
+)
+"parser.ml" 463 18944 18958 "parser.ml" 463 18944 18994
+type(
+  string
+)
+"parser.ml" 464 19008 19012 "parser.ml" 464 19008 19020
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 75 19040 19080 "parser.mly" 75 19040 19084
+type(
+  string
+)
+ident(
+  int_ref _1 "parser.ml" 463 18944 18952 "parser.ml" 463 18944 18954
+)
+"parser.mly" 75 19040 19075 "parser.mly" 75 19040 19086
+type(
+  Syntax.t
+)
+"parser.ml" 464 19008 19012 "parser.ml" 468 19105 19128
+type(
+  Obj.t
+)
+"parser.ml" 463 18944 18948 "parser.ml" 468 19105 19128
+type(
+  Obj.t
+)
+"parser.ml" 462 18916 18918 "parser.ml" 468 19105 19129
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 469 19130 19137 "parser.ml" 469 19130 19154
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 470 19158 19162 "parser.ml" 475 19313 19336
+)
+"parser.ml" 470 19158 19166 "parser.ml" 470 19158 19168
+type(
+  Syntax.t
+)
+ident(
+  def _2 "parser.ml" 471 19221 19225 "parser.ml" 475 19313 19336
+)
+"parser.ml" 470 19158 19172 "parser.ml" 470 19158 19188
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 470 19158 19189 "parser.ml" 470 19158 19206
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 469 19130 19137 "parser.ml" 469 19130 19154
+)
+"parser.ml" 470 19158 19207 "parser.ml" 470 19158 19208
+type(
+  int
+)
+"parser.ml" 470 19158 19172 "parser.ml" 470 19158 19208
+type(
+  Syntax.t
+)
+"parser.ml" 471 19221 19225 "parser.ml" 471 19221 19233
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 78 19253 19288 "parser.mly" 78 19253 19294
+type(
+  Syntax.t
+)
+ident(
+  int_ref _2 "parser.ml" 470 19158 19166 "parser.ml" 470 19158 19168
+)
+"parser.ml" 471 19221 19225 "parser.ml" 475 19313 19336
+type(
+  Obj.t
+)
+"parser.ml" 470 19158 19162 "parser.ml" 475 19313 19336
+type(
+  Obj.t
+)
+"parser.ml" 469 19130 19132 "parser.ml" 475 19313 19337
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 476 19338 19345 "parser.ml" 476 19338 19362
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 477 19366 19370 "parser.ml" 482 19533 19556
+)
+"parser.ml" 477 19366 19374 "parser.ml" 477 19366 19376
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 478 19430 19434 "parser.ml" 482 19533 19556
+)
+"parser.ml" 477 19366 19380 "parser.ml" 477 19366 19396
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 477 19366 19397 "parser.ml" 477 19366 19414
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 476 19338 19345 "parser.ml" 476 19338 19362
+)
+"parser.ml" 477 19366 19415 "parser.ml" 477 19366 19416
+type(
+  int
+)
+"parser.ml" 477 19366 19380 "parser.ml" 477 19366 19416
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 478 19430 19434 "parser.ml" 478 19430 19442
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 79 19462 19499 "parser.mly" 79 19462 19503
+type(
+  Syntax.t list -> Syntax.t
+)
+ident(
+  int_ref muls "parser.mly" 4 342 346 "parser.mly" 4 342 350
+)
+"parser.mly" 79 19462 19505 "parser.mly" 79 19462 19508
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 79 19462 19509 "parser.mly" 79 19462 19511
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 477 19366 19374 "parser.ml" 477 19366 19376
+)
+"parser.mly" 79 19462 19504 "parser.mly" 79 19462 19512
+type(
+  Syntax.t list
+)
+"parser.mly" 79 19462 19497 "parser.mly" 79 19462 19514
+type(
+  Syntax.t
+)
+"parser.ml" 478 19430 19434 "parser.ml" 482 19533 19556
+type(
+  Obj.t
+)
+"parser.ml" 477 19366 19370 "parser.ml" 482 19533 19556
+type(
+  Obj.t
+)
+"parser.ml" 476 19338 19340 "parser.ml" 482 19533 19557
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 483 19558 19565 "parser.ml" 483 19558 19582
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 484 19586 19590 "parser.ml" 490 19811 19834
+)
+"parser.ml" 484 19586 19594 "parser.ml" 484 19586 19596
+type(
+  int
+)
+ident(
+  def _1 "parser.ml" 485 19647 19651 "parser.ml" 490 19811 19834
+)
+"parser.ml" 484 19586 19600 "parser.ml" 484 19586 19616
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 484 19586 19617 "parser.ml" 484 19586 19634
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 483 19558 19565 "parser.ml" 483 19558 19582
+)
+"parser.ml" 484 19586 19635 "parser.ml" 484 19586 19636
+type(
+  int
+)
+"parser.ml" 484 19586 19600 "parser.ml" 484 19586 19636
+type(
+  int
+)
+"parser.ml" 485 19647 19655 "parser.ml" 485 19647 19657
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 486 19709 19713 "parser.ml" 490 19811 19834
+)
+"parser.ml" 485 19647 19661 "parser.ml" 485 19647 19677
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 485 19647 19678 "parser.ml" 485 19647 19695
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 483 19558 19565 "parser.ml" 483 19558 19582
+)
+"parser.ml" 485 19647 19696 "parser.ml" 485 19647 19697
+type(
+  int
+)
+"parser.ml" 485 19647 19661 "parser.ml" 485 19647 19697
+type(
+  Syntax.t
+)
+"parser.ml" 486 19709 19713 "parser.ml" 486 19709 19721
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 80 19741 19783 "parser.mly" 80 19741 19785
+type(
+  int
+)
+ident(
+  int_ref _1 "parser.ml" 484 19586 19594 "parser.ml" 484 19586 19596
+)
+"parser.mly" 80 19741 19787 "parser.mly" 80 19741 19789
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 485 19647 19655 "parser.ml" 485 19647 19657
+)
+"parser.mly" 80 19741 19776 "parser.mly" 80 19741 19792
+type(
+  Syntax.t
+)
+"parser.ml" 486 19709 19713 "parser.ml" 490 19811 19834
+type(
+  Obj.t
+)
+"parser.ml" 485 19647 19651 "parser.ml" 490 19811 19834
+type(
+  Obj.t
+)
+"parser.ml" 484 19586 19590 "parser.ml" 490 19811 19834
+type(
+  Obj.t
+)
+"parser.ml" 483 19558 19560 "parser.ml" 490 19811 19835
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 491 19836 19843 "parser.ml" 491 19836 19860
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 492 19864 19868 "parser.ml" 498 20091 20114
+)
+"parser.ml" 492 19864 19872 "parser.ml" 492 19864 19874
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 493 19927 19931 "parser.ml" 498 20091 20114
+)
+"parser.ml" 492 19864 19878 "parser.ml" 492 19864 19894
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 492 19864 19895 "parser.ml" 492 19864 19912
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 491 19836 19843 "parser.ml" 491 19836 19860
+)
+"parser.ml" 492 19864 19913 "parser.ml" 492 19864 19914
+type(
+  int
+)
+"parser.ml" 492 19864 19878 "parser.ml" 492 19864 19914
+type(
+  Syntax.t
+)
+"parser.ml" 493 19927 19935 "parser.ml" 493 19927 19937
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 494 19990 19994 "parser.ml" 498 20091 20114
+)
+"parser.ml" 493 19927 19941 "parser.ml" 493 19927 19957
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 493 19927 19958 "parser.ml" 493 19927 19975
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 491 19836 19843 "parser.ml" 491 19836 19860
+)
+"parser.ml" 493 19927 19976 "parser.ml" 493 19927 19977
+type(
+  int
+)
+"parser.ml" 493 19927 19941 "parser.ml" 493 19927 19977
+type(
+  Syntax.t
+)
+"parser.ml" 494 19990 19994 "parser.ml" 494 19990 20002
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 81 20022 20063 "parser.mly" 81 20022 20065
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 492 19864 19872 "parser.ml" 492 19864 19874
+)
+"parser.mly" 81 20022 20067 "parser.mly" 81 20022 20069
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 493 19927 19935 "parser.ml" 493 19927 19937
+)
+"parser.mly" 81 20022 20057 "parser.mly" 81 20022 20072
+type(
+  Syntax.t
+)
+"parser.ml" 494 19990 19994 "parser.ml" 498 20091 20114
+type(
+  Obj.t
+)
+"parser.ml" 493 19927 19931 "parser.ml" 498 20091 20114
+type(
+  Obj.t
+)
+"parser.ml" 492 19864 19868 "parser.ml" 498 20091 20114
+type(
+  Obj.t
+)
+"parser.ml" 491 19836 19838 "parser.ml" 498 20091 20115
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 499 20116 20123 "parser.ml" 499 20116 20140
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 500 20144 20148 "parser.ml" 506 20369 20392
+)
+"parser.ml" 500 20144 20152 "parser.ml" 500 20144 20154
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 501 20207 20211 "parser.ml" 506 20369 20392
+)
+"parser.ml" 500 20144 20158 "parser.ml" 500 20144 20174
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 500 20144 20175 "parser.ml" 500 20144 20192
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 499 20116 20123 "parser.ml" 499 20116 20140
+)
+"parser.ml" 500 20144 20193 "parser.ml" 500 20144 20194
+type(
+  int
+)
+"parser.ml" 500 20144 20158 "parser.ml" 500 20144 20194
+type(
+  Syntax.t
+)
+"parser.ml" 501 20207 20215 "parser.ml" 501 20207 20217
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 502 20270 20274 "parser.ml" 506 20369 20392
+)
+"parser.ml" 501 20207 20221 "parser.ml" 501 20207 20237
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 501 20207 20238 "parser.ml" 501 20207 20255
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 499 20116 20123 "parser.ml" 499 20116 20140
+)
+"parser.ml" 501 20207 20256 "parser.ml" 501 20207 20257
+type(
+  int
+)
+"parser.ml" 501 20207 20221 "parser.ml" 501 20207 20257
+type(
+  Syntax.t
+)
+"parser.ml" 502 20270 20274 "parser.ml" 502 20270 20282
+type(
+  Syntax.t -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 82 20302 20339 "parser.mly" 82 20302 20342
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cor "syntax.ml" 20 372 376 "syntax.ml" 20 372 379
+)
+"parser.mly" 82 20302 20343 "parser.mly" 82 20302 20345
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 500 20144 20152 "parser.ml" 500 20144 20154
+)
+"parser.mly" 82 20302 20346 "parser.mly" 82 20302 20348
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 501 20207 20215 "parser.ml" 501 20207 20217
+)
+"parser.mly" 82 20302 20337 "parser.mly" 82 20302 20350
+type(
+  Syntax.t
+)
+"parser.ml" 502 20270 20274 "parser.ml" 506 20369 20392
+type(
+  Obj.t
+)
+"parser.ml" 501 20207 20211 "parser.ml" 506 20369 20392
+type(
+  Obj.t
+)
+"parser.ml" 500 20144 20148 "parser.ml" 506 20369 20392
+type(
+  Obj.t
+)
+"parser.ml" 499 20116 20118 "parser.ml" 506 20369 20393
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 507 20394 20401 "parser.ml" 507 20394 20418
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 508 20422 20426 "parser.ml" 514 20676 20700
+)
+"parser.ml" 508 20422 20430 "parser.ml" 508 20422 20432
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 509 20485 20489 "parser.ml" 514 20676 20700
+)
+"parser.ml" 508 20422 20436 "parser.ml" 508 20422 20452
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 508 20422 20453 "parser.ml" 508 20422 20470
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 507 20394 20401 "parser.ml" 507 20394 20418
+)
+"parser.ml" 508 20422 20471 "parser.ml" 508 20422 20472
+type(
+  int
+)
+"parser.ml" 508 20422 20436 "parser.ml" 508 20422 20472
+type(
+  Syntax.t list
+)
+"parser.ml" 509 20485 20493 "parser.ml" 509 20485 20495
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 510 20550 20554 "parser.ml" 514 20676 20700
+)
+"parser.ml" 509 20485 20499 "parser.ml" 509 20485 20515
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 509 20485 20516 "parser.ml" 509 20485 20533
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 507 20394 20401 "parser.ml" 507 20394 20418
+)
+"parser.ml" 509 20485 20534 "parser.ml" 509 20485 20535
+type(
+  int
+)
+"parser.ml" 509 20485 20499 "parser.ml" 509 20485 20535
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 510 20550 20554 "parser.ml" 510 20550 20562
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 85 20582 20620 "parser.mly" 85 20582 20622
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 508 20422 20430 "parser.ml" 508 20422 20432
+)
+"parser.mly" 85 20582 20624 "parser.mly" 85 20582 20629
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 85 20582 20630 "parser.mly" 85 20582 20633
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.ceq "syntax.ml" 19 336 340 "syntax.ml" 19 336 343
+)
+"parser.mly" 85 20582 20634 "parser.mly" 85 20582 20636
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 508 20422 20430 "parser.ml" 508 20422 20432
+)
+"parser.mly" 85 20582 20638 "parser.mly" 85 20582 20641
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 85 20582 20642 "parser.mly" 85 20582 20644
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 509 20485 20493 "parser.ml" 509 20485 20495
+)
+"parser.mly" 85 20582 20637 "parser.mly" 85 20582 20645
+type(
+  Syntax.t list
+)
+"parser.mly" 85 20582 20624 "parser.mly" 85 20582 20645
+type(
+  Syntax.t list
+)
+"parser.mly" 85 20582 20646 "parser.mly" 85 20582 20647
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 85 20582 20648 "parser.mly" 85 20582 20651
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 85 20582 20652 "parser.mly" 85 20582 20654
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 509 20485 20493 "parser.ml" 509 20485 20495
+)
+"parser.mly" 85 20582 20648 "parser.mly" 85 20582 20654
+type(
+  Syntax.t list
+)
+"parser.mly" 85 20582 20624 "parser.mly" 85 20582 20654
+type(
+  Syntax.t list
+)
+"parser.mly" 85 20582 20617 "parser.mly" 85 20582 20657
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 510 20550 20554 "parser.ml" 514 20676 20700
+type(
+  Obj.t
+)
+"parser.ml" 509 20485 20489 "parser.ml" 514 20676 20700
+type(
+  Obj.t
+)
+"parser.ml" 508 20422 20426 "parser.ml" 514 20676 20700
+type(
+  Obj.t
+)
+"parser.ml" 507 20394 20396 "parser.ml" 514 20676 20701
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 515 20702 20709 "parser.ml" 515 20702 20726
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 516 20730 20734 "parser.ml" 522 20983 21007
+)
+"parser.ml" 516 20730 20738 "parser.ml" 516 20730 20740
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 517 20793 20797 "parser.ml" 522 20983 21007
+)
+"parser.ml" 516 20730 20744 "parser.ml" 516 20730 20760
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 516 20730 20761 "parser.ml" 516 20730 20778
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 515 20702 20709 "parser.ml" 515 20702 20726
+)
+"parser.ml" 516 20730 20779 "parser.ml" 516 20730 20780
+type(
+  int
+)
+"parser.ml" 516 20730 20744 "parser.ml" 516 20730 20780
+type(
+  Syntax.t list
+)
+"parser.ml" 517 20793 20801 "parser.ml" 517 20793 20803
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 518 20858 20862 "parser.ml" 522 20983 21007
+)
+"parser.ml" 517 20793 20807 "parser.ml" 517 20793 20823
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 517 20793 20824 "parser.ml" 517 20793 20841
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 515 20702 20709 "parser.ml" 515 20702 20726
+)
+"parser.ml" 517 20793 20842 "parser.ml" 517 20793 20843
+type(
+  int
+)
+"parser.ml" 517 20793 20807 "parser.ml" 517 20793 20843
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 518 20858 20862 "parser.ml" 518 20858 20870
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 86 20890 20928 "parser.mly" 86 20890 20930
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 516 20730 20738 "parser.ml" 516 20730 20740
+)
+"parser.mly" 86 20890 20932 "parser.mly" 86 20890 20937
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 86 20890 20938 "parser.mly" 86 20890 20940
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cl "syntax.ml" 17 291 295 "syntax.ml" 17 291 297
+)
+"parser.mly" 86 20890 20941 "parser.mly" 86 20890 20943
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 516 20730 20738 "parser.ml" 516 20730 20740
+)
+"parser.mly" 86 20890 20945 "parser.mly" 86 20890 20948
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 86 20890 20949 "parser.mly" 86 20890 20951
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 517 20793 20801 "parser.ml" 517 20793 20803
+)
+"parser.mly" 86 20890 20944 "parser.mly" 86 20890 20952
+type(
+  Syntax.t list
+)
+"parser.mly" 86 20890 20932 "parser.mly" 86 20890 20952
+type(
+  Syntax.t list
+)
+"parser.mly" 86 20890 20953 "parser.mly" 86 20890 20954
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 86 20890 20955 "parser.mly" 86 20890 20958
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 86 20890 20959 "parser.mly" 86 20890 20961
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 517 20793 20801 "parser.ml" 517 20793 20803
+)
+"parser.mly" 86 20890 20955 "parser.mly" 86 20890 20961
+type(
+  Syntax.t list
+)
+"parser.mly" 86 20890 20932 "parser.mly" 86 20890 20961
+type(
+  Syntax.t list
+)
+"parser.mly" 86 20890 20925 "parser.mly" 86 20890 20964
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 518 20858 20862 "parser.ml" 522 20983 21007
+type(
+  Obj.t
+)
+"parser.ml" 517 20793 20797 "parser.ml" 522 20983 21007
+type(
+  Obj.t
+)
+"parser.ml" 516 20730 20734 "parser.ml" 522 20983 21007
+type(
+  Obj.t
+)
+"parser.ml" 515 20702 20704 "parser.ml" 522 20983 21008
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 523 21009 21016 "parser.ml" 523 21009 21033
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 524 21037 21041 "parser.ml" 530 21290 21314
+)
+"parser.ml" 524 21037 21045 "parser.ml" 524 21037 21047
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 525 21100 21104 "parser.ml" 530 21290 21314
+)
+"parser.ml" 524 21037 21051 "parser.ml" 524 21037 21067
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 524 21037 21068 "parser.ml" 524 21037 21085
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 523 21009 21016 "parser.ml" 523 21009 21033
+)
+"parser.ml" 524 21037 21086 "parser.ml" 524 21037 21087
+type(
+  int
+)
+"parser.ml" 524 21037 21051 "parser.ml" 524 21037 21087
+type(
+  Syntax.t list
+)
+"parser.ml" 525 21100 21108 "parser.ml" 525 21100 21110
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 526 21165 21169 "parser.ml" 530 21290 21314
+)
+"parser.ml" 525 21100 21114 "parser.ml" 525 21100 21130
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 525 21100 21131 "parser.ml" 525 21100 21148
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 523 21009 21016 "parser.ml" 523 21009 21033
+)
+"parser.ml" 525 21100 21149 "parser.ml" 525 21100 21150
+type(
+  int
+)
+"parser.ml" 525 21100 21114 "parser.ml" 525 21100 21150
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 526 21165 21169 "parser.ml" 526 21165 21177
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 87 21197 21235 "parser.mly" 87 21197 21237
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 524 21037 21045 "parser.ml" 524 21037 21047
+)
+"parser.mly" 87 21197 21239 "parser.mly" 87 21197 21244
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 87 21197 21245 "parser.mly" 87 21197 21247
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cg "syntax.ml" 18 316 320 "syntax.ml" 18 316 322
+)
+"parser.mly" 87 21197 21248 "parser.mly" 87 21197 21250
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 524 21037 21045 "parser.ml" 524 21037 21047
+)
+"parser.mly" 87 21197 21252 "parser.mly" 87 21197 21255
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 87 21197 21256 "parser.mly" 87 21197 21258
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 525 21100 21108 "parser.ml" 525 21100 21110
+)
+"parser.mly" 87 21197 21251 "parser.mly" 87 21197 21259
+type(
+  Syntax.t list
+)
+"parser.mly" 87 21197 21239 "parser.mly" 87 21197 21259
+type(
+  Syntax.t list
+)
+"parser.mly" 87 21197 21260 "parser.mly" 87 21197 21261
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 87 21197 21262 "parser.mly" 87 21197 21265
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 87 21197 21266 "parser.mly" 87 21197 21268
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 525 21100 21108 "parser.ml" 525 21100 21110
+)
+"parser.mly" 87 21197 21262 "parser.mly" 87 21197 21268
+type(
+  Syntax.t list
+)
+"parser.mly" 87 21197 21239 "parser.mly" 87 21197 21268
+type(
+  Syntax.t list
+)
+"parser.mly" 87 21197 21232 "parser.mly" 87 21197 21271
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 526 21165 21169 "parser.ml" 530 21290 21314
+type(
+  Obj.t
+)
+"parser.ml" 525 21100 21104 "parser.ml" 530 21290 21314
+type(
+  Obj.t
+)
+"parser.ml" 524 21037 21041 "parser.ml" 530 21290 21314
+type(
+  Obj.t
+)
+"parser.ml" 523 21009 21011 "parser.ml" 530 21290 21315
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 531 21316 21323 "parser.ml" 531 21316 21340
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 532 21344 21348 "parser.ml" 538 21598 21622
+)
+"parser.ml" 532 21344 21352 "parser.ml" 532 21344 21354
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 533 21407 21411 "parser.ml" 538 21598 21622
+)
+"parser.ml" 532 21344 21358 "parser.ml" 532 21344 21374
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 532 21344 21375 "parser.ml" 532 21344 21392
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 531 21316 21323 "parser.ml" 531 21316 21340
+)
+"parser.ml" 532 21344 21393 "parser.ml" 532 21344 21394
+type(
+  int
+)
+"parser.ml" 532 21344 21358 "parser.ml" 532 21344 21394
+type(
+  Syntax.t list
+)
+"parser.ml" 533 21407 21415 "parser.ml" 533 21407 21417
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 534 21472 21476 "parser.ml" 538 21598 21622
+)
+"parser.ml" 533 21407 21421 "parser.ml" 533 21407 21437
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 533 21407 21438 "parser.ml" 533 21407 21455
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 531 21316 21323 "parser.ml" 531 21316 21340
+)
+"parser.ml" 533 21407 21456 "parser.ml" 533 21407 21457
+type(
+  int
+)
+"parser.ml" 533 21407 21421 "parser.ml" 533 21407 21457
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 534 21472 21476 "parser.ml" 534 21472 21484
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 88 21504 21542 "parser.mly" 88 21504 21544
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 532 21344 21352 "parser.ml" 532 21344 21354
+)
+"parser.mly" 88 21504 21546 "parser.mly" 88 21504 21551
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 88 21504 21552 "parser.mly" 88 21504 21555
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cle "syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+)
+"parser.mly" 88 21504 21556 "parser.mly" 88 21504 21558
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 532 21344 21352 "parser.ml" 532 21344 21354
+)
+"parser.mly" 88 21504 21560 "parser.mly" 88 21504 21563
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 88 21504 21564 "parser.mly" 88 21504 21566
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 533 21407 21415 "parser.ml" 533 21407 21417
+)
+"parser.mly" 88 21504 21559 "parser.mly" 88 21504 21567
+type(
+  Syntax.t list
+)
+"parser.mly" 88 21504 21546 "parser.mly" 88 21504 21567
+type(
+  Syntax.t list
+)
+"parser.mly" 88 21504 21568 "parser.mly" 88 21504 21569
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 88 21504 21570 "parser.mly" 88 21504 21573
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 88 21504 21574 "parser.mly" 88 21504 21576
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 533 21407 21415 "parser.ml" 533 21407 21417
+)
+"parser.mly" 88 21504 21570 "parser.mly" 88 21504 21576
+type(
+  Syntax.t list
+)
+"parser.mly" 88 21504 21546 "parser.mly" 88 21504 21576
+type(
+  Syntax.t list
+)
+"parser.mly" 88 21504 21539 "parser.mly" 88 21504 21579
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 534 21472 21476 "parser.ml" 538 21598 21622
+type(
+  Obj.t
+)
+"parser.ml" 533 21407 21411 "parser.ml" 538 21598 21622
+type(
+  Obj.t
+)
+"parser.ml" 532 21344 21348 "parser.ml" 538 21598 21622
+type(
+  Obj.t
+)
+"parser.ml" 531 21316 21318 "parser.ml" 538 21598 21623
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 539 21624 21631 "parser.ml" 539 21624 21648
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 540 21652 21656 "parser.ml" 546 21906 21930
+)
+"parser.ml" 540 21652 21660 "parser.ml" 540 21652 21662
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 541 21715 21719 "parser.ml" 546 21906 21930
+)
+"parser.ml" 540 21652 21666 "parser.ml" 540 21652 21682
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 540 21652 21683 "parser.ml" 540 21652 21700
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 539 21624 21631 "parser.ml" 539 21624 21648
+)
+"parser.ml" 540 21652 21701 "parser.ml" 540 21652 21702
+type(
+  int
+)
+"parser.ml" 540 21652 21666 "parser.ml" 540 21652 21702
+type(
+  Syntax.t list
+)
+"parser.ml" 541 21715 21723 "parser.ml" 541 21715 21725
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 542 21780 21784 "parser.ml" 546 21906 21930
+)
+"parser.ml" 541 21715 21729 "parser.ml" 541 21715 21745
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 541 21715 21746 "parser.ml" 541 21715 21763
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 539 21624 21631 "parser.ml" 539 21624 21648
+)
+"parser.ml" 541 21715 21764 "parser.ml" 541 21715 21765
+type(
+  int
+)
+"parser.ml" 541 21715 21729 "parser.ml" 541 21715 21765
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 542 21780 21784 "parser.ml" 542 21780 21792
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 89 21812 21850 "parser.mly" 89 21812 21852
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 540 21652 21660 "parser.ml" 540 21652 21662
+)
+"parser.mly" 89 21812 21854 "parser.mly" 89 21812 21859
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 89 21812 21860 "parser.mly" 89 21812 21863
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cge "syntax.ml" 16 269 273 "syntax.ml" 16 269 276
+)
+"parser.mly" 89 21812 21864 "parser.mly" 89 21812 21866
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 540 21652 21660 "parser.ml" 540 21652 21662
+)
+"parser.mly" 89 21812 21868 "parser.mly" 89 21812 21871
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 89 21812 21872 "parser.mly" 89 21812 21874
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 541 21715 21723 "parser.ml" 541 21715 21725
+)
+"parser.mly" 89 21812 21867 "parser.mly" 89 21812 21875
+type(
+  Syntax.t list
+)
+"parser.mly" 89 21812 21854 "parser.mly" 89 21812 21875
+type(
+  Syntax.t list
+)
+"parser.mly" 89 21812 21876 "parser.mly" 89 21812 21877
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 89 21812 21878 "parser.mly" 89 21812 21881
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 89 21812 21882 "parser.mly" 89 21812 21884
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 541 21715 21723 "parser.ml" 541 21715 21725
+)
+"parser.mly" 89 21812 21878 "parser.mly" 89 21812 21884
+type(
+  Syntax.t list
+)
+"parser.mly" 89 21812 21854 "parser.mly" 89 21812 21884
+type(
+  Syntax.t list
+)
+"parser.mly" 89 21812 21847 "parser.mly" 89 21812 21887
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 542 21780 21784 "parser.ml" 546 21906 21930
+type(
+  Obj.t
+)
+"parser.ml" 541 21715 21719 "parser.ml" 546 21906 21930
+type(
+  Obj.t
+)
+"parser.ml" 540 21652 21656 "parser.ml" 546 21906 21930
+type(
+  Obj.t
+)
+"parser.ml" 539 21624 21626 "parser.ml" 546 21906 21931
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 547 21932 21939 "parser.ml" 547 21932 21956
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 548 21960 21964 "parser.ml" 553 22121 22146
+)
+"parser.ml" 548 21960 21968 "parser.ml" 548 21960 21970
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 549 22023 22027 "parser.ml" 553 22121 22146
+)
+"parser.ml" 548 21960 21974 "parser.ml" 548 21960 21990
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 548 21960 21991 "parser.ml" 548 21960 22008
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 547 21932 21939 "parser.ml" 547 21932 21956
+)
+"parser.ml" 548 21960 22009 "parser.ml" 548 21960 22010
+type(
+  int
+)
+"parser.ml" 548 21960 21974 "parser.ml" 548 21960 22010
+type(
+  Syntax.t list
+)
+"parser.ml" 549 22023 22027 "parser.ml" 549 22023 22035
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 92 22055 22093 "parser.mly" 92 22055 22095
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 548 21960 21968 "parser.ml" 548 21960 21970
+)
+"parser.mly" 92 22055 22097 "parser.mly" 92 22055 22099
+type(
+  Syntax.t list
+)
+"parser.mly" 92 22055 22090 "parser.mly" 92 22055 22102
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 549 22023 22027 "parser.ml" 553 22121 22146
+type(
+  Obj.t
+)
+"parser.ml" 548 21960 21964 "parser.ml" 553 22121 22146
+type(
+  Obj.t
+)
+"parser.ml" 547 21932 21934 "parser.ml" 553 22121 22147
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 554 22148 22155 "parser.ml" 554 22148 22172
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 555 22176 22180 "parser.ml" 561 22430 22455
+)
+"parser.ml" 555 22176 22184 "parser.ml" 555 22176 22186
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 556 22239 22243 "parser.ml" 561 22430 22455
+)
+"parser.ml" 555 22176 22190 "parser.ml" 555 22176 22206
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 555 22176 22207 "parser.ml" 555 22176 22224
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 554 22148 22155 "parser.ml" 554 22148 22172
+)
+"parser.ml" 555 22176 22225 "parser.ml" 555 22176 22226
+type(
+  int
+)
+"parser.ml" 555 22176 22190 "parser.ml" 555 22176 22226
+type(
+  Syntax.t list
+)
+"parser.ml" 556 22239 22247 "parser.ml" 556 22239 22249
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 557 22304 22308 "parser.ml" 561 22430 22455
+)
+"parser.ml" 556 22239 22253 "parser.ml" 556 22239 22269
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 556 22239 22270 "parser.ml" 556 22239 22287
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 554 22148 22155 "parser.ml" 554 22148 22172
+)
+"parser.ml" 556 22239 22288 "parser.ml" 556 22239 22289
+type(
+  int
+)
+"parser.ml" 556 22239 22253 "parser.ml" 556 22239 22289
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 557 22304 22308 "parser.ml" 557 22304 22316
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 93 22336 22374 "parser.mly" 93 22336 22376
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 555 22176 22184 "parser.ml" 555 22176 22186
+)
+"parser.mly" 93 22336 22378 "parser.mly" 93 22336 22383
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 93 22336 22384 "parser.mly" 93 22336 22387
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.ceq "syntax.ml" 19 336 340 "syntax.ml" 19 336 343
+)
+"parser.mly" 93 22336 22388 "parser.mly" 93 22336 22390
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 555 22176 22184 "parser.ml" 555 22176 22186
+)
+"parser.mly" 93 22336 22392 "parser.mly" 93 22336 22395
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 93 22336 22396 "parser.mly" 93 22336 22398
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 556 22239 22247 "parser.ml" 556 22239 22249
+)
+"parser.mly" 93 22336 22391 "parser.mly" 93 22336 22399
+type(
+  Syntax.t list
+)
+"parser.mly" 93 22336 22378 "parser.mly" 93 22336 22399
+type(
+  Syntax.t list
+)
+"parser.mly" 93 22336 22400 "parser.mly" 93 22336 22401
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 93 22336 22402 "parser.mly" 93 22336 22405
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 93 22336 22406 "parser.mly" 93 22336 22408
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 556 22239 22247 "parser.ml" 556 22239 22249
+)
+"parser.mly" 93 22336 22402 "parser.mly" 93 22336 22408
+type(
+  Syntax.t list
+)
+"parser.mly" 93 22336 22378 "parser.mly" 93 22336 22408
+type(
+  Syntax.t list
+)
+"parser.mly" 93 22336 22371 "parser.mly" 93 22336 22411
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 557 22304 22308 "parser.ml" 561 22430 22455
+type(
+  Obj.t
+)
+"parser.ml" 556 22239 22243 "parser.ml" 561 22430 22455
+type(
+  Obj.t
+)
+"parser.ml" 555 22176 22180 "parser.ml" 561 22430 22455
+type(
+  Obj.t
+)
+"parser.ml" 554 22148 22150 "parser.ml" 561 22430 22456
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 562 22457 22464 "parser.ml" 562 22457 22481
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 563 22485 22489 "parser.ml" 569 22738 22763
+)
+"parser.ml" 563 22485 22493 "parser.ml" 563 22485 22495
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 564 22548 22552 "parser.ml" 569 22738 22763
+)
+"parser.ml" 563 22485 22499 "parser.ml" 563 22485 22515
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 563 22485 22516 "parser.ml" 563 22485 22533
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 562 22457 22464 "parser.ml" 562 22457 22481
+)
+"parser.ml" 563 22485 22534 "parser.ml" 563 22485 22535
+type(
+  int
+)
+"parser.ml" 563 22485 22499 "parser.ml" 563 22485 22535
+type(
+  Syntax.t list
+)
+"parser.ml" 564 22548 22556 "parser.ml" 564 22548 22558
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 565 22613 22617 "parser.ml" 569 22738 22763
+)
+"parser.ml" 564 22548 22562 "parser.ml" 564 22548 22578
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 564 22548 22579 "parser.ml" 564 22548 22596
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 562 22457 22464 "parser.ml" 562 22457 22481
+)
+"parser.ml" 564 22548 22597 "parser.ml" 564 22548 22598
+type(
+  int
+)
+"parser.ml" 564 22548 22562 "parser.ml" 564 22548 22598
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 565 22613 22617 "parser.ml" 565 22613 22625
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 94 22645 22683 "parser.mly" 94 22645 22685
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 563 22485 22493 "parser.ml" 563 22485 22495
+)
+"parser.mly" 94 22645 22687 "parser.mly" 94 22645 22692
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 94 22645 22693 "parser.mly" 94 22645 22695
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cl "syntax.ml" 17 291 295 "syntax.ml" 17 291 297
+)
+"parser.mly" 94 22645 22696 "parser.mly" 94 22645 22698
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 563 22485 22493 "parser.ml" 563 22485 22495
+)
+"parser.mly" 94 22645 22700 "parser.mly" 94 22645 22703
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 94 22645 22704 "parser.mly" 94 22645 22706
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 564 22548 22556 "parser.ml" 564 22548 22558
+)
+"parser.mly" 94 22645 22699 "parser.mly" 94 22645 22707
+type(
+  Syntax.t list
+)
+"parser.mly" 94 22645 22687 "parser.mly" 94 22645 22707
+type(
+  Syntax.t list
+)
+"parser.mly" 94 22645 22708 "parser.mly" 94 22645 22709
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 94 22645 22710 "parser.mly" 94 22645 22713
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 94 22645 22714 "parser.mly" 94 22645 22716
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 564 22548 22556 "parser.ml" 564 22548 22558
+)
+"parser.mly" 94 22645 22710 "parser.mly" 94 22645 22716
+type(
+  Syntax.t list
+)
+"parser.mly" 94 22645 22687 "parser.mly" 94 22645 22716
+type(
+  Syntax.t list
+)
+"parser.mly" 94 22645 22680 "parser.mly" 94 22645 22719
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 565 22613 22617 "parser.ml" 569 22738 22763
+type(
+  Obj.t
+)
+"parser.ml" 564 22548 22552 "parser.ml" 569 22738 22763
+type(
+  Obj.t
+)
+"parser.ml" 563 22485 22489 "parser.ml" 569 22738 22763
+type(
+  Obj.t
+)
+"parser.ml" 562 22457 22459 "parser.ml" 569 22738 22764
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 570 22765 22772 "parser.ml" 570 22765 22789
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 571 22793 22797 "parser.ml" 577 23046 23071
+)
+"parser.ml" 571 22793 22801 "parser.ml" 571 22793 22803
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 572 22856 22860 "parser.ml" 577 23046 23071
+)
+"parser.ml" 571 22793 22807 "parser.ml" 571 22793 22823
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 571 22793 22824 "parser.ml" 571 22793 22841
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 570 22765 22772 "parser.ml" 570 22765 22789
+)
+"parser.ml" 571 22793 22842 "parser.ml" 571 22793 22843
+type(
+  int
+)
+"parser.ml" 571 22793 22807 "parser.ml" 571 22793 22843
+type(
+  Syntax.t list
+)
+"parser.ml" 572 22856 22864 "parser.ml" 572 22856 22866
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 573 22921 22925 "parser.ml" 577 23046 23071
+)
+"parser.ml" 572 22856 22870 "parser.ml" 572 22856 22886
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 572 22856 22887 "parser.ml" 572 22856 22904
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 570 22765 22772 "parser.ml" 570 22765 22789
+)
+"parser.ml" 572 22856 22905 "parser.ml" 572 22856 22906
+type(
+  int
+)
+"parser.ml" 572 22856 22870 "parser.ml" 572 22856 22906
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 573 22921 22925 "parser.ml" 573 22921 22933
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 95 22953 22991 "parser.mly" 95 22953 22993
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 571 22793 22801 "parser.ml" 571 22793 22803
+)
+"parser.mly" 95 22953 22995 "parser.mly" 95 22953 23000
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 95 22953 23001 "parser.mly" 95 22953 23003
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cg "syntax.ml" 18 316 320 "syntax.ml" 18 316 322
+)
+"parser.mly" 95 22953 23004 "parser.mly" 95 22953 23006
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 571 22793 22801 "parser.ml" 571 22793 22803
+)
+"parser.mly" 95 22953 23008 "parser.mly" 95 22953 23011
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 95 22953 23012 "parser.mly" 95 22953 23014
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 572 22856 22864 "parser.ml" 572 22856 22866
+)
+"parser.mly" 95 22953 23007 "parser.mly" 95 22953 23015
+type(
+  Syntax.t list
+)
+"parser.mly" 95 22953 22995 "parser.mly" 95 22953 23015
+type(
+  Syntax.t list
+)
+"parser.mly" 95 22953 23016 "parser.mly" 95 22953 23017
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 95 22953 23018 "parser.mly" 95 22953 23021
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 95 22953 23022 "parser.mly" 95 22953 23024
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 572 22856 22864 "parser.ml" 572 22856 22866
+)
+"parser.mly" 95 22953 23018 "parser.mly" 95 22953 23024
+type(
+  Syntax.t list
+)
+"parser.mly" 95 22953 22995 "parser.mly" 95 22953 23024
+type(
+  Syntax.t list
+)
+"parser.mly" 95 22953 22988 "parser.mly" 95 22953 23027
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 573 22921 22925 "parser.ml" 577 23046 23071
+type(
+  Obj.t
+)
+"parser.ml" 572 22856 22860 "parser.ml" 577 23046 23071
+type(
+  Obj.t
+)
+"parser.ml" 571 22793 22797 "parser.ml" 577 23046 23071
+type(
+  Obj.t
+)
+"parser.ml" 570 22765 22767 "parser.ml" 577 23046 23072
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 578 23073 23080 "parser.ml" 578 23073 23097
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 579 23101 23105 "parser.ml" 585 23355 23380
+)
+"parser.ml" 579 23101 23109 "parser.ml" 579 23101 23111
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 580 23164 23168 "parser.ml" 585 23355 23380
+)
+"parser.ml" 579 23101 23115 "parser.ml" 579 23101 23131
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 579 23101 23132 "parser.ml" 579 23101 23149
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 578 23073 23080 "parser.ml" 578 23073 23097
+)
+"parser.ml" 579 23101 23150 "parser.ml" 579 23101 23151
+type(
+  int
+)
+"parser.ml" 579 23101 23115 "parser.ml" 579 23101 23151
+type(
+  Syntax.t list
+)
+"parser.ml" 580 23164 23172 "parser.ml" 580 23164 23174
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 581 23229 23233 "parser.ml" 585 23355 23380
+)
+"parser.ml" 580 23164 23178 "parser.ml" 580 23164 23194
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 580 23164 23195 "parser.ml" 580 23164 23212
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 578 23073 23080 "parser.ml" 578 23073 23097
+)
+"parser.ml" 580 23164 23213 "parser.ml" 580 23164 23214
+type(
+  int
+)
+"parser.ml" 580 23164 23178 "parser.ml" 580 23164 23214
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 581 23229 23233 "parser.ml" 581 23229 23241
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 96 23261 23299 "parser.mly" 96 23261 23301
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 579 23101 23109 "parser.ml" 579 23101 23111
+)
+"parser.mly" 96 23261 23303 "parser.mly" 96 23261 23308
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 96 23261 23309 "parser.mly" 96 23261 23312
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cle "syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+)
+"parser.mly" 96 23261 23313 "parser.mly" 96 23261 23315
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 579 23101 23109 "parser.ml" 579 23101 23111
+)
+"parser.mly" 96 23261 23317 "parser.mly" 96 23261 23320
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 96 23261 23321 "parser.mly" 96 23261 23323
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 580 23164 23172 "parser.ml" 580 23164 23174
+)
+"parser.mly" 96 23261 23316 "parser.mly" 96 23261 23324
+type(
+  Syntax.t list
+)
+"parser.mly" 96 23261 23303 "parser.mly" 96 23261 23324
+type(
+  Syntax.t list
+)
+"parser.mly" 96 23261 23325 "parser.mly" 96 23261 23326
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 96 23261 23327 "parser.mly" 96 23261 23330
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 96 23261 23331 "parser.mly" 96 23261 23333
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 580 23164 23172 "parser.ml" 580 23164 23174
+)
+"parser.mly" 96 23261 23327 "parser.mly" 96 23261 23333
+type(
+  Syntax.t list
+)
+"parser.mly" 96 23261 23303 "parser.mly" 96 23261 23333
+type(
+  Syntax.t list
+)
+"parser.mly" 96 23261 23296 "parser.mly" 96 23261 23336
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 581 23229 23233 "parser.ml" 585 23355 23380
+type(
+  Obj.t
+)
+"parser.ml" 580 23164 23168 "parser.ml" 585 23355 23380
+type(
+  Obj.t
+)
+"parser.ml" 579 23101 23105 "parser.ml" 585 23355 23380
+type(
+  Obj.t
+)
+"parser.ml" 578 23073 23075 "parser.ml" 585 23355 23381
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 586 23382 23389 "parser.ml" 586 23382 23406
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 587 23410 23414 "parser.ml" 593 23664 23689
+)
+"parser.ml" 587 23410 23418 "parser.ml" 587 23410 23420
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 588 23473 23477 "parser.ml" 593 23664 23689
+)
+"parser.ml" 587 23410 23424 "parser.ml" 587 23410 23440
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 587 23410 23441 "parser.ml" 587 23410 23458
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 586 23382 23389 "parser.ml" 586 23382 23406
+)
+"parser.ml" 587 23410 23459 "parser.ml" 587 23410 23460
+type(
+  int
+)
+"parser.ml" 587 23410 23424 "parser.ml" 587 23410 23460
+type(
+  Syntax.t list
+)
+"parser.ml" 588 23473 23481 "parser.ml" 588 23473 23483
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 589 23538 23542 "parser.ml" 593 23664 23689
+)
+"parser.ml" 588 23473 23487 "parser.ml" 588 23473 23503
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 588 23473 23504 "parser.ml" 588 23473 23521
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 586 23382 23389 "parser.ml" 586 23382 23406
+)
+"parser.ml" 588 23473 23522 "parser.ml" 588 23473 23523
+type(
+  int
+)
+"parser.ml" 588 23473 23487 "parser.ml" 588 23473 23523
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 589 23538 23542 "parser.ml" 589 23538 23550
+type(
+  Syntax.t list * Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 97 23570 23608 "parser.mly" 97 23570 23610
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 587 23410 23418 "parser.ml" 587 23410 23420
+)
+"parser.mly" 97 23570 23612 "parser.mly" 97 23570 23617
+type(
+  (Syntax.t -> Syntax.t -> Syntax.t) ->
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Util.cross "util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+)
+"parser.mly" 97 23570 23618 "parser.mly" 97 23570 23621
+type(
+  Syntax.t -> Syntax.t -> Syntax.t
+)
+ident(
+  int_ref Syntax.cge "syntax.ml" 16 269 273 "syntax.ml" 16 269 276
+)
+"parser.mly" 97 23570 23622 "parser.mly" 97 23570 23624
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 587 23410 23418 "parser.ml" 587 23410 23420
+)
+"parser.mly" 97 23570 23626 "parser.mly" 97 23570 23629
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.fst "stdlib.mli" 811 30222 30222 "stdlib.mli" 811 30222 30262
+)
+"parser.mly" 97 23570 23630 "parser.mly" 97 23570 23632
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 588 23473 23481 "parser.ml" 588 23473 23483
+)
+"parser.mly" 97 23570 23625 "parser.mly" 97 23570 23633
+type(
+  Syntax.t list
+)
+"parser.mly" 97 23570 23612 "parser.mly" 97 23570 23633
+type(
+  Syntax.t list
+)
+"parser.mly" 97 23570 23634 "parser.mly" 97 23570 23635
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 97 23570 23636 "parser.mly" 97 23570 23639
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 97 23570 23640 "parser.mly" 97 23570 23642
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 588 23473 23481 "parser.ml" 588 23473 23483
+)
+"parser.mly" 97 23570 23636 "parser.mly" 97 23570 23642
+type(
+  Syntax.t list
+)
+"parser.mly" 97 23570 23612 "parser.mly" 97 23570 23642
+type(
+  Syntax.t list
+)
+"parser.mly" 97 23570 23605 "parser.mly" 97 23570 23645
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 589 23538 23542 "parser.ml" 593 23664 23689
+type(
+  Obj.t
+)
+"parser.ml" 588 23473 23477 "parser.ml" 593 23664 23689
+type(
+  Obj.t
+)
+"parser.ml" 587 23410 23414 "parser.ml" 593 23664 23689
+type(
+  Obj.t
+)
+"parser.ml" 586 23382 23384 "parser.ml" 593 23664 23690
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 594 23691 23698 "parser.ml" 594 23691 23715
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 595 23719 23723 "parser.ml" 600 23876 23899
+)
+"parser.ml" 595 23719 23727 "parser.ml" 595 23719 23729
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 596 23781 23785 "parser.ml" 600 23876 23899
+)
+"parser.ml" 595 23719 23733 "parser.ml" 595 23719 23749
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 595 23719 23750 "parser.ml" 595 23719 23767
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 594 23691 23698 "parser.ml" 594 23691 23715
+)
+"parser.ml" 595 23719 23768 "parser.ml" 595 23719 23769
+type(
+  int
+)
+"parser.ml" 595 23719 23733 "parser.ml" 595 23719 23769
+type(
+  Syntax.t
+)
+"parser.ml" 596 23781 23785 "parser.ml" 596 23781 23793
+type(
+  Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 100 23814 23852 "parser.mly" 100 23814 23854
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 595 23719 23727 "parser.ml" 595 23719 23729
+)
+"parser.mly" 100 23814 23849 "parser.mly" 100 23814 23857
+type(
+  Syntax.t list
+)
+"parser.ml" 596 23781 23785 "parser.ml" 600 23876 23899
+type(
+  Obj.t
+)
+"parser.ml" 595 23719 23723 "parser.ml" 600 23876 23899
+type(
+  Obj.t
+)
+"parser.ml" 594 23691 23693 "parser.ml" 600 23876 23900
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 601 23901 23908 "parser.ml" 601 23901 23925
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 602 23929 23933 "parser.ml" 608 24153 24176
+)
+"parser.ml" 602 23929 23937 "parser.ml" 602 23929 23939
+type(
+  Syntax.t
+)
+ident(
+  def _1 "parser.ml" 603 23991 23995 "parser.ml" 608 24153 24176
+)
+"parser.ml" 602 23929 23943 "parser.ml" 602 23929 23959
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 602 23929 23960 "parser.ml" 602 23929 23977
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 601 23901 23908 "parser.ml" 601 23901 23925
+)
+"parser.ml" 602 23929 23978 "parser.ml" 602 23929 23979
+type(
+  int
+)
+"parser.ml" 602 23929 23943 "parser.ml" 602 23929 23979
+type(
+  Syntax.t
+)
+"parser.ml" 603 23991 23999 "parser.ml" 603 23991 24001
+type(
+  Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 604 24054 24058 "parser.ml" 608 24153 24176
+)
+"parser.ml" 603 23991 24005 "parser.ml" 603 23991 24021
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 603 23991 24022 "parser.ml" 603 23991 24039
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 601 23901 23908 "parser.ml" 601 23901 23925
+)
+"parser.ml" 603 23991 24040 "parser.ml" 603 23991 24041
+type(
+  int
+)
+"parser.ml" 603 23991 24005 "parser.ml" 603 23991 24041
+type(
+  Syntax.t list
+)
+"parser.ml" 604 24054 24058 "parser.ml" 604 24054 24066
+type(
+  Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 101 24087 24124 "parser.mly" 101 24087 24126
+type(
+  Syntax.t
+)
+ident(
+  int_ref _1 "parser.ml" 602 23929 23937 "parser.ml" 602 23929 23939
+)
+"parser.mly" 101 24087 24130 "parser.mly" 101 24087 24132
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 603 23991 23999 "parser.ml" 603 23991 24001
+)
+"parser.mly" 101 24087 24122 "parser.mly" 101 24087 24134
+type(
+  Syntax.t list
+)
+"parser.ml" 604 24054 24058 "parser.ml" 608 24153 24176
+type(
+  Obj.t
+)
+"parser.ml" 603 23991 23995 "parser.ml" 608 24153 24176
+type(
+  Obj.t
+)
+"parser.ml" 602 23929 23933 "parser.ml" 608 24153 24176
+type(
+  Obj.t
+)
+"parser.ml" 601 23901 23903 "parser.ml" 608 24153 24177
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 609 24178 24185 "parser.ml" 609 24178 24202
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 610 24206 24210 "parser.ml" 615 24369 24393
+)
+"parser.ml" 610 24206 24214 "parser.ml" 610 24206 24216
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 611 24270 24274 "parser.ml" 615 24369 24393
+)
+"parser.ml" 610 24206 24220 "parser.ml" 610 24206 24236
+type(
+  Parsing.parser_env -> int -> Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 610 24206 24237 "parser.ml" 610 24206 24254
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 609 24178 24185 "parser.ml" 609 24178 24202
+)
+"parser.ml" 610 24206 24255 "parser.ml" 610 24206 24256
+type(
+  int
+)
+"parser.ml" 610 24206 24220 "parser.ml" 610 24206 24256
+type(
+  Syntax.t list * Syntax.t list
+)
+"parser.ml" 611 24270 24274 "parser.ml" 611 24270 24282
+type(
+  Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 104 24303 24341 "parser.mly" 104 24303 24344
+type(
+  Syntax.t list * Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.snd "stdlib.mli" 814 30309 30309 "stdlib.mli" 814 30309 30349
+)
+"parser.mly" 104 24303 24345 "parser.mly" 104 24303 24347
+type(
+  Syntax.t list * Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 610 24206 24214 "parser.ml" 610 24206 24216
+)
+"parser.mly" 104 24303 24338 "parser.mly" 104 24303 24350
+type(
+  Syntax.t list
+)
+"parser.ml" 611 24270 24274 "parser.ml" 615 24369 24393
+type(
+  Obj.t
+)
+"parser.ml" 610 24206 24210 "parser.ml" 615 24369 24393
+type(
+  Obj.t
+)
+"parser.ml" 609 24178 24180 "parser.ml" 615 24369 24394
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 616 24395 24402 "parser.ml" 616 24395 24419
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 617 24423 24427 "parser.ml" 623 24651 24675
+)
+"parser.ml" 617 24423 24431 "parser.ml" 617 24423 24433
+type(
+  int
+)
+ident(
+  def _1 "parser.ml" 618 24484 24488 "parser.ml" 623 24651 24675
+)
+"parser.ml" 617 24423 24437 "parser.ml" 617 24423 24453
+type(
+  Parsing.parser_env -> int -> int
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 617 24423 24454 "parser.ml" 617 24423 24471
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 616 24395 24402 "parser.ml" 616 24395 24419
+)
+"parser.ml" 617 24423 24472 "parser.ml" 617 24423 24473
+type(
+  int
+)
+"parser.ml" 617 24423 24437 "parser.ml" 617 24423 24473
+type(
+  int
+)
+"parser.ml" 618 24484 24492 "parser.ml" 618 24484 24494
+type(
+  Syntax.t
+)
+ident(
+  def _3 "parser.ml" 619 24546 24550 "parser.ml" 623 24651 24675
+)
+"parser.ml" 618 24484 24498 "parser.ml" 618 24484 24514
+type(
+  Parsing.parser_env -> int -> Syntax.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 618 24484 24515 "parser.ml" 618 24484 24532
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 616 24395 24402 "parser.ml" 616 24395 24419
+)
+"parser.ml" 618 24484 24533 "parser.ml" 618 24484 24534
+type(
+  int
+)
+"parser.ml" 618 24484 24498 "parser.ml" 618 24484 24534
+type(
+  Syntax.t
+)
+"parser.ml" 619 24546 24550 "parser.ml" 619 24546 24558
+type(
+  Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 105 24579 24622 "parser.mly" 105 24579 24624
+type(
+  int
+)
+ident(
+  int_ref _1 "parser.ml" 617 24423 24431 "parser.ml" 617 24423 24433
+)
+"parser.mly" 105 24579 24626 "parser.mly" 105 24579 24628
+type(
+  Syntax.t
+)
+ident(
+  int_ref _3 "parser.ml" 618 24484 24492 "parser.ml" 618 24484 24494
+)
+"parser.mly" 105 24579 24617 "parser.mly" 105 24579 24629
+type(
+  Syntax.t
+)
+"parser.mly" 105 24579 24614 "parser.mly" 105 24579 24632
+type(
+  Syntax.t list
+)
+"parser.ml" 619 24546 24550 "parser.ml" 623 24651 24675
+type(
+  Obj.t
+)
+"parser.ml" 618 24484 24488 "parser.ml" 623 24651 24675
+type(
+  Obj.t
+)
+"parser.ml" 617 24423 24427 "parser.ml" 623 24651 24675
+type(
+  Obj.t
+)
+"parser.ml" 616 24395 24397 "parser.ml" 623 24651 24676
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 624 24677 24684 "parser.ml" 624 24677 24701
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 625 24705 24709 "parser.ml" 631 24931 24955
+)
+"parser.ml" 625 24705 24713 "parser.ml" 625 24705 24715
+type(
+  Syntax.t list
+)
+ident(
+  def _1 "parser.ml" 626 24769 24773 "parser.ml" 631 24931 24955
+)
+"parser.ml" 625 24705 24719 "parser.ml" 625 24705 24735
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 625 24705 24736 "parser.ml" 625 24705 24753
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 624 24677 24684 "parser.ml" 624 24677 24701
+)
+"parser.ml" 625 24705 24754 "parser.ml" 625 24705 24755
+type(
+  int
+)
+"parser.ml" 625 24705 24719 "parser.ml" 625 24705 24755
+type(
+  Syntax.t list
+)
+"parser.ml" 626 24769 24777 "parser.ml" 626 24769 24779
+type(
+  Syntax.t list
+)
+ident(
+  def _3 "parser.ml" 627 24833 24837 "parser.ml" 631 24931 24955
+)
+"parser.ml" 626 24769 24783 "parser.ml" 626 24769 24799
+type(
+  Parsing.parser_env -> int -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 626 24769 24800 "parser.ml" 626 24769 24817
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 624 24677 24684 "parser.ml" 624 24677 24701
+)
+"parser.ml" 626 24769 24818 "parser.ml" 626 24769 24819
+type(
+  int
+)
+"parser.ml" 626 24769 24783 "parser.ml" 626 24769 24819
+type(
+  Syntax.t list
+)
+"parser.ml" 627 24833 24837 "parser.ml" 627 24833 24845
+type(
+  Syntax.t list -> Obj.t
+)
+ident(
+  int_ref Stdlib.Obj.repr "obj.mli" 25 1220 1220 "obj.mli" 25 1220 1257
+)
+"parser.mly" 106 24866 24903 "parser.mly" 106 24866 24905
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _1 "parser.ml" 625 24705 24713 "parser.ml" 625 24705 24715
+)
+"parser.mly" 106 24866 24906 "parser.mly" 106 24866 24907
+type(
+  Syntax.t list -> Syntax.t list -> Syntax.t list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"parser.mly" 106 24866 24908 "parser.mly" 106 24866 24910
+type(
+  Syntax.t list
+)
+ident(
+  int_ref _3 "parser.ml" 626 24769 24777 "parser.ml" 626 24769 24779
+)
+"parser.mly" 106 24866 24901 "parser.mly" 106 24866 24912
+type(
+  Syntax.t list
+)
+"parser.ml" 627 24833 24837 "parser.ml" 631 24931 24955
+type(
+  Obj.t
+)
+"parser.ml" 626 24769 24773 "parser.ml" 631 24931 24955
+type(
+  Obj.t
+)
+"parser.ml" 625 24705 24709 "parser.ml" 631 24931 24955
+type(
+  Obj.t
+)
+"parser.ml" 624 24677 24679 "parser.ml" 631 24931 24956
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 633 24974 24981 "parser.ml" 633 24974 24998
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "parser.ml" 633 24974 25002 "parser.ml" 633 24974 25063
+)
+"parser.ml" 633 24974 25002 "parser.ml" 633 24974 25007
+type(
+  exn -> Obj.t
+)
+ident(
+  int_ref Stdlib.raise "stdlib.mli" 30 1602 1602 "stdlib.mli" 30 1602 1639
+)
+"parser.ml" 633 24974 25025 "parser.ml" 633 24974 25041
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  int_ref Stdlib.Parsing.peek_val "parsing.mli" 103 4073 4073 "parsing.mli" 103 4073 4111
+)
+"parser.ml" 633 24974 25042 "parser.ml" 633 24974 25059
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "parser.ml" 633 24974 24981 "parser.ml" 633 24974 24998
+)
+"parser.ml" 633 24974 25060 "parser.ml" 633 24974 25061
+type(
+  int
+)
+"parser.ml" 633 24974 25024 "parser.ml" 633 24974 25062
+type(
+  Obj.t
+)
+"parser.ml" 633 24974 25008 "parser.ml" 633 24974 25063
+type(
+  exn
+)
+"parser.ml" 633 24974 25002 "parser.ml" 633 24974 25063
+type(
+  Obj.t
+)
+"parser.ml" 633 24974 24976 "parser.ml" 633 24974 25064
+type(
+  Parsing.parser_env -> Obj.t
+)
+"parser.ml" 294 13405 13417 "parser.ml" 634 25065 25067
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+"parser.ml" 635 25068 25072 "parser.ml" 635 25068 25080
+type(
+  Parsing.parse_tables
+)
+ident(
+  def yytables "parser.ml" 652 25589 25589 "parser.ml" 0 0 -1
+)
+"parser.ml" 636 25083 25103 "parser.ml" 636 25083 25108
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  int_ref yyact "parser.ml" 294 13405 13409 "parser.ml" 294 13405 13414
+)
+"parser.ml" 637 25110 25135 "parser.ml" 637 25110 25149
+type(
+  int array
+)
+ident(
+  int_ref yytransl_const "parser.ml" 35 461 465 "parser.ml" 35 461 479
+)
+"parser.ml" 638 25151 25176 "parser.ml" 638 25151 25190
+type(
+  int array
+)
+ident(
+  int_ref yytransl_block "parser.ml" 59 894 898 "parser.ml" 59 894 912
+)
+"parser.ml" 639 25192 25208 "parser.ml" 639 25192 25213
+type(
+  string
+)
+ident(
+  int_ref yylhs "parser.ml" 64 965 969 "parser.ml" 64 965 974
+)
+"parser.ml" 640 25215 25231 "parser.ml" 640 25215 25236
+type(
+  string
+)
+ident(
+  int_ref yylen "parser.ml" 72 1361 1365 "parser.ml" 72 1361 1370
+)
+"parser.ml" 641 25238 25257 "parser.ml" 641 25238 25265
+type(
+  string
+)
+ident(
+  int_ref yydefred "parser.ml" 80 1757 1761 "parser.ml" 80 1757 1769
+)
+"parser.ml" 642 25267 25285 "parser.ml" 642 25267 25292
+type(
+  string
+)
+ident(
+  int_ref yydgoto "parser.ml" 94 2536 2540 "parser.ml" 94 2536 2547
+)
+"parser.ml" 643 25294 25313 "parser.ml" 643 25294 25321
+type(
+  string
+)
+ident(
+  int_ref yysindex "parser.ml" 97 2628 2632 "parser.ml" 97 2628 2640
+)
+"parser.ml" 644 25323 25342 "parser.ml" 644 25323 25350
+type(
+  string
+)
+ident(
+  int_ref yyrindex "parser.ml" 111 3407 3411 "parser.ml" 111 3407 3419
+)
+"parser.ml" 645 25352 25371 "parser.ml" 645 25352 25379
+type(
+  string
+)
+ident(
+  int_ref yygindex "parser.ml" 125 4186 4190 "parser.ml" 125 4186 4198
+)
+"parser.ml" 646 25381 25403 "parser.ml" 646 25381 25414
+type(
+  int
+)
+ident(
+  int_ref yytablesize "parser.ml" 128 4279 4283 "parser.ml" 128 4279 4294
+)
+"parser.ml" 647 25416 25434 "parser.ml" 647 25416 25441
+type(
+  string
+)
+ident(
+  int_ref yytable "parser.ml" 129 4301 4305 "parser.ml" 129 4301 4312
+)
+"parser.ml" 648 25443 25461 "parser.ml" 648 25443 25468
+type(
+  string
+)
+ident(
+  int_ref yycheck "parser.ml" 197 8675 8679 "parser.ml" 197 8675 8686
+)
+"parser.ml" 649 25470 25497 "parser.ml" 649 25470 25508
+type(
+  string -> unit
+)
+ident(
+  int_ref Stdlib.Parsing.parse_error "parsing.mli" 105 4150 4150 "parsing.mli" 105 4150 4182
+)
+"parser.ml" 650 25510 25534 "parser.ml" 650 25510 25547
+type(
+  string
+)
+ident(
+  int_ref yynames_const "parser.ml" 265 13049 13053 "parser.ml" 265 13049 13066
+)
+"parser.ml" 651 25549 25573 "parser.ml" 651 25549 25586
+type(
+  string
+)
+ident(
+  int_ref yynames_block "parser.ml" 289 13351 13355 "parser.ml" 289 13351 13368
+)
+"parser.ml" 636 25083 25085 "parser.ml" 651 25549 25588
+type(
+  Parsing.parse_tables
+)
+"parser.ml" 652 25589 25593 "parser.ml" 652 25589 25597
+type(
+  (Lexing.lexbuf -> token) -> Lexing.lexbuf -> Syntax.t * Syntax.t list
+)
+ident(
+  def prog "parser.ml" 653 25659 25731 "parser.ml" 0 0 -1
+)
+"parser.ml" 652 25589 25599 "parser.ml" 652 25589 25605
+type(
+  Lexing.lexbuf -> token
+)
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "parser.ml" 652 25589 25632 "parser.ml" 653 25659 25731
+)
+"parser.ml" 652 25589 25633 "parser.ml" 652 25589 25639
+type(
+  Lexing.lexbuf
+)
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "parser.ml" 653 25659 25663 "parser.ml" 653 25659 25703
+)
+"parser.ml" 653 25659 25663 "parser.ml" 653 25659 25678
+type(
+  Parsing.parse_tables ->
+  int ->
+  (Lexing.lexbuf -> token) -> Lexing.lexbuf -> Syntax.t * Syntax.t list
+)
+ident(
+  int_ref Stdlib.Parsing.yyparse "parsing.mli" 101 3989 3989 "parsing.mli" 102 4003 4072
+)
+"parser.ml" 653 25659 25679 "parser.ml" 653 25659 25687
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "parser.ml" 635 25068 25072 "parser.ml" 635 25068 25080
+)
+"parser.ml" 653 25659 25688 "parser.ml" 653 25659 25689
+type(
+  int
+)
+"parser.ml" 653 25659 25690 "parser.ml" 653 25659 25696
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "parser.ml" 652 25589 25599 "parser.ml" 652 25589 25605
+)
+"parser.ml" 653 25659 25697 "parser.ml" 653 25659 25703
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parser.ml" 652 25589 25633 "parser.ml" 652 25589 25639
+)
+"parser.ml" 653 25659 25663 "parser.ml" 653 25659 25703
+type(
+  Syntax.t * Syntax.t list
+)

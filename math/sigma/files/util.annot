@@ -1,0 +1,2306 @@
+"util.ml" 1 0 8 "util.ml" 1 0 11
+type(
+  int -> int -> int
+)
+ident(
+  def gcd "util.ml" 1 0 0 "util.ml" 0 0 -1
+)
+"util.ml" 1 0 12 "util.ml" 1 0 13
+type(
+  int
+)
+ident(
+  def a "util.ml" 1 0 14 "util.ml" 3 40 62
+)
+"util.ml" 1 0 14 "util.ml" 1 0 15
+type(
+  int
+)
+ident(
+  def b "util.ml" 2 18 20 "util.ml" 3 40 62
+)
+"util.ml" 2 18 23 "util.ml" 2 18 24
+type(
+  int
+)
+ident(
+  int_ref b "util.ml" 1 0 14 "util.ml" 1 0 15
+)
+"util.ml" 2 18 25 "util.ml" 2 18 26
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 2 18 27 "util.ml" 2 18 28
+type(
+  int
+)
+"util.ml" 2 18 23 "util.ml" 2 18 28
+type(
+  bool
+)
+"util.ml" 2 18 34 "util.ml" 2 18 37
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.abs "stdlib.mli" 385 15001 15001 "stdlib.mli" 385 15001 15021
+)
+"util.ml" 2 18 38 "util.ml" 2 18 39
+type(
+  int
+)
+ident(
+  int_ref a "util.ml" 1 0 12 "util.ml" 1 0 13
+)
+"util.ml" 2 18 34 "util.ml" 2 18 39
+type(
+  int
+)
+"util.ml" 3 40 47 "util.ml" 3 40 50
+type(
+  int -> int -> int
+)
+ident(
+  int_ref gcd "util.ml" 1 0 8 "util.ml" 1 0 11
+)
+"util.ml" 3 40 51 "util.ml" 3 40 52
+type(
+  int
+)
+ident(
+  int_ref b "util.ml" 1 0 14 "util.ml" 1 0 15
+)
+"util.ml" 3 40 54 "util.ml" 3 40 55
+type(
+  int
+)
+ident(
+  int_ref a "util.ml" 1 0 12 "util.ml" 1 0 13
+)
+"util.ml" 3 40 56 "util.ml" 3 40 59
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( mod ) "stdlib.mli" 373 14550 14550 "stdlib.mli" 373 14550 14598
+)
+"util.ml" 3 40 60 "util.ml" 3 40 61
+type(
+  int
+)
+ident(
+  int_ref b "util.ml" 1 0 14 "util.ml" 1 0 15
+)
+"util.ml" 3 40 53 "util.ml" 3 40 62
+type(
+  int
+)
+"util.ml" 3 40 47 "util.ml" 3 40 62
+type(
+  int
+)
+"util.ml" 2 18 20 "util.ml" 3 40 62
+type(
+  int
+)
+"util.ml" 5 64 72 "util.ml" 5 64 78
+type(
+  int -> int -> int -> int -> int -> int -> int * int * int
+)
+ident(
+  def exgcd' "util.ml" 5 64 64 "util.ml" 0 0 -1
+)
+"util.ml" 5 64 79 "util.ml" 5 64 80
+type(
+  int
+)
+ident(
+  def x "util.ml" 5 64 81 "util.ml" 9 162 228
+)
+"util.ml" 5 64 81 "util.ml" 5 64 82
+type(
+  int
+)
+ident(
+  def y "util.ml" 5 64 83 "util.ml" 9 162 228
+)
+"util.ml" 5 64 83 "util.ml" 5 64 85
+type(
+  int
+)
+ident(
+  def a0 "util.ml" 5 64 86 "util.ml" 9 162 228
+)
+"util.ml" 5 64 86 "util.ml" 5 64 88
+type(
+  int
+)
+ident(
+  def b0 "util.ml" 5 64 89 "util.ml" 9 162 228
+)
+"util.ml" 5 64 89 "util.ml" 5 64 91
+type(
+  int
+)
+ident(
+  def a1 "util.ml" 5 64 92 "util.ml" 9 162 228
+)
+"util.ml" 5 64 92 "util.ml" 5 64 94
+type(
+  int
+)
+ident(
+  def b1 "util.ml" 6 97 98 "util.ml" 9 162 228
+)
+"util.ml" 6 97 101 "util.ml" 6 97 102
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 5 64 81 "util.ml" 5 64 82
+)
+"util.ml" 6 97 103 "util.ml" 6 97 104
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 6 97 105 "util.ml" 6 97 106
+type(
+  int
+)
+"util.ml" 6 97 101 "util.ml" 6 97 106
+type(
+  bool
+)
+"util.ml" 7 112 117 "util.ml" 7 112 118
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 7 112 119 "util.ml" 7 112 120
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"util.ml" 7 112 121 "util.ml" 7 112 122
+type(
+  int
+)
+"util.ml" 7 112 117 "util.ml" 7 112 122
+type(
+  bool
+)
+"util.ml" 7 112 129 "util.ml" 7 112 130
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 329 13119 13119 "stdlib.mli" 329 13119 13159
+)
+"util.ml" 7 112 130 "util.ml" 7 112 132
+type(
+  int
+)
+ident(
+  int_ref a0 "util.ml" 5 64 83 "util.ml" 5 64 85
+)
+"util.ml" 7 112 129 "util.ml" 7 112 132
+type(
+  int
+)
+"util.ml" 7 112 134 "util.ml" 7 112 135
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 329 13119 13119 "stdlib.mli" 329 13119 13159
+)
+"util.ml" 7 112 135 "util.ml" 7 112 137
+type(
+  int
+)
+ident(
+  int_ref b0 "util.ml" 5 64 86 "util.ml" 5 64 88
+)
+"util.ml" 7 112 134 "util.ml" 7 112 137
+type(
+  int
+)
+"util.ml" 7 112 139 "util.ml" 7 112 140
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 329 13119 13119 "stdlib.mli" 329 13119 13159
+)
+"util.ml" 7 112 140 "util.ml" 7 112 141
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 7 112 139 "util.ml" 7 112 141
+type(
+  int
+)
+"util.ml" 7 112 128 "util.ml" 7 112 142
+type(
+  int * int * int
+)
+"util.ml" 8 143 151 "util.ml" 8 143 153
+type(
+  int
+)
+ident(
+  int_ref a0 "util.ml" 5 64 83 "util.ml" 5 64 85
+)
+"util.ml" 8 143 155 "util.ml" 8 143 157
+type(
+  int
+)
+ident(
+  int_ref b0 "util.ml" 5 64 86 "util.ml" 5 64 88
+)
+"util.ml" 8 143 159 "util.ml" 8 143 160
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 8 143 150 "util.ml" 8 143 161
+type(
+  int * int * int
+)
+"util.ml" 7 112 114 "util.ml" 8 143 161
+type(
+  int * int * int
+)
+"util.ml" 9 162 168 "util.ml" 9 162 174
+type(
+  int -> int -> int -> int -> int -> int -> int * int * int
+)
+ident(
+  int_ref exgcd' "util.ml" 5 64 72 "util.ml" 5 64 78
+)
+"util.ml" 9 162 175 "util.ml" 9 162 176
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 5 64 81 "util.ml" 5 64 82
+)
+"util.ml" 9 162 178 "util.ml" 9 162 179
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 9 162 180 "util.ml" 9 162 183
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( mod ) "stdlib.mli" 373 14550 14550 "stdlib.mli" 373 14550 14598
+)
+"util.ml" 9 162 184 "util.ml" 9 162 185
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 5 64 81 "util.ml" 5 64 82
+)
+"util.ml" 9 162 177 "util.ml" 9 162 186
+type(
+  int
+)
+"util.ml" 9 162 187 "util.ml" 9 162 189
+type(
+  int
+)
+ident(
+  int_ref a1 "util.ml" 5 64 89 "util.ml" 5 64 91
+)
+"util.ml" 9 162 190 "util.ml" 9 162 192
+type(
+  int
+)
+ident(
+  int_ref b1 "util.ml" 5 64 92 "util.ml" 5 64 94
+)
+"util.ml" 9 162 194 "util.ml" 9 162 196
+type(
+  int
+)
+ident(
+  int_ref a0 "util.ml" 5 64 83 "util.ml" 5 64 85
+)
+"util.ml" 9 162 197 "util.ml" 9 162 198
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"util.ml" 9 162 199 "util.ml" 9 162 200
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 9 162 201 "util.ml" 9 162 202
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"util.ml" 9 162 203 "util.ml" 9 162 204
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 5 64 81 "util.ml" 5 64 82
+)
+"util.ml" 9 162 199 "util.ml" 9 162 204
+type(
+  int
+)
+"util.ml" 9 162 205 "util.ml" 9 162 206
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 9 162 207 "util.ml" 9 162 209
+type(
+  int
+)
+ident(
+  int_ref a1 "util.ml" 5 64 89 "util.ml" 5 64 91
+)
+"util.ml" 9 162 199 "util.ml" 9 162 209
+type(
+  int
+)
+"util.ml" 9 162 193 "util.ml" 9 162 210
+type(
+  int
+)
+"util.ml" 9 162 212 "util.ml" 9 162 214
+type(
+  int
+)
+ident(
+  int_ref b0 "util.ml" 5 64 86 "util.ml" 5 64 88
+)
+"util.ml" 9 162 215 "util.ml" 9 162 216
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"util.ml" 9 162 217 "util.ml" 9 162 218
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 5 64 79 "util.ml" 5 64 80
+)
+"util.ml" 9 162 219 "util.ml" 9 162 220
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"util.ml" 9 162 221 "util.ml" 9 162 222
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 5 64 81 "util.ml" 5 64 82
+)
+"util.ml" 9 162 217 "util.ml" 9 162 222
+type(
+  int
+)
+"util.ml" 9 162 223 "util.ml" 9 162 224
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 9 162 225 "util.ml" 9 162 227
+type(
+  int
+)
+ident(
+  int_ref b1 "util.ml" 5 64 92 "util.ml" 5 64 94
+)
+"util.ml" 9 162 217 "util.ml" 9 162 227
+type(
+  int
+)
+"util.ml" 9 162 211 "util.ml" 9 162 228
+type(
+  int
+)
+"util.ml" 9 162 168 "util.ml" 9 162 228
+type(
+  int * int * int
+)
+"util.ml" 6 97 98 "util.ml" 9 162 228
+type(
+  int * int * int
+)
+"util.ml" 11 230 234 "util.ml" 11 230 239
+type(
+  int -> int -> int * int * int
+)
+ident(
+  def exgcd "util.ml" 14 268 268 "util.ml" 0 0 -1
+)
+"util.ml" 11 230 240 "util.ml" 11 230 241
+type(
+  int
+)
+ident(
+  def x "util.ml" 11 230 242 "util.ml" 12 246 266
+)
+"util.ml" 11 230 242 "util.ml" 11 230 243
+type(
+  int
+)
+ident(
+  def y "util.ml" 12 246 248 "util.ml" 12 246 266
+)
+"util.ml" 12 246 248 "util.ml" 12 246 254
+type(
+  int -> int -> int -> int -> int -> int -> int * int * int
+)
+ident(
+  int_ref exgcd' "util.ml" 5 64 72 "util.ml" 5 64 78
+)
+"util.ml" 12 246 255 "util.ml" 12 246 256
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 11 230 240 "util.ml" 11 230 241
+)
+"util.ml" 12 246 257 "util.ml" 12 246 258
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 11 230 242 "util.ml" 11 230 243
+)
+"util.ml" 12 246 259 "util.ml" 12 246 260
+type(
+  int
+)
+"util.ml" 12 246 261 "util.ml" 12 246 262
+type(
+  int
+)
+"util.ml" 12 246 263 "util.ml" 12 246 264
+type(
+  int
+)
+"util.ml" 12 246 265 "util.ml" 12 246 266
+type(
+  int
+)
+"util.ml" 12 246 248 "util.ml" 12 246 266
+type(
+  int * int * int
+)
+"util.ml" 14 268 272 "util.ml" 14 268 278
+type(
+  int -> int -> int
+)
+ident(
+  def modulo "util.ml" 19 338 338 "util.ml" 0 0 -1
+)
+"util.ml" 14 268 279 "util.ml" 14 268 280
+type(
+  int
+)
+ident(
+  def x "util.ml" 14 268 281 "util.ml" 17 328 336
+)
+"util.ml" 14 268 281 "util.ml" 14 268 282
+type(
+  int
+)
+ident(
+  def y "util.ml" 15 285 287 "util.ml" 17 328 336
+)
+"util.ml" 15 285 291 "util.ml" 15 285 292
+type(
+  int
+)
+ident(
+  def z "util.ml" 16 306 308 "util.ml" 17 328 336
+)
+"util.ml" 15 285 295 "util.ml" 15 285 296
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 14 268 279 "util.ml" 14 268 280
+)
+"util.ml" 15 285 297 "util.ml" 15 285 300
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( mod ) "stdlib.mli" 373 14550 14550 "stdlib.mli" 373 14550 14598
+)
+"util.ml" 15 285 301 "util.ml" 15 285 302
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 14 268 281 "util.ml" 14 268 282
+)
+"util.ml" 15 285 295 "util.ml" 15 285 302
+type(
+  int
+)
+"util.ml" 16 306 311 "util.ml" 16 306 312
+type(
+  int
+)
+ident(
+  int_ref z "util.ml" 15 285 291 "util.ml" 15 285 292
+)
+"util.ml" 16 306 313 "util.ml" 16 306 314
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"util.ml" 16 306 315 "util.ml" 16 306 316
+type(
+  int
+)
+"util.ml" 16 306 311 "util.ml" 16 306 316
+type(
+  bool
+)
+"util.ml" 16 306 322 "util.ml" 16 306 323
+type(
+  int
+)
+ident(
+  int_ref z "util.ml" 15 285 291 "util.ml" 15 285 292
+)
+"util.ml" 16 306 324 "util.ml" 16 306 325
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 347 13626 13626 "stdlib.mli" 347 13626 13672
+)
+"util.ml" 16 306 326 "util.ml" 16 306 327
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 14 268 281 "util.ml" 14 268 282
+)
+"util.ml" 16 306 322 "util.ml" 16 306 327
+type(
+  int
+)
+"util.ml" 17 328 335 "util.ml" 17 328 336
+type(
+  int
+)
+ident(
+  int_ref z "util.ml" 15 285 291 "util.ml" 15 285 292
+)
+"util.ml" 16 306 308 "util.ml" 17 328 336
+type(
+  int
+)
+"util.ml" 15 285 287 "util.ml" 17 328 336
+type(
+  int
+)
+"util.ml" 19 338 342 "util.ml" 19 338 346
+type(
+  int -> int -> int
+)
+ident(
+  def fdiv "util.ml" 24 412 412 "util.ml" 0 0 -1
+)
+"util.ml" 19 338 347 "util.ml" 19 338 348
+type(
+  int
+)
+ident(
+  def x "util.ml" 19 338 349 "util.ml" 22 401 410
+)
+"util.ml" 19 338 349 "util.ml" 19 338 350
+type(
+  int
+)
+ident(
+  def y "util.ml" 20 353 355 "util.ml" 22 401 410
+)
+"util.ml" 20 353 359 "util.ml" 20 353 361
+type(
+  int
+)
+ident(
+  def x' "util.ml" 21 373 375 "util.ml" 22 401 410
+)
+"util.ml" 20 353 364 "util.ml" 20 353 365
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 19 338 347 "util.ml" 19 338 348
+)
+"util.ml" 20 353 366 "util.ml" 20 353 367
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"util.ml" 20 353 368 "util.ml" 20 353 369
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 19 338 349 "util.ml" 19 338 350
+)
+"util.ml" 20 353 364 "util.ml" 20 353 369
+type(
+  int
+)
+"util.ml" 21 373 378 "util.ml" 21 373 380
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 20 353 359 "util.ml" 20 353 361
+)
+"util.ml" 21 373 381 "util.ml" 21 373 382
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 21 373 383 "util.ml" 21 373 384
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 19 338 349 "util.ml" 19 338 350
+)
+"util.ml" 21 373 378 "util.ml" 21 373 384
+type(
+  int
+)
+"util.ml" 21 373 385 "util.ml" 21 373 386
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"util.ml" 21 373 387 "util.ml" 21 373 388
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 19 338 347 "util.ml" 19 338 348
+)
+"util.ml" 21 373 378 "util.ml" 21 373 388
+type(
+  bool
+)
+"util.ml" 21 373 394 "util.ml" 21 373 396
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 20 353 359 "util.ml" 20 353 361
+)
+"util.ml" 21 373 397 "util.ml" 21 373 398
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"util.ml" 21 373 399 "util.ml" 21 373 400
+type(
+  int
+)
+"util.ml" 21 373 394 "util.ml" 21 373 400
+type(
+  int
+)
+"util.ml" 22 401 408 "util.ml" 22 401 410
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 20 353 359 "util.ml" 20 353 361
+)
+"util.ml" 21 373 375 "util.ml" 22 401 410
+type(
+  int
+)
+"util.ml" 20 353 355 "util.ml" 22 401 410
+type(
+  int
+)
+"util.ml" 24 412 416 "util.ml" 24 412 420
+type(
+  int -> int -> int
+)
+ident(
+  def cdiv "util.ml" 29 486 486 "util.ml" 0 0 -1
+)
+"util.ml" 24 412 421 "util.ml" 24 412 422
+type(
+  int
+)
+ident(
+  def x "util.ml" 24 412 423 "util.ml" 27 475 484
+)
+"util.ml" 24 412 423 "util.ml" 24 412 424
+type(
+  int
+)
+ident(
+  def y "util.ml" 25 427 429 "util.ml" 27 475 484
+)
+"util.ml" 25 427 433 "util.ml" 25 427 435
+type(
+  int
+)
+ident(
+  def x' "util.ml" 26 447 449 "util.ml" 27 475 484
+)
+"util.ml" 25 427 438 "util.ml" 25 427 439
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 24 412 421 "util.ml" 24 412 422
+)
+"util.ml" 25 427 440 "util.ml" 25 427 441
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"util.ml" 25 427 442 "util.ml" 25 427 443
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 24 412 423 "util.ml" 24 412 424
+)
+"util.ml" 25 427 438 "util.ml" 25 427 443
+type(
+  int
+)
+"util.ml" 26 447 452 "util.ml" 26 447 454
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 25 427 433 "util.ml" 25 427 435
+)
+"util.ml" 26 447 455 "util.ml" 26 447 456
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 26 447 457 "util.ml" 26 447 458
+type(
+  int
+)
+ident(
+  int_ref y "util.ml" 24 412 423 "util.ml" 24 412 424
+)
+"util.ml" 26 447 452 "util.ml" 26 447 458
+type(
+  int
+)
+"util.ml" 26 447 459 "util.ml" 26 447 460
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"util.ml" 26 447 461 "util.ml" 26 447 462
+type(
+  int
+)
+ident(
+  int_ref x "util.ml" 24 412 421 "util.ml" 24 412 422
+)
+"util.ml" 26 447 452 "util.ml" 26 447 462
+type(
+  bool
+)
+"util.ml" 26 447 468 "util.ml" 26 447 470
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 25 427 433 "util.ml" 25 427 435
+)
+"util.ml" 26 447 471 "util.ml" 26 447 472
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 347 13626 13626 "stdlib.mli" 347 13626 13672
+)
+"util.ml" 26 447 473 "util.ml" 26 447 474
+type(
+  int
+)
+"util.ml" 26 447 468 "util.ml" 26 447 474
+type(
+  int
+)
+"util.ml" 27 475 482 "util.ml" 27 475 484
+type(
+  int
+)
+ident(
+  int_ref x' "util.ml" 25 427 433 "util.ml" 25 427 435
+)
+"util.ml" 26 447 449 "util.ml" 27 475 484
+type(
+  int
+)
+"util.ml" 25 427 429 "util.ml" 27 475 484
+type(
+  int
+)
+"util.ml" 29 486 490 "util.ml" 29 486 492
+type(
+  'a -> 'a list -> 'a list
+)
+ident(
+  def rm "util.ml" 32 538 538 "util.ml" 0 0 -1
+)
+"util.ml" 29 486 493 "util.ml" 29 486 494
+type(
+  'a
+)
+ident(
+  def x "util.ml" 29 486 495 "util.ml" 30 500 536
+)
+"util.ml" 29 486 495 "util.ml" 29 486 497
+type(
+  'a list
+)
+ident(
+  def xs "util.ml" 30 500 502 "util.ml" 30 500 536
+)
+"util.ml" 30 500 502 "util.ml" 30 500 513
+type(
+  ('a -> bool) -> 'a list -> 'a list
+)
+ident(
+  int_ref Stdlib.List.filter "list.mli" 327 10954 10954 "list.mli" 327 10954 11001
+)
+"util.ml" 30 500 519 "util.ml" 30 500 521
+type(
+  'a
+)
+ident(
+  def x' "util.ml" 30 500 525 "util.ml" 30 500 532
+)
+"util.ml" 30 500 525 "util.ml" 30 500 527
+type(
+  'a
+)
+ident(
+  int_ref x' "util.ml" 30 500 519 "util.ml" 30 500 521
+)
+"util.ml" 30 500 528 "util.ml" 30 500 530
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Stdlib.( <> ) "stdlib.mli" 130 5559 5559 "stdlib.mli" 130 5559 5607
+)
+"util.ml" 30 500 531 "util.ml" 30 500 532
+type(
+  'a
+)
+ident(
+  int_ref x "util.ml" 29 486 493 "util.ml" 29 486 494
+)
+"util.ml" 30 500 525 "util.ml" 30 500 532
+type(
+  bool
+)
+"util.ml" 30 500 514 "util.ml" 30 500 533
+type(
+  'a -> bool
+)
+"util.ml" 30 500 534 "util.ml" 30 500 536
+type(
+  'a list
+)
+ident(
+  int_ref xs "util.ml" 29 486 495 "util.ml" 29 486 497
+)
+"util.ml" 30 500 502 "util.ml" 30 500 536
+type(
+  'a list
+)
+"util.ml" 32 538 542 "util.ml" 32 538 545
+type(
+  'a -> ('a * int) list -> int
+)
+ident(
+  def get "util.ml" 36 612 612 "util.ml" 0 0 -1
+)
+"util.ml" 32 538 546 "util.ml" 32 538 547
+type(
+  'a
+)
+ident(
+  def k "util.ml" 32 538 548 "util.ml" 34 602 610
+)
+"util.ml" 32 538 548 "util.ml" 32 538 551
+type(
+  ('a * int) list
+)
+ident(
+  def kvs "util.ml" 33 554 556 "util.ml" 34 602 610
+)
+"util.ml" 33 554 559 "util.ml" 33 554 573
+type(
+  'a -> ('a * int) list -> bool
+)
+ident(
+  int_ref Stdlib.List.mem_assoc "list.mli" 401 13450 13450 "list.mli" 401 13450 13494
+)
+"util.ml" 33 554 574 "util.ml" 33 554 575
+type(
+  'a
+)
+ident(
+  int_ref k "util.ml" 32 538 546 "util.ml" 32 538 547
+)
+"util.ml" 33 554 576 "util.ml" 33 554 579
+type(
+  ('a * int) list
+)
+ident(
+  int_ref kvs "util.ml" 32 538 548 "util.ml" 32 538 551
+)
+"util.ml" 33 554 559 "util.ml" 33 554 579
+type(
+  bool
+)
+"util.ml" 33 554 585 "util.ml" 33 554 595
+type(
+  'a -> ('a * int) list -> int
+)
+ident(
+  int_ref Stdlib.List.assoc "list.mli" 371 12459 12459 "list.mli" 371 12459 12497
+)
+"util.ml" 33 554 596 "util.ml" 33 554 597
+type(
+  'a
+)
+ident(
+  int_ref k "util.ml" 32 538 546 "util.ml" 32 538 547
+)
+"util.ml" 33 554 598 "util.ml" 33 554 601
+type(
+  ('a * int) list
+)
+ident(
+  int_ref kvs "util.ml" 32 538 548 "util.ml" 32 538 551
+)
+"util.ml" 33 554 585 "util.ml" 33 554 601
+type(
+  int
+)
+"util.ml" 34 602 609 "util.ml" 34 602 610
+type(
+  int
+)
+"util.ml" 33 554 556 "util.ml" 34 602 610
+type(
+  int
+)
+"util.ml" 36 612 616 "util.ml" 36 612 622
+type(
+  'a -> ('a * 'b) list -> ('a * 'b) list
+)
+ident(
+  def remove "util.ml" 39 658 658 "util.ml" 0 0 -1
+)
+"util.ml" 36 612 623 "util.ml" 36 612 624
+type(
+  'a
+)
+ident(
+  def k "util.ml" 36 612 625 "util.ml" 37 631 656
+)
+"util.ml" 36 612 625 "util.ml" 36 612 628
+type(
+  ('a * 'b) list
+)
+ident(
+  def kvs "util.ml" 37 631 633 "util.ml" 37 631 656
+)
+"util.ml" 37 631 633 "util.ml" 37 631 650
+type(
+  'a -> ('a * 'b) list -> ('a * 'b) list
+)
+ident(
+  int_ref Stdlib.List.remove_assoc "list.mli" 411 13776 13776 "list.mli" 411 13776 13833
+)
+"util.ml" 37 631 651 "util.ml" 37 631 652
+type(
+  'a
+)
+ident(
+  int_ref k "util.ml" 36 612 623 "util.ml" 36 612 624
+)
+"util.ml" 37 631 653 "util.ml" 37 631 656
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref kvs "util.ml" 36 612 625 "util.ml" 36 612 628
+)
+"util.ml" 37 631 633 "util.ml" 37 631 656
+type(
+  ('a * 'b) list
+)
+"util.ml" 39 658 662 "util.ml" 39 658 671
+type(
+  ('a -> 'b) -> ('c * 'a) list -> ('c * 'b) list
+)
+ident(
+  def map_assoc "util.ml" 42 721 721 "util.ml" 0 0 -1
+)
+"util.ml" 39 658 672 "util.ml" 39 658 673
+type(
+  'a -> 'b
+)
+ident(
+  def f "util.ml" 39 658 674 "util.ml" 40 680 719
+)
+"util.ml" 39 658 674 "util.ml" 39 658 677
+type(
+  ('c * 'a) list
+)
+ident(
+  def kvs "util.ml" 40 680 682 "util.ml" 40 680 719
+)
+"util.ml" 40 680 682 "util.ml" 40 680 690
+type(
+  ('c * 'a -> 'c * 'b) -> ('c * 'a) list -> ('c * 'b) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"util.ml" 40 680 697 "util.ml" 40 680 698
+type(
+  'c
+)
+ident(
+  def k "util.ml" 40 680 706 "util.ml" 40 680 714
+)
+"util.ml" 40 680 700 "util.ml" 40 680 701
+type(
+  'a
+)
+ident(
+  def v "util.ml" 40 680 706 "util.ml" 40 680 714
+)
+"util.ml" 40 680 696 "util.ml" 40 680 702
+type(
+  'c * 'a
+)
+"util.ml" 40 680 707 "util.ml" 40 680 708
+type(
+  'c
+)
+ident(
+  int_ref k "util.ml" 40 680 697 "util.ml" 40 680 698
+)
+"util.ml" 40 680 710 "util.ml" 40 680 711
+type(
+  'a -> 'b
+)
+ident(
+  int_ref f "util.ml" 39 658 672 "util.ml" 39 658 673
+)
+"util.ml" 40 680 712 "util.ml" 40 680 713
+type(
+  'a
+)
+ident(
+  int_ref v "util.ml" 40 680 700 "util.ml" 40 680 701
+)
+"util.ml" 40 680 710 "util.ml" 40 680 713
+type(
+  'b
+)
+"util.ml" 40 680 706 "util.ml" 40 680 714
+type(
+  'c * 'b
+)
+"util.ml" 40 680 691 "util.ml" 40 680 715
+type(
+  'c * 'a -> 'c * 'b
+)
+"util.ml" 40 680 716 "util.ml" 40 680 719
+type(
+  ('c * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 39 658 674 "util.ml" 39 658 677
+)
+"util.ml" 40 680 682 "util.ml" 40 680 719
+type(
+  ('c * 'b) list
+)
+"util.ml" 42 721 725 "util.ml" 42 721 734
+type(
+  int -> ('a * int) list -> ('a * int) list
+)
+ident(
+  def mul_assoc "util.ml" 45 801 801 "util.ml" 0 0 -1
+)
+"util.ml" 42 721 735 "util.ml" 42 721 736
+type(
+  int
+)
+ident(
+  def n "util.ml" 42 721 737 "util.ml" 43 743 799
+)
+"util.ml" 42 721 737 "util.ml" 42 721 740
+type(
+  ('a * int) list
+)
+ident(
+  def kvs "util.ml" 43 743 745 "util.ml" 43 743 799
+)
+"util.ml" 43 743 745 "util.ml" 43 743 754
+type(
+  (int -> int) -> ('a * int) list -> ('a * int) list
+)
+ident(
+  int_ref map_assoc "util.ml" 39 658 662 "util.ml" 39 658 671
+)
+"util.ml" 43 743 760 "util.ml" 43 743 761
+type(
+  int
+)
+ident(
+  def v "util.ml" 43 743 765 "util.ml" 43 743 794
+)
+"util.ml" 43 743 773 "util.ml" 43 743 774
+type(
+  int
+)
+ident(
+  int_ref v "util.ml" 43 743 760 "util.ml" 43 743 761
+)
+"util.ml" 43 743 775 "util.ml" 43 743 776
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 43 743 777 "util.ml" 43 743 778
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 42 721 735 "util.ml" 42 721 736
+)
+"util.ml" 43 743 773 "util.ml" 43 743 778
+type(
+  int
+)
+"util.ml" 43 743 779 "util.ml" 43 743 780
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( / ) "stdlib.mli" 362 14084 14084 "stdlib.mli" 362 14084 14130
+)
+"util.ml" 43 743 781 "util.ml" 43 743 782
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 42 721 735 "util.ml" 42 721 736
+)
+"util.ml" 43 743 773 "util.ml" 43 743 782
+type(
+  int
+)
+"util.ml" 43 743 783 "util.ml" 43 743 784
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 43 743 785 "util.ml" 43 743 786
+type(
+  int
+)
+ident(
+  int_ref v "util.ml" 43 743 760 "util.ml" 43 743 761
+)
+"util.ml" 43 743 772 "util.ml" 43 743 787
+type(
+  bool
+)
+"util.ml" 43 743 765 "util.ml" 43 743 787
+type(
+  unit
+)
+"util.ml" 43 743 789 "util.ml" 43 743 790
+type(
+  int
+)
+ident(
+  int_ref v "util.ml" 43 743 760 "util.ml" 43 743 761
+)
+"util.ml" 43 743 791 "util.ml" 43 743 792
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"util.ml" 43 743 793 "util.ml" 43 743 794
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 42 721 735 "util.ml" 42 721 736
+)
+"util.ml" 43 743 789 "util.ml" 43 743 794
+type(
+  int
+)
+"util.ml" 43 743 765 "util.ml" 43 743 794
+type(
+  int
+)
+"util.ml" 43 743 755 "util.ml" 43 743 795
+type(
+  int -> int
+)
+"util.ml" 43 743 796 "util.ml" 43 743 799
+type(
+  ('a * int) list
+)
+ident(
+  int_ref kvs "util.ml" 42 721 737 "util.ml" 42 721 740
+)
+"util.ml" 43 743 745 "util.ml" 43 743 799
+type(
+  ('a * int) list
+)
+"util.ml" 45 801 805 "util.ml" 45 801 809
+type(
+  'a list -> 'a list
+)
+ident(
+  def sort "util.ml" 48 839 839 "util.ml" 0 0 -1
+)
+"util.ml" 45 801 810 "util.ml" 45 801 812
+type(
+  'a list
+)
+ident(
+  def ls "util.ml" 46 815 817 "util.ml" 46 815 837
+)
+"util.ml" 46 815 817 "util.ml" 46 815 826
+type(
+  ('a -> 'a -> int) -> 'a list -> 'a list
+)
+ident(
+  int_ref Stdlib.List.sort "list.mli" 444 14676 14676 "list.mli" 444 14676 14726
+)
+"util.ml" 46 815 827 "util.ml" 46 815 834
+type(
+  'a -> 'a -> int
+)
+ident(
+  int_ref Stdlib.compare "stdlib.mli" 162 6792 6792 "stdlib.mli" 162 6792 6839
+)
+"util.ml" 46 815 835 "util.ml" 46 815 837
+type(
+  'a list
+)
+ident(
+  int_ref ls "util.ml" 45 801 810 "util.ml" 45 801 812
+)
+"util.ml" 46 815 817 "util.ml" 46 815 837
+type(
+  'a list
+)
+"util.ml" 48 839 843 "util.ml" 48 839 849
+type(
+  ('a -> 'a -> 'a) -> 'a -> ('b * 'a) list -> ('b * 'a) list
+)
+ident(
+  def normal "util.ml" 60 1150 1150 "util.ml" 0 0 -1
+)
+"util.ml" 48 839 850 "util.ml" 48 839 853
+type(
+  'a -> 'a -> 'a
+)
+ident(
+  def add "util.ml" 48 839 854 "util.ml" 58 1118 1148
+)
+"util.ml" 48 839 854 "util.ml" 48 839 858
+type(
+  'a
+)
+ident(
+  def zero "util.ml" 48 839 859 "util.ml" 58 1118 1148
+)
+"util.ml" 48 839 859 "util.ml" 48 839 862
+type(
+  ('b * 'a) list
+)
+ident(
+  def kvs "util.ml" 49 865 867 "util.ml" 58 1118 1148
+)
+"util.ml" 49 865 867 "util.ml" 49 865 881
+type(
+  (('b * 'a) list -> 'b * 'a -> ('b * 'a) list) ->
+  ('b * 'a) list -> ('b * 'a) list -> ('b * 'a) list
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"util.ml" 50 882 891 "util.ml" 50 882 894
+type(
+  ('b * 'a) list
+)
+ident(
+  def kvs "util.ml" 50 882 895 "util.ml" 57 1089 1117
+)
+"util.ml" 50 882 896 "util.ml" 50 882 897
+type(
+  'b
+)
+ident(
+  def k "util.ml" 51 905 911 "util.ml" 57 1089 1117
+)
+"util.ml" 50 882 899 "util.ml" 50 882 900
+type(
+  'a
+)
+ident(
+  def v "util.ml" 51 905 911 "util.ml" 57 1089 1117
+)
+"util.ml" 50 882 895 "util.ml" 50 882 901
+type(
+  'b * 'a
+)
+"util.ml" 51 905 917 "util.ml" 51 905 920
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 50 882 891 "util.ml" 50 882 894
+)
+"util.ml" 52 926 935 "util.ml" 52 926 937
+type(
+  'b
+)
+ident(
+  def k' "util.ml" 52 926 955 "util.ml" 55 1026 1055
+)
+"util.ml" 52 926 939 "util.ml" 52 926 941
+type(
+  'a
+)
+ident(
+  def v' "util.ml" 52 926 955 "util.ml" 55 1026 1055
+)
+"util.ml" 52 926 934 "util.ml" 52 926 942
+type(
+  'b * 'a
+)
+"util.ml" 52 926 946 "util.ml" 52 926 949
+type(
+  ('b * 'a) list
+)
+ident(
+  def kvs "util.ml" 52 926 955 "util.ml" 55 1026 1055
+)
+"util.ml" 52 926 934 "util.ml" 52 926 949
+type(
+  ('b * 'a) list
+)
+type(
+  ('b * 'a) list
+)
+"util.ml" 52 926 955 "util.ml" 52 926 957
+type(
+  'b
+)
+ident(
+  int_ref k' "util.ml" 52 926 935 "util.ml" 52 926 937
+)
+"util.ml" 52 926 958 "util.ml" 52 926 959
+type(
+  'b -> 'b -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 52 926 960 "util.ml" 52 926 961
+type(
+  'b
+)
+ident(
+  int_ref k "util.ml" 50 882 896 "util.ml" 50 882 897
+)
+"util.ml" 52 926 955 "util.ml" 52 926 961
+type(
+  bool
+)
+"util.ml" 53 965 979 "util.ml" 53 965 980
+type(
+  'a
+)
+ident(
+  def u "util.ml" 54 995 1005 "util.ml" 55 1026 1055
+)
+"util.ml" 53 965 983 "util.ml" 53 965 986
+type(
+  'a -> 'a -> 'a
+)
+ident(
+  int_ref add "util.ml" 48 839 850 "util.ml" 48 839 853
+)
+"util.ml" 53 965 987 "util.ml" 53 965 989
+type(
+  'a
+)
+ident(
+  int_ref v' "util.ml" 52 926 939 "util.ml" 52 926 941
+)
+"util.ml" 53 965 990 "util.ml" 53 965 991
+type(
+  'a
+)
+ident(
+  int_ref v "util.ml" 50 882 899 "util.ml" 50 882 900
+)
+"util.ml" 53 965 983 "util.ml" 53 965 991
+type(
+  'a
+)
+"util.ml" 54 995 1008 "util.ml" 54 995 1009
+type(
+  'a
+)
+ident(
+  int_ref u "util.ml" 53 965 979 "util.ml" 53 965 980
+)
+"util.ml" 54 995 1010 "util.ml" 54 995 1011
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 54 995 1012 "util.ml" 54 995 1016
+type(
+  'a
+)
+ident(
+  int_ref zero "util.ml" 48 839 854 "util.ml" 48 839 858
+)
+"util.ml" 54 995 1008 "util.ml" 54 995 1016
+type(
+  bool
+)
+"util.ml" 54 995 1022 "util.ml" 54 995 1025
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 52 926 946 "util.ml" 52 926 949
+)
+"util.ml" 55 1026 1042 "util.ml" 55 1026 1044
+type(
+  'b
+)
+ident(
+  int_ref k' "util.ml" 52 926 935 "util.ml" 52 926 937
+)
+"util.ml" 55 1026 1046 "util.ml" 55 1026 1047
+type(
+  'a
+)
+ident(
+  int_ref u "util.ml" 53 965 979 "util.ml" 53 965 980
+)
+"util.ml" 55 1026 1041 "util.ml" 55 1026 1048
+type(
+  'b * 'a
+)
+"util.ml" 55 1026 1052 "util.ml" 55 1026 1055
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 52 926 946 "util.ml" 52 926 949
+)
+"util.ml" 55 1026 1041 "util.ml" 55 1026 1055
+type(
+  ('b * 'a) list
+)
+"util.ml" 54 995 1005 "util.ml" 55 1026 1055
+type(
+  ('b * 'a) list
+)
+"util.ml" 53 965 975 "util.ml" 55 1026 1055
+type(
+  ('b * 'a) list
+)
+"util.ml" 56 1056 1064 "util.ml" 56 1056 1067
+type(
+  ('b * 'a) list
+)
+type(
+  ('b * 'a) list
+)
+ident(
+  def kvs "util.ml" 56 1056 1073 "util.ml" 56 1056 1088
+)
+"util.ml" 56 1056 1073 "util.ml" 56 1056 1074
+type(
+  'a
+)
+ident(
+  int_ref v "util.ml" 50 882 899 "util.ml" 50 882 900
+)
+"util.ml" 56 1056 1075 "util.ml" 56 1056 1076
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 56 1056 1077 "util.ml" 56 1056 1081
+type(
+  'a
+)
+ident(
+  int_ref zero "util.ml" 48 839 854 "util.ml" 48 839 858
+)
+"util.ml" 56 1056 1073 "util.ml" 56 1056 1081
+type(
+  bool
+)
+"util.ml" 56 1056 1085 "util.ml" 56 1056 1088
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 56 1056 1064 "util.ml" 56 1056 1067
+)
+"util.ml" 57 1089 1097 "util.ml" 57 1089 1100
+type(
+  ('b * 'a) list
+)
+type(
+  ('b * 'a) list
+)
+ident(
+  def kvs "util.ml" 57 1089 1104 "util.ml" 57 1089 1117
+)
+"util.ml" 57 1089 1105 "util.ml" 57 1089 1106
+type(
+  'b
+)
+ident(
+  int_ref k "util.ml" 50 882 896 "util.ml" 50 882 897
+)
+"util.ml" 57 1089 1108 "util.ml" 57 1089 1109
+type(
+  'a
+)
+ident(
+  int_ref v "util.ml" 50 882 899 "util.ml" 50 882 900
+)
+"util.ml" 57 1089 1104 "util.ml" 57 1089 1110
+type(
+  'b * 'a
+)
+"util.ml" 57 1089 1114 "util.ml" 57 1089 1117
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 57 1089 1097 "util.ml" 57 1089 1100
+)
+"util.ml" 57 1089 1104 "util.ml" 57 1089 1117
+type(
+  ('b * 'a) list
+)
+"util.ml" 51 905 911 "util.ml" 57 1089 1117
+type(
+  ('b * 'a) list
+)
+"util.ml" 50 882 886 "util.ml" 58 1118 1123
+type(
+  ('b * 'a) list -> 'b * 'a -> ('b * 'a) list
+)
+"util.ml" 58 1118 1124 "util.ml" 58 1118 1126
+type(
+  ('b * 'a) list
+)
+"util.ml" 58 1118 1128 "util.ml" 58 1118 1136
+type(
+  ('b * 'a) list -> ('b * 'a) list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 90 3519 3519 "list.mli" 90 3519 3547
+)
+"util.ml" 58 1118 1138 "util.ml" 58 1118 1142
+type(
+  ('b * 'a) list -> ('b * 'a) list
+)
+ident(
+  int_ref sort "util.ml" 45 801 805 "util.ml" 45 801 809
+)
+"util.ml" 58 1118 1143 "util.ml" 58 1118 1146
+type(
+  ('b * 'a) list
+)
+ident(
+  int_ref kvs "util.ml" 48 839 859 "util.ml" 48 839 862
+)
+"util.ml" 58 1118 1137 "util.ml" 58 1118 1147
+type(
+  ('b * 'a) list
+)
+"util.ml" 58 1118 1127 "util.ml" 58 1118 1148
+type(
+  ('b * 'a) list
+)
+"util.ml" 49 865 867 "util.ml" 58 1118 1148
+type(
+  ('b * 'a) list
+)
+"util.ml" 60 1150 1154 "util.ml" 60 1150 1158
+type(
+  'a list -> 'a list
+)
+ident(
+  def next "util.ml" 64 1204 1204 "util.ml" 0 0 -1
+)
+"util.ml" 60 1150 1159 "util.ml" 60 1150 1161
+type(
+  'a list
+)
+ident(
+  def ls "util.ml" 61 1164 1166 "util.ml" 62 1185 1202
+)
+"util.ml" 61 1164 1169 "util.ml" 61 1164 1171
+type(
+  'a list
+)
+ident(
+  int_ref ls "util.ml" 60 1150 1159 "util.ml" 60 1150 1161
+)
+"util.ml" 61 1164 1172 "util.ml" 61 1164 1173
+type(
+  'a list -> 'a list -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"util.ml" 61 1164 1174 "util.ml" 61 1164 1176
+type(
+  'a list
+)
+"util.ml" 61 1164 1169 "util.ml" 61 1164 1176
+type(
+  bool
+)
+"util.ml" 61 1164 1182 "util.ml" 61 1164 1184
+type(
+  'a list
+)
+"util.ml" 62 1185 1192 "util.ml" 62 1185 1199
+type(
+  'a list -> 'a list
+)
+ident(
+  int_ref Stdlib.List.tl "list.mli" 70 2896 2896 "list.mli" 70 2896 2923
+)
+"util.ml" 62 1185 1200 "util.ml" 62 1185 1202
+type(
+  'a list
+)
+ident(
+  int_ref ls "util.ml" 60 1150 1159 "util.ml" 60 1150 1161
+)
+"util.ml" 62 1185 1192 "util.ml" 62 1185 1202
+type(
+  'a list
+)
+"util.ml" 61 1164 1166 "util.ml" 62 1185 1202
+type(
+  'a list
+)
+"util.ml" 64 1204 1208 "util.ml" 64 1204 1212
+type(
+  ('a -> 'b -> int -> 'a) -> 'a -> 'b list -> 'a
+)
+ident(
+  def fold "util.ml" 68 1305 1305 "util.ml" 0 0 -1
+)
+"util.ml" 64 1204 1213 "util.ml" 64 1204 1214
+type(
+  'a -> 'b -> int -> 'a
+)
+ident(
+  def f "util.ml" 64 1204 1215 "util.ml" 66 1300 1303
+)
+"util.ml" 64 1204 1215 "util.ml" 64 1204 1216
+type(
+  'a
+)
+ident(
+  def a "util.ml" 64 1204 1217 "util.ml" 66 1300 1303
+)
+"util.ml" 64 1204 1217 "util.ml" 64 1204 1219
+type(
+  'b list
+)
+ident(
+  def ls "util.ml" 65 1222 1224 "util.ml" 66 1300 1303
+)
+"util.ml" 65 1222 1229 "util.ml" 65 1222 1230
+type(
+  'a
+)
+ident(
+  def a "util.ml" 66 1300 1302 "util.ml" 66 1300 1303
+)
+"util.ml" 65 1222 1232 "util.ml" 65 1222 1233
+type(
+  int
+)
+"util.ml" 65 1222 1228 "util.ml" 65 1222 1234
+type(
+  'a * int
+)
+"util.ml" 65 1222 1237 "util.ml" 65 1222 1251
+type(
+  ('a * int -> 'b -> 'a * int) -> 'a * int -> 'b list -> 'a * int
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"util.ml" 65 1222 1258 "util.ml" 65 1222 1259
+type(
+  'a
+)
+ident(
+  def a "util.ml" 65 1222 1264 "util.ml" 65 1222 1285
+)
+"util.ml" 65 1222 1261 "util.ml" 65 1222 1262
+type(
+  int
+)
+ident(
+  def i "util.ml" 65 1222 1264 "util.ml" 65 1222 1285
+)
+"util.ml" 65 1222 1257 "util.ml" 65 1222 1263
+type(
+  'a * int
+)
+"util.ml" 65 1222 1264 "util.ml" 65 1222 1265
+type(
+  'b
+)
+ident(
+  def b "util.ml" 65 1222 1269 "util.ml" 65 1222 1285
+)
+"util.ml" 65 1222 1270 "util.ml" 65 1222 1271
+type(
+  'a -> 'b -> int -> 'a
+)
+ident(
+  int_ref f "util.ml" 64 1204 1213 "util.ml" 64 1204 1214
+)
+"util.ml" 65 1222 1272 "util.ml" 65 1222 1273
+type(
+  'a
+)
+ident(
+  int_ref a "util.ml" 65 1222 1258 "util.ml" 65 1222 1259
+)
+"util.ml" 65 1222 1274 "util.ml" 65 1222 1275
+type(
+  'b
+)
+ident(
+  int_ref b "util.ml" 65 1222 1264 "util.ml" 65 1222 1265
+)
+"util.ml" 65 1222 1276 "util.ml" 65 1222 1277
+type(
+  int
+)
+ident(
+  int_ref i "util.ml" 65 1222 1261 "util.ml" 65 1222 1262
+)
+"util.ml" 65 1222 1270 "util.ml" 65 1222 1277
+type(
+  'a
+)
+"util.ml" 65 1222 1279 "util.ml" 65 1222 1280
+type(
+  int
+)
+ident(
+  int_ref i "util.ml" 65 1222 1261 "util.ml" 65 1222 1262
+)
+"util.ml" 65 1222 1281 "util.ml" 65 1222 1282
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 347 13626 13626 "stdlib.mli" 347 13626 13672
+)
+"util.ml" 65 1222 1283 "util.ml" 65 1222 1284
+type(
+  int
+)
+"util.ml" 65 1222 1279 "util.ml" 65 1222 1284
+type(
+  int
+)
+"util.ml" 65 1222 1269 "util.ml" 65 1222 1285
+type(
+  'a * int
+)
+"util.ml" 65 1222 1252 "util.ml" 65 1222 1286
+type(
+  'a * int -> 'b -> 'a * int
+)
+"util.ml" 65 1222 1288 "util.ml" 65 1222 1289
+type(
+  'a
+)
+ident(
+  int_ref a "util.ml" 64 1204 1215 "util.ml" 64 1204 1216
+)
+"util.ml" 65 1222 1291 "util.ml" 65 1222 1292
+type(
+  int
+)
+"util.ml" 65 1222 1287 "util.ml" 65 1222 1293
+type(
+  'a * int
+)
+"util.ml" 65 1222 1294 "util.ml" 65 1222 1296
+type(
+  'b list
+)
+ident(
+  int_ref ls "util.ml" 64 1204 1217 "util.ml" 64 1204 1219
+)
+"util.ml" 65 1222 1237 "util.ml" 65 1222 1296
+type(
+  'a * int
+)
+"util.ml" 66 1300 1302 "util.ml" 66 1300 1303
+type(
+  'a
+)
+ident(
+  int_ref a "util.ml" 65 1222 1229 "util.ml" 65 1222 1230
+)
+"util.ml" 65 1222 1224 "util.ml" 66 1300 1303
+type(
+  'a
+)
+"util.ml" 68 1305 1309 "util.ml" 68 1305 1313
+type(
+  ('a -> int -> 'a) -> 'a -> int -> 'a
+)
+ident(
+  def loop "util.ml" 74 1417 1417 "util.ml" 0 0 -1
+)
+"util.ml" 68 1305 1314 "util.ml" 68 1305 1315
+type(
+  'a -> int -> 'a
+)
+ident(
+  def f "util.ml" 68 1305 1316 "util.ml" 72 1395 1415
+)
+"util.ml" 68 1305 1316 "util.ml" 68 1305 1317
+type(
+  'a
+)
+ident(
+  def a "util.ml" 68 1305 1318 "util.ml" 72 1395 1415
+)
+"util.ml" 68 1305 1318 "util.ml" 68 1305 1319
+type(
+  int
+)
+ident(
+  def n "util.ml" 69 1322 1324 "util.ml" 72 1395 1415
+)
+"util.ml" 69 1322 1332 "util.ml" 69 1322 1337
+type(
+  ('a -> int -> 'a) -> int -> 'a
+)
+ident(
+  def loop' "util.ml" 69 1322 1324 "util.ml" 72 1395 1415
+)
+"util.ml" 69 1322 1338 "util.ml" 69 1322 1339
+type(
+  'a -> int -> 'a
+)
+ident(
+  def f "util.ml" 69 1322 1340 "util.ml" 71 1364 1394
+)
+"util.ml" 69 1322 1340 "util.ml" 69 1322 1341
+type(
+  int
+)
+ident(
+  def n "util.ml" 70 1344 1348 "util.ml" 71 1364 1394
+)
+"util.ml" 70 1344 1351 "util.ml" 70 1344 1352
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 69 1322 1340 "util.ml" 69 1322 1341
+)
+"util.ml" 70 1344 1353 "util.ml" 70 1344 1354
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"util.ml" 70 1344 1355 "util.ml" 70 1344 1356
+type(
+  int
+)
+"util.ml" 70 1344 1351 "util.ml" 70 1344 1356
+type(
+  bool
+)
+"util.ml" 70 1344 1362 "util.ml" 70 1344 1363
+type(
+  'a
+)
+ident(
+  int_ref a "util.ml" 68 1305 1316 "util.ml" 68 1305 1317
+)
+"util.ml" 71 1364 1373 "util.ml" 71 1364 1374
+type(
+  'a -> int -> 'a
+)
+ident(
+  int_ref f "util.ml" 69 1322 1338 "util.ml" 69 1322 1339
+)
+"util.ml" 71 1364 1376 "util.ml" 71 1364 1381
+type(
+  ('a -> int -> 'a) -> int -> 'a
+)
+ident(
+  int_ref loop' "util.ml" 69 1322 1332 "util.ml" 69 1322 1337
+)
+"util.ml" 71 1364 1382 "util.ml" 71 1364 1383
+type(
+  'a -> int -> 'a
+)
+ident(
+  int_ref f "util.ml" 69 1322 1338 "util.ml" 69 1322 1339
+)
+"util.ml" 71 1364 1385 "util.ml" 71 1364 1386
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 69 1322 1340 "util.ml" 69 1322 1341
+)
+"util.ml" 71 1364 1387 "util.ml" 71 1364 1388
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"util.ml" 71 1364 1389 "util.ml" 71 1364 1390
+type(
+  int
+)
+"util.ml" 71 1364 1384 "util.ml" 71 1364 1391
+type(
+  int
+)
+"util.ml" 71 1364 1375 "util.ml" 71 1364 1392
+type(
+  'a
+)
+"util.ml" 71 1364 1393 "util.ml" 71 1364 1394
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 69 1322 1340 "util.ml" 69 1322 1341
+)
+"util.ml" 71 1364 1373 "util.ml" 71 1364 1394
+type(
+  'a
+)
+"util.ml" 70 1344 1348 "util.ml" 71 1364 1394
+type(
+  'a
+)
+"util.ml" 72 1395 1400 "util.ml" 72 1395 1405
+type(
+  ('a -> int -> 'a) -> int -> 'a
+)
+ident(
+  int_ref loop' "util.ml" 69 1322 1332 "util.ml" 69 1322 1337
+)
+"util.ml" 72 1395 1406 "util.ml" 72 1395 1407
+type(
+  'a -> int -> 'a
+)
+ident(
+  int_ref f "util.ml" 68 1305 1314 "util.ml" 68 1305 1315
+)
+"util.ml" 72 1395 1409 "util.ml" 72 1395 1410
+type(
+  int
+)
+ident(
+  int_ref n "util.ml" 68 1305 1318 "util.ml" 68 1305 1319
+)
+"util.ml" 72 1395 1411 "util.ml" 72 1395 1412
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"util.ml" 72 1395 1413 "util.ml" 72 1395 1414
+type(
+  int
+)
+"util.ml" 72 1395 1408 "util.ml" 72 1395 1415
+type(
+  int
+)
+"util.ml" 72 1395 1400 "util.ml" 72 1395 1415
+type(
+  'a
+)
+"util.ml" 69 1322 1324 "util.ml" 72 1395 1415
+type(
+  'a
+)
+"util.ml" 74 1417 1421 "util.ml" 74 1417 1426
+type(
+  ('a -> 'b -> 'c) -> 'a list -> 'b list -> 'c list
+)
+ident(
+  def cross "util.ml" 81 1551 1562 "util.ml" 0 0 -1
+)
+"util.ml" 74 1417 1427 "util.ml" 74 1417 1428
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def f "util.ml" 74 1417 1429 "util.ml" 81 1551 1562
+)
+"util.ml" 74 1417 1429 "util.ml" 74 1417 1431
+type(
+  'a list
+)
+ident(
+  def vs "util.ml" 74 1417 1432 "util.ml" 81 1551 1562
+)
+"util.ml" 74 1417 1432 "util.ml" 74 1417 1434
+type(
+  'b list
+)
+ident(
+  def us "util.ml" 75 1437 1439 "util.ml" 81 1551 1562
+)
+"util.ml" 75 1437 1439 "util.ml" 75 1437 1453
+type(
+  ('c list -> 'a -> 'c list) -> 'c list -> 'a list -> 'c list
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"util.ml" 76 1454 1463 "util.ml" 76 1454 1465
+type(
+  'c list
+)
+ident(
+  def ts "util.ml" 76 1454 1466 "util.ml" 80 1535 1550
+)
+"util.ml" 76 1454 1466 "util.ml" 76 1454 1467
+type(
+  'a
+)
+ident(
+  def v "util.ml" 77 1471 1477 "util.ml" 80 1535 1550
+)
+"util.ml" 77 1471 1477 "util.ml" 77 1471 1491
+type(
+  ('c list -> 'b -> 'c list) -> 'c list -> 'b list -> 'c list
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"util.ml" 78 1492 1505 "util.ml" 78 1492 1507
+type(
+  'c list
+)
+ident(
+  def ts "util.ml" 78 1492 1508 "util.ml" 79 1513 1534
+)
+"util.ml" 78 1492 1508 "util.ml" 78 1492 1509
+type(
+  'b
+)
+ident(
+  def u "util.ml" 79 1513 1523 "util.ml" 79 1513 1534
+)
+"util.ml" 79 1513 1523 "util.ml" 79 1513 1524
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  int_ref f "util.ml" 74 1417 1427 "util.ml" 74 1417 1428
+)
+"util.ml" 79 1513 1525 "util.ml" 79 1513 1526
+type(
+  'a
+)
+ident(
+  int_ref v "util.ml" 76 1454 1466 "util.ml" 76 1454 1467
+)
+"util.ml" 79 1513 1527 "util.ml" 79 1513 1528
+type(
+  'b
+)
+ident(
+  int_ref u "util.ml" 78 1492 1508 "util.ml" 78 1492 1509
+)
+"util.ml" 79 1513 1523 "util.ml" 79 1513 1528
+type(
+  'c
+)
+"util.ml" 79 1513 1532 "util.ml" 79 1513 1534
+type(
+  'c list
+)
+ident(
+  int_ref ts "util.ml" 78 1492 1505 "util.ml" 78 1492 1507
+)
+"util.ml" 79 1513 1523 "util.ml" 79 1513 1534
+type(
+  'c list
+)
+"util.ml" 78 1492 1500 "util.ml" 80 1535 1544
+type(
+  'c list -> 'b -> 'c list
+)
+"util.ml" 80 1535 1545 "util.ml" 80 1535 1547
+type(
+  'c list
+)
+ident(
+  int_ref ts "util.ml" 76 1454 1463 "util.ml" 76 1454 1465
+)
+"util.ml" 80 1535 1548 "util.ml" 80 1535 1550
+type(
+  'b list
+)
+ident(
+  int_ref us "util.ml" 74 1417 1432 "util.ml" 74 1417 1434
+)
+"util.ml" 77 1471 1477 "util.ml" 80 1535 1550
+type(
+  'c list
+)
+"util.ml" 76 1454 1458 "util.ml" 81 1551 1556
+type(
+  'c list -> 'a -> 'c list
+)
+"util.ml" 81 1551 1557 "util.ml" 81 1551 1559
+type(
+  'c list
+)
+"util.ml" 81 1551 1560 "util.ml" 81 1551 1562
+type(
+  'a list
+)
+ident(
+  int_ref vs "util.ml" 74 1417 1429 "util.ml" 74 1417 1431
+)
+"util.ml" 75 1437 1439 "util.ml" 81 1551 1562
+type(
+  'c list
+)

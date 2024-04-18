@@ -1,0 +1,4 @@
+#include <xmmintrin.h>
+_MM_SET_FLUSH_ZERO_MODE(_MM_FLUSH_ZERO_ON);
+
+MM_ はmainの一番最初に置く

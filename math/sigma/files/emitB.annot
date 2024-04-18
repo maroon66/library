@@ -1,0 +1,2023 @@
+"emitB.ml" 6 39 43 "emitB.ml" 6 39 46
+type(
+  string -> int -> string
+)
+ident(
+  def pow "emitB.ml" 10 111 111 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 6 39 47 "emitB.ml" 6 39 48
+type(
+  string
+)
+ident(
+  def x "emitB.ml" 6 39 49 "emitB.ml" 8 71 109
+)
+"emitB.ml" 6 39 49 "emitB.ml" 6 39 50
+type(
+  int
+)
+ident(
+  def n "emitB.ml" 7 53 55 "emitB.ml" 8 71 109
+)
+"emitB.ml" 7 53 58 "emitB.ml" 7 53 59
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 6 39 49 "emitB.ml" 6 39 50
+)
+"emitB.ml" 7 53 60 "emitB.ml" 7 53 61
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 7 53 62 "emitB.ml" 7 53 63
+type(
+  int
+)
+"emitB.ml" 7 53 58 "emitB.ml" 7 53 63
+type(
+  bool
+)
+"emitB.ml" 7 53 69 "emitB.ml" 7 53 70
+type(
+  string
+)
+ident(
+  int_ref x "emitB.ml" 6 39 47 "emitB.ml" 6 39 48
+)
+"emitB.ml" 8 71 78 "emitB.ml" 8 71 92
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 8 71 93 "emitB.ml" 8 71 105
+type(
+  (string -> int -> string, unit, string) format
+)
+"emitB.ml" 8 71 106 "emitB.ml" 8 71 107
+type(
+  string
+)
+ident(
+  int_ref x "emitB.ml" 6 39 47 "emitB.ml" 6 39 48
+)
+"emitB.ml" 8 71 108 "emitB.ml" 8 71 109
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 6 39 49 "emitB.ml" 6 39 50
+)
+"emitB.ml" 8 71 78 "emitB.ml" 8 71 109
+type(
+  string
+)
+"emitB.ml" 7 53 55 "emitB.ml" 8 71 109
+type(
+  string
+)
+"emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+type(
+  Emit.term -> string
+)
+ident(
+  def string_of_term "emitB.ml" 10 111 111 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 10 111 134 "emitB.ml" 10 111 136
+type(
+  Emit.term
+)
+ident(
+  def fs "emitB.ml" 11 139 141 "emitB.ml" 19 346 374
+)
+"emitB.ml" 11 139 145 "emitB.ml" 11 139 147
+type(
+  string list
+)
+ident(
+  def ss "emitB.ml" 16 270 272 "emitB.ml" 19 346 374
+)
+"emitB.ml" 11 139 150 "emitB.ml" 11 139 158
+type(
+  (Emit.factor -> string) -> Emit.term -> string list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emitB.ml" 13 173 185 "emitB.ml" 13 173 186
+type(
+  string
+)
+ident(
+  def x "emitB.ml" 13 173 194 "emitB.ml" 13 173 201
+)
+"emitB.ml" 13 173 188 "emitB.ml" 13 173 189
+type(
+  int
+)
+ident(
+  def n "emitB.ml" 13 173 194 "emitB.ml" 13 173 201
+)
+"emitB.ml" 13 173 181 "emitB.ml" 13 173 190
+type(
+  Emit.factor
+)
+"emitB.ml" 13 173 194 "emitB.ml" 13 173 197
+type(
+  string -> int -> string
+)
+ident(
+  int_ref pow "emitB.ml" 6 39 43 "emitB.ml" 6 39 46
+)
+"emitB.ml" 13 173 198 "emitB.ml" 13 173 199
+type(
+  string
+)
+ident(
+  int_ref x "emitB.ml" 13 173 185 "emitB.ml" 13 173 186
+)
+"emitB.ml" 13 173 200 "emitB.ml" 13 173 201
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 13 173 188 "emitB.ml" 13 173 189
+)
+"emitB.ml" 13 173 194 "emitB.ml" 13 173 201
+type(
+  string
+)
+"emitB.ml" 14 202 213 "emitB.ml" 14 202 216
+type(
+  Emit.exp
+)
+ident(
+  def e "emitB.ml" 14 202 220 "emitB.ml" 14 202 257
+)
+"emitB.ml" 14 202 210 "emitB.ml" 14 202 216
+type(
+  Emit.factor
+)
+"emitB.ml" 14 202 220 "emitB.ml" 14 202 234
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 14 202 235 "emitB.ml" 14 202 239
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 14 202 241 "emitB.ml" 14 202 254
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 14 202 255 "emitB.ml" 14 202 256
+type(
+  Emit.exp
+)
+ident(
+  int_ref e "emitB.ml" 14 202 213 "emitB.ml" 14 202 216
+)
+"emitB.ml" 14 202 240 "emitB.ml" 14 202 257
+type(
+  string
+)
+"emitB.ml" 14 202 220 "emitB.ml" 14 202 257
+type(
+  string
+)
+"emitB.ml" 12 159 163 "emitB.ml" 15 258 263
+type(
+  Emit.factor -> string
+)
+"emitB.ml" 15 258 264 "emitB.ml" 15 258 266
+type(
+  Emit.term
+)
+ident(
+  int_ref fs "emitB.ml" 10 111 134 "emitB.ml" 10 111 136
+)
+"emitB.ml" 11 139 150 "emitB.ml" 15 258 266
+type(
+  string list
+)
+"emitB.ml" 16 270 272 "emitB.ml" 16 270 286
+type(
+  (string -> string -> string) -> string -> string list -> string
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"emitB.ml" 17 287 296 "emitB.ml" 17 287 297
+type(
+  string
+)
+ident(
+  def s "emitB.ml" 17 287 298 "emitB.ml" 18 303 345
+)
+"emitB.ml" 17 287 298 "emitB.ml" 17 287 299
+type(
+  string
+)
+ident(
+  def t "emitB.ml" 18 303 309 "emitB.ml" 18 303 345
+)
+"emitB.ml" 18 303 309 "emitB.ml" 18 303 323
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 18 303 324 "emitB.ml" 18 303 341
+type(
+  (string -> string -> string, unit, string) format
+)
+"emitB.ml" 18 303 342 "emitB.ml" 18 303 343
+type(
+  string
+)
+ident(
+  int_ref s "emitB.ml" 17 287 296 "emitB.ml" 17 287 297
+)
+"emitB.ml" 18 303 344 "emitB.ml" 18 303 345
+type(
+  string
+)
+ident(
+  int_ref t "emitB.ml" 17 287 298 "emitB.ml" 17 287 299
+)
+"emitB.ml" 18 303 309 "emitB.ml" 18 303 345
+type(
+  string
+)
+"emitB.ml" 17 287 291 "emitB.ml" 19 346 351
+type(
+  string -> string -> string
+)
+"emitB.ml" 19 346 353 "emitB.ml" 19 346 360
+type(
+  string list -> string
+)
+ident(
+  int_ref Stdlib.List.hd "list.mli" 65 2780 2780 "list.mli" 65 2780 2802
+)
+"emitB.ml" 19 346 361 "emitB.ml" 19 346 363
+type(
+  string list
+)
+ident(
+  int_ref ss "emitB.ml" 11 139 145 "emitB.ml" 11 139 147
+)
+"emitB.ml" 19 346 352 "emitB.ml" 19 346 364
+type(
+  string
+)
+"emitB.ml" 19 346 366 "emitB.ml" 19 346 370
+type(
+  string list -> string list
+)
+ident(
+  int_ref Util.next "util.ml" 60 1150 1154 "util.ml" 60 1150 1158
+)
+"emitB.ml" 19 346 371 "emitB.ml" 19 346 373
+type(
+  string list
+)
+ident(
+  int_ref ss "emitB.ml" 11 139 145 "emitB.ml" 11 139 147
+)
+"emitB.ml" 19 346 365 "emitB.ml" 19 346 374
+type(
+  string list
+)
+"emitB.ml" 16 270 272 "emitB.ml" 19 346 374
+type(
+  string
+)
+"emitB.ml" 11 139 141 "emitB.ml" 19 346 374
+type(
+  string
+)
+"emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+type(
+  Emit.exp -> string
+)
+ident(
+  def string_of_exp "emitB.ml" 10 111 111 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 22 405 409 "emitB.ml" 22 405 411
+type(
+  Emit.exp
+)
+"emitB.ml" 22 405 415 "emitB.ml" 22 405 421
+type(
+  string
+)
+"emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+type(
+  Emit.term
+)
+ident(
+  def t "emitB.ml" 24 442 448 "emitB.ml" 41 1408 1439
+)
+"emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+type(
+  int
+)
+ident(
+  def n "emitB.ml" 24 442 448 "emitB.ml" 41 1408 1439
+)
+"emitB.ml" 23 422 426 "emitB.ml" 23 422 432
+type(
+  Emit.term * int
+)
+"emitB.ml" 23 422 436 "emitB.ml" 23 422 438
+type(
+  (Emit.term * int) list
+)
+ident(
+  def ts "emitB.ml" 24 442 448 "emitB.ml" 41 1408 1439
+)
+"emitB.ml" 23 422 426 "emitB.ml" 23 422 438
+type(
+  Emit.exp
+)
+"emitB.ml" 24 442 452 "emitB.ml" 24 442 453
+type(
+  string
+)
+ident(
+  def s "emitB.ml" 30 752 758 "emitB.ml" 41 1408 1439
+)
+"emitB.ml" 25 456 467 "emitB.ml" 25 456 468
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+)
+"emitB.ml" 25 456 469 "emitB.ml" 25 456 470
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 25 456 471 "emitB.ml" 25 456 473
+type(
+  Emit.term
+)
+"emitB.ml" 25 456 467 "emitB.ml" 25 456 473
+type(
+  bool
+)
+"emitB.ml" 25 456 474 "emitB.ml" 25 456 476
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"emitB.ml" 25 456 477 "emitB.ml" 25 456 478
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+)
+"emitB.ml" 25 456 479 "emitB.ml" 25 456 480
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 25 456 481 "emitB.ml" 25 456 482
+type(
+  int
+)
+"emitB.ml" 25 456 477 "emitB.ml" 25 456 482
+type(
+  bool
+)
+"emitB.ml" 25 456 467 "emitB.ml" 25 456 482
+type(
+  bool
+)
+"emitB.ml" 25 456 488 "emitB.ml" 25 456 493
+type(
+  string
+)
+"emitB.ml" 26 494 510 "emitB.ml" 26 494 511
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+)
+"emitB.ml" 26 494 512 "emitB.ml" 26 494 513
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 26 494 514 "emitB.ml" 26 494 516
+type(
+  Emit.term
+)
+"emitB.ml" 26 494 510 "emitB.ml" 26 494 516
+type(
+  bool
+)
+"emitB.ml" 26 494 522 "emitB.ml" 26 494 536
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 26 494 537 "emitB.ml" 26 494 550
+type(
+  (int -> string, unit, string) format
+)
+"emitB.ml" 26 494 551 "emitB.ml" 26 494 552
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+)
+"emitB.ml" 26 494 522 "emitB.ml" 26 494 552
+type(
+  string
+)
+"emitB.ml" 27 553 569 "emitB.ml" 27 553 570
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+)
+"emitB.ml" 27 553 571 "emitB.ml" 27 553 572
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 27 553 573 "emitB.ml" 27 553 574
+type(
+  int
+)
+"emitB.ml" 27 553 569 "emitB.ml" 27 553 574
+type(
+  bool
+)
+"emitB.ml" 27 553 580 "emitB.ml" 27 553 594
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 27 553 595 "emitB.ml" 27 553 596
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+)
+"emitB.ml" 27 553 580 "emitB.ml" 27 553 596
+type(
+  string
+)
+"emitB.ml" 28 597 613 "emitB.ml" 28 597 614
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+)
+"emitB.ml" 28 597 615 "emitB.ml" 28 597 616
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 28 597 617 "emitB.ml" 28 597 619
+type(
+  int
+)
+"emitB.ml" 28 597 613 "emitB.ml" 28 597 619
+type(
+  bool
+)
+"emitB.ml" 28 597 625 "emitB.ml" 28 597 639
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 28 597 640 "emitB.ml" 28 597 653
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 28 597 655 "emitB.ml" 28 597 669
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 28 597 670 "emitB.ml" 28 597 671
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+)
+"emitB.ml" 28 597 654 "emitB.ml" 28 597 672
+type(
+  string
+)
+"emitB.ml" 28 597 625 "emitB.ml" 28 597 672
+type(
+  string
+)
+"emitB.ml" 29 673 686 "emitB.ml" 29 673 700
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 29 673 701 "emitB.ml" 29 673 727
+type(
+  (int -> string -> string, unit, string) format
+)
+"emitB.ml" 29 673 728 "emitB.ml" 29 673 729
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 23 422 430 "emitB.ml" 23 422 431
+)
+"emitB.ml" 29 673 731 "emitB.ml" 29 673 745
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 29 673 746 "emitB.ml" 29 673 747
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 23 422 427 "emitB.ml" 23 422 428
+)
+"emitB.ml" 29 673 730 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 29 673 686 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 28 597 610 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 27 553 566 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 26 494 507 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 25 456 464 "emitB.ml" 29 673 748
+type(
+  string
+)
+"emitB.ml" 30 752 762 "emitB.ml" 30 752 764
+type(
+  string list
+)
+ident(
+  def ss "emitB.ml" 41 1408 1414 "emitB.ml" 41 1408 1439
+)
+"emitB.ml" 30 752 767 "emitB.ml" 30 752 775
+type(
+  (Emit.term * int -> string) -> (Emit.term * int) list -> string list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+type(
+  Emit.term
+)
+ident(
+  def t "emitB.ml" 32 799 809 "emitB.ml" 39 1301 1391
+)
+"emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+type(
+  int
+)
+ident(
+  def n "emitB.ml" 32 799 809 "emitB.ml" 39 1301 1391
+)
+"emitB.ml" 31 776 789 "emitB.ml" 31 776 795
+type(
+  Emit.term * int
+)
+"emitB.ml" 32 799 812 "emitB.ml" 32 799 813
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 32 799 814 "emitB.ml" 32 799 815
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 32 799 816 "emitB.ml" 32 799 818
+type(
+  Emit.term
+)
+"emitB.ml" 32 799 812 "emitB.ml" 32 799 818
+type(
+  bool
+)
+"emitB.ml" 32 799 819 "emitB.ml" 32 799 821
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"emitB.ml" 32 799 822 "emitB.ml" 32 799 823
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 32 799 824 "emitB.ml" 32 799 825
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 32 799 826 "emitB.ml" 32 799 827
+type(
+  int
+)
+"emitB.ml" 32 799 822 "emitB.ml" 32 799 827
+type(
+  bool
+)
+"emitB.ml" 32 799 812 "emitB.ml" 32 799 827
+type(
+  bool
+)
+"emitB.ml" 32 799 833 "emitB.ml" 32 799 844
+type(
+  string
+)
+"emitB.ml" 33 845 862 "emitB.ml" 33 845 863
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 33 845 864 "emitB.ml" 33 845 865
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 33 845 866 "emitB.ml" 33 845 868
+type(
+  Emit.term
+)
+"emitB.ml" 33 845 862 "emitB.ml" 33 845 868
+type(
+  bool
+)
+"emitB.ml" 33 845 869 "emitB.ml" 33 845 871
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"emitB.ml" 33 845 872 "emitB.ml" 33 845 873
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 33 845 874 "emitB.ml" 33 845 875
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"emitB.ml" 33 845 876 "emitB.ml" 33 845 877
+type(
+  int
+)
+"emitB.ml" 33 845 872 "emitB.ml" 33 845 877
+type(
+  bool
+)
+"emitB.ml" 33 845 862 "emitB.ml" 33 845 877
+type(
+  bool
+)
+"emitB.ml" 33 845 883 "emitB.ml" 33 845 897
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 33 845 898 "emitB.ml" 33 845 917
+type(
+  (int -> string, unit, string) format
+)
+"emitB.ml" 33 845 918 "emitB.ml" 33 845 919
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 33 845 883 "emitB.ml" 33 845 919
+type(
+  string
+)
+"emitB.ml" 34 920 938 "emitB.ml" 34 920 939
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 34 920 940 "emitB.ml" 34 920 941
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 34 920 942 "emitB.ml" 34 920 944
+type(
+  Emit.term
+)
+"emitB.ml" 34 920 938 "emitB.ml" 34 920 944
+type(
+  bool
+)
+"emitB.ml" 34 920 945 "emitB.ml" 34 920 947
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 214 8960 8960 "stdlib.mli" 214 8960 9011
+)
+"emitB.ml" 34 920 948 "emitB.ml" 34 920 949
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 34 920 950 "emitB.ml" 34 920 951
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 34 920 952 "emitB.ml" 34 920 954
+type(
+  int
+)
+"emitB.ml" 34 920 948 "emitB.ml" 34 920 954
+type(
+  bool
+)
+"emitB.ml" 34 920 938 "emitB.ml" 34 920 954
+type(
+  bool
+)
+"emitB.ml" 34 920 960 "emitB.ml" 34 920 976
+type(
+  string
+)
+"emitB.ml" 35 977 994 "emitB.ml" 35 977 995
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 35 977 996 "emitB.ml" 35 977 997
+type(
+  Emit.term -> Emit.term -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 35 977 998 "emitB.ml" 35 977 1000
+type(
+  Emit.term
+)
+"emitB.ml" 35 977 994 "emitB.ml" 35 977 1000
+type(
+  bool
+)
+"emitB.ml" 35 977 1006 "emitB.ml" 35 977 1020
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 35 977 1021 "emitB.ml" 35 977 1045
+type(
+  (int -> string, unit, string) format
+)
+"emitB.ml" 35 977 1047 "emitB.ml" 35 977 1048
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 329 13119 13119 "stdlib.mli" 329 13119 13159
+)
+"emitB.ml" 35 977 1048 "emitB.ml" 35 977 1049
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 35 977 1046 "emitB.ml" 35 977 1050
+type(
+  int
+)
+"emitB.ml" 35 977 1006 "emitB.ml" 35 977 1050
+type(
+  string
+)
+"emitB.ml" 36 1051 1068 "emitB.ml" 36 1051 1069
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 36 1051 1070 "emitB.ml" 36 1051 1071
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 36 1051 1072 "emitB.ml" 36 1051 1073
+type(
+  int
+)
+"emitB.ml" 36 1051 1068 "emitB.ml" 36 1051 1073
+type(
+  bool
+)
+"emitB.ml" 36 1051 1079 "emitB.ml" 36 1051 1093
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 36 1051 1094 "emitB.ml" 36 1051 1104
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 36 1051 1106 "emitB.ml" 36 1051 1120
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 36 1051 1121 "emitB.ml" 36 1051 1122
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 36 1051 1105 "emitB.ml" 36 1051 1123
+type(
+  string
+)
+"emitB.ml" 36 1051 1079 "emitB.ml" 36 1051 1123
+type(
+  string
+)
+"emitB.ml" 37 1124 1141 "emitB.ml" 37 1124 1142
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 37 1124 1143 "emitB.ml" 37 1124 1144
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 37 1124 1145 "emitB.ml" 37 1124 1147
+type(
+  int
+)
+"emitB.ml" 37 1124 1141 "emitB.ml" 37 1124 1147
+type(
+  bool
+)
+"emitB.ml" 37 1124 1153 "emitB.ml" 37 1124 1167
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 37 1124 1168 "emitB.ml" 37 1124 1183
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 37 1124 1185 "emitB.ml" 37 1124 1199
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 37 1124 1200 "emitB.ml" 37 1124 1201
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 37 1124 1184 "emitB.ml" 37 1124 1202
+type(
+  string
+)
+"emitB.ml" 37 1124 1153 "emitB.ml" 37 1124 1202
+type(
+  string
+)
+"emitB.ml" 38 1203 1221 "emitB.ml" 38 1203 1222
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 38 1203 1223 "emitB.ml" 38 1203 1224
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"emitB.ml" 38 1203 1225 "emitB.ml" 38 1203 1226
+type(
+  int
+)
+"emitB.ml" 38 1203 1221 "emitB.ml" 38 1203 1226
+type(
+  bool
+)
+"emitB.ml" 38 1203 1232 "emitB.ml" 38 1203 1246
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 38 1203 1247 "emitB.ml" 38 1203 1279
+type(
+  (int -> string -> string, unit, string) format
+)
+"emitB.ml" 38 1203 1280 "emitB.ml" 38 1203 1281
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 38 1203 1283 "emitB.ml" 38 1203 1297
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 38 1203 1298 "emitB.ml" 38 1203 1299
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 38 1203 1282 "emitB.ml" 38 1203 1300
+type(
+  string
+)
+"emitB.ml" 38 1203 1232 "emitB.ml" 38 1203 1300
+type(
+  string
+)
+"emitB.ml" 39 1301 1315 "emitB.ml" 39 1301 1329
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 39 1301 1330 "emitB.ml" 39 1301 1367
+type(
+  (int -> string -> string, unit, string) format
+)
+"emitB.ml" 39 1301 1369 "emitB.ml" 39 1301 1370
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 329 13119 13119 "stdlib.mli" 329 13119 13159
+)
+"emitB.ml" 39 1301 1370 "emitB.ml" 39 1301 1371
+type(
+  int
+)
+ident(
+  int_ref n "emitB.ml" 31 776 793 "emitB.ml" 31 776 794
+)
+"emitB.ml" 39 1301 1368 "emitB.ml" 39 1301 1372
+type(
+  int
+)
+"emitB.ml" 39 1301 1374 "emitB.ml" 39 1301 1388
+type(
+  Emit.term -> string
+)
+ident(
+  int_ref string_of_term "emitB.ml" 10 111 119 "emitB.ml" 10 111 133
+)
+"emitB.ml" 39 1301 1389 "emitB.ml" 39 1301 1390
+type(
+  Emit.term
+)
+ident(
+  int_ref t "emitB.ml" 31 776 790 "emitB.ml" 31 776 791
+)
+"emitB.ml" 39 1301 1373 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 39 1301 1315 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 38 1203 1218 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 37 1124 1138 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 36 1051 1065 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 35 977 991 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 34 920 935 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 33 845 859 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 32 799 809 "emitB.ml" 39 1301 1391
+type(
+  string
+)
+"emitB.ml" 31 776 784 "emitB.ml" 40 1392 1401
+type(
+  Emit.term * int -> string
+)
+"emitB.ml" 40 1392 1402 "emitB.ml" 40 1392 1404
+type(
+  (Emit.term * int) list
+)
+ident(
+  int_ref ts "emitB.ml" 23 422 436 "emitB.ml" 23 422 438
+)
+"emitB.ml" 30 752 767 "emitB.ml" 40 1392 1404
+type(
+  string list
+)
+"emitB.ml" 41 1408 1414 "emitB.ml" 41 1408 1415
+type(
+  string
+)
+ident(
+  int_ref s "emitB.ml" 24 442 452 "emitB.ml" 24 442 453
+)
+"emitB.ml" 41 1408 1416 "emitB.ml" 41 1408 1417
+type(
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.( ^ ) "stdlib.mli" 699 26389 26389 "stdlib.mli" 699 26389 26427
+)
+"emitB.ml" 41 1408 1419 "emitB.ml" 41 1408 1432
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref Stdlib.String.concat "string.mli" 132 5016 5016 "string.mli" 132 5016 5060
+)
+"emitB.ml" 41 1408 1433 "emitB.ml" 41 1408 1435
+type(
+  string
+)
+"emitB.ml" 41 1408 1436 "emitB.ml" 41 1408 1438
+type(
+  string list
+)
+ident(
+  int_ref ss "emitB.ml" 30 752 762 "emitB.ml" 30 752 764
+)
+"emitB.ml" 41 1408 1418 "emitB.ml" 41 1408 1439
+type(
+  string
+)
+"emitB.ml" 41 1408 1414 "emitB.ml" 41 1408 1439
+type(
+  string
+)
+"emitB.ml" 30 752 758 "emitB.ml" 41 1408 1439
+type(
+  string
+)
+"emitB.ml" 24 442 448 "emitB.ml" 41 1408 1439
+type(
+  string
+)
+"emitB.ml" 21 376 396 "emitB.ml" 41 1408 1439
+type(
+  Emit.exp -> string
+)
+"emitB.ml" 43 1441 1445 "emitB.ml" 43 1441 1459
+type(
+  Emit.exp * int -> string
+)
+ident(
+  def string_of_expd "emitB.ml" 49 1577 1577 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 43 1441 1461 "emitB.ml" 43 1441 1462
+type(
+  Emit.exp
+)
+ident(
+  def e "emitB.ml" 44 1469 1471 "emitB.ml" 47 1512 1575
+)
+"emitB.ml" 43 1441 1464 "emitB.ml" 43 1441 1465
+type(
+  int
+)
+ident(
+  def d "emitB.ml" 44 1469 1471 "emitB.ml" 47 1512 1575
+)
+"emitB.ml" 43 1441 1460 "emitB.ml" 43 1441 1466
+type(
+  Emit.exp * int
+)
+"emitB.ml" 44 1469 1474 "emitB.ml" 44 1469 1475
+type(
+  int
+)
+ident(
+  int_ref d "emitB.ml" 43 1441 1464 "emitB.ml" 43 1441 1465
+)
+"emitB.ml" 44 1469 1476 "emitB.ml" 44 1469 1477
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emitB.ml" 44 1469 1478 "emitB.ml" 44 1469 1479
+type(
+  int
+)
+"emitB.ml" 44 1469 1474 "emitB.ml" 44 1469 1479
+type(
+  bool
+)
+"emitB.ml" 45 1485 1489 "emitB.ml" 45 1485 1502
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 45 1485 1503 "emitB.ml" 45 1485 1504
+type(
+  Emit.exp
+)
+ident(
+  int_ref e "emitB.ml" 43 1441 1461 "emitB.ml" 43 1441 1462
+)
+"emitB.ml" 45 1485 1489 "emitB.ml" 45 1485 1504
+type(
+  string
+)
+"emitB.ml" 47 1512 1516 "emitB.ml" 47 1512 1530
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 47 1512 1531 "emitB.ml" 47 1512 1555
+type(
+  (string -> int -> string, unit, string) format
+)
+"emitB.ml" 47 1512 1557 "emitB.ml" 47 1512 1570
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 47 1512 1571 "emitB.ml" 47 1512 1572
+type(
+  Emit.exp
+)
+ident(
+  int_ref e "emitB.ml" 43 1441 1461 "emitB.ml" 43 1441 1462
+)
+"emitB.ml" 47 1512 1556 "emitB.ml" 47 1512 1573
+type(
+  string
+)
+"emitB.ml" 47 1512 1574 "emitB.ml" 47 1512 1575
+type(
+  int
+)
+ident(
+  int_ref d "emitB.ml" 43 1441 1464 "emitB.ml" 43 1441 1465
+)
+"emitB.ml" 47 1512 1516 "emitB.ml" 47 1512 1575
+type(
+  string
+)
+"emitB.ml" 44 1469 1471 "emitB.ml" 47 1512 1575
+type(
+  string
+)
+"emitB.ml" 49 1577 1581 "emitB.ml" 49 1577 1596
+type(
+  Emit.cond list -> string
+)
+ident(
+  def string_of_conds "emitB.ml" 58 1966 1966 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 49 1577 1597 "emitB.ml" 49 1577 1599
+type(
+  Emit.cond list
+)
+ident(
+  def cs "emitB.ml" 50 1602 1604 "emitB.ml" 56 1939 1964
+)
+"emitB.ml" 50 1602 1608 "emitB.ml" 50 1602 1610
+type(
+  string list
+)
+ident(
+  def ss "emitB.ml" 56 1939 1941 "emitB.ml" 56 1939 1964
+)
+"emitB.ml" 50 1602 1613 "emitB.ml" 50 1602 1621
+type(
+  (Emit.cond -> string) -> Emit.cond list -> string list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emitB.ml" 52 1636 1648 "emitB.ml" 52 1636 1650
+type(
+  Emit.exp
+)
+ident(
+  def e1 "emitB.ml" 52 1636 1659 "emitB.ml" 52 1636 1735
+)
+"emitB.ml" 52 1636 1652 "emitB.ml" 52 1636 1654
+type(
+  Emit.exp
+)
+ident(
+  def e2 "emitB.ml" 52 1636 1659 "emitB.ml" 52 1636 1735
+)
+"emitB.ml" 52 1636 1644 "emitB.ml" 52 1636 1655
+type(
+  Emit.cond
+)
+"emitB.ml" 52 1636 1659 "emitB.ml" 52 1636 1673
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 52 1636 1674 "emitB.ml" 52 1636 1697
+type(
+  (string -> string -> string, unit, string) format
+)
+"emitB.ml" 52 1636 1699 "emitB.ml" 52 1636 1712
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 52 1636 1713 "emitB.ml" 52 1636 1715
+type(
+  Emit.exp
+)
+ident(
+  int_ref e1 "emitB.ml" 52 1636 1648 "emitB.ml" 52 1636 1650
+)
+"emitB.ml" 52 1636 1698 "emitB.ml" 52 1636 1716
+type(
+  string
+)
+"emitB.ml" 52 1636 1718 "emitB.ml" 52 1636 1731
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 52 1636 1732 "emitB.ml" 52 1636 1734
+type(
+  Emit.exp
+)
+ident(
+  int_ref e2 "emitB.ml" 52 1636 1652 "emitB.ml" 52 1636 1654
+)
+"emitB.ml" 52 1636 1717 "emitB.ml" 52 1636 1735
+type(
+  string
+)
+"emitB.ml" 52 1636 1659 "emitB.ml" 52 1636 1735
+type(
+  string
+)
+"emitB.ml" 53 1736 1747 "emitB.ml" 53 1736 1749
+type(
+  Emit.exp
+)
+ident(
+  def e1 "emitB.ml" 53 1736 1758 "emitB.ml" 53 1736 1833
+)
+"emitB.ml" 53 1736 1751 "emitB.ml" 53 1736 1753
+type(
+  Emit.exp
+)
+ident(
+  def e2 "emitB.ml" 53 1736 1758 "emitB.ml" 53 1736 1833
+)
+"emitB.ml" 53 1736 1744 "emitB.ml" 53 1736 1754
+type(
+  Emit.cond
+)
+"emitB.ml" 53 1736 1758 "emitB.ml" 53 1736 1772
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 53 1736 1773 "emitB.ml" 53 1736 1795
+type(
+  (string -> string -> string, unit, string) format
+)
+"emitB.ml" 53 1736 1797 "emitB.ml" 53 1736 1810
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 53 1736 1811 "emitB.ml" 53 1736 1813
+type(
+  Emit.exp
+)
+ident(
+  int_ref e1 "emitB.ml" 53 1736 1747 "emitB.ml" 53 1736 1749
+)
+"emitB.ml" 53 1736 1796 "emitB.ml" 53 1736 1814
+type(
+  string
+)
+"emitB.ml" 53 1736 1816 "emitB.ml" 53 1736 1829
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 53 1736 1830 "emitB.ml" 53 1736 1832
+type(
+  Emit.exp
+)
+ident(
+  int_ref e2 "emitB.ml" 53 1736 1751 "emitB.ml" 53 1736 1753
+)
+"emitB.ml" 53 1736 1815 "emitB.ml" 53 1736 1833
+type(
+  string
+)
+"emitB.ml" 53 1736 1758 "emitB.ml" 53 1736 1833
+type(
+  string
+)
+"emitB.ml" 54 1834 1847 "emitB.ml" 54 1834 1848
+type(
+  Emit.exp
+)
+ident(
+  def e "emitB.ml" 54 1834 1856 "emitB.ml" 54 1834 1926
+)
+"emitB.ml" 54 1834 1850 "emitB.ml" 54 1834 1851
+type(
+  int
+)
+ident(
+  def m "emitB.ml" 54 1834 1856 "emitB.ml" 54 1834 1926
+)
+"emitB.ml" 54 1834 1842 "emitB.ml" 54 1834 1852
+type(
+  Emit.cond
+)
+"emitB.ml" 54 1834 1856 "emitB.ml" 54 1834 1870
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 54 1834 1871 "emitB.ml" 54 1834 1906
+type(
+  (string -> int -> string, unit, string) format
+)
+"emitB.ml" 54 1834 1908 "emitB.ml" 54 1834 1921
+type(
+  Emit.exp -> string
+)
+ident(
+  int_ref string_of_exp "emitB.ml" 21 376 380 "emitB.ml" 21 376 393
+)
+"emitB.ml" 54 1834 1922 "emitB.ml" 54 1834 1923
+type(
+  Emit.exp
+)
+ident(
+  int_ref e "emitB.ml" 54 1834 1847 "emitB.ml" 54 1834 1848
+)
+"emitB.ml" 54 1834 1907 "emitB.ml" 54 1834 1924
+type(
+  string
+)
+"emitB.ml" 54 1834 1925 "emitB.ml" 54 1834 1926
+type(
+  int
+)
+ident(
+  int_ref m "emitB.ml" 54 1834 1850 "emitB.ml" 54 1834 1851
+)
+"emitB.ml" 54 1834 1856 "emitB.ml" 54 1834 1926
+type(
+  string
+)
+"emitB.ml" 51 1622 1626 "emitB.ml" 55 1927 1932
+type(
+  Emit.cond -> string
+)
+"emitB.ml" 55 1927 1933 "emitB.ml" 55 1927 1935
+type(
+  Emit.cond list
+)
+ident(
+  int_ref cs "emitB.ml" 49 1577 1597 "emitB.ml" 49 1577 1599
+)
+"emitB.ml" 50 1602 1613 "emitB.ml" 55 1927 1935
+type(
+  string list
+)
+"emitB.ml" 56 1939 1941 "emitB.ml" 56 1939 1954
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref Stdlib.String.concat "string.mli" 132 5016 5016 "string.mli" 132 5016 5060
+)
+"emitB.ml" 56 1939 1955 "emitB.ml" 56 1939 1961
+type(
+  string
+)
+"emitB.ml" 56 1939 1962 "emitB.ml" 56 1939 1964
+type(
+  string list
+)
+ident(
+  int_ref ss "emitB.ml" 50 1602 1608 "emitB.ml" 50 1602 1610
+)
+"emitB.ml" 56 1939 1941 "emitB.ml" 56 1939 1964
+type(
+  string
+)
+"emitB.ml" 50 1602 1604 "emitB.ml" 56 1939 1964
+type(
+  string
+)
+"emitB.ml" 58 1966 1970 "emitB.ml" 58 1966 1984
+type(
+  (Emit.cond list * (Emit.exp * int)) list -> string
+)
+ident(
+  def string_of_prog "emitB.ml" 73 2560 2626 "emitB.ml" 0 0 -1
+)
+"emitB.ml" 58 1966 1985 "emitB.ml" 58 1966 1986
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  def p "emitB.ml" 59 1989 1991 "emitB.ml" 73 2560 2626
+)
+"emitB.ml" 59 1989 1997 "emitB.ml" 59 1989 1998
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref p "emitB.ml" 58 1966 1985 "emitB.ml" 58 1966 1986
+)
+"emitB.ml" 60 2004 2010 "emitB.ml" 60 2004 2012
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 60 2004 2016 "emitB.ml" 60 2004 2030
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 60 2004 2031 "emitB.ml" 60 2004 2047
+type(
+  (string, unit, string) format
+)
+"emitB.ml" 60 2004 2016 "emitB.ml" 60 2004 2047
+type(
+  string
+)
+"emitB.ml" 61 2048 2055 "emitB.ml" 61 2048 2057
+type(
+  Emit.cond list
+)
+"emitB.ml" 61 2048 2059 "emitB.ml" 61 2048 2060
+type(
+  Emit.exp * int
+)
+ident(
+  def e "emitB.ml" 61 2048 2065 "emitB.ml" 61 2048 2113
+)
+"emitB.ml" 61 2048 2055 "emitB.ml" 61 2048 2060
+type(
+  Emit.cond list * (Emit.exp * int)
+)
+"emitB.ml" 61 2048 2054 "emitB.ml" 61 2048 2061
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 61 2048 2065 "emitB.ml" 61 2048 2079
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 61 2048 2080 "emitB.ml" 61 2048 2094
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 61 2048 2096 "emitB.ml" 61 2048 2110
+type(
+  Emit.exp * int -> string
+)
+ident(
+  int_ref string_of_expd "emitB.ml" 43 1441 1445 "emitB.ml" 43 1441 1459
+)
+"emitB.ml" 61 2048 2111 "emitB.ml" 61 2048 2112
+type(
+  Emit.exp * int
+)
+ident(
+  int_ref e "emitB.ml" 61 2048 2059 "emitB.ml" 61 2048 2060
+)
+"emitB.ml" 61 2048 2095 "emitB.ml" 61 2048 2113
+type(
+  string
+)
+"emitB.ml" 61 2048 2065 "emitB.ml" 61 2048 2113
+type(
+  string
+)
+"emitB.ml" 62 2114 2120 "emitB.ml" 62 2114 2122
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  def es "emitB.ml" 63 2126 2134 "emitB.ml" 73 2560 2626
+)
+"emitB.ml" 63 2126 2139 "emitB.ml" 63 2126 2140
+type(
+  string
+)
+ident(
+  def s "emitB.ml" 69 2392 2400 "emitB.ml" 73 2560 2626
+)
+"emitB.ml" 63 2126 2142 "emitB.ml" 63 2126 2144
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  def es "emitB.ml" 69 2392 2400 "emitB.ml" 73 2560 2626
+)
+"emitB.ml" 63 2126 2138 "emitB.ml" 63 2126 2145
+type(
+  string * (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 64 2148 2161 "emitB.ml" 64 2148 2175
+type(
+  Emit.cond list -> (Emit.cond list * (Emit.exp * int)) list -> bool
+)
+ident(
+  int_ref Stdlib.List.mem_assoc "list.mli" 401 13450 13450 "list.mli" 401 13450 13494
+)
+"emitB.ml" 64 2148 2176 "emitB.ml" 64 2148 2178
+type(
+  Emit.cond list
+)
+"emitB.ml" 64 2148 2179 "emitB.ml" 64 2148 2181
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref es "emitB.ml" 62 2114 2120 "emitB.ml" 62 2114 2122
+)
+"emitB.ml" 64 2148 2161 "emitB.ml" 64 2148 2181
+type(
+  bool
+)
+"emitB.ml" 65 2187 2203 "emitB.ml" 65 2187 2204
+type(
+  Emit.exp * int
+)
+ident(
+  def e "emitB.ml" 66 2227 2239 "emitB.ml" 66 2227 2313
+)
+"emitB.ml" 65 2187 2207 "emitB.ml" 65 2187 2217
+type(
+  Emit.cond list ->
+  (Emit.cond list * (Emit.exp * int)) list -> Emit.exp * int
+)
+ident(
+  int_ref Stdlib.List.assoc "list.mli" 371 12459 12459 "list.mli" 371 12459 12497
+)
+"emitB.ml" 65 2187 2218 "emitB.ml" 65 2187 2220
+type(
+  Emit.cond list
+)
+"emitB.ml" 65 2187 2221 "emitB.ml" 65 2187 2223
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref es "emitB.ml" 62 2114 2120 "emitB.ml" 62 2114 2122
+)
+"emitB.ml" 65 2187 2207 "emitB.ml" 65 2187 2223
+type(
+  Emit.exp * int
+)
+"emitB.ml" 66 2227 2240 "emitB.ml" 66 2227 2254
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 66 2227 2255 "emitB.ml" 66 2227 2279
+type(
+  (string -> string, unit, string) format
+)
+"emitB.ml" 66 2227 2281 "emitB.ml" 66 2227 2295
+type(
+  Emit.exp * int -> string
+)
+ident(
+  int_ref string_of_expd "emitB.ml" 43 1441 1445 "emitB.ml" 43 1441 1459
+)
+"emitB.ml" 66 2227 2296 "emitB.ml" 66 2227 2297
+type(
+  Emit.exp * int
+)
+ident(
+  int_ref e "emitB.ml" 65 2187 2203 "emitB.ml" 65 2187 2204
+)
+"emitB.ml" 66 2227 2280 "emitB.ml" 66 2227 2298
+type(
+  string
+)
+"emitB.ml" 66 2227 2240 "emitB.ml" 66 2227 2298
+type(
+  string
+)
+"emitB.ml" 66 2227 2300 "emitB.ml" 66 2227 2306
+type(
+  Emit.cond list ->
+  (Emit.cond list * (Emit.exp * int)) list ->
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref Util.remove "util.ml" 36 612 616 "util.ml" 36 612 622
+)
+"emitB.ml" 66 2227 2307 "emitB.ml" 66 2227 2309
+type(
+  Emit.cond list
+)
+"emitB.ml" 66 2227 2310 "emitB.ml" 66 2227 2312
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref es "emitB.ml" 62 2114 2120 "emitB.ml" 62 2114 2122
+)
+"emitB.ml" 66 2227 2300 "emitB.ml" 66 2227 2312
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 66 2227 2239 "emitB.ml" 66 2227 2313
+type(
+  string * (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 65 2187 2199 "emitB.ml" 66 2227 2313
+type(
+  string * (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 68 2329 2342 "emitB.ml" 68 2329 2356
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 68 2329 2357 "emitB.ml" 68 2329 2383
+type(
+  (string, unit, string) format
+)
+"emitB.ml" 68 2329 2342 "emitB.ml" 68 2329 2383
+type(
+  string
+)
+"emitB.ml" 68 2329 2385 "emitB.ml" 68 2329 2387
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref es "emitB.ml" 62 2114 2120 "emitB.ml" 62 2114 2122
+)
+"emitB.ml" 68 2329 2341 "emitB.ml" 68 2329 2388
+type(
+  string * (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 64 2148 2158 "emitB.ml" 68 2329 2388
+type(
+  string * (Emit.cond list * (Emit.exp * int)) list
+)
+"emitB.ml" 69 2392 2404 "emitB.ml" 69 2392 2406
+type(
+  string list
+)
+ident(
+  def ss "emitB.ml" 73 2560 2568 "emitB.ml" 73 2560 2626
+)
+"emitB.ml" 69 2392 2409 "emitB.ml" 69 2392 2417
+type(
+  (Emit.cond list * (Emit.exp * int) -> string) ->
+  (Emit.cond list * (Emit.exp * int)) list -> string list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emitB.ml" 70 2418 2434 "emitB.ml" 70 2418 2436
+type(
+  Emit.cond list
+)
+ident(
+  def cs "emitB.ml" 71 2444 2456 "emitB.ml" 71 2444 2541
+)
+"emitB.ml" 70 2418 2438 "emitB.ml" 70 2418 2439
+type(
+  Emit.exp * int
+)
+ident(
+  def e "emitB.ml" 71 2444 2456 "emitB.ml" 71 2444 2541
+)
+"emitB.ml" 70 2418 2433 "emitB.ml" 70 2418 2440
+type(
+  Emit.cond list * (Emit.exp * int)
+)
+"emitB.ml" 71 2444 2456 "emitB.ml" 71 2444 2470
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 71 2444 2471 "emitB.ml" 71 2444 2501
+type(
+  (string -> string -> string, unit, string) format
+)
+"emitB.ml" 71 2444 2503 "emitB.ml" 71 2444 2518
+type(
+  Emit.cond list -> string
+)
+ident(
+  int_ref string_of_conds "emitB.ml" 49 1577 1581 "emitB.ml" 49 1577 1596
+)
+"emitB.ml" 71 2444 2519 "emitB.ml" 71 2444 2521
+type(
+  Emit.cond list
+)
+ident(
+  int_ref cs "emitB.ml" 70 2418 2434 "emitB.ml" 70 2418 2436
+)
+"emitB.ml" 71 2444 2502 "emitB.ml" 71 2444 2522
+type(
+  string
+)
+"emitB.ml" 71 2444 2524 "emitB.ml" 71 2444 2538
+type(
+  Emit.exp * int -> string
+)
+ident(
+  int_ref string_of_expd "emitB.ml" 43 1441 1445 "emitB.ml" 43 1441 1459
+)
+"emitB.ml" 71 2444 2539 "emitB.ml" 71 2444 2540
+type(
+  Emit.exp * int
+)
+ident(
+  int_ref e "emitB.ml" 70 2418 2438 "emitB.ml" 70 2418 2439
+)
+"emitB.ml" 71 2444 2523 "emitB.ml" 71 2444 2541
+type(
+  string
+)
+"emitB.ml" 71 2444 2456 "emitB.ml" 71 2444 2541
+type(
+  string
+)
+"emitB.ml" 70 2418 2428 "emitB.ml" 72 2542 2553
+type(
+  Emit.cond list * (Emit.exp * int) -> string
+)
+"emitB.ml" 72 2542 2554 "emitB.ml" 72 2542 2556
+type(
+  (Emit.cond list * (Emit.exp * int)) list
+)
+ident(
+  int_ref es "emitB.ml" 63 2126 2142 "emitB.ml" 63 2126 2144
+)
+"emitB.ml" 69 2392 2409 "emitB.ml" 72 2542 2556
+type(
+  string list
+)
+"emitB.ml" 73 2560 2568 "emitB.ml" 73 2560 2582
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"emitB.ml" 73 2560 2583 "emitB.ml" 73 2560 2602
+type(
+  (string -> string -> string, unit, string) format
+)
+"emitB.ml" 73 2560 2603 "emitB.ml" 73 2560 2604
+type(
+  string
+)
+ident(
+  int_ref s "emitB.ml" 63 2126 2139 "emitB.ml" 63 2126 2140
+)
+"emitB.ml" 73 2560 2606 "emitB.ml" 73 2560 2619
+type(
+  string -> string list -> string
+)
+ident(
+  int_ref Stdlib.String.concat "string.mli" 132 5016 5016 "string.mli" 132 5016 5060
+)
+"emitB.ml" 73 2560 2620 "emitB.ml" 73 2560 2622
+type(
+  string
+)
+"emitB.ml" 73 2560 2623 "emitB.ml" 73 2560 2625
+type(
+  string list
+)
+ident(
+  int_ref ss "emitB.ml" 69 2392 2404 "emitB.ml" 69 2392 2406
+)
+"emitB.ml" 73 2560 2605 "emitB.ml" 73 2560 2626
+type(
+  string
+)
+"emitB.ml" 73 2560 2568 "emitB.ml" 73 2560 2626
+type(
+  string
+)
+"emitB.ml" 69 2392 2400 "emitB.ml" 73 2560 2626
+type(
+  string
+)
+"emitB.ml" 63 2126 2134 "emitB.ml" 73 2560 2626
+type(
+  string
+)
+"emitB.ml" 59 1989 1991 "emitB.ml" 73 2560 2626
+type(
+  string
+)

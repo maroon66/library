@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Following Teams Should Buy Us BBQ.(The University of Tokyo)</title>
+	<link rel="stylesheet" href="./main.css">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet"
+		  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/xcode.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script type="text/javascript">
+        function load(tar, fileName){
+            var httpObj = new XMLHttpRequest();
+            httpObj.open('GET',fileName);
+            httpObj.send(null);
+            httpObj.onreadystatechange = function(){
+                document.getElementById(tar).innerHTML=hljs.highlightAuto(httpObj.responseText).value;
+            }
+        }
+		function load2(tar, fileName){
+			var httpObj = new XMLHttpRequest();
+			httpObj.open('GET',fileName);
+			httpObj.send(null);
+			httpObj.onreadystatechange = function(){
+				elm = document.getElementById(tar)
+				elm.innerHTML=httpObj.responseText;
+				renderMathInElement(elm,
+						{delimiters: [{left: "[[", right: "]]", display: true},{left: "$", right: "$", display: false}]})
+			}
+		}
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+	function loads(tar, srcs) {
+		let main_div = document.getElementById(tar);
+
+		srcs.forEach(function (v) {
+			let elem_h3 = document.createElement('h3');
+			let elem_pre = document.createElement('pre');
+			let elem_code = document.createElement('code');
+			elem_h3.innerText += v[0];
+			elem_code.id = v[1]
+			if (v[0]) main_div.appendChild(elem_h3);
+			main_div.appendChild(elem_pre);
+			elem_pre.appendChild(elem_code);
+			load(v[1], '../' + v[1]);
+		});
+	}
+</script>
+
+<div class="title">
+	<div class="inner">
+		<br>
+		<h2>Following Teams Should Buy Us BBQ.(The University of Tokyo)</h2>
+		<img src="title.png">
+	</div>
+</div>
+
+<div id="src_main" class="src_main">
+
+	<div id='primitives'></div>
+	<script>loads('primitives', [
+		['makefile', 'Makefile'],
+		['main.cpp', 'main.cpp'],
+		['check.sh', 'check.sh'],
+		['utility', 'main_sub.cpp'],
+	])</script>
+
+	<h2>数学</h2>
+	<div id='math'></div>
+	<script>loads('math', [
+		['数学', 'math/base.cpp'],
+		['modint', 'math/modint.cpp'],
+		['int128', 'math/int128.cpp'],
+		['FFT', 'old/math/fft.cpp'],
+		['NFT', 'old/math/fmt.cpp'],
+		['Transforms', 'old/math/transforms.cpp'],
+		['Prime', 'math/prime_yosupo.h'],
+		//['Poly', 'math/poly_yosupo.h'],
+		['行列式', 'math/det.cpp'],
+		['連立方程式', 'math/ldmat.cpp'],
+		['Subset', 'math/subset_sigma.cpp'],
+		//['MonotoneMinima', 'math/monotone_minima_sigma.cpp'],
+		['PeriodicMaxmin', 'math/periodic_maxmin_sigma.cpp'],
+		['GaussSum', 'math/gauss_sum.cpp'],
+		['Simplex', 'math/koosaga_lp.cpp'],
+		['BerlekampMassey', 'math/berlekamp_massey.cpp'],
+		['P-Recursive', 'math/p_recursive.cpp'],
+		['Matroid Intersection', 'old/math/matroid_intersection.cpp'],
+	])</script>
+
+	<h2>Graph</h2>
+	<div id='graph'></div>
+	<script>loads('graph', [
+		['SCC', 'graph/scc.cpp'],
+		['SCC64', 'old/graph/SCC64.cpp'],
+		//['TwoSat', 'graph/twosat_yosupo.h'],
+		//['関節点', 'graph/ariticulation.h'],
+		//['橋', 'graph/bridge.h'],
+		['MaxMatching', 'graph/maxmatching.cpp'],
+		['MWPM','old/graph/MaxWeightPerfectMatching.cpp'],
+		['最小有向全域木', 'graph/directedmst.cpp'],
+		['最小直径全域木', 'graph/mdst.cpp'],
+		['Dominator Tree', 'old/graph/DominatorTree.cpp'],
+		['Max Clique', 'graph/maxclique.h'],
+		['Chromatic Polynomial', 'old/graph/graph_exp_algo.cpp'],
+	])</script>
+
+	<h2>Flow</h2>
+	<div id='flow'></div>
+	<script>loads('flow', [
+		['MaxFlow', 'graph/maxflow.cpp'],
+		['Hungarian', 'graph/hungarian_yosupo.h'],
+		['MinCostFlow', 'graph/mincostflow.cpp'],
+	])</script>
+
+	<h2>Tree</h2>
+	<div id='tree'></div>
+	<script>loads('tree', [
+		['ET-LCA', 'tree/etlca.cpp'],
+		['全方位木DP', 'tree/dp.cpp'],
+		['HLD', 'tree/hld.cpp'],
+		['重心分解', 'tree/centroiddecomp.cpp'],
+		//['木圧縮', 'tree/CompressSubtree.cpp']
+	])</script>
+
+	<h2>Data Structure</h2>
+	<div id='ds'></div>
+	<script>loads('ds', [
+		['UnionFind', 'datastructure/unionfind.cpp'],
+		//['QuickFind', 'datastructure/quickfind_yosupo.h'],
+		['BIT', 'datastructure/bit.cpp'],
+		//['Fenwick2D', 'datastructure/fenwick2d_yosupo.h'],
+		['SparseTable', 'datastructure/sparsetable.cpp'],
+		//['DisjointTable', 'datastructure/disjointtable_yosupo.h'],
+		//['fastset', 'datastructure/fastset_yosupo.h'],
+		['ConvexHull', 'datastructure/cht.cpp'],
+		['LineContainer', 'datastructure/linecontainer.cpp'],
+		['RBST', 'old/datastructure/RBST.cpp'],
+		['Link Cut', 'old/datastructure/LinkCut.cpp'],
+		['Persistent AVL', 'datastructure/pavl.cpp'],
+		//['Leftist Heap', 'datastructure/LeftistHeap_maroon.cpp'],
+		//['Top Tree', 'datastructure/toptree.h'],
+		['pb_ds', 'datastructure/pb_ds.cpp'],
+		['Segtree', 'datastructure/segtree.cpp'],
+		['Segtree Beats', 'datastructure/segbeats.cpp'],
+		['Persistent Segtree', 'datastructure/psegtree.cpp'],
+		['Slide', 'datastructure/slide.cpp'],
+	])</script>
+
+	<h2>文字列</h2>
+	<div id='string'></div>
+	<script>loads('string', [
+		['AhoCorasick', 'old/string/Aho.cpp'],
+		['Rolling Hash', 'string/rhash.cpp'],
+		['Suffix Array', 'string/sa.cpp'],
+		['MP', 'old/string/kmp.cpp'],
+		['Manacher', 'old/string/manacher.cpp'],
+		['Z-Algorithm', 'string/zalgo.cpp'],
+		['EERTREE', 'string/eertree.cpp'],
+		//['Run', 'string/run.h'],
+		['SuffixAutomaton', 'string/SuffixAutomaton.cpp'],
+	])</script>
+
+	<h2>幾何</h2>
+	<div id='geo'></div>
+	<script>loads('geo', [
+		['Frac', 'geometry/frac.cpp'],
+		['Base', 'geometry/base.cpp'],
+		['Line', 'geometry/line.cpp'],
+		['Polygon', 'geometry/poly.cpp'],
+		['Circle', 'geometry/circle.cpp'],
+		['PlanarDual', 'geometry/planardual.cpp'],
+		//['複雑系', 'geo/graphiccompute.h'],
+		//['3D', 'geo/3d.h'],
+		//['Visualizer', 'geo/visualizer.h'],
+	])</script>
+
+</div>
+
+</body>
+</html>

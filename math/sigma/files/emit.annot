@@ -1,0 +1,2025 @@
+"emit.ml" 10 231 235 "emit.ml" 10 231 238
+type(
+  exp -> exp -> (factor list * int) list
+)
+ident(
+  def mul "emit.ml" 15 350 350 "emit.ml" 0 0 -1
+)
+"emit.ml" 10 231 239 "emit.ml" 10 231 241
+type(
+  exp
+)
+ident(
+  def e1 "emit.ml" 10 231 242 "emit.ml" 13 314 348
+)
+"emit.ml" 10 231 242 "emit.ml" 10 231 244
+type(
+  exp
+)
+ident(
+  def e2 "emit.ml" 11 247 249 "emit.ml" 13 314 348
+)
+"emit.ml" 11 247 255 "emit.ml" 11 247 257
+type(
+  exp
+)
+ident(
+  int_ref e1 "emit.ml" 10 231 239 "emit.ml" 10 231 241
+)
+"emit.ml" 11 247 259 "emit.ml" 11 247 261
+type(
+  exp
+)
+ident(
+  int_ref e2 "emit.ml" 10 231 242 "emit.ml" 10 231 244
+)
+"emit.ml" 11 247 255 "emit.ml" 11 247 261
+type(
+  exp * exp
+)
+"emit.ml" 12 267 274 "emit.ml" 12 267 276
+type(
+  term
+)
+ident(
+  def t1 "emit.ml" 12 267 295 "emit.ml" 12 267 313
+)
+"emit.ml" 12 267 278 "emit.ml" 12 267 280
+type(
+  int
+)
+ident(
+  def n1 "emit.ml" 12 267 295 "emit.ml" 12 267 313
+)
+"emit.ml" 12 267 274 "emit.ml" 12 267 280
+type(
+  term * int
+)
+"emit.ml" 12 267 273 "emit.ml" 12 267 281
+type(
+  exp
+)
+"emit.ml" 12 267 284 "emit.ml" 12 267 286
+type(
+  term
+)
+ident(
+  def t2 "emit.ml" 12 267 295 "emit.ml" 12 267 313
+)
+"emit.ml" 12 267 288 "emit.ml" 12 267 290
+type(
+  int
+)
+ident(
+  def n2 "emit.ml" 12 267 295 "emit.ml" 12 267 313
+)
+"emit.ml" 12 267 284 "emit.ml" 12 267 290
+type(
+  term * int
+)
+"emit.ml" 12 267 283 "emit.ml" 12 267 291
+type(
+  exp
+)
+"emit.ml" 12 267 273 "emit.ml" 12 267 291
+type(
+  exp * exp
+)
+type(
+  exp * exp
+)
+"emit.ml" 12 267 296 "emit.ml" 12 267 298
+type(
+  term
+)
+ident(
+  int_ref t1 "emit.ml" 12 267 274 "emit.ml" 12 267 276
+)
+"emit.ml" 12 267 299 "emit.ml" 12 267 300
+type(
+  term -> term -> factor list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"emit.ml" 12 267 301 "emit.ml" 12 267 303
+type(
+  term
+)
+ident(
+  int_ref t2 "emit.ml" 12 267 284 "emit.ml" 12 267 286
+)
+"emit.ml" 12 267 296 "emit.ml" 12 267 303
+type(
+  factor list
+)
+"emit.ml" 12 267 305 "emit.ml" 12 267 307
+type(
+  int
+)
+ident(
+  int_ref n1 "emit.ml" 12 267 278 "emit.ml" 12 267 280
+)
+"emit.ml" 12 267 308 "emit.ml" 12 267 309
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( * ) "stdlib.mli" 357 13929 13929 "stdlib.mli" 357 13929 13975
+)
+"emit.ml" 12 267 310 "emit.ml" 12 267 312
+type(
+  int
+)
+ident(
+  int_ref n2 "emit.ml" 12 267 288 "emit.ml" 12 267 290
+)
+"emit.ml" 12 267 305 "emit.ml" 12 267 312
+type(
+  int
+)
+"emit.ml" 12 267 296 "emit.ml" 12 267 312
+type(
+  factor list * int
+)
+"emit.ml" 12 267 295 "emit.ml" 12 267 313
+type(
+  (factor list * int) list
+)
+"emit.ml" 13 314 320 "emit.ml" 13 314 321
+type(
+  exp * exp
+)
+type(
+  exp * exp
+)
+"emit.ml" 13 314 330 "emit.ml" 13 314 334
+type(
+  exp
+)
+ident(
+  int_ref e1 "emit.ml" 10 231 239 "emit.ml" 10 231 241
+)
+"emit.ml" 13 314 327 "emit.ml" 13 314 334
+type(
+  factor
+)
+"emit.ml" 13 314 339 "emit.ml" 13 314 343
+type(
+  exp
+)
+ident(
+  int_ref e2 "emit.ml" 10 231 242 "emit.ml" 10 231 244
+)
+"emit.ml" 13 314 336 "emit.ml" 13 314 343
+type(
+  factor
+)
+"emit.ml" 13 314 326 "emit.ml" 13 314 344
+type(
+  factor list
+)
+"emit.ml" 13 314 346 "emit.ml" 13 314 347
+type(
+  int
+)
+"emit.ml" 13 314 326 "emit.ml" 13 314 347
+type(
+  factor list * int
+)
+"emit.ml" 13 314 325 "emit.ml" 13 314 348
+type(
+  (factor list * int) list
+)
+"emit.ml" 11 247 249 "emit.ml" 13 314 348
+type(
+  (factor list * int) list
+)
+"emit.ml" 15 350 354 "emit.ml" 15 350 361
+type(
+  (('a * 'b) list * 'c) list -> 'a
+)
+ident(
+  def get_var "emit.ml" 30 651 651 "emit.ml" 0 0 -1
+)
+"emit.ml" 15 350 362 "emit.ml" 15 350 364
+type(
+  (('a * 'b) list * 'c) list
+)
+ident(
+  def ts "emit.ml" 16 367 368 "emit.ml" 28 631 649
+)
+"emit.ml" 16 367 372 "emit.ml" 16 367 374
+type(
+  'a option
+)
+ident(
+  def v' "emit.ml" 26 588 590 "emit.ml" 28 631 649
+)
+"emit.ml" 16 367 377 "emit.ml" 16 367 391
+type(
+  ('a option -> ('a * 'b) list * 'c -> 'a option) ->
+  'a option -> (('a * 'b) list * 'c) list -> 'a option
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"emit.ml" 17 392 398 "emit.ml" 17 392 400
+type(
+  'a option
+)
+ident(
+  def v' "emit.ml" 17 392 401 "emit.ml" 24 561 573
+)
+"emit.ml" 17 392 402 "emit.ml" 17 392 404
+type(
+  ('a * 'b) list
+)
+ident(
+  def fs "emit.ml" 18 412 415 "emit.ml" 24 561 573
+)
+"emit.ml" 17 392 406 "emit.ml" 17 392 407
+type(
+  'c
+)
+"emit.ml" 17 392 401 "emit.ml" 17 392 408
+type(
+  ('a * 'b) list * 'c
+)
+"emit.ml" 18 412 415 "emit.ml" 18 412 429
+type(
+  ('a option -> 'a * 'b -> 'a option) ->
+  'a option -> ('a * 'b) list -> 'a option
+)
+ident(
+  int_ref Stdlib.List.fold_left "list.mli" 211 7387 7387 "list.mli" 211 7387 7442
+)
+"emit.ml" 19 430 440 "emit.ml" 19 430 442
+type(
+  'a option
+)
+ident(
+  def v' "emit.ml" 19 430 443 "emit.ml" 23 542 560
+)
+"emit.ml" 19 430 444 "emit.ml" 19 430 445
+type(
+  'a
+)
+ident(
+  def f "emit.ml" 20 453 460 "emit.ml" 23 542 560
+)
+"emit.ml" 19 430 447 "emit.ml" 19 430 448
+type(
+  'b
+)
+"emit.ml" 19 430 443 "emit.ml" 19 430 449
+type(
+  'a * 'b
+)
+"emit.ml" 20 453 466 "emit.ml" 20 453 468
+type(
+  'a option
+)
+ident(
+  int_ref v' "emit.ml" 19 430 440 "emit.ml" 19 430 442
+)
+"emit.ml" 21 474 485 "emit.ml" 21 474 489
+type(
+  'a option
+)
+type(
+  'a option
+)
+"emit.ml" 21 474 497 "emit.ml" 21 474 500
+type(
+  'a
+)
+ident(
+  int_ref f "emit.ml" 19 430 444 "emit.ml" 19 430 445
+)
+"emit.ml" 21 474 493 "emit.ml" 21 474 500
+type(
+  'a option
+)
+"emit.ml" 22 501 516 "emit.ml" 22 501 519
+type(
+  'a
+)
+ident(
+  def v "emit.ml" 22 501 525 "emit.ml" 22 501 541
+)
+"emit.ml" 22 501 512 "emit.ml" 22 501 519
+type(
+  'a option
+)
+type(
+  'a option
+)
+"emit.ml" 22 501 525 "emit.ml" 22 501 526
+type(
+  'a
+)
+ident(
+  int_ref v "emit.ml" 22 501 516 "emit.ml" 22 501 519
+)
+"emit.ml" 22 501 527 "emit.ml" 22 501 528
+type(
+  'a -> 'a -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"emit.ml" 22 501 529 "emit.ml" 22 501 530
+type(
+  'a
+)
+ident(
+  int_ref f "emit.ml" 19 430 444 "emit.ml" 19 430 445
+)
+"emit.ml" 22 501 525 "emit.ml" 22 501 530
+type(
+  bool
+)
+"emit.ml" 22 501 538 "emit.ml" 22 501 541
+type(
+  'a
+)
+ident(
+  int_ref f "emit.ml" 19 430 444 "emit.ml" 19 430 445
+)
+"emit.ml" 22 501 534 "emit.ml" 22 501 541
+type(
+  'a option
+)
+"emit.ml" 23 542 553 "emit.ml" 23 542 554
+type(
+  'a option
+)
+type(
+  'a option
+)
+"emit.ml" 23 542 558 "emit.ml" 23 542 560
+type(
+  'a option
+)
+ident(
+  int_ref v' "emit.ml" 19 430 440 "emit.ml" 19 430 442
+)
+"emit.ml" 20 453 460 "emit.ml" 23 542 560
+type(
+  'a option
+)
+"emit.ml" 19 430 435 "emit.ml" 24 561 567
+type(
+  'a option -> 'a * 'b -> 'a option
+)
+"emit.ml" 24 561 568 "emit.ml" 24 561 570
+type(
+  'a option
+)
+ident(
+  int_ref v' "emit.ml" 17 392 398 "emit.ml" 17 392 400
+)
+"emit.ml" 24 561 571 "emit.ml" 24 561 573
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref fs "emit.ml" 17 392 402 "emit.ml" 17 392 404
+)
+"emit.ml" 18 412 415 "emit.ml" 24 561 573
+type(
+  'a option
+)
+"emit.ml" 17 392 393 "emit.ml" 25 574 576
+type(
+  'a option -> ('a * 'b) list * 'c -> 'a option
+)
+"emit.ml" 25 574 577 "emit.ml" 25 574 581
+type(
+  'a option
+)
+"emit.ml" 25 574 582 "emit.ml" 25 574 584
+type(
+  (('a * 'b) list * 'c) list
+)
+ident(
+  int_ref ts "emit.ml" 15 350 362 "emit.ml" 15 350 364
+)
+"emit.ml" 16 367 377 "emit.ml" 25 574 584
+type(
+  'a option
+)
+"emit.ml" 26 588 596 "emit.ml" 26 588 598
+type(
+  'a option
+)
+ident(
+  int_ref v' "emit.ml" 16 367 372 "emit.ml" 16 367 374
+)
+"emit.ml" 27 604 610 "emit.ml" 27 604 614
+type(
+  'a option
+)
+type(
+  'a option
+)
+"emit.ml" 27 604 625 "emit.ml" 27 604 630
+type(
+  bool
+)
+"emit.ml" 27 604 618 "emit.ml" 27 604 630
+type(
+  'a
+)
+"emit.ml" 28 631 641 "emit.ml" 28 631 644
+type(
+  'a
+)
+ident(
+  def v "emit.ml" 28 631 648 "emit.ml" 28 631 649
+)
+"emit.ml" 28 631 637 "emit.ml" 28 631 644
+type(
+  'a option
+)
+type(
+  'a option
+)
+"emit.ml" 28 631 648 "emit.ml" 28 631 649
+type(
+  'a
+)
+ident(
+  int_ref v "emit.ml" 28 631 641 "emit.ml" 28 631 644
+)
+"emit.ml" 26 588 590 "emit.ml" 28 631 649
+type(
+  'a
+)
+"emit.ml" 16 367 368 "emit.ml" 28 631 649
+type(
+  'a
+)
+"emit.ml" 30 651 655 "emit.ml" 30 651 659
+type(
+  (Sigma.var * 'a) list -> (factor list * 'a) list
+)
+ident(
+  def f_vs "emit.ml" 38 803 803 "emit.ml" 0 0 -1
+)
+"emit.ml" 30 651 660 "emit.ml" 30 651 662
+type(
+  (Sigma.var * 'a) list
+)
+ident(
+  def vs "emit.ml" 31 665 667 "emit.ml" 36 793 801
+)
+"emit.ml" 31 665 667 "emit.ml" 31 665 675
+type(
+  (Sigma.var * 'a -> factor list * 'a) ->
+  (Sigma.var * 'a) list -> (factor list * 'a) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 32 676 686 "emit.ml" 32 676 687
+type(
+  Sigma.var
+)
+ident(
+  def v "emit.ml" 32 676 695 "emit.ml" 35 757 792
+)
+"emit.ml" 32 676 689 "emit.ml" 32 676 690
+type(
+  'a
+)
+ident(
+  def n "emit.ml" 32 676 695 "emit.ml" 35 757 792
+)
+"emit.ml" 32 676 685 "emit.ml" 32 676 691
+type(
+  Sigma.var * 'a
+)
+"emit.ml" 32 676 701 "emit.ml" 32 676 702
+type(
+  Sigma.var
+)
+ident(
+  int_ref v "emit.ml" 32 676 686 "emit.ml" 32 676 687
+)
+"emit.ml" 33 708 716 "emit.ml" 33 708 719
+type(
+  Sigma.var
+)
+type(
+  Sigma.var
+)
+"emit.ml" 33 708 730 "emit.ml" 33 708 735
+type(
+  bool
+)
+"emit.ml" 33 708 723 "emit.ml" 33 708 735
+type(
+  factor list * 'a
+)
+"emit.ml" 34 736 744 "emit.ml" 34 736 745
+type(
+  Sigma.var
+)
+type(
+  Sigma.var
+)
+"emit.ml" 34 736 750 "emit.ml" 34 736 752
+type(
+  factor list
+)
+"emit.ml" 34 736 754 "emit.ml" 34 736 755
+type(
+  'a
+)
+ident(
+  int_ref n "emit.ml" 32 676 689 "emit.ml" 32 676 690
+)
+"emit.ml" 34 736 749 "emit.ml" 34 736 756
+type(
+  factor list * 'a
+)
+"emit.ml" 35 757 767 "emit.ml" 35 757 771
+type(
+  string
+)
+ident(
+  def id "emit.ml" 35 757 775 "emit.ml" 35 757 792
+)
+"emit.ml" 35 757 765 "emit.ml" 35 757 771
+type(
+  Sigma.var
+)
+type(
+  Sigma.var
+)
+"emit.ml" 35 757 781 "emit.ml" 35 757 783
+type(
+  string
+)
+ident(
+  int_ref id "emit.ml" 35 757 767 "emit.ml" 35 757 771
+)
+"emit.ml" 35 757 785 "emit.ml" 35 757 786
+type(
+  int
+)
+"emit.ml" 35 757 777 "emit.ml" 35 757 787
+type(
+  factor
+)
+"emit.ml" 35 757 776 "emit.ml" 35 757 788
+type(
+  factor list
+)
+"emit.ml" 35 757 790 "emit.ml" 35 757 791
+type(
+  'a
+)
+ident(
+  int_ref n "emit.ml" 32 676 689 "emit.ml" 32 676 690
+)
+"emit.ml" 35 757 775 "emit.ml" 35 757 792
+type(
+  factor list * 'a
+)
+"emit.ml" 32 676 695 "emit.ml" 35 757 792
+type(
+  factor list * 'a
+)
+"emit.ml" 32 676 680 "emit.ml" 36 793 798
+type(
+  Sigma.var * 'a -> factor list * 'a
+)
+"emit.ml" 36 793 799 "emit.ml" 36 793 801
+type(
+  (Sigma.var * 'a) list
+)
+ident(
+  int_ref vs "emit.ml" 30 651 660 "emit.ml" 30 651 662
+)
+"emit.ml" 31 665 667 "emit.ml" 36 793 801
+type(
+  (factor list * 'a) list
+)
+"emit.ml" 38 803 807 "emit.ml" 38 803 813
+type(
+  Sigma.cond -> cond
+)
+ident(
+  def f_cond "emit.ml" 48 1070 1070 "emit.ml" 0 0 -1
+)
+"emit.ml" 38 803 814 "emit.ml" 38 803 815
+type(
+  Sigma.cond
+)
+ident(
+  def c "emit.ml" 39 818 819 "emit.ml" 46 1045 1068
+)
+"emit.ml" 39 818 822 "emit.ml" 39 818 823
+type(
+  Sigma.cond
+)
+ident(
+  int_ref c "emit.ml" 38 803 814 "emit.ml" 38 803 815
+)
+"emit.ml" 39 818 822 "emit.ml" 39 818 825
+type(
+  int
+)
+"emit.ml" 39 818 826 "emit.ml" 39 818 827
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emit.ml" 39 818 828 "emit.ml" 39 818 829
+type(
+  int
+)
+"emit.ml" 39 818 822 "emit.ml" 39 818 829
+type(
+  bool
+)
+"emit.ml" 40 835 843 "emit.ml" 40 835 846
+type(
+  (Sigma.var * int) list
+)
+ident(
+  def pos "emit.ml" 41 899 903 "emit.ml" 44 993 1037
+)
+"emit.ml" 40 835 848 "emit.ml" 40 835 851
+type(
+  (Sigma.var * int) list
+)
+ident(
+  def neg "emit.ml" 41 899 903 "emit.ml" 44 993 1037
+)
+"emit.ml" 40 835 843 "emit.ml" 40 835 851
+type(
+  (Sigma.var * int) list * (Sigma.var * int) list
+)
+"emit.ml" 40 835 854 "emit.ml" 40 835 868
+type(
+  (Sigma.var * int -> bool) ->
+  (Sigma.var * int) list -> (Sigma.var * int) list * (Sigma.var * int) list
+)
+ident(
+  int_ref Stdlib.List.partition "list.mli" 344 11505 11505 "list.mli" 344 11505 11565
+)
+"emit.ml" 40 835 875 "emit.ml" 40 835 876
+type(
+  Sigma.var
+)
+"emit.ml" 40 835 878 "emit.ml" 40 835 879
+type(
+  int
+)
+ident(
+  def n "emit.ml" 40 835 884 "emit.ml" 40 835 889
+)
+"emit.ml" 40 835 874 "emit.ml" 40 835 880
+type(
+  Sigma.var * int
+)
+"emit.ml" 40 835 884 "emit.ml" 40 835 885
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 40 835 878 "emit.ml" 40 835 879
+)
+"emit.ml" 40 835 886 "emit.ml" 40 835 887
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"emit.ml" 40 835 888 "emit.ml" 40 835 889
+type(
+  int
+)
+"emit.ml" 40 835 884 "emit.ml" 40 835 889
+type(
+  bool
+)
+"emit.ml" 40 835 869 "emit.ml" 40 835 890
+type(
+  Sigma.var * int -> bool
+)
+"emit.ml" 40 835 891 "emit.ml" 40 835 892
+type(
+  Sigma.cond
+)
+ident(
+  int_ref c "emit.ml" 38 803 814 "emit.ml" 38 803 815
+)
+"emit.ml" 40 835 891 "emit.ml" 40 835 895
+type(
+  (Sigma.var * int) list
+)
+"emit.ml" 40 835 854 "emit.ml" 40 835 895
+type(
+  (Sigma.var * int) list * (Sigma.var * int) list
+)
+"emit.ml" 41 899 907 "emit.ml" 41 899 910
+type(
+  Sigma.var -> (Sigma.var * int) list -> int
+)
+ident(
+  int_ref Util.get "util.ml" 32 538 542 "util.ml" 32 538 545
+)
+"emit.ml" 41 899 911 "emit.ml" 41 899 914
+type(
+  Sigma.var
+)
+"emit.ml" 41 899 915 "emit.ml" 41 899 918
+type(
+  (Sigma.var * int) list
+)
+ident(
+  int_ref pos "emit.ml" 40 835 843 "emit.ml" 40 835 846
+)
+"emit.ml" 41 899 906 "emit.ml" 41 899 919
+type(
+  int
+)
+"emit.ml" 41 899 920 "emit.ml" 41 899 921
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 140 5875 5875 "stdlib.mli" 140 5875 5925
+)
+"emit.ml" 41 899 922 "emit.ml" 41 899 923
+type(
+  int
+)
+"emit.ml" 41 899 906 "emit.ml" 41 899 923
+type(
+  bool
+)
+"emit.ml" 42 929 936 "emit.ml" 42 929 940
+type(
+  (Sigma.var * int) list -> exp
+)
+ident(
+  int_ref f_vs "emit.ml" 30 651 655 "emit.ml" 30 651 659
+)
+"emit.ml" 42 929 942 "emit.ml" 42 929 948
+type(
+  Sigma.var -> (Sigma.var * int) list -> (Sigma.var * int) list
+)
+ident(
+  int_ref Util.remove "util.ml" 36 612 616 "util.ml" 36 612 622
+)
+"emit.ml" 42 929 949 "emit.ml" 42 929 952
+type(
+  Sigma.var
+)
+"emit.ml" 42 929 953 "emit.ml" 42 929 956
+type(
+  (Sigma.var * int) list
+)
+ident(
+  int_ref pos "emit.ml" 40 835 843 "emit.ml" 40 835 846
+)
+"emit.ml" 42 929 941 "emit.ml" 42 929 957
+type(
+  (Sigma.var * int) list
+)
+"emit.ml" 42 929 936 "emit.ml" 42 929 957
+type(
+  exp
+)
+"emit.ml" 42 929 959 "emit.ml" 42 929 963
+type(
+  (Sigma.var * int) list -> exp
+)
+ident(
+  int_ref f_vs "emit.ml" 30 651 655 "emit.ml" 30 651 659
+)
+"emit.ml" 42 929 965 "emit.ml" 42 929 974
+type(
+  int -> (Sigma.var * int) list -> (Sigma.var * int) list
+)
+ident(
+  int_ref Util.mul_assoc "util.ml" 42 721 725 "util.ml" 42 721 734
+)
+"emit.ml" 42 929 975 "emit.ml" 42 929 979
+type(
+  int
+)
+"emit.ml" 42 929 980 "emit.ml" 42 929 983
+type(
+  (Sigma.var * int) list
+)
+ident(
+  int_ref neg "emit.ml" 40 835 848 "emit.ml" 40 835 851
+)
+"emit.ml" 42 929 964 "emit.ml" 42 929 984
+type(
+  (Sigma.var * int) list
+)
+"emit.ml" 42 929 959 "emit.ml" 42 929 984
+type(
+  exp
+)
+"emit.ml" 42 929 933 "emit.ml" 42 929 985
+type(
+  cond
+)
+"emit.ml" 44 993 1001 "emit.ml" 44 993 1005
+type(
+  (Sigma.var * int) list -> exp
+)
+ident(
+  int_ref f_vs "emit.ml" 30 651 655 "emit.ml" 30 651 659
+)
+"emit.ml" 44 993 1006 "emit.ml" 44 993 1009
+type(
+  (Sigma.var * int) list
+)
+ident(
+  int_ref pos "emit.ml" 40 835 843 "emit.ml" 40 835 846
+)
+"emit.ml" 44 993 1001 "emit.ml" 44 993 1009
+type(
+  exp
+)
+"emit.ml" 44 993 1011 "emit.ml" 44 993 1015
+type(
+  (Sigma.var * int) list -> exp
+)
+ident(
+  int_ref f_vs "emit.ml" 30 651 655 "emit.ml" 30 651 659
+)
+"emit.ml" 44 993 1017 "emit.ml" 44 993 1026
+type(
+  int -> (Sigma.var * int) list -> (Sigma.var * int) list
+)
+ident(
+  int_ref Util.mul_assoc "util.ml" 42 721 725 "util.ml" 42 721 734
+)
+"emit.ml" 44 993 1027 "emit.ml" 44 993 1031
+type(
+  int
+)
+"emit.ml" 44 993 1032 "emit.ml" 44 993 1035
+type(
+  (Sigma.var * int) list
+)
+ident(
+  int_ref neg "emit.ml" 40 835 848 "emit.ml" 40 835 851
+)
+"emit.ml" 44 993 1016 "emit.ml" 44 993 1036
+type(
+  (Sigma.var * int) list
+)
+"emit.ml" 44 993 1011 "emit.ml" 44 993 1036
+type(
+  exp
+)
+"emit.ml" 44 993 997 "emit.ml" 44 993 1037
+type(
+  cond
+)
+"emit.ml" 41 899 903 "emit.ml" 44 993 1037
+type(
+  cond
+)
+"emit.ml" 40 835 839 "emit.ml" 44 993 1038
+type(
+  cond
+)
+"emit.ml" 46 1045 1053 "emit.ml" 46 1045 1057
+type(
+  (Sigma.var * int) list -> exp
+)
+ident(
+  int_ref f_vs "emit.ml" 30 651 655 "emit.ml" 30 651 659
+)
+"emit.ml" 46 1045 1058 "emit.ml" 46 1045 1059
+type(
+  Sigma.cond
+)
+ident(
+  int_ref c "emit.ml" 38 803 814 "emit.ml" 38 803 815
+)
+"emit.ml" 46 1045 1058 "emit.ml" 46 1045 1062
+type(
+  (Sigma.var * int) list
+)
+"emit.ml" 46 1045 1053 "emit.ml" 46 1045 1062
+type(
+  exp
+)
+"emit.ml" 46 1045 1064 "emit.ml" 46 1045 1065
+type(
+  Sigma.cond
+)
+ident(
+  int_ref c "emit.ml" 38 803 814 "emit.ml" 38 803 815
+)
+"emit.ml" 46 1045 1064 "emit.ml" 46 1045 1067
+type(
+  int
+)
+"emit.ml" 46 1045 1048 "emit.ml" 46 1045 1068
+type(
+  cond
+)
+"emit.ml" 39 818 819 "emit.ml" 46 1045 1068
+type(
+  cond
+)
+"emit.ml" 48 1070 1078 "emit.ml" 48 1070 1086
+type(
+  string ->
+  int -> (int * ((string * int) list * int) list) list -> (term * int) list
+)
+ident(
+  def f_terms' "emit.ml" 48 1070 1070 "emit.ml" 0 0 -1
+)
+"emit.ml" 48 1070 1087 "emit.ml" 48 1070 1088
+type(
+  string
+)
+ident(
+  def x "emit.ml" 48 1070 1089 "emit.ml" 53 1214 1282
+)
+"emit.ml" 48 1070 1089 "emit.ml" 48 1070 1090
+type(
+  int
+)
+ident(
+  def n "emit.ml" 48 1070 1093 "emit.ml" 53 1214 1282
+)
+"emit.ml" 49 1102 1106 "emit.ml" 49 1102 1108
+type(
+  (int * ((string * int) list * int) list) list
+)
+"emit.ml" 49 1102 1112 "emit.ml" 49 1102 1114
+type(
+  (term * int) list
+)
+"emit.ml" 50 1115 1120 "emit.ml" 50 1115 1122
+type(
+  int
+)
+ident(
+  def n' "emit.ml" 50 1115 1140 "emit.ml" 51 1150 1190
+)
+"emit.ml" 50 1115 1124 "emit.ml" 50 1115 1126
+type(
+  ((string * int) list * int) list
+)
+ident(
+  def ts "emit.ml" 50 1115 1140 "emit.ml" 51 1150 1190
+)
+"emit.ml" 50 1115 1119 "emit.ml" 50 1115 1127
+type(
+  int * ((string * int) list * int) list
+)
+"emit.ml" 50 1115 1131 "emit.ml" 50 1115 1134
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  def tss "emit.ml" 50 1115 1140 "emit.ml" 51 1150 1190
+)
+"emit.ml" 50 1115 1119 "emit.ml" 50 1115 1134
+type(
+  (int * ((string * int) list * int) list) list
+)
+"emit.ml" 50 1115 1140 "emit.ml" 50 1115 1142
+type(
+  int
+)
+ident(
+  int_ref n' "emit.ml" 50 1115 1120 "emit.ml" 50 1115 1122
+)
+"emit.ml" 50 1115 1143 "emit.ml" 50 1115 1144
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"emit.ml" 50 1115 1145 "emit.ml" 50 1115 1146
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 48 1070 1089 "emit.ml" 48 1070 1090
+)
+"emit.ml" 50 1115 1140 "emit.ml" 50 1115 1146
+type(
+  bool
+)
+"emit.ml" 51 1150 1157 "emit.ml" 51 1150 1164
+type(
+  ((string * int) list * int) list -> (term * int) list
+)
+ident(
+  int_ref f_terms "emit.ml" 55 1284 1288 "emit.ml" 55 1284 1295
+)
+"emit.ml" 51 1150 1165 "emit.ml" 51 1150 1167
+type(
+  ((string * int) list * int) list
+)
+ident(
+  int_ref ts "emit.ml" 50 1115 1124 "emit.ml" 50 1115 1126
+)
+"emit.ml" 51 1150 1156 "emit.ml" 51 1150 1168
+type(
+  (term * int) list
+)
+"emit.ml" 51 1150 1169 "emit.ml" 51 1150 1170
+type(
+  (term * int) list -> (term * int) list -> (term * int) list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"emit.ml" 51 1150 1172 "emit.ml" 51 1150 1180
+type(
+  string ->
+  int -> (int * ((string * int) list * int) list) list -> (term * int) list
+)
+ident(
+  int_ref f_terms' "emit.ml" 48 1070 1078 "emit.ml" 48 1070 1086
+)
+"emit.ml" 51 1150 1181 "emit.ml" 51 1150 1182
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 48 1070 1087 "emit.ml" 48 1070 1088
+)
+"emit.ml" 51 1150 1183 "emit.ml" 51 1150 1185
+type(
+  int
+)
+ident(
+  int_ref n' "emit.ml" 50 1115 1120 "emit.ml" 50 1115 1122
+)
+"emit.ml" 51 1150 1186 "emit.ml" 51 1150 1189
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref tss "emit.ml" 50 1115 1131 "emit.ml" 50 1115 1134
+)
+"emit.ml" 51 1150 1171 "emit.ml" 51 1150 1190
+type(
+  (term * int) list
+)
+"emit.ml" 51 1150 1156 "emit.ml" 51 1150 1190
+type(
+  (term * int) list
+)
+"emit.ml" 52 1191 1196 "emit.ml" 52 1191 1198
+type(
+  int
+)
+ident(
+  def n' "emit.ml" 53 1214 1220 "emit.ml" 53 1214 1282
+)
+"emit.ml" 52 1191 1200 "emit.ml" 52 1191 1202
+type(
+  ((string * int) list * int) list
+)
+ident(
+  def ts "emit.ml" 53 1214 1220 "emit.ml" 53 1214 1282
+)
+"emit.ml" 52 1191 1195 "emit.ml" 52 1191 1203
+type(
+  int * ((string * int) list * int) list
+)
+"emit.ml" 52 1191 1207 "emit.ml" 52 1191 1210
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  def tss "emit.ml" 53 1214 1220 "emit.ml" 53 1214 1282
+)
+"emit.ml" 52 1191 1195 "emit.ml" 52 1191 1210
+type(
+  (int * ((string * int) list * int) list) list
+)
+"emit.ml" 53 1214 1220 "emit.ml" 53 1214 1223
+type(
+  exp -> exp -> (term * int) list
+)
+ident(
+  int_ref mul "emit.ml" 10 231 235 "emit.ml" 10 231 238
+)
+"emit.ml" 53 1214 1230 "emit.ml" 53 1214 1231
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 48 1070 1087 "emit.ml" 48 1070 1088
+)
+"emit.ml" 53 1214 1233 "emit.ml" 53 1214 1235
+type(
+  int
+)
+ident(
+  int_ref n' "emit.ml" 52 1191 1196 "emit.ml" 52 1191 1198
+)
+"emit.ml" 53 1214 1236 "emit.ml" 53 1214 1237
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 352 13775 13775 "stdlib.mli" 352 13775 13821
+)
+"emit.ml" 53 1214 1238 "emit.ml" 53 1214 1239
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 48 1070 1089 "emit.ml" 48 1070 1090
+)
+"emit.ml" 53 1214 1233 "emit.ml" 53 1214 1239
+type(
+  int
+)
+"emit.ml" 53 1214 1226 "emit.ml" 53 1214 1240
+type(
+  factor
+)
+"emit.ml" 53 1214 1225 "emit.ml" 53 1214 1241
+type(
+  term
+)
+"emit.ml" 53 1214 1243 "emit.ml" 53 1214 1244
+type(
+  int
+)
+"emit.ml" 53 1214 1225 "emit.ml" 53 1214 1244
+type(
+  term * int
+)
+"emit.ml" 53 1214 1224 "emit.ml" 53 1214 1245
+type(
+  exp
+)
+"emit.ml" 53 1214 1248 "emit.ml" 53 1214 1255
+type(
+  ((string * int) list * int) list -> (term * int) list
+)
+ident(
+  int_ref f_terms "emit.ml" 55 1284 1288 "emit.ml" 55 1284 1295
+)
+"emit.ml" 53 1214 1256 "emit.ml" 53 1214 1258
+type(
+  ((string * int) list * int) list
+)
+ident(
+  int_ref ts "emit.ml" 52 1191 1200 "emit.ml" 52 1191 1202
+)
+"emit.ml" 53 1214 1247 "emit.ml" 53 1214 1259
+type(
+  (term * int) list
+)
+"emit.ml" 53 1214 1260 "emit.ml" 53 1214 1261
+type(
+  (term * int) list -> (term * int) list -> exp
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"emit.ml" 53 1214 1263 "emit.ml" 53 1214 1271
+type(
+  string ->
+  int -> (int * ((string * int) list * int) list) list -> (term * int) list
+)
+ident(
+  int_ref f_terms' "emit.ml" 48 1070 1078 "emit.ml" 48 1070 1086
+)
+"emit.ml" 53 1214 1272 "emit.ml" 53 1214 1273
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 48 1070 1087 "emit.ml" 48 1070 1088
+)
+"emit.ml" 53 1214 1274 "emit.ml" 53 1214 1276
+type(
+  int
+)
+ident(
+  int_ref n' "emit.ml" 52 1191 1196 "emit.ml" 52 1191 1198
+)
+"emit.ml" 53 1214 1277 "emit.ml" 53 1214 1280
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref tss "emit.ml" 52 1191 1207 "emit.ml" 52 1191 1210
+)
+"emit.ml" 53 1214 1262 "emit.ml" 53 1214 1281
+type(
+  (term * int) list
+)
+"emit.ml" 53 1214 1246 "emit.ml" 53 1214 1282
+type(
+  exp
+)
+"emit.ml" 53 1214 1220 "emit.ml" 53 1214 1282
+type(
+  (term * int) list
+)
+"emit.ml" 48 1070 1093 "emit.ml" 53 1214 1282
+type(
+  (int * ((string * int) list * int) list) list -> (term * int) list
+)
+"emit.ml" 55 1284 1288 "emit.ml" 55 1284 1295
+type(
+  ((string * int) list * int) list -> (term * int) list
+)
+ident(
+  def f_terms "emit.ml" 48 1070 1070 "emit.ml" 0 0 -1
+)
+"emit.ml" 56 1307 1311 "emit.ml" 56 1307 1313
+type(
+  ((string * int) list * int) list
+)
+"emit.ml" 56 1307 1324 "emit.ml" 56 1307 1329
+type(
+  bool
+)
+"emit.ml" 56 1307 1317 "emit.ml" 56 1307 1329
+type(
+  (term * int) list
+)
+"emit.ml" 57 1330 1335 "emit.ml" 57 1330 1337
+type(
+  (string * int) list
+)
+"emit.ml" 57 1330 1339 "emit.ml" 57 1330 1340
+type(
+  int
+)
+ident(
+  def n "emit.ml" 57 1330 1345 "emit.ml" 57 1330 1352
+)
+"emit.ml" 57 1330 1335 "emit.ml" 57 1330 1340
+type(
+  (string * int) list * int
+)
+"emit.ml" 57 1330 1334 "emit.ml" 57 1330 1341
+type(
+  ((string * int) list * int) list
+)
+"emit.ml" 57 1330 1346 "emit.ml" 57 1330 1348
+type(
+  term
+)
+"emit.ml" 57 1330 1350 "emit.ml" 57 1330 1351
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 57 1330 1339 "emit.ml" 57 1330 1340
+)
+"emit.ml" 57 1330 1346 "emit.ml" 57 1330 1351
+type(
+  term * int
+)
+"emit.ml" 57 1330 1345 "emit.ml" 57 1330 1352
+type(
+  (term * int) list
+)
+"emit.ml" 58 1353 1357 "emit.ml" 58 1353 1359
+type(
+  ((string * int) list * int) list
+)
+ident(
+  def ts "emit.ml" 59 1363 1369 "emit.ml" 65 1532 1553
+)
+"emit.ml" 59 1363 1373 "emit.ml" 59 1363 1374
+type(
+  string
+)
+ident(
+  def x "emit.ml" 60 1391 1397 "emit.ml" 65 1532 1553
+)
+"emit.ml" 59 1363 1377 "emit.ml" 59 1363 1384
+type(
+  ((string * int) list * int) list -> string
+)
+ident(
+  int_ref get_var "emit.ml" 15 350 354 "emit.ml" 15 350 361
+)
+"emit.ml" 59 1363 1385 "emit.ml" 59 1363 1387
+type(
+  ((string * int) list * int) list
+)
+ident(
+  int_ref ts "emit.ml" 58 1353 1357 "emit.ml" 58 1353 1359
+)
+"emit.ml" 59 1363 1377 "emit.ml" 59 1363 1387
+type(
+  string
+)
+"emit.ml" 60 1391 1401 "emit.ml" 60 1391 1404
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  def tss "emit.ml" 64 1495 1501 "emit.ml" 65 1532 1553
+)
+"emit.ml" 60 1391 1407 "emit.ml" 60 1391 1415
+type(
+  ((string * int) list * int -> int * ((string * int) list * int) list) ->
+  ((string * int) list * int) list ->
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 61 1416 1430 "emit.ml" 61 1416 1432
+type(
+  (string * int) list
+)
+ident(
+  def fs "emit.ml" 62 1440 1450 "emit.ml" 62 1440 1478
+)
+"emit.ml" 61 1416 1434 "emit.ml" 61 1416 1435
+type(
+  int
+)
+ident(
+  def n "emit.ml" 62 1440 1450 "emit.ml" 62 1440 1478
+)
+"emit.ml" 61 1416 1429 "emit.ml" 61 1416 1436
+type(
+  (string * int) list * int
+)
+"emit.ml" 62 1440 1451 "emit.ml" 62 1440 1454
+type(
+  string -> (string * int) list -> int
+)
+ident(
+  int_ref Util.get "util.ml" 32 538 542 "util.ml" 32 538 545
+)
+"emit.ml" 62 1440 1455 "emit.ml" 62 1440 1456
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 59 1363 1373 "emit.ml" 59 1363 1374
+)
+"emit.ml" 62 1440 1457 "emit.ml" 62 1440 1459
+type(
+  (string * int) list
+)
+ident(
+  int_ref fs "emit.ml" 61 1416 1430 "emit.ml" 61 1416 1432
+)
+"emit.ml" 62 1440 1451 "emit.ml" 62 1440 1459
+type(
+  int
+)
+"emit.ml" 62 1440 1462 "emit.ml" 62 1440 1468
+type(
+  string -> (string * int) list -> (string * int) list
+)
+ident(
+  int_ref Util.remove "util.ml" 36 612 616 "util.ml" 36 612 622
+)
+"emit.ml" 62 1440 1469 "emit.ml" 62 1440 1470
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 59 1363 1373 "emit.ml" 59 1363 1374
+)
+"emit.ml" 62 1440 1471 "emit.ml" 62 1440 1473
+type(
+  (string * int) list
+)
+ident(
+  int_ref fs "emit.ml" 61 1416 1430 "emit.ml" 61 1416 1432
+)
+"emit.ml" 62 1440 1462 "emit.ml" 62 1440 1473
+type(
+  (string * int) list
+)
+"emit.ml" 62 1440 1475 "emit.ml" 62 1440 1476
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 61 1416 1434 "emit.ml" 61 1416 1435
+)
+"emit.ml" 62 1440 1462 "emit.ml" 62 1440 1476
+type(
+  (string * int) list * int
+)
+"emit.ml" 62 1440 1461 "emit.ml" 62 1440 1477
+type(
+  ((string * int) list * int) list
+)
+"emit.ml" 62 1440 1450 "emit.ml" 62 1440 1478
+type(
+  int * ((string * int) list * int) list
+)
+"emit.ml" 61 1416 1424 "emit.ml" 63 1479 1488
+type(
+  (string * int) list * int -> int * ((string * int) list * int) list
+)
+"emit.ml" 63 1479 1489 "emit.ml" 63 1479 1491
+type(
+  ((string * int) list * int) list
+)
+ident(
+  int_ref ts "emit.ml" 58 1353 1357 "emit.ml" 58 1353 1359
+)
+"emit.ml" 60 1391 1407 "emit.ml" 63 1479 1491
+type(
+  (int * ((string * int) list * int) list) list
+)
+"emit.ml" 64 1495 1505 "emit.ml" 64 1495 1508
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  def tss "emit.ml" 65 1532 1537 "emit.ml" 65 1532 1553
+)
+"emit.ml" 64 1495 1511 "emit.ml" 64 1495 1517
+type(
+  (((string * int) list * int) list ->
+   ((string * int) list * int) list -> ((string * int) list * int) list) ->
+  ((string * int) list * int) list ->
+  (int * ((string * int) list * int) list) list ->
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref Util.normal "util.ml" 48 839 843 "util.ml" 48 839 849
+)
+"emit.ml" 64 1495 1518 "emit.ml" 64 1495 1521
+type(
+  ((string * int) list * int) list ->
+  ((string * int) list * int) list -> ((string * int) list * int) list
+)
+ident(
+  int_ref Stdlib.( @ ) "stdlib.mli" 823 30483 30483 "stdlib.mli" 823 30483 30524
+)
+"emit.ml" 64 1495 1522 "emit.ml" 64 1495 1524
+type(
+  ((string * int) list * int) list
+)
+"emit.ml" 64 1495 1525 "emit.ml" 64 1495 1528
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref tss "emit.ml" 60 1391 1401 "emit.ml" 60 1391 1404
+)
+"emit.ml" 64 1495 1511 "emit.ml" 64 1495 1528
+type(
+  (int * ((string * int) list * int) list) list
+)
+"emit.ml" 65 1532 1537 "emit.ml" 65 1532 1545
+type(
+  string ->
+  int -> (int * ((string * int) list * int) list) list -> (term * int) list
+)
+ident(
+  int_ref f_terms' "emit.ml" 48 1070 1078 "emit.ml" 48 1070 1086
+)
+"emit.ml" 65 1532 1546 "emit.ml" 65 1532 1547
+type(
+  string
+)
+ident(
+  int_ref x "emit.ml" 59 1363 1373 "emit.ml" 59 1363 1374
+)
+"emit.ml" 65 1532 1548 "emit.ml" 65 1532 1549
+type(
+  int
+)
+"emit.ml" 65 1532 1550 "emit.ml" 65 1532 1553
+type(
+  (int * ((string * int) list * int) list) list
+)
+ident(
+  int_ref tss "emit.ml" 64 1495 1505 "emit.ml" 64 1495 1508
+)
+"emit.ml" 65 1532 1537 "emit.ml" 65 1532 1553
+type(
+  (term * int) list
+)
+"emit.ml" 64 1495 1501 "emit.ml" 65 1532 1553
+type(
+  (term * int) list
+)
+"emit.ml" 60 1391 1397 "emit.ml" 65 1532 1553
+type(
+  (term * int) list
+)
+"emit.ml" 59 1363 1369 "emit.ml" 65 1532 1553
+type(
+  (term * int) list
+)
+"emit.ml" 55 1284 1298 "emit.ml" 65 1532 1553
+type(
+  ((string * int) list * int) list -> (term * int) list
+)
+"emit.ml" 67 1555 1559 "emit.ml" 67 1555 1560
+type(
+  Sigma.prog -> (cond list * ((term * int) list * int)) list
+)
+ident(
+  def f "emit.ml" 75 1757 1757 "emit.ml" 0 0 -1
+)
+"emit.ml" 67 1555 1566 "emit.ml" 67 1555 1570
+type(
+  (Sigma.conds * Sigma.exp) list
+)
+ident(
+  def es "emit.ml" 68 1574 1576 "emit.ml" 73 1747 1755
+)
+"emit.ml" 67 1555 1561 "emit.ml" 67 1555 1571
+type(
+  Sigma.prog
+)
+"emit.ml" 68 1574 1576 "emit.ml" 68 1574 1584
+type(
+  (Sigma.conds * Sigma.exp -> cond list * ((term * int) list * int)) ->
+  (Sigma.conds * Sigma.exp) list ->
+  (cond list * ((term * int) list * int)) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 69 1585 1600 "emit.ml" 69 1585 1604
+type(
+  Sigma.cond list
+)
+ident(
+  def cs "emit.ml" 70 1612 1618 "emit.ml" 72 1717 1746
+)
+"emit.ml" 69 1585 1595 "emit.ml" 69 1585 1604
+type(
+  Sigma.conds
+)
+"emit.ml" 69 1585 1606 "emit.ml" 69 1585 1607
+type(
+  Sigma.exp
+)
+ident(
+  def e "emit.ml" 70 1612 1618 "emit.ml" 72 1717 1746
+)
+"emit.ml" 69 1585 1594 "emit.ml" 69 1585 1608
+type(
+  Sigma.conds * Sigma.exp
+)
+"emit.ml" 70 1612 1622 "emit.ml" 70 1612 1624
+type(
+  cond list
+)
+ident(
+  def cs "emit.ml" 71 1649 1655 "emit.ml" 72 1717 1746
+)
+"emit.ml" 70 1612 1627 "emit.ml" 70 1612 1635
+type(
+  (Sigma.cond -> cond) -> Sigma.cond list -> cond list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 70 1612 1636 "emit.ml" 70 1612 1642
+type(
+  Sigma.cond -> cond
+)
+ident(
+  int_ref f_cond "emit.ml" 38 803 807 "emit.ml" 38 803 813
+)
+"emit.ml" 70 1612 1643 "emit.ml" 70 1612 1645
+type(
+  Sigma.cond list
+)
+ident(
+  int_ref cs "emit.ml" 69 1585 1600 "emit.ml" 69 1585 1604
+)
+"emit.ml" 70 1612 1627 "emit.ml" 70 1612 1645
+type(
+  cond list
+)
+"emit.ml" 71 1649 1659 "emit.ml" 71 1649 1661
+type(
+  ((string * int) list * int) list
+)
+ident(
+  def ts "emit.ml" 72 1717 1723 "emit.ml" 72 1717 1746
+)
+"emit.ml" 71 1649 1664 "emit.ml" 71 1649 1672
+type(
+  (Sigma.term * int -> (string * int) list * int) ->
+  (Sigma.term * int) list -> ((string * int) list * int) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 71 1649 1688 "emit.ml" 71 1649 1692
+type(
+  (string * int) list
+)
+ident(
+  def fs "emit.ml" 71 1649 1700 "emit.ml" 71 1649 1707
+)
+"emit.ml" 71 1649 1684 "emit.ml" 71 1649 1692
+type(
+  Sigma.term
+)
+"emit.ml" 71 1649 1694 "emit.ml" 71 1649 1695
+type(
+  int
+)
+ident(
+  def n "emit.ml" 71 1649 1700 "emit.ml" 71 1649 1707
+)
+"emit.ml" 71 1649 1683 "emit.ml" 71 1649 1696
+type(
+  Sigma.term * int
+)
+"emit.ml" 71 1649 1701 "emit.ml" 71 1649 1703
+type(
+  (string * int) list
+)
+ident(
+  int_ref fs "emit.ml" 71 1649 1688 "emit.ml" 71 1649 1692
+)
+"emit.ml" 71 1649 1705 "emit.ml" 71 1649 1706
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 71 1649 1694 "emit.ml" 71 1649 1695
+)
+"emit.ml" 71 1649 1700 "emit.ml" 71 1649 1707
+type(
+  (string * int) list * int
+)
+"emit.ml" 71 1649 1673 "emit.ml" 71 1649 1708
+type(
+  Sigma.term * int -> (string * int) list * int
+)
+"emit.ml" 71 1649 1709 "emit.ml" 71 1649 1710
+type(
+  Sigma.exp
+)
+ident(
+  int_ref e "emit.ml" 69 1585 1606 "emit.ml" 69 1585 1607
+)
+"emit.ml" 71 1649 1709 "emit.ml" 71 1649 1713
+type(
+  (Sigma.term * int) list
+)
+"emit.ml" 71 1649 1664 "emit.ml" 71 1649 1713
+type(
+  ((string * int) list * int) list
+)
+"emit.ml" 72 1717 1724 "emit.ml" 72 1717 1726
+type(
+  cond list
+)
+ident(
+  int_ref cs "emit.ml" 70 1612 1622 "emit.ml" 70 1612 1624
+)
+"emit.ml" 72 1717 1729 "emit.ml" 72 1717 1736
+type(
+  ((string * int) list * int) list -> (term * int) list
+)
+ident(
+  int_ref f_terms "emit.ml" 55 1284 1288 "emit.ml" 55 1284 1295
+)
+"emit.ml" 72 1717 1737 "emit.ml" 72 1717 1739
+type(
+  ((string * int) list * int) list
+)
+ident(
+  int_ref ts "emit.ml" 71 1649 1659 "emit.ml" 71 1649 1661
+)
+"emit.ml" 72 1717 1729 "emit.ml" 72 1717 1739
+type(
+  (term * int) list
+)
+"emit.ml" 72 1717 1741 "emit.ml" 72 1717 1742
+type(
+  Sigma.exp
+)
+ident(
+  int_ref e "emit.ml" 69 1585 1606 "emit.ml" 69 1585 1607
+)
+"emit.ml" 72 1717 1741 "emit.ml" 72 1717 1744
+type(
+  int
+)
+"emit.ml" 72 1717 1728 "emit.ml" 72 1717 1745
+type(
+  (term * int) list * int
+)
+"emit.ml" 72 1717 1723 "emit.ml" 72 1717 1746
+type(
+  cond list * ((term * int) list * int)
+)
+"emit.ml" 71 1649 1655 "emit.ml" 72 1717 1746
+type(
+  cond list * ((term * int) list * int)
+)
+"emit.ml" 70 1612 1618 "emit.ml" 72 1717 1746
+type(
+  cond list * ((term * int) list * int)
+)
+"emit.ml" 69 1585 1589 "emit.ml" 73 1747 1752
+type(
+  Sigma.conds * Sigma.exp -> cond list * ((term * int) list * int)
+)
+"emit.ml" 73 1747 1753 "emit.ml" 73 1747 1755
+type(
+  (Sigma.conds * Sigma.exp) list
+)
+ident(
+  int_ref es "emit.ml" 67 1555 1566 "emit.ml" 67 1555 1570
+)
+"emit.ml" 68 1574 1576 "emit.ml" 73 1747 1755
+type(
+  (cond list * ((term * int) list * int)) list
+)
+"emit.ml" 75 1757 1761 "emit.ml" 75 1757 1762
+type(
+  Sigma.prog -> (cond list * ((factor list * int) list * int)) list
+)
+ident(
+  def g "emit.ml" 84 2003 2011 "emit.ml" 0 0 -1
+)
+"emit.ml" 75 1757 1768 "emit.ml" 75 1757 1772
+type(
+  (Sigma.conds * Sigma.exp) list
+)
+ident(
+  def es "emit.ml" 76 1776 1778 "emit.ml" 84 2003 2011
+)
+"emit.ml" 75 1757 1763 "emit.ml" 75 1757 1773
+type(
+  Sigma.prog
+)
+"emit.ml" 76 1776 1778 "emit.ml" 76 1776 1786
+type(
+  (Sigma.conds * Sigma.exp -> cond list * ((factor list * int) list * int)) ->
+  (Sigma.conds * Sigma.exp) list ->
+  (cond list * ((factor list * int) list * int)) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 77 1787 1802 "emit.ml" 77 1787 1806
+type(
+  Sigma.cond list
+)
+ident(
+  def cs "emit.ml" 78 1814 1820 "emit.ml" 83 1981 2002
+)
+"emit.ml" 77 1787 1797 "emit.ml" 77 1787 1806
+type(
+  Sigma.conds
+)
+"emit.ml" 77 1787 1808 "emit.ml" 77 1787 1809
+type(
+  Sigma.exp
+)
+ident(
+  def e "emit.ml" 78 1814 1820 "emit.ml" 83 1981 2002
+)
+"emit.ml" 77 1787 1796 "emit.ml" 77 1787 1810
+type(
+  Sigma.conds * Sigma.exp
+)
+"emit.ml" 78 1814 1824 "emit.ml" 78 1814 1826
+type(
+  cond list
+)
+ident(
+  def cs "emit.ml" 79 1851 1857 "emit.ml" 83 1981 2002
+)
+"emit.ml" 78 1814 1829 "emit.ml" 78 1814 1837
+type(
+  (Sigma.cond -> cond) -> Sigma.cond list -> cond list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 78 1814 1838 "emit.ml" 78 1814 1844
+type(
+  Sigma.cond -> cond
+)
+ident(
+  int_ref f_cond "emit.ml" 38 803 807 "emit.ml" 38 803 813
+)
+"emit.ml" 78 1814 1845 "emit.ml" 78 1814 1847
+type(
+  Sigma.cond list
+)
+ident(
+  int_ref cs "emit.ml" 77 1787 1802 "emit.ml" 77 1787 1806
+)
+"emit.ml" 78 1814 1829 "emit.ml" 78 1814 1847
+type(
+  cond list
+)
+"emit.ml" 79 1851 1861 "emit.ml" 79 1851 1863
+type(
+  (factor list * int) list
+)
+ident(
+  def e' "emit.ml" 83 1981 1987 "emit.ml" 83 1981 2002
+)
+"emit.ml" 79 1851 1866 "emit.ml" 79 1851 1874
+type(
+  (Sigma.term * int -> factor list * int) ->
+  (Sigma.term * int) list -> (factor list * int) list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 80 1875 1898 "emit.ml" 80 1875 1902
+type(
+  (string * int) list
+)
+ident(
+  def fs "emit.ml" 81 1910 1920 "emit.ml" 81 1910 1962
+)
+"emit.ml" 80 1875 1894 "emit.ml" 80 1875 1902
+type(
+  Sigma.term
+)
+"emit.ml" 80 1875 1904 "emit.ml" 80 1875 1905
+type(
+  int
+)
+ident(
+  def n "emit.ml" 81 1910 1920 "emit.ml" 81 1910 1962
+)
+"emit.ml" 80 1875 1893 "emit.ml" 80 1875 1906
+type(
+  Sigma.term * int
+)
+"emit.ml" 81 1910 1921 "emit.ml" 81 1910 1929
+type(
+  (string * int -> factor) -> (string * int) list -> factor list
+)
+ident(
+  int_ref Stdlib.List.map "list.mli" 172 6124 6124 "list.mli" 172 6124 6166
+)
+"emit.ml" 81 1910 1936 "emit.ml" 81 1910 1937
+type(
+  string
+)
+ident(
+  def v "emit.ml" 81 1910 1945 "emit.ml" 81 1910 1954
+)
+"emit.ml" 81 1910 1939 "emit.ml" 81 1910 1940
+type(
+  int
+)
+ident(
+  def n "emit.ml" 81 1910 1945 "emit.ml" 81 1910 1954
+)
+"emit.ml" 81 1910 1935 "emit.ml" 81 1910 1941
+type(
+  string * int
+)
+"emit.ml" 81 1910 1949 "emit.ml" 81 1910 1950
+type(
+  string
+)
+ident(
+  int_ref v "emit.ml" 81 1910 1936 "emit.ml" 81 1910 1937
+)
+"emit.ml" 81 1910 1952 "emit.ml" 81 1910 1953
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 81 1910 1939 "emit.ml" 81 1910 1940
+)
+"emit.ml" 81 1910 1945 "emit.ml" 81 1910 1954
+type(
+  factor
+)
+"emit.ml" 81 1910 1930 "emit.ml" 81 1910 1955
+type(
+  string * int -> factor
+)
+"emit.ml" 81 1910 1956 "emit.ml" 81 1910 1958
+type(
+  (string * int) list
+)
+ident(
+  int_ref fs "emit.ml" 80 1875 1898 "emit.ml" 80 1875 1902
+)
+"emit.ml" 81 1910 1921 "emit.ml" 81 1910 1958
+type(
+  factor list
+)
+"emit.ml" 81 1910 1960 "emit.ml" 81 1910 1961
+type(
+  int
+)
+ident(
+  int_ref n "emit.ml" 80 1875 1904 "emit.ml" 80 1875 1905
+)
+"emit.ml" 81 1910 1920 "emit.ml" 81 1910 1962
+type(
+  factor list * int
+)
+"emit.ml" 80 1875 1883 "emit.ml" 82 1963 1972
+type(
+  Sigma.term * int -> factor list * int
+)
+"emit.ml" 82 1963 1973 "emit.ml" 82 1963 1974
+type(
+  Sigma.exp
+)
+ident(
+  int_ref e "emit.ml" 77 1787 1808 "emit.ml" 77 1787 1809
+)
+"emit.ml" 82 1963 1973 "emit.ml" 82 1963 1977
+type(
+  (Sigma.term * int) list
+)
+"emit.ml" 79 1851 1866 "emit.ml" 82 1963 1977
+type(
+  (factor list * int) list
+)
+"emit.ml" 83 1981 1988 "emit.ml" 83 1981 1990
+type(
+  cond list
+)
+ident(
+  int_ref cs "emit.ml" 78 1814 1824 "emit.ml" 78 1814 1826
+)
+"emit.ml" 83 1981 1993 "emit.ml" 83 1981 1995
+type(
+  (factor list * int) list
+)
+ident(
+  int_ref e' "emit.ml" 79 1851 1861 "emit.ml" 79 1851 1863
+)
+"emit.ml" 83 1981 1997 "emit.ml" 83 1981 1998
+type(
+  Sigma.exp
+)
+ident(
+  int_ref e "emit.ml" 77 1787 1808 "emit.ml" 77 1787 1809
+)
+"emit.ml" 83 1981 1997 "emit.ml" 83 1981 2000
+type(
+  int
+)
+"emit.ml" 83 1981 1992 "emit.ml" 83 1981 2001
+type(
+  (factor list * int) list * int
+)
+"emit.ml" 83 1981 1987 "emit.ml" 83 1981 2002
+type(
+  cond list * ((factor list * int) list * int)
+)
+"emit.ml" 79 1851 1857 "emit.ml" 83 1981 2002
+type(
+  cond list * ((factor list * int) list * int)
+)
+"emit.ml" 78 1814 1820 "emit.ml" 83 1981 2002
+type(
+  cond list * ((factor list * int) list * int)
+)
+"emit.ml" 77 1787 1791 "emit.ml" 84 2003 2008
+type(
+  Sigma.conds * Sigma.exp -> cond list * ((factor list * int) list * int)
+)
+"emit.ml" 84 2003 2009 "emit.ml" 84 2003 2011
+type(
+  (Sigma.conds * Sigma.exp) list
+)
+ident(
+  int_ref es "emit.ml" 75 1757 1768 "emit.ml" 75 1757 1772
+)
+"emit.ml" 76 1776 1778 "emit.ml" 84 2003 2011
+type(
+  (cond list * ((factor list * int) list * int)) list
+)

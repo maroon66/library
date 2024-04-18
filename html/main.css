@@ -1,0 +1,37 @@
+.hljs {
+	font-family: "Roboto Mono", "Source Code Pro", Consolas, "Courier New", monospace;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: dashed 2px #bbb;
+}
+
+.title .inner {
+    text-align: center;
+}
+
+
+@media print {
+    .title {
+        page-break-after: always;        
+    }
+    .title pre {
+        font-size: 10px;
+    }
+    .src_main {
+        font-size: 8px;
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        column-count: 2;
+        column-gap: 0.3em;
+    }
+}
+
+@page {
+    size: A4;
+/*    margin: 0cm; */
+    margin-top: 1.2cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+}

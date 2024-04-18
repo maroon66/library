@@ -1,0 +1,937 @@
+"syntax.ml" 13 184 188 "syntax.ml" 13 184 191
+type(
+  t -> t
+)
+ident(
+  def neg "syntax.ml" 14 214 214 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 13 184 192 "syntax.ml" 13 184 193
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 13 184 196 "syntax.ml" 13 184 213
+)
+"syntax.ml" 13 184 205 "syntax.ml" 13 184 209
+type(
+  int
+)
+"syntax.ml" 13 184 200 "syntax.ml" 13 184 209
+type(
+  t
+)
+"syntax.ml" 13 184 211 "syntax.ml" 13 184 212
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 13 184 192 "syntax.ml" 13 184 193
+)
+"syntax.ml" 13 184 196 "syntax.ml" 13 184 213
+type(
+  t
+)
+"syntax.ml" 14 214 218 "syntax.ml" 14 214 221
+type(
+  t -> t -> t
+)
+ident(
+  def sub "syntax.ml" 15 242 242 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 14 214 222 "syntax.ml" 14 214 223
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 14 214 224 "syntax.ml" 14 214 241
+)
+"syntax.ml" 14 214 224 "syntax.ml" 14 214 225
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 14 214 228 "syntax.ml" 14 214 241
+)
+"syntax.ml" 14 214 232 "syntax.ml" 14 214 233
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 14 214 222 "syntax.ml" 14 214 223
+)
+"syntax.ml" 14 214 235 "syntax.ml" 14 214 238
+type(
+  t -> t
+)
+ident(
+  int_ref neg "syntax.ml" 13 184 188 "syntax.ml" 13 184 191
+)
+"syntax.ml" 14 214 239 "syntax.ml" 14 214 240
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 14 214 224 "syntax.ml" 14 214 225
+)
+"syntax.ml" 14 214 235 "syntax.ml" 14 214 240
+type(
+  t
+)
+"syntax.ml" 14 214 228 "syntax.ml" 14 214 241
+type(
+  t
+)
+"syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+type(
+  t -> t -> t
+)
+ident(
+  def cle "syntax.ml" 16 269 269 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 15 242 250 "syntax.ml" 15 242 251
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 15 242 252 "syntax.ml" 15 242 268
+)
+"syntax.ml" 15 242 252 "syntax.ml" 15 242 253
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 15 242 256 "syntax.ml" 15 242 268
+)
+"syntax.ml" 15 242 260 "syntax.ml" 15 242 263
+type(
+  t -> t -> t
+)
+ident(
+  int_ref sub "syntax.ml" 14 214 218 "syntax.ml" 14 214 221
+)
+"syntax.ml" 15 242 264 "syntax.ml" 15 242 265
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 15 242 250 "syntax.ml" 15 242 251
+)
+"syntax.ml" 15 242 266 "syntax.ml" 15 242 267
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 15 242 252 "syntax.ml" 15 242 253
+)
+"syntax.ml" 15 242 259 "syntax.ml" 15 242 268
+type(
+  t
+)
+"syntax.ml" 15 242 256 "syntax.ml" 15 242 268
+type(
+  t
+)
+"syntax.ml" 16 269 273 "syntax.ml" 16 269 276
+type(
+  t -> t -> t
+)
+ident(
+  def cge "syntax.ml" 17 291 291 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 16 269 277 "syntax.ml" 16 269 278
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 16 269 279 "syntax.ml" 16 269 290
+)
+"syntax.ml" 16 269 279 "syntax.ml" 16 269 280
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 16 269 283 "syntax.ml" 16 269 290
+)
+"syntax.ml" 16 269 283 "syntax.ml" 16 269 286
+type(
+  t -> t -> t
+)
+ident(
+  int_ref cle "syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+)
+"syntax.ml" 16 269 287 "syntax.ml" 16 269 288
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 16 269 279 "syntax.ml" 16 269 280
+)
+"syntax.ml" 16 269 289 "syntax.ml" 16 269 290
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 16 269 277 "syntax.ml" 16 269 278
+)
+"syntax.ml" 16 269 283 "syntax.ml" 16 269 290
+type(
+  t
+)
+"syntax.ml" 17 291 295 "syntax.ml" 17 291 297
+type(
+  t -> t -> t
+)
+ident(
+  def cl "syntax.ml" 18 316 316 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 17 291 298 "syntax.ml" 17 291 299
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 17 291 300 "syntax.ml" 17 291 315
+)
+"syntax.ml" 17 291 300 "syntax.ml" 17 291 301
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 17 291 304 "syntax.ml" 17 291 315
+)
+"syntax.ml" 17 291 307 "syntax.ml" 17 291 310
+type(
+  t -> t -> t
+)
+ident(
+  int_ref sub "syntax.ml" 14 214 218 "syntax.ml" 14 214 221
+)
+"syntax.ml" 17 291 311 "syntax.ml" 17 291 312
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 17 291 298 "syntax.ml" 17 291 299
+)
+"syntax.ml" 17 291 313 "syntax.ml" 17 291 314
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 17 291 300 "syntax.ml" 17 291 301
+)
+"syntax.ml" 17 291 306 "syntax.ml" 17 291 315
+type(
+  t
+)
+"syntax.ml" 17 291 304 "syntax.ml" 17 291 315
+type(
+  t
+)
+"syntax.ml" 18 316 320 "syntax.ml" 18 316 322
+type(
+  t -> t -> t
+)
+ident(
+  def cg "syntax.ml" 19 336 336 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 18 316 323 "syntax.ml" 18 316 324
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 18 316 325 "syntax.ml" 18 316 335
+)
+"syntax.ml" 18 316 325 "syntax.ml" 18 316 326
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 18 316 329 "syntax.ml" 18 316 335
+)
+"syntax.ml" 18 316 329 "syntax.ml" 18 316 331
+type(
+  t -> t -> t
+)
+ident(
+  int_ref cl "syntax.ml" 17 291 295 "syntax.ml" 17 291 297
+)
+"syntax.ml" 18 316 332 "syntax.ml" 18 316 333
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 18 316 325 "syntax.ml" 18 316 326
+)
+"syntax.ml" 18 316 334 "syntax.ml" 18 316 335
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 18 316 323 "syntax.ml" 18 316 324
+)
+"syntax.ml" 18 316 329 "syntax.ml" 18 316 335
+type(
+  t
+)
+"syntax.ml" 19 336 340 "syntax.ml" 19 336 343
+type(
+  t -> t -> t
+)
+ident(
+  def ceq "syntax.ml" 20 372 372 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 19 336 344 "syntax.ml" 19 336 345
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 19 336 346 "syntax.ml" 19 336 371
+)
+"syntax.ml" 19 336 346 "syntax.ml" 19 336 347
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 19 336 350 "syntax.ml" 19 336 371
+)
+"syntax.ml" 19 336 354 "syntax.ml" 19 336 357
+type(
+  t -> t -> t
+)
+ident(
+  int_ref cle "syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+)
+"syntax.ml" 19 336 358 "syntax.ml" 19 336 359
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 19 336 344 "syntax.ml" 19 336 345
+)
+"syntax.ml" 19 336 360 "syntax.ml" 19 336 361
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 19 336 346 "syntax.ml" 19 336 347
+)
+"syntax.ml" 19 336 354 "syntax.ml" 19 336 361
+type(
+  t
+)
+"syntax.ml" 19 336 363 "syntax.ml" 19 336 366
+type(
+  t -> t -> t
+)
+ident(
+  int_ref cle "syntax.ml" 15 242 246 "syntax.ml" 15 242 249
+)
+"syntax.ml" 19 336 367 "syntax.ml" 19 336 368
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 19 336 346 "syntax.ml" 19 336 347
+)
+"syntax.ml" 19 336 369 "syntax.ml" 19 336 370
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 19 336 344 "syntax.ml" 19 336 345
+)
+"syntax.ml" 19 336 363 "syntax.ml" 19 336 370
+type(
+  t
+)
+"syntax.ml" 19 336 350 "syntax.ml" 19 336 371
+type(
+  t
+)
+"syntax.ml" 20 372 376 "syntax.ml" 20 372 379
+type(
+  t -> t -> t
+)
+ident(
+  def cor "syntax.ml" 22 415 415 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 20 372 380 "syntax.ml" 20 372 381
+type(
+  t
+)
+ident(
+  def a "syntax.ml" 20 372 382 "syntax.ml" 20 372 413
+)
+"syntax.ml" 20 372 382 "syntax.ml" 20 372 383
+type(
+  t
+)
+ident(
+  def b "syntax.ml" 20 372 386 "syntax.ml" 20 372 413
+)
+"syntax.ml" 20 372 386 "syntax.ml" 20 372 389
+type(
+  t -> t -> t
+)
+ident(
+  int_ref sub "syntax.ml" 14 214 218 "syntax.ml" 14 214 221
+)
+"syntax.ml" 20 372 395 "syntax.ml" 20 372 396
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 20 372 380 "syntax.ml" 20 372 381
+)
+"syntax.ml" 20 372 398 "syntax.ml" 20 372 399
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 20 372 382 "syntax.ml" 20 372 383
+)
+"syntax.ml" 20 372 390 "syntax.ml" 20 372 401
+type(
+  t
+)
+"syntax.ml" 20 372 407 "syntax.ml" 20 372 408
+type(
+  t
+)
+ident(
+  int_ref a "syntax.ml" 20 372 380 "syntax.ml" 20 372 381
+)
+"syntax.ml" 20 372 410 "syntax.ml" 20 372 411
+type(
+  t
+)
+ident(
+  int_ref b "syntax.ml" 20 372 382 "syntax.ml" 20 372 383
+)
+"syntax.ml" 20 372 402 "syntax.ml" 20 372 413
+type(
+  t
+)
+"syntax.ml" 20 372 386 "syntax.ml" 20 372 413
+type(
+  t
+)
+"syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+type(
+  t -> string
+)
+ident(
+  def string_of_t "syntax.ml" 22 415 415 "syntax.ml" 0 0 -1
+)
+"syntax.ml" 23 446 455 "syntax.ml" 23 446 458
+type(
+  int
+)
+ident(
+  def c "syntax.ml" 23 446 462 "syntax.ml" 23 446 477
+)
+"syntax.ml" 23 446 450 "syntax.ml" 23 446 458
+type(
+  t
+)
+"syntax.ml" 23 446 462 "syntax.ml" 23 446 475
+type(
+  int -> string
+)
+ident(
+  int_ref Stdlib.string_of_int "stdlib.mli" 750 27897 27897 "stdlib.mli" 750 27897 27930
+)
+"syntax.ml" 23 446 476 "syntax.ml" 23 446 477
+type(
+  int
+)
+ident(
+  int_ref c "syntax.ml" 23 446 455 "syntax.ml" 23 446 458
+)
+"syntax.ml" 23 446 462 "syntax.ml" 23 446 477
+type(
+  string
+)
+"syntax.ml" 24 478 485 "syntax.ml" 24 478 489
+type(
+  string
+)
+ident(
+  def id "syntax.ml" 24 478 493 "syntax.ml" 24 478 495
+)
+"syntax.ml" 24 478 482 "syntax.ml" 24 478 489
+type(
+  t
+)
+"syntax.ml" 24 478 493 "syntax.ml" 24 478 495
+type(
+  string
+)
+ident(
+  int_ref id "syntax.ml" 24 478 485 "syntax.ml" 24 478 489
+)
+"syntax.ml" 25 496 504 "syntax.ml" 25 496 506
+type(
+  t
+)
+ident(
+  def e1 "syntax.ml" 25 496 515 "syntax.ml" 25 496 575
+)
+"syntax.ml" 25 496 508 "syntax.ml" 25 496 510
+type(
+  t
+)
+ident(
+  def e2 "syntax.ml" 25 496 515 "syntax.ml" 25 496 575
+)
+"syntax.ml" 25 496 500 "syntax.ml" 25 496 511
+type(
+  t
+)
+"syntax.ml" 25 496 515 "syntax.ml" 25 496 529
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 25 496 530 "syntax.ml" 25 496 541
+type(
+  (string -> string -> string, unit, string) format
+)
+"syntax.ml" 25 496 543 "syntax.ml" 25 496 554
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 25 496 555 "syntax.ml" 25 496 557
+type(
+  t
+)
+ident(
+  int_ref e1 "syntax.ml" 25 496 504 "syntax.ml" 25 496 506
+)
+"syntax.ml" 25 496 542 "syntax.ml" 25 496 558
+type(
+  string
+)
+"syntax.ml" 25 496 560 "syntax.ml" 25 496 571
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 25 496 572 "syntax.ml" 25 496 574
+type(
+  t
+)
+ident(
+  int_ref e2 "syntax.ml" 25 496 508 "syntax.ml" 25 496 510
+)
+"syntax.ml" 25 496 559 "syntax.ml" 25 496 575
+type(
+  string
+)
+"syntax.ml" 25 496 515 "syntax.ml" 25 496 575
+type(
+  string
+)
+"syntax.ml" 26 576 584 "syntax.ml" 26 576 586
+type(
+  t
+)
+ident(
+  def e1 "syntax.ml" 26 576 595 "syntax.ml" 26 576 653
+)
+"syntax.ml" 26 576 588 "syntax.ml" 26 576 590
+type(
+  t
+)
+ident(
+  def e2 "syntax.ml" 26 576 595 "syntax.ml" 26 576 653
+)
+"syntax.ml" 26 576 580 "syntax.ml" 26 576 591
+type(
+  t
+)
+"syntax.ml" 26 576 595 "syntax.ml" 26 576 609
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 26 576 610 "syntax.ml" 26 576 619
+type(
+  (string -> string -> string, unit, string) format
+)
+"syntax.ml" 26 576 621 "syntax.ml" 26 576 632
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 26 576 633 "syntax.ml" 26 576 635
+type(
+  t
+)
+ident(
+  int_ref e1 "syntax.ml" 26 576 584 "syntax.ml" 26 576 586
+)
+"syntax.ml" 26 576 620 "syntax.ml" 26 576 636
+type(
+  string
+)
+"syntax.ml" 26 576 638 "syntax.ml" 26 576 649
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 26 576 650 "syntax.ml" 26 576 652
+type(
+  t
+)
+ident(
+  int_ref e2 "syntax.ml" 26 576 588 "syntax.ml" 26 576 590
+)
+"syntax.ml" 26 576 637 "syntax.ml" 26 576 653
+type(
+  string
+)
+"syntax.ml" 26 576 595 "syntax.ml" 26 576 653
+type(
+  string
+)
+"syntax.ml" 27 654 662 "syntax.ml" 27 654 663
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 27 654 671 "syntax.ml" 27 654 713
+)
+"syntax.ml" 27 654 665 "syntax.ml" 27 654 666
+type(
+  int
+)
+ident(
+  def n "syntax.ml" 27 654 671 "syntax.ml" 27 654 713
+)
+"syntax.ml" 27 654 658 "syntax.ml" 27 654 667
+type(
+  t
+)
+"syntax.ml" 27 654 671 "syntax.ml" 27 654 685
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 27 654 686 "syntax.ml" 27 654 695
+type(
+  (string -> int -> string, unit, string) format
+)
+"syntax.ml" 27 654 697 "syntax.ml" 27 654 708
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 27 654 709 "syntax.ml" 27 654 710
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 27 654 662 "syntax.ml" 27 654 663
+)
+"syntax.ml" 27 654 696 "syntax.ml" 27 654 711
+type(
+  string
+)
+"syntax.ml" 27 654 712 "syntax.ml" 27 654 713
+type(
+  int
+)
+ident(
+  int_ref n "syntax.ml" 27 654 665 "syntax.ml" 27 654 666
+)
+"syntax.ml" 27 654 671 "syntax.ml" 27 654 713
+type(
+  string
+)
+"syntax.ml" 28 714 722 "syntax.ml" 28 714 723
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 28 714 731 "syntax.ml" 28 714 771
+)
+"syntax.ml" 28 714 725 "syntax.ml" 28 714 726
+type(
+  int
+)
+ident(
+  def n "syntax.ml" 28 714 731 "syntax.ml" 28 714 771
+)
+"syntax.ml" 28 714 718 "syntax.ml" 28 714 727
+type(
+  t
+)
+"syntax.ml" 28 714 731 "syntax.ml" 28 714 745
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 28 714 746 "syntax.ml" 28 714 753
+type(
+  (string -> int -> string, unit, string) format
+)
+"syntax.ml" 28 714 755 "syntax.ml" 28 714 766
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 28 714 767 "syntax.ml" 28 714 768
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 28 714 722 "syntax.ml" 28 714 723
+)
+"syntax.ml" 28 714 754 "syntax.ml" 28 714 769
+type(
+  string
+)
+"syntax.ml" 28 714 770 "syntax.ml" 28 714 771
+type(
+  int
+)
+ident(
+  int_ref n "syntax.ml" 28 714 725 "syntax.ml" 28 714 726
+)
+"syntax.ml" 28 714 731 "syntax.ml" 28 714 771
+type(
+  string
+)
+"syntax.ml" 29 772 779 "syntax.ml" 29 772 782
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 29 772 786 "syntax.ml" 29 772 828
+)
+"syntax.ml" 29 772 776 "syntax.ml" 29 772 782
+type(
+  t
+)
+"syntax.ml" 29 772 786 "syntax.ml" 29 772 800
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 29 772 801 "syntax.ml" 29 772 812
+type(
+  (string -> string, unit, string) format
+)
+"syntax.ml" 29 772 814 "syntax.ml" 29 772 825
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 29 772 826 "syntax.ml" 29 772 827
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 29 772 779 "syntax.ml" 29 772 782
+)
+"syntax.ml" 29 772 813 "syntax.ml" 29 772 828
+type(
+  string
+)
+"syntax.ml" 29 772 786 "syntax.ml" 29 772 828
+type(
+  string
+)
+"syntax.ml" 30 829 835 "syntax.ml" 30 829 838
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 30 829 842 "syntax.ml" 30 829 883
+)
+"syntax.ml" 30 829 833 "syntax.ml" 30 829 838
+type(
+  t
+)
+"syntax.ml" 30 829 842 "syntax.ml" 30 829 856
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 30 829 857 "syntax.ml" 30 829 867
+type(
+  (string -> string, unit, string) format
+)
+"syntax.ml" 30 829 869 "syntax.ml" 30 829 880
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 30 829 881 "syntax.ml" 30 829 882
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 30 829 835 "syntax.ml" 30 829 838
+)
+"syntax.ml" 30 829 868 "syntax.ml" 30 829 883
+type(
+  string
+)
+"syntax.ml" 30 829 842 "syntax.ml" 30 829 883
+type(
+  string
+)
+"syntax.ml" 31 884 893 "syntax.ml" 31 884 894
+type(
+  int
+)
+ident(
+  def m "syntax.ml" 31 884 902 "syntax.ml" 31 884 946
+)
+"syntax.ml" 31 884 896 "syntax.ml" 31 884 897
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 31 884 902 "syntax.ml" 31 884 946
+)
+"syntax.ml" 31 884 888 "syntax.ml" 31 884 898
+type(
+  t
+)
+"syntax.ml" 31 884 902 "syntax.ml" 31 884 916
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 31 884 917 "syntax.ml" 31 884 928
+type(
+  (int -> string -> string, unit, string) format
+)
+"syntax.ml" 31 884 929 "syntax.ml" 31 884 930
+type(
+  int
+)
+ident(
+  int_ref m "syntax.ml" 31 884 893 "syntax.ml" 31 884 894
+)
+"syntax.ml" 31 884 932 "syntax.ml" 31 884 943
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 31 884 944 "syntax.ml" 31 884 945
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 31 884 896 "syntax.ml" 31 884 897
+)
+"syntax.ml" 31 884 931 "syntax.ml" 31 884 946
+type(
+  string
+)
+"syntax.ml" 31 884 902 "syntax.ml" 31 884 946
+type(
+  string
+)
+"syntax.ml" 32 947 955 "syntax.ml" 32 947 957
+type(
+  string
+)
+ident(
+  def id "syntax.ml" 32 947 965 "syntax.ml" 32 947 1009
+)
+"syntax.ml" 32 947 959 "syntax.ml" 32 947 960
+type(
+  t
+)
+ident(
+  def e "syntax.ml" 32 947 965 "syntax.ml" 32 947 1009
+)
+"syntax.ml" 32 947 951 "syntax.ml" 32 947 961
+type(
+  t
+)
+"syntax.ml" 32 947 965 "syntax.ml" 32 947 979
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  int_ref Stdlib.Format.sprintf "format.mli" 1245 48071 48071 "format.mli" 1245 48071 48116
+)
+"syntax.ml" 32 947 980 "syntax.ml" 32 947 990
+type(
+  (string -> string -> string, unit, string) format
+)
+"syntax.ml" 32 947 991 "syntax.ml" 32 947 993
+type(
+  string
+)
+ident(
+  int_ref id "syntax.ml" 32 947 955 "syntax.ml" 32 947 957
+)
+"syntax.ml" 32 947 995 "syntax.ml" 32 947 1006
+type(
+  t -> string
+)
+ident(
+  int_ref string_of_t "syntax.ml" 22 415 423 "syntax.ml" 22 415 434
+)
+"syntax.ml" 32 947 1007 "syntax.ml" 32 947 1008
+type(
+  t
+)
+ident(
+  int_ref e "syntax.ml" 32 947 959 "syntax.ml" 32 947 960
+)
+"syntax.ml" 32 947 994 "syntax.ml" 32 947 1009
+type(
+  string
+)
+"syntax.ml" 32 947 965 "syntax.ml" 32 947 1009
+type(
+  string
+)
+"syntax.ml" 22 415 437 "syntax.ml" 32 947 1009
+type(
+  t -> string
+)

@@ -1,0 +1,24 @@
+//CF854H
+vc<pi> reorder_tree(int n,vc<pi>es){
+	vvc<int> t(n);
+	for(auto [a,b]:es){
+		t[a].pb(b);
+		t[b].pb(a);
+	}
+	vi ord(n);
+	int head=0;
+	vc<pi> res;
+	auto dfs=[&](auto self,int v,int p)->void{
+		ord[v]=head++;
+		if(p!=-1)res.eb(ord[p],ord[v]);
+		for(auto ch:t[v])if(ch!=p)self(self,ch,v);
+	};
+	dfs(dfs,0,-1);
+	return res;
+}
+
+see CF 406 D
+
+頂点を dfs 順にする
+辺を一列に並べる（一つの頂点からでるやつは連続させる）
+部分木サイズ，親への辺を適宜更新しておく dfs_slv
