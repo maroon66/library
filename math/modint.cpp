@@ -116,15 +116,16 @@ const int vmax=(1<<21)+10;
 #endif
 mint fact[vmax],finv[vmax],invs[vmax];
 void initfact(){
+	const int s=min<int>(vmax,base.mod);
 	fact[0]=1;
-	rng(i,1,vmax){
+	rng(i,1,s){
 		fact[i]=fact[i-1]*i;
 	}
-	finv[vmax-1]=fact[vmax-1].inv();
-	for(int i=vmax-2;i>=0;i--){
+	finv[s-1]=fact[s-1].inv();
+	for(int i=s-2;i>=0;i--){
 		finv[i]=finv[i+1]*(i+1);
 	}
-	for(int i=vmax-1;i>=1;i--){
+	for(int i=s-1;i>=1;i--){
 		invs[i]=finv[i]*fact[i-1];
 	}
 }
@@ -178,4 +179,9 @@ void initp2(){
 	rep(i,vmax-1)p2[i+1]=p2[i]*2;
 	p2inv[vmax-1]=p2[vmax-1].inv();
 	per(i,vmax-1)p2inv[i]=p2inv[i+1]*2;
+}
+
+int m2i(mint a){
+	uint v=a.v;
+	return v<mint::mod/2?v:int(v)-int(mint::mod);
 }

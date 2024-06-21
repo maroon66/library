@@ -4,7 +4,7 @@
 //コメントアウトしてあるところは全く試してない
 //CF887F (lazy)
 //TOKI35G (lazy)
-//#define AVLLAZY
+#define AVLLAZY
 //https://qiita.com/QCFium/items/3cf26a6dc2d49ef490d7
 template<class N>
 struct avl{
@@ -33,9 +33,33 @@ struct avl{
 			p=nullptr;
 			return this;
 		}
+		np push(){
+			#ifdef AVLLAZY
+			if(l)v.pushl(l->v);
+			if(r)v.pushr(r->v);
+			v.clear();
+			#endif
+			return this;
+		}
 		np L(np x){l=x;return upd();}
 		np R(np x){r=x;return upd();}
 		np LR(np x,np y){l=x;r=y;return upd();}
+		np leftmost(){
+			np x=this;
+			while(x->l){
+				x->push();
+				x=x->l;
+			}
+			return x->push();
+		}
+		np rightmost(){
+			np x=this;
+			while(x->r){
+				x->push();
+				x=x->r;
+			}
+			return x->push();
+		}
 	};
 	using np=N2*;
 	const int S;
@@ -50,6 +74,7 @@ struct avl{
 	void emplace_new(np x,N v){
 		*x=N2{v,0,0,0,1};
 	}
+	np push(np x){return x->push();}
 	/*void checkvalidity(){
 		rep(i,used){
 			np x=&buf[i];
@@ -63,15 +88,8 @@ struct avl{
 			}
 		}
 	}*/
+	bool operatable(np x){return x==nullptr||x->p==nullptr;}
 	//a is not null
-	np push(np x){
-		#ifdef AVLLAZY
-		if(x->l)x->v.pushl(x->l->v);
-		if(x->r)x->v.pushr(x->r->v);
-		x->v.clear();
-		#endif
-		return x;
-	}
 	int hei(np x){return x?x->h:0;}
 	N val(np x){return x?x->v:N();}
 	int ok(int a,int b){return abs(a-b)<=1;}
@@ -134,10 +152,13 @@ struct avl{
 	template<class...Args>
 	np merge(Args...args){
 		np res=0;
-		for(auto x:{args...})res=mergedfs(res,x);
+		for(auto x:{args...}){
+			assert(operatable(x));
+			res=mergedfs(res,x);
+		}
 		return res;
 	}
-	/*template <class F,class... Args> 
+	template <class F,class... Args> 
 	pair<np,np> max_right(np x,N cur,F f,Args&&... args){
 		if(x==0)return mp(np(0),np(0));
 		push(x);
@@ -155,8 +176,9 @@ struct avl{
 	}
 	template <class F,class... Args> 
 	pair<np,np> max_right(np x,F f,Args&&... args){
+		assert(operatable(x));
 		return max_right(x,N(),f,forward<Args>(args)...);
-	}*/
+	}
 	//f(v,args)=true が左，false が右
 	//not verified
 	template <class F,class... Args>
@@ -190,14 +212,6 @@ struct avl{
 			insert_cmp(x->l,f,v);
 		x=balance(x);
 	}
-	//emplace に書き換えないと
-	//insert_cmp ように書き換えないと
-	/*template <class F>
-	np insert_by_cmp(np&x,F f,const N&v){
-		auto [newx,ins]=insertdfs(x,f,v);
-		x=newx;
-		return ins;
-	}*/
 	//x のデータをこちょこちょ書き換えたので upd を反映させて root を返す
 	//CF887F
 	void reload(np x){
@@ -272,8 +286,8 @@ struct avl{
 	//TOKI35G
 	template <class F,class... Args>
 	void chroot(np x,F f,Args&&... args){
+		assert(operatable(x));
 		if(!x)return;
-		assert(x->p==nullptr);
 		(x->v.*f)(forward<Args>(args)...);
 	}
 	/*//lower_bound の位置を erase
@@ -317,11 +331,24 @@ struct avl{
 		else return mp(false,N());
 	}*/
 	//TOKI35G
-	pair<np,np> split(np x,const N&v){return split_by_cmp(x,less<N>(),v);}
+	pair<np,np> split(np&x,const N&v){
+		assert(operatable(x));
+		auto res=split_by_cmp(x,less<N>(),v);
+		x=nullptr;//invalidate
+		return res;
+	}
 	//TOKI35G
-	//np insert(np&x,const N&v){return insert_by_cmp(x,less<N>(),v);}
+	np insert(np&x,const N&v){
+		assert(operatable(x));
+		np z=nn(v);
+		insert_cmp(x,less<N>(),z);
+		return z;
+	}
 	//UCUP 2-24-H
-	void insert(np&x,np v){return insert_cmp(x,less<N>(),v);}
+	void insert(np&x,np v){
+		assert(operatable(x));
+		return insert_cmp(x,less<N>(),v);
+	}
 	//pair<bool,np> erase(np x,const N&v){return erase_by_cmp(x,less<N>(),v);}
 	//pair<bool,N> lower_bound(np x,const N&v){return lower_bound_by_cmp(x,less<N>(),v);}
 	/*template<class T>
@@ -336,6 +363,7 @@ struct avl{
 	}*/
 	//CF887F
 	vc<N> listup(np root){
+		assert(operatable(root));
 		vc<N> res;
 		auto dfs=[&](auto self,np x)->void{
 			if(x==0)return;
@@ -346,6 +374,20 @@ struct avl{
 		};
 		dfs(dfs,root);
 		return res;
+	}
+	//https://stackoverflow.com/a/49091681
+	template<class Tuple>
+	auto tuple_pop_front(Tuple tuple) {
+		return apply([](auto a,auto...rest){return mp(a,mt(rest...));},tuple);
+	}
+	tuple<np> cut_by_index(np a){
+		return a;
+	}
+	template<class...Args>
+	auto cut_by_index(np x,int pos,Args...args){
+		assert((!x&&pos==0)||inc(0,pos,x->v.len));
+		auto [ab,c]=tuple_pop_front(cut_by_index(x,args...));
+		return tuple_cat(max_right(ab,&N::ok_len,pos),c);
 	}
 };
 template<class N>typename avl<N>::np avl<N>::vs[100];
@@ -380,3 +422,7 @@ template<class N>typename avl<N>::np avl<N>::vs[100];
 
 //ノード同士の比較関数でも split 可能(TODO)
 //TODO 細かい実装の違いによる定数倍を検証
+
+//max_right をverify
+//oeprable(root or null) を至るところでチェック
+//cut_by_index, insert by value, leftmost,rightmost を導入

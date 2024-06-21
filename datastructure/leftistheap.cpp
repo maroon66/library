@@ -222,3 +222,59 @@ struct leftistheaplazy{
 		return res;
 	}
 };
+
+//persistent で lazy な heap
+//
+template<class F,class U,int S_>
+struct persistent_heap{
+	struct N{
+		U u;
+		N *l,*r;
+		int s;
+	};
+	static constexpr int S=S_/sizeof(N);
+	N w[S];
+	F f=F();
+	int used=0;
+	using np=N*;
+	int depth(np a){
+		return a?a->s:0;
+	}
+	np nn(U u,np l,np r){
+		assert(used<S);
+		if(depth(l)<depth(r))swap(l,r);
+		w[used]={u,l,r,depth(r)+1};
+		return w+used++;
+	}
+	np nn(){
+		static np memo=nullptr;
+		if(!memo)memo=nn(0,nullptr,nullptr);
+		return memo;
+	}
+	np clone(np x){
+		assert(used<S);
+		w[used]=*x;
+		return w+used++;
+	}
+	np add(np x,U u){
+		if(!x||u==0)return x;
+		x=clone(x);
+		x->u+=u;
+		return x;
+	}
+	np merge(np a,np b,U aoff=0,U boff=0){
+		if(!a)return add(b,boff);
+		if(!b)return add(a,aoff);
+		if(f(a->u+aoff,b->u+boff)){
+			swap(a,b);
+			swap(aoff,boff);
+		}
+		return nn(a->u+aoff,a->l,merge(a->r,b,0,boff-(a->u+aoff)));
+	}
+	np pop(np a){
+		return merge(a->l,a->r,a->u,a->u);
+	}
+};
+
+persistent_heap<less<int>,int,900'000'000> ph;
+using np=decltype(ph)::np;

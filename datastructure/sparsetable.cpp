@@ -31,6 +31,10 @@ const auto imax=[](int a,int b){
 	return max(a,b);
 };
 using maxst=sparsetable<int,decltype(imax)>;
+const auto pimax=[](pi a,pi b){
+	return max(a,b);
+};
+using pimaxst=sparsetable<pi,decltype(pimax)>;
 
 SA sa(t);
 sparsetable<int,decltype(imin)> st(sa.lcp,imin,inf);

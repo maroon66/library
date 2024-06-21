@@ -5,19 +5,22 @@
 template<class t>
 struct frac{
 	t a,b;
-	frac(t aa=0,t bb=1):a(aa),b(bb){g();}
+	frac():a(0),b(1){}
+	template<class u>
+	frac(u aa):a(aa),b(1){}
+	template<class u,class v>
+	frac(u aa,v bb):a(aa),b(bb){g();}
 	frac&g(){
-		/*
 		if(a==0){
 			b=1;
 			return *this;
 		}
 		t x=gcd(a,b);
-		a/=x;b/=x;*/
+		a/=x;b/=x;
 		if(b<0){a=-a;b=-b;}
 		return *this;
 	}
-	t quo()const{return a/b-((a^b)<0&&a%b);}
+	t quo()const{return a/b-(((a<0&&b>0)||(a>0&&b<0))&&(a%b!=0));}
 	t rem()const{return a-quo()*b;}
 	frac inv()const{return frac(b,a);}
 	frac operator-()const{return frac(-a,b);}

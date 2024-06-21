@@ -91,7 +91,8 @@ int sweep(vvc<mint>&a,vi*col=nullptr,int c=-1){
 }
 
 //https://uoj.ac/problem/785
-bool inverse(vvc<mint>&a){
+//result を bool->mint に変更 (ARC177E)
+mint inverse_inplace(vvc<mint>&a){
 	int n=si(a);
 	rep(i,n){
 		assert(si(a[i])==n);
@@ -99,13 +100,15 @@ bool inverse(vvc<mint>&a){
 	}
 	static vi row;
 	row.resize(n);rep(i,n)row[i]=i;
+	mint det=1;
 	rep(i,n){
 		rng(j,i,n)if(a[j][i]){
 			swap(a[i],a[j]);
 			swap(row[i],row[j]);
 			break;
 		}
-		if(a[i][i]==0)return false;
+		if(a[i][i]==0)return 0;
+		det*=a[i][i];
 		mint u=a[i][i].inv();
 		a[i][n+i]=1;
 		rng(k,i,n+i+1)a[i][k]*=u;
@@ -118,7 +121,7 @@ bool inverse(vvc<mint>&a){
 		rep(j,n)a[i][row[j]]=a[i][n+j];
 		a[i].resize(n);
 	}
-	return true;
+	return det;
 }
 
 //https://uoj.ac/problem/785

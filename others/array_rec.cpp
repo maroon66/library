@@ -25,6 +25,20 @@ void sorted_distinct_rec(int n,int m,F f){
 	});
 }
 
+//vs から k 要素選んだ tuple すべてに対して f を呼ぶ
+//ARC177 E
+template<class t,class F>
+void tuple_rec(const vc<t>&vs,int k,F f){
+	int n=si(vs);
+	if(k<=n){
+		vc<t> a(k);
+		sorted_array_rec(k,n-k+1,[&](const vi&idx){
+			rep(i,k)a[i]=vs[idx[i]+i];
+			f(a);
+		});
+	}
+};
+
 template<class F>
 void array_rec(int n,int m,F f){
 	vi a(n);

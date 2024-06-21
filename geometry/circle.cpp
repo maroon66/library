@@ -378,3 +378,14 @@ Hull calc(vc<C> cs){
 		return Hull{ini,res};
 	}
 }
+
+
+//p が円の内部に入っているか
+//座標の 4 乗オーダーの値が出てくる
+//CGR26H (>=0 で円上もチェックできているつもりだが未確認)
+bool incircle(pt a,pt b,pt c,pt p){
+	if(ccw(a,b,c)<0)swap(b,c);
+	assert(ccw(a,b,c)>0);
+	__int128 a2=norm(a-=p),b2=norm(b-=p),c2=norm(c-=p);
+	return a2*crs(b,c)+b2*crs(c,a)+c2*crs(a,b)>=0;
+}

@@ -132,8 +132,22 @@ void input(Args&... a){
 #define VPI(name,size) vc<pi> name(size);rep(i_##name,size)input(name[i_##name]);
 #define VVI(name,sizeN,sizeM) vvi name(sizeN,vi(sizeM));\
 rep(i_##name,sizeN)rep(j_##name,sizeM)input(name[i_##name][j_##name]);
+#define VS(name,size) vc<string> name(size);rep(i_##name,size)input(name[i_##name]);
 
-#define VVC(type,name,sizeN,sizeM) vvc<type> name(sizeN,vc<type>(sizeM));
+#define overload5(a,b,c,d,e,f,...) f
+#define VVC4(type,name,sizeN,sizeM) vvc<type> name(sizeN,vc<type>(sizeM));
+#define VVC5(type,name,sizeN,sizeM,ini) vvc<type> name(sizeN,vc<type>(sizeM,ini));
+#define VVC(...) overload5(__VA_ARGS__,VVC5,VVC4)(__VA_ARGS__)
+
+template<class T>
+T vvvc(T v){
+	return v;
+}
+
+template<class T,class...Args>
+auto vvvc(int n,T v,Args...args){
+	return vector(n,vvvc(v,args...));
+}
 
 template<int i,class T>
 void print_tuple(ostream&,const T&){
@@ -439,19 +453,23 @@ vvc<int> readGraph(int n,int m){
 	return g;
 }
 
+vvc<int> rand_tree(int n){
+	vvc<int> t(n);
+	unionfind uf(n);
+	while(uf.c>1){
+		int a=rand_int(n);
+		int b=rand_int(n);
+		if(uf.unite(a,b)){
+			t[a].pb(b);
+			t[b].pb(a);
+		}
+	}
+	return t;
+}
+
 vvc<int> readTree(int n){
 	if(dbg){
-		vvc<int> t(n);
-		unionfind uf(n);
-		while(uf.c>1){
-			int a=rand_int(n);
-			int b=rand_int(n);
-			if(uf.unite(a,b)){
-				t[a].pb(b);
-				t[b].pb(a);
-			}
-		}
-		return t;
+		return rand_tree(n);
 	}else{
 		return readGraph(n,n-1);
 	}
@@ -679,6 +697,13 @@ vc<t> operator+(vc<t> a,u x){
 }
 
 template<class t>
+vc<t>& operator+=(vc<t>&a,const vc<t>&b){
+	a.resize(max(si(a),si(b)));
+	rep(i,si(b))a[i]+=b[i];
+	return a;
+}
+
+template<class t>
 vc<t> operator+(const vc<t>&a,const vc<t>&b){
 	vc<t> c(max(si(a),si(b)));
 	rep(i,si(a))c[i]+=a[i];
@@ -704,6 +729,16 @@ vc<t>& operator*=(vc<t>&a,u x){
 template<class t,class u>
 vc<t>& operator*(vc<t> a,u x){
 	return a*=x;
+}
+
+template<class t,class u>
+vc<t>& operator/=(vc<t>&a,u x){
+	for(auto&v:a)v/=x;
+	return a;
+}
+template<class t,class u>
+vc<t>& operator/(vc<t> a,u x){
+	return a/=x;
 }
 
 template<class t,class u>

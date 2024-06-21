@@ -206,7 +206,8 @@ vc<mint> pow_cyc(vc<mint> x,int n){
 }
 
 //f を掛け算の最後に持ってくると定数倍改善するかも〜
-vc<mint> pow_lowdegree(int n,const vc<mint>&g,mint k){
+//MITIT 2024 Spring Invitational Finals D
+vc<mint> pow_easy(int n,const vc<mint>&g,mint k){
 	assert(g[0]==1);
 	int d=si(g);
 	vc<mint> f(n);
@@ -270,6 +271,48 @@ vvc<mint> pow_2d_lowdegree(int n,int m,const vc<tuple<int,int,mint>>&f,mint k){
 			sum+=g[a-i][b-j]*v*(k*(i+j)-(a-i+b-j));
 		}
 		g[a][b]=sum*invs[a+b];
+	}
+	return g;
+}
+
+vc<mint> inv_easy(const vc<mint>&f){
+	int n=si(f);
+	assert(n>=1);
+	assert(f[0]==1);
+	vc<mint> g(n);
+	g[0]=1;
+	rep(i,n)rng(j,i+1,n){
+		g[j]-=g[i]*f[j-i];
+	}
+	return g;
+}
+
+vc<mint> log_easy(const vc<mint>&f){
+	int n=si(f);
+	assert(n>=1);
+	assert(f[0]==1);
+	auto g=f;
+	rep(i,n)g[i]*=i;
+	rep(i,n)rng(j,i+1,n){
+		g[j]-=g[i]*f[j-i];
+	}
+	rng(i,1,n)g[i]*=invs[i];
+	return g;
+}
+
+vc<mint> exp_easy(const vc<mint>&f){
+	int n=si(f);
+	assert(n>=1);
+	assert(f[0]==0);
+	auto a=f;
+	rep(i,n)a[i]*=i;
+	vc<mint> g(n);
+	g[0]=1;
+	rng(i,1,n){
+		rng(j,1,i+1){
+			g[i]+=a[j]*g[i-j];
+		}
+		g[i]*=invs[i];
 	}
 	return g;
 }

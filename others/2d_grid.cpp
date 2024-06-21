@@ -109,3 +109,28 @@ vvc<pi> components_2d(vvc<bool> a){
 	}
 	return res;
 }
+
+//ARC177 C
+vvc<int> dijkstra_2d(const vvc<int>&cost,int si,int sj){
+	int n=si(cost),m=si(cost[0]);
+	VVC(int,dist,n,m,inf);
+	const int dyx[]{-1,0,1,0,-1};
+	pqmin<T> pq;
+	auto reach=[&](int i,int j,int d){
+		d+=cost[i][j];
+		if(chmin(dist[i][j],d))
+			pq.emplace(d,i,j);
+	};
+	reach(si,sj,0);
+	while(si(pq)){
+		auto [d,i,j]=pq.top();pq.pop();
+		if(dist[i][j]!=d)continue;
+		rep(dir,4){
+			int y=i+dyx[dir],x=j+dyx[dir+1];
+			if(inc(0,y,n-1)&&inc(0,x,m-1)){
+				reach(y,x,d);
+			}
+		}
+	}
+	return dist;
+}
