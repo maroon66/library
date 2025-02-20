@@ -10,7 +10,10 @@ ll rem(ll a,ll b){
 	return res<0?res+b:res;
 }
 
-ll cap(ll a,ll b){
+ll capadd(ll a,ll b){
+	return min(a+b,inf);
+}
+ll capmul(ll a,ll b){
 	return b==0?0:a<=inf/b?a*b:inf;
 }
 

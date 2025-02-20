@@ -97,3 +97,8 @@ struct pathfinder{
 		return pi(y->x.val,tot-1);
 	}
 };
+
+//UCUP 3-27-B
+//lc.lc.expose(i);
+//lc.lc[i].val=0;
+//lc.lc.x[i].update();

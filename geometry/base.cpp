@@ -66,8 +66,10 @@ struct pt {
     bool operator==(const pt& r) const { return sgn((*this - r).rabs()) == 0; }
     bool operator!=(const pt& r) const { return !(*this == r); }
 
+	pt conj()const{ return pt(x,-y);}
     ld norm() const { return x * x + y * y; }
     ld rabs() const { return max(std::abs(x), std::abs(y)); }  // robust abs
+    ld srabs() const{ return std::abs(x)>std::abs(y)?x:y; } // signed robust abs
     pair<ld, ld> to_pair() const { return {x, y}; }
     #ifdef GEOF
     ld abs() const { return sqrt(norm()); }
@@ -86,6 +88,9 @@ ld norm(const pt&a){
 }
 ld rabs(const pt&a){
 	return a.rabs();
+}
+ld srabs(const pt&a){
+	return a.srabs();
 }
 #ifdef GEOF
 ld abs(const pt&a){
@@ -144,7 +149,9 @@ int argcmp(const pt&a,const pt&b){
 bool argless(const pt&a,const pt&b){return argcmp(a,b)<0;}
 //c の位置を聞く関数です，b じゃないです
 //(-2)[a,-1](0)[b,1](2)
+//a==c のケースで変な挙動をしたのでassertを入れた
 int bet(pt a,pt b,pt c){
+	assert(a!=c);
 	pt d=b-a;
 	ld e=dot(d,c-a);
 	if(sgn(e)<=0)return sgn(e)-1;
@@ -166,6 +173,11 @@ pt rot90(pt a){
 	return pt(-a.y,a.x);
 }
 #ifdef GEOF
+//Multiuni 2024-6-C
+pt rot(pt a,ld b){
+	ld c=cos(b),s=sin(b);
+	return pt(a.x*c-a.y*s,a.x*s+a.y*c);
+}
 ld xcutval(const pt&a,const pt&b,ld x){
 	auto [p,q]=xcut(a,b,x);
 	return p/q;
@@ -200,3 +212,7 @@ ld area2(const vc<pt>&ps){
 	rep(i,si(ps))res+=crs(ps[i],ps[(i+1)%si(ps)]);
 	return res;
 }
+
+template<class... Args>void inputpt(Args&... a){(input(a.x,a.y),...);}
+#define PT(...) pt __VA_ARGS__;inputpt(__VA_ARGS__)
+#define VPT(name,size) vc<pt> name(size);rep(i_##name,size)inputpt(name[i_##name]);

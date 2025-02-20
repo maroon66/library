@@ -257,7 +257,7 @@ struct splaytree{
 		return merge(merge(a,b),args...);
 	}
 	template<bool C,class F,class...Args>
-	pair<np,np> max_right_sub(np a,F f,Args&&...args){
+	static pair<np,np> max_right_sub(np a,F f,Args&&...args){
 		N cur;
 		np x=0,y=0;
 		while(a){
@@ -283,8 +283,9 @@ struct splaytree{
 	}
 	//max_right で失敗する最初のノードを根にする
 	//そのようなものがない場合は false が返ってくる
+	//UCUP3-17-L
 	template<class F,class...Args>
-	bool max_right_splay(np&a,F f,Args&&...args){
+	static bool max_right_splay(np&a,F f,Args&&...args){
 		auto [x,y]=max_right_sub<false>(a,f,forward<Args>(args)...);
 		if(y){
 			a=y;
@@ -297,7 +298,7 @@ struct splaytree{
 	//分けた列の右端と左端が返ってくる
 	//CF Dytechlab Cup 2022 G (lazy あり)
 	template<class F,class...Args>
-	pair<np,np> max_right_split(np a,F f,Args&&...args){
+	static pair<np,np> max_right_split(np a,F f,Args&&...args){
 		return max_right_sub<true>(a,f,forward<Args>(args)...);
 	}
 	//XX Opencup GP of Wroclaw D

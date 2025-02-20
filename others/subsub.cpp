@@ -61,3 +61,45 @@ int bitrev(int bit,int len){
 	rep(i,len)res+=((bit>>i)&1)<<(len-1-i);
 	return res;
 }
+
+//a が subseq として b を含むか
+bool issub(const vi&a,const vi&b){
+	int i=0;
+	for(auto v:b){
+		while(i<si(a)&&a[i]!=v)i++;
+		if(i==si(a))return false;
+		i++;
+	}
+	return true;
+}
+
+//UCUP3-30-D
+//ソート列 A がある
+//0<=B[i]<=A[i] なる数列 B をつくる
+//sum B = s とする
+//下の方から埋める
+vi sorted_fill(vi a,int s){
+	assert(is_sorted(all(a)));
+	int n=si(a);
+	vi b(n);
+	rep(i,n){
+		if(a[i]*(n-i)<=s){
+			b[i]=a[i];
+			s-=b[i];
+		}else{
+			int p=s/(n-i),q=s%(n-i);
+			rng(j,i,n){
+				b[j]=p;
+				s-=p;
+			}
+			rng(j,n-q,n){
+				if(b[j]<a[j]){
+					b[j]++;
+					s--;
+				}
+			}
+			break;
+		}
+	}
+	return b;
+}

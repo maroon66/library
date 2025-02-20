@@ -1,3 +1,6 @@
+//array をもとにしているから int で初期化しないとめちゃくちゃな値が入って壊れるかも
+//value-initialize {} しようね
+
 //Bytecamp 2022 Day2 L
 template<class num,int S>
 struct Vector:array<num,S>{

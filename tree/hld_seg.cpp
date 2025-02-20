@@ -1,13 +1,14 @@
 //Codechef 2021 August Lunchtime Bunny Hops
 //MHC2023 Practice D
+//UCUP 3-8-J
 template<class E,class N>
 struct HLD_seg{
 	HLD<E>*hld;
 	segtree<N> seg;
 	vc<N> acc;
 	HLD_seg():hld(nullptr){}
-	//template<class t>
-	//HLD_seg(HLD<E>&hh,const vc<t>&rw):hld(hh),seg(perm(rw)){}
+	template<class t>
+	HLD_seg(HLD<E>&hh,const vc<t>&rw){init(hh,rw);}
 	template<class t>
 	void init(HLD<E>&hh,const vc<t>&rw){
 		hld=&hh;
@@ -44,9 +45,9 @@ struct HLD_seg{
 		}
 	}
 	//N が可環とかでないと全て壊れる
-	N get(int a,int b){
+	N get(int a,int b,bool ex){
 		int c=hld->lca(a,b);
-		return N::merge(subpath(a,c,false),subpath(b,c,true));
+		return N::merge(subpath(a,c,ex),subpath(b,c,true));
 	}
 	//a-root (CF906F)
 	N get(int a){
@@ -94,7 +95,10 @@ struct HLD_seglazy{
 		rep(i,n)res[hld.in[i]]=rw[i];
 		return res;
 	}
-	void set(int i,const N&x){
+	N point_get(int i){
+		return seg.point_get(hld.in[i]);
+	}
+	void point_set(int i,const N&x){
 		seg.point_set(hld.in[i],x);
 	}
 	N getall(){
@@ -102,8 +106,18 @@ struct HLD_seglazy{
 	}
 	//a-root
 	template<class F,class...Args>
-	void ch(int a,F f,Args&&...args){
+	void ch_root(int a,F f,Args&&...args){
 		hld.subpath_work(a,hld.rt,false,[&](int l,int r){
+			seg.ch(l,r,f,forward<Args>(args)...);
+		});
+	}
+	template<class F,class...Args>
+	void ch_path(int a,int b,bool ex,F f,Args&&...args){
+		int c=hld.lca(a,b);
+		hld.subpath_work(a,c,ex,[&](int l,int r){
+			seg.ch(l,r,f,forward<Args>(args)...);
+		});
+		hld.subpath_work(b,c,true,[&](int l,int r){
 			seg.ch(l,r,f,forward<Args>(args)...);
 		});
 	}

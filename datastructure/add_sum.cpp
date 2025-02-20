@@ -185,3 +185,83 @@ struct ds1{
 	}
 	*/
 };
+
+
+//6th Turing Cup B
+//https://contest.xinyoudui.com/contest/237/problem/1276
+//stress-tested
+/*
+//B分木
+//range add
+//point get
+template<class t,int B>
+struct addsum{
+	int n,L;
+	vvc<t> x;
+	addsum(int nn):n(nn){
+		vi lens;
+		while(nn){
+			lens.pb(nn);
+			nn=nn/B;
+		}
+		L=si(lens);
+		x.resize(L);
+		rep(i,L)x[i].resize(lens[i]);
+	}
+	void add(int l,int r,t v){
+		assert(0<=l&&l<=r&&r<=n);
+		rep(lv,L){
+			int lp=l/B;
+			int rp=r/B;
+			if(lp==rp){
+				rng(i,l,r)x[lv][i]+=v;
+				break;
+			}
+			lp++;
+			rng(i,l,lp*B)x[lv][i]+=v;
+			rng(i,rp*B,r)x[lv][i]+=v;
+			l=lp;
+			r=rp;
+		}
+	}
+	t get(int i){
+		assert(inc(0,i,n-1));
+		t res=0;
+		rep(lv,L){
+			if(i>=si(x[lv]))break;
+			res+=x[lv][i];
+			i/=B;
+		}
+		return res;
+	}
+};
+*/
+//2^L分木
+//3段確定
+//range add
+//point get
+template<class t,int L,int S>
+struct addsum{
+	t x[3][S];
+	void add(int l0,int r0,t v){
+		int l1=(l0+(1<<L)-1)>>L,r1=r0>>L;
+		if(l1<=r1){
+			rng(i,l0,l1<<L)x[0][i]+=v;
+			rng(i,r1<<L,r0)x[0][i]+=v;
+			
+			int l2=(l1+(1<<L)-1)>>L,r2=r1>>L;
+			if(l2<=r2){
+				rng(i,l1,l2<<L)x[1][i]+=v;
+				rng(i,r2<<L,r1)x[1][i]+=v;
+				rng(i,l2,r2)x[2][i]+=v;
+			}else{
+				rng(i,l1,r1)x[1][i]+=v;
+			}
+		}else{
+			rng(i,l0,r0)x[0][i]+=v;
+		}
+	}
+	t get(int i){
+		return x[0][i]+x[1][i>>L]+x[2][i>>(L*2)];
+	}
+};

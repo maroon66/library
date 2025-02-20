@@ -17,7 +17,7 @@ struct matrix_tree{
 };
 
 
-//USACO2021 USOPEN Platinum C
+//USACO2021 USOPEN Platinum B
 //directed tree rooted at v
 //v -> other vertices
 struct matrix_tree_directed{
@@ -39,7 +39,7 @@ struct matrix_tree_directed{
 
 //全点についてそれを根にしたやつがほしい→adjugate
 
-//USACO2021 USOPEN Platinum C
+//USACO2021 USOPEN Platinum B
 //Verified only for connected eulerian graph
 struct best{
 	int n;

@@ -19,14 +19,9 @@ pair<vi,vc<E>> get_tree_path(const vvc<E>&t,int a,int b){
 
 //Newton 2022 Triwizard F
 //パス上の頂点を取り出して森に分解
-	vi vs=get_tree_path(t,S,T).a;
+	vi vs=get_tree_path(t,0,cur).a;
 	int L=si(vs);
-	{
-		auto del=[&](int v,int p){
-			t[v].erase(find(all(t[v]),p));
-		};
-		rep(i,L-1){
-			del(vs[i],vs[i+1]);
-			del(vs[i+1],vs[i]);
-		}
+	rep(i,L-1){
+		remval(t[vs[i]],vs[i+1]);
+		remval(t[vs[i+1]],vs[i]);
 	}

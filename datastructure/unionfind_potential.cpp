@@ -50,3 +50,5 @@ struct potential_uf{
 		return s[find(a)];
 	}
 };
+//multiuni2024-8-C
+//uf[uf.find(v)]+=C+uf.get(u)-uf.get(v)

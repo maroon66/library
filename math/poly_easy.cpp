@@ -87,7 +87,49 @@ mint interpolate(const vc<mint>&a,mint x){
 	return res;
 }
 
+//si(x)=n
+//A[i][j]=x[i]^j
+//verify with nimber
+template<class t>
+vvc<t> vandermonde(const vc<t>&x){
+	int n=si(x);
+	VVC(t,res,n,n);
+	rep(i,n){
+		t cur=1;
+		rep(j,n){
+			res[i][j]=cur;
+			cur*=x[i];
+		}
+	}
+	return res;
+}
+//verify with nimber
+//res=A^-1
+template<class t>
+vvc<t> vandermonde_inverse(const vc<t>&x){
+	int n=si(x);
+	vc<t> f(n+1);
+	f[0]=1;
+	rep(i,n){
+		per(j,i+1){
+			f[j+1]+=f[j];
+			f[j]*=-x[i];
+		}
+	}
+	vc<t> g(n);
+	VVC(t,res,n,n);
+	rep(i,n){
+		rep(j,n)g[j]=f[j+1];
+		per(j,n-1)g[j]+=g[j+1]*x[i];
+		t w=eval(g,x[i]).inv();
+		rep(j,n)res[j][i]+=g[j]*w;
+	}
+	return res;	
+}
+
 vc<mint> mod_f(vc<mint> x,const vc<mint>&f){
+	assert(si(f)>=1);
+	assert(f.back()!=0);
 	int k=si(f);
 	gnr(i,k-1,si(x)){
 		mint w=x[i]/f[k-1];
@@ -98,6 +140,8 @@ vc<mint> mod_f(vc<mint> x,const vc<mint>&f){
 }
 
 vc<mint> mult_mod_f(const vc<mint>&x,const vc<mint>&y,const vc<mint>&f){
+	assert(si(f)>=1);
+	assert(f.back()!=0);
 	int n=si(x),m=si(y);
 	vc<mint> res(n+m-1);
 	rep(i,n)rep(j,m)res[i+j]+=x[i]*y[j];
@@ -106,6 +150,8 @@ vc<mint> mult_mod_f(const vc<mint>&x,const vc<mint>&y,const vc<mint>&f){
 
 //assume si(f)>=2 (degree(f)>=1)
 vc<mint> pow_mod_f(vc<mint> x,int n,const vc<mint>&f){
+	assert(si(f)>=2);
+	assert(f.back()!=0);
 	vc<mint> res{1};
 	while(n){
 		if(n&1)res=mult_mod_f(res,x,f);
@@ -254,6 +300,19 @@ vc<mint> pow_lowdegree(int n,const vc<pair<int,mint>>&f,mint k){
 	return g;
 }
 
+//(1+ax)^n(1+bx)^m を s 項求める
+vc<mint> pow_anbm(int s,mint a,mint n,mint b,mint m){
+	vc<mint> g(s);
+	g[0]=1;
+	if(s>=2){
+		g[1]=a*n+b*m;
+		rng(k,1,s-1){
+			g[k+1]=(((n-k)*a+(m-k)*b)*g[k]+(n+m-k+1)*a*b*g[k-1])*invs[k+1];
+		}
+	}
+	return g;
+}
+
 //f^k をサイズ n*m で求める
 //need invs
 //fの定数項は 1 で固定
@@ -311,6 +370,29 @@ vc<mint> exp_easy(const vc<mint>&f){
 	rng(i,1,n){
 		rng(j,1,i+1){
 			g[i]+=a[j]*g[i-j];
+		}
+		g[i]*=invs[i];
+	}
+	return g;
+}
+
+vc<mint> mult_poly(const vc<mint>&a,const vc<mint>&b){
+	int n=si(a),m=si(b);
+	vc<mint> c(n+m-1);
+	rep(i,n)rep(j,m)c[i+j]+=a[i]*b[j];
+	return c;
+}
+vvc<mint> exp2d_easy(vvc<mint> f){
+	int n=si(f);
+	assert(n>=1);
+	assert(f[0]==vc<mint>(si(f[0]),0));
+	auto a=f;
+	rep(i,n)a[i]*=i;
+	vvc<mint> g(n);
+	g[0]={1};
+	rng(i,1,n){
+		rng(j,1,i+1){
+			g[i]+=mult_poly(a[j],g[i-j]);
 		}
 		g[i]*=invs[i];
 	}

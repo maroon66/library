@@ -1,3 +1,4 @@
+#define USE_FAST_IO
 //fast IO by yosupo
 //sc.read(string) だと append される
 struct Scanner {
@@ -150,4 +151,3 @@ struct Printer {
 
 Scanner sc(stdin);
 Printer pr(stdout);
-

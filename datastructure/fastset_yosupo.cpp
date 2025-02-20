@@ -43,7 +43,7 @@ struct FastSet {
     // x以上最小の要素
     int next(int i) {
         for (int h = 0; h < lg; h++) {
-            if (i / B == si(seg[h])) break;
+            if (i / B == (int)seg[h].size()) break;
             ull d = seg[h][i / B] >> (i % B);
             if (!d) {
                 i = i / B + 1;

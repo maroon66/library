@@ -34,10 +34,11 @@ struct geteulertour{
 };
 
 //CF Pinely2 D
+//CF 959 F
 //undirected
 struct geteulertour{
 	vvc<pi> g;
-	vi head,res;
+	vi head,res,vs;
 	void dfs(int v){
 		while(head[v]<si(g[v])){
 			auto [to,idx]=g[v][head[v]++];
@@ -46,6 +47,7 @@ struct geteulertour{
 				dfs(to);
 			}
 		}
+		vs.pb(v);
 	}
 	void ae(int a,int b){
 		int m=si(res);
@@ -54,9 +56,11 @@ struct geteulertour{
 		res.pb(-1);
 	}
 	geteulertour(int n):g(n),head(n){}
-	bool calc(){
-		rep(i,si(g))if(si(g[i])%2)return false;
-		rep(i,si(g))dfs(i);
-		return true;
+	pair<bool,vi> calc(){
+		rep(i,si(g))if(si(g[i])%2)return mp(false,vi());
+		//rep(i,si(g))dfs(i);
+		dfs(0);
+		rein(vs);
+		return mp(true,vs);
 	}
 };

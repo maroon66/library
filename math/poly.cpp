@@ -11,6 +11,8 @@ struct Poly:public vc<mint>{
 	//Poly(initializer_list<mint>init):vc<mint>(all(init)){}
 	template<class...Args>
 	Poly(Args&&...args):vc<mint>(forward<Args>(args)...){}*/
+	Poly(const vc<mint>&val):vc<mint>(val){}
+	Poly(vc<mint>&&val):vc<mint>(val){}
 	using vc<mint>::vector;
 	using vc<mint>::operator=;
 	//Poly(const Poly<mint>&rhs):vc<mint>((vc<mint>)rhs){}
@@ -57,6 +59,9 @@ struct Poly:public vc<mint>{
 			(*this)[i]+=r[i];
 		return *this;
 	}
+	Poly& operator+=(const vc<mint>&r){
+		return operator+=((const Poly&)r);
+	}
 	template<class T>
 	Poly& operator+=(T t){
 		(*this)[0]+=t;
@@ -67,6 +72,9 @@ struct Poly:public vc<mint>{
 		rep(i,r.size())
 			(*this)[i]-=r[i];
 		return *this;
+	}
+	Poly& operator-=(const vc<mint>&r){
+		return operator-=((const Poly&)r);
 	}
 	template<class T>
 	Poly& operator-=(T t){
@@ -80,8 +88,11 @@ struct Poly:public vc<mint>{
 		return *this;
 	}
 	Poly& operator*=(const Poly&r){
-		*this=multiply(*this,r);;
+		*this=multiply(*this,r);
 		return *this;
+	}
+	Poly& operator*=(const vc<mint>&r){
+		return operator*=((const Poly&)r);
 	}
 	Poly square()const{
 		return multiply(*this,*this,true);
@@ -319,6 +330,13 @@ struct Poly:public vc<mint>{
 		rep(i,t)y[z*p+i]=x[i];
 		return y;
 	}
+	//verified in compositional inverse
+	Poly pow_const1(mint p,const mint invs[])const{
+		assert((*this)[0]==1);
+		Poly x=log(size(),invs);
+		rep(i,size())x[i]*=p;
+		return x.exp(size(),invs);
+	}
 	mint eval(mint x)const{
 		mint r=0,w=1;
 		for(auto v:*this){
@@ -328,6 +346,17 @@ struct Poly:public vc<mint>{
 		return r;
 	}
 };
+template<class T>
+void print_single(const Poly<T>&v,int suc=1){
+	rep(i,v.size())
+		print_single(v[i],i==int(v.size())-1?3:2);
+	if(suc==1){
+		if(dbg)cout<<endl;
+		else cout<<"\n";
+	}
+	if(suc==2)
+		cout<<" ";
+}
 
 //CF641 F2
 //f*x^(-a)
@@ -349,17 +378,3 @@ struct Laurent{
 		return f[i+a];
 	}
 };
-
-template<class mint>
-ll m2l(mint a){
-	return a.v<mint::mod/2?a.v:ll(a.v)-ll(mint::mod);
-}
-
-template<class mint>
-void showpoly(const Poly<mint>&a){
-	vi tmp(si(a));
-	rep(i,si(a)){
-		tmp[i]=m2l(a[i]);
-	}
-	cerr<<tmp<<endl;
-}

@@ -1,4 +1,15 @@
-//UOJ 596
+
+	vi hs(s);
+	rep(i,s){
+		int cur=i;
+		rep(j,k){
+			hs[i]+=cur;
+			cur/=ns[j];
+		}
+		hs[i]%=k;
+	}
+
+//UOJ Mutual Test 2021-1-B (596)
 vc<mint> multivariable_mult(const vc<mint>&f,const vc<mint>&g,const vi&ns,const vi&hs){
 	int n=si(f),k=si(ns);
 	assert(si(g)==n);

@@ -172,7 +172,9 @@ struct Count0{
 	using P=pair<int,t>;
 	int mn,lz;
 	t val;
-	Count0(P rw=P(inf,0)):mn(rw.a),lz(0),val(rw.b){}
+	Count0():mn(inf),lz(0),val(0){}
+	//Count0(P rw=P(inf,0)):mn(rw.a),lz(0),val(rw.b){}
+	Count0(int m,mint v):mn(m),lz(0),val(v){}
 	void add(int v){
 		mn+=v;
 		lz+=v;
@@ -183,7 +185,7 @@ struct Count0{
 		lz=0;
 	}
 	static Count0 merge(const Count0&a,const Count0&b){
-		Count0 res(P(min(a.mn,b.mn),0));
+		Count0 res(min(a.mn,b.mn),0);
 		if(res.mn==a.mn)res.val+=a.val;
 		if(res.mn==b.mn)res.val+=b.val;
 		return res;
@@ -294,5 +296,51 @@ struct N{
 	}
 	static N merge(N x,N y){
 		return N(x.sum+y.sum);
+	}
+};
+
+//range add,set
+//get min,max,sum
+//1要素の値域は全部int
+//UCUP 3-26-L
+const int none=-inf;
+struct N{
+	int minval,maxval,lzset,lzadd,len;
+	ll sum;
+	N():minval(inf),maxval(-inf),lzset(none),lzadd(0),len(0),sum(0){}
+	N(int v):minval(v),maxval(v),lzset(none),lzadd(0),len(1),sum(v){}
+	void updset(int v){
+		minval=maxval=lzset=v;
+		lzadd=0;
+		sum=(ll)len*v;
+	}
+	void updadd(int v){
+		if(lzset==none){
+			minval+=v;
+			maxval+=v;
+			lzadd+=v;
+			sum+=(ll)len*v;
+		}else{
+			updset(lzset+v);
+		}
+	}
+	void push(N&x,N&y){
+		if(lzset!=none){
+			x.updset(lzset);
+			y.updset(lzset);
+		}else{
+			x.updadd(lzadd);
+			y.updadd(lzadd);
+		}
+		lzset=none;
+		lzadd=0;
+	}
+	static N merge(const N&x,const N&y){
+		N res;
+		res.minval=min(x.minval,y.minval);
+		res.maxval=max(x.maxval,y.maxval);
+		res.len=x.len+y.len;
+		res.sum=x.sum+y.sum;
+		return res;
 	}
 };

@@ -81,11 +81,18 @@ vi max_convolution_with_upper_convex(const vi&conv,const vi&a){
 	return res;
 }
 //SEERC 2022 L
-vi min_convolution_with_lower_convex(vi conv,vi a){
-	for(auto&v:conv)v=-v;
-	for(auto&v:a)v=-v;
-	vi res=max_convolution_with_upper_convex(conv,a);
-	for(auto&v:res)v=-v;
+//CF999 I
+vi min_convolution_with_lower_convex(const vi&conv,const vi&a){
+	int n=si(conv),m=si(a);
+	auto cmp=[&](int i,int j,int k){
+		assert(j<k);
+		if(i<k)return false;
+		if(i-j>=n)return true;
+		return conv[i-j]+a[j]>conv[i-k]+a[k];
+	};
+	vi idx=smawk(cmp,n+m-1,m);
+	vi res(n+m-1);
+	rep(i,n+m-1)res[i]=conv[i-idx[i]]+a[idx[i]];
 	return res;
 }
 

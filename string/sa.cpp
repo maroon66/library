@@ -107,19 +107,27 @@ struct string_cmp{
 	}
 	//[l,r) のリストを受け取り，それらを連結してできる文字列の比較をする
 	//リストの長さ 2 の場合は verify (Xmas2012 B)
-	int cmp_list(vc<pi> a,vc<pi> b){
+	//UCUP 3-10-B
+	int cmp_list(const vc<pi>&a,const vc<pi>&b){
+		assert(si(a));
+		assert(si(b));
 		int i=0,j=0;
+		pi u=a[0],v=b[0];
 		while(1){
-			while(i<si(a)&&a[i].a==a[i].b)i++;
-			while(j<si(b)&&b[j].a==b[j].b)j++;
+			while(i<si(a)&&u.a==u.b){
+				if(++i<si(a))u=a[i];
+			}
+			while(j<si(b)&&v.a==v.b){
+				if(++j<si(b))v=b[j];
+			}
 			if(i==si(a)&&j==si(b))return 0;
 			if(i==si(a))return -1;
 			if(j==si(b))return 1;
-			int k=min(a[i].b-a[i].a,b[j].b-b[j].a);
-			int x=cmp_samelen(a[i].a,b[j].a,k);
+			int k=min(u.b-u.a,v.b-v.a);
+			int x=cmp_samelen(u.a,v.a,k);
 			if(x)return x;
-			a[i].a+=k;
-			b[j].a+=k;
+			u.a+=k;
+			v.a+=k;
 		}
 		assert(0);
 	}
@@ -155,6 +163,17 @@ struct string_cmp{
 		})+1;
 		return pi(l,r);
 	}
+	//UCUP3-16-H
+	/*
+	string_cmp<string> sc(s+reout(s));
+	auto&sa=sc.sa;
+	segtree<MinNode> lcpseg(sa.lcp);
+	auto common_range=[&](int i,int len){
+		i=sa.as[i];
+		int l=lcpseg.min_left(i,&MinNode::ok,len).a;
+		int r=lcpseg.max_right(i,&MinNode::ok,len).a;
+		return pi(l,r+1);
+	};*/
 };
 
 //res[i]=start index of the lex-min suffix of a[:i+1]

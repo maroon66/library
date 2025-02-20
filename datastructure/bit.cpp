@@ -1,12 +1,17 @@
 template<class t>
 struct BIT{
-	vc<t> buf;
+	vc<t> raw,buf;
 	int s;
 	BIT(int n=0){init(n);}
 	BIT(const vc<t>&a){init(a);}
-	void init(int n){buf.clear();buf.resize(s=n);}
+	void init(int n){
+		s=n;
+		raw.clear();raw.resize(s);
+		buf.clear();buf.resize(s);
+	}
 	void init(const vc<t>&a){
 		s=si(a);
+		raw=a;
 		buf.resize(s);
 		rep(i,s)buf[i]=a[i];
 		rep(i,s){
@@ -15,6 +20,8 @@ struct BIT{
 		}
 	}
 	void add(int i,t v){
+		if(s<=i)return;
+		raw[i]+=v;
 		for(;i<s;i+=(i+1)&(-i-1))
 			buf[i]+=v;
 	}
@@ -45,5 +52,8 @@ struct BIT{
 	//UCUP 2-9-I
 	int kth_helper(int i,int k){
 		return kth(k+get(i-1));
+	}
+	t operator[](int i)const{
+		return raw[i];
 	}
 };

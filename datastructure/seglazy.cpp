@@ -40,6 +40,7 @@ struct seglazy{
 	void push(int i){
 		x[i].push(x[i*2],x[i*2+1]);
 	}
+	//空ノードなしで動く ver が segbeats_norec に書いてある
 	N composite(int l,int r){
 		assert(0<=l&&l<=r&&r<=n);
 		if(l==r)return N();
@@ -62,14 +63,46 @@ struct seglazy{
 
 		return N::merge(sml, smr);
 	}
+	//[l,r)内の極大区間について f(i) を呼ぶ
+	//UCUP3-26-L
+	template<class F>
+	void foreach_range(int l,int r,F f){
+		assert(0<=l&&l<=r&&r<=n);
+		if(l==r)return;
+		
+		l+=s;
+		r+=s;
+		
+		for (int i = L; i >= 1; i--) {
+			if (((l >> i) << i) != l) push(l >> i);
+			if (((r >> i) << i) != r) push((r - 1) >> i);
+		}
+		
+		while (l < r) {
+			if (l & 1) f(l++);
+			if (r & 1) f(--r);
+			l >>= 1;
+			r >>= 1;
+		}
+	}
 	//UCUP1-21 D
+	//JSC2024FinalD
 	template<class F,class... Args>
 	void ch_beats(int i,F f,Args&&... args){
-		if((x[i].*f)(forward<Args>(args)...))return;
-		push(i);
-		ch_beats(i*2,f,forward<Args>(args)...);
-		ch_beats(i*2+1,f,forward<Args>(args)...);
-		upd(i);
+		int ini=i;
+		while(1){
+			if((x[i].*f)(forward<Args>(args)...)){
+				while(i>ini&&(i&1)){
+					i>>=1;
+					upd(i);
+				}
+				if(i==ini)break;
+				i++;
+			}else{
+				push(i);
+				i*=2;
+			}
+		}
 	}
 	template<class F,class... Args>
 	void ch(int l, int r, F f,Args&&... args) {

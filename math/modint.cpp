@@ -185,3 +185,32 @@ int m2i(mint a){
 	uint v=a.v;
 	return v<mint::mod/2?v:int(v)-int(mint::mod);
 }
+
+pi m2f(mint x){
+	pi res(inf,inf);
+	auto upd=[&](int a,int b){
+		if(abs(res.a)+res.b>abs(a)+b){
+			res=pi(a,b);
+		}
+	};
+	rng(b,1,1000){
+		mint y=x*b;
+		upd(y.v,b);
+		upd(-int((-y).v),b);
+	}
+	return res;
+}
+
+ll m2l(mint a){
+	return a.v<mint::mod/2?a.v:ll(a.v)-ll(mint::mod);
+}
+
+void showpoly(const vc<mint>&a){
+	vi tmp(si(a));
+	rep(i,si(a)){
+		tmp[i]=m2l(a[i]);
+	}
+	cerr<<tmp<<endl;
+}
+
+struct initfactp2{initfactp2(){initfact();initp2();}}initfactp2_;

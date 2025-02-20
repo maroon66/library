@@ -36,6 +36,7 @@ namespace nimber{
 	struct nim{
 		ull v;
 		nim(ull vv=0):v(vv){}
+		nim operator-()const{return *this;}
 		nim& operator+=(const nim&rhs){v^=rhs.v;return *this;}
 		nim& operator-=(const nim&rhs){v^=rhs.v;return *this;}
 		nim& operator*=(const nim&rhs){v=mult(v,rhs.v);return *this;}

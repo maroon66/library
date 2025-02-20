@@ -127,6 +127,7 @@ struct avl{
 	}
 	np Lb(np x,np a){x->l=a;return balance(x);}
 	np Rb(np x,np a){x->r=a;return balance(x);}
+	np LRb(np x,np a,np b){x->l=a;x->r=b;return balance(x);}
 	//hei(res)==max(hei(a),hei(b))+(0 or 1)
 	//O(hei(a)+hei(b))
 	//a,b は基本的にはちゃんとした木なのだが，p に変な情報が入っているかもしれないので消しておく
@@ -158,6 +159,29 @@ struct avl{
 		}
 		return res;
 	}
+	np melddfs(np a,np b){
+		if(a==0&&b==0)return nullptr;
+		if(a==0){
+			b->p=nullptr;
+			return b;
+		}
+		if(b==0){
+			a->p=nullptr;
+			return a;
+		}
+		if(hei(a)<hei(b))swap(a,b);
+		push(a);
+		b->p=nullptr;
+		auto [l,r]=split(b,a->v);
+		return LRb(a,melddfs(l,a->l),melddfs(r,a->r));
+	}
+	//Lazyなし
+	//CF CodeTon3-H
+	np meld(np a,np b){
+		assert(operatable(a));
+		assert(operatable(b));
+		return melddfs(a,b);
+	}
 	template <class F,class... Args> 
 	pair<np,np> max_right(np x,N cur,F f,Args&&... args){
 		if(x==0)return mp(np(0),np(0));
@@ -177,7 +201,31 @@ struct avl{
 	template <class F,class... Args> 
 	pair<np,np> max_right(np x,F f,Args&&... args){
 		assert(operatable(x));
+		assert((N().*f)(forward<Args>(args)...));
 		return max_right(x,N(),f,forward<Args>(args)...);
+	}
+	template <class F,class... Args> 
+	pair<np,np> min_left(np x,N cur,F f,Args&&... args){
+		if(x==0)return mp(np(0),np(0));
+		push(x);
+		x->v.single();
+		N nx=cur;
+		nx.updatel(val(x->r));
+		nx.updatel(val(x));
+		if((nx.*f)(forward<Args>(args)...)){
+			auto [a,b]=min_left(x->l,nx,f,forward<Args>(args)...);
+			return mp(a,Lb(x,b));
+		}else{
+			auto [a,b]=min_left(x->r,cur,f,forward<Args>(args)...);
+			return mp(Rb(x,a),b);
+		}
+	}
+	//CF CodeTON 3-H
+	template <class F,class... Args> 
+	pair<np,np> min_left(np x,F f,Args&&... args){
+		assert(operatable(x));
+		assert((N().*f)(forward<Args>(args)...));
+		return min_left(x,N(),f,forward<Args>(args)...);
 	}
 	//f(v,args)=true が左，false が右
 	//not verified

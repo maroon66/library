@@ -32,6 +32,20 @@ void linear_sieve(){
 		}
 	}
 }
+vi get_primes(int v){
+	assert(1<=v&&v<vmax);
+	vi res;
+	int pre=-1;
+	while(v>1){
+		int p=sf[v];
+		if(p!=pre){
+			res.pb(p);
+		}
+		pre=p;
+		v/=p;
+	}
+	return res;
+}
 int lf[vmax]; //largest factor
 void initlf(){
 	rng(i,2,vmax)if(pri[i])lf[i]=i;

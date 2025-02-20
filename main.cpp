@@ -115,7 +115,11 @@ void input(Args&... a){
 	if(dbg){
 		(generate_single(a),...);
 	}else{
+		#ifdef USE_FAST_IO
+		sc.read(a...);
+		#else
 		(cin >> ... >> a);
+		#endif
 	}
 }
 #define INT(...) int __VA_ARGS__;input(__VA_ARGS__)
@@ -129,10 +133,11 @@ void input(Args&... a){
 #define VI2(name,size) vi name(size);rep(i_##name,size)input(name[i_##name]);
 #define VI3(name,size,offset) vi name(size);rep(i_##name,size)input(name[i_##name]),name[i_##name]+=offset;
 #define VI(...) overload3(__VA_ARGS__,VI3,VI2)(__VA_ARGS__)
-#define VPI(name,size) vc<pi> name(size);rep(i_##name,size)input(name[i_##name]);
+#define VPI(name,size) vc<pi> name(size);rep(i_##name,size)input(name[i_##name].a,name[i_##name].b);
 #define VVI(name,sizeN,sizeM) vvi name(sizeN,vi(sizeM));\
 rep(i_##name,sizeN)rep(j_##name,sizeM)input(name[i_##name][j_##name]);
 #define VS(name,size) vc<string> name(size);rep(i_##name,size)input(name[i_##name]);
+#define VMI(name,size) vc<mint> name(size);rep(i_##name,size){INT(tmp_##name);name[i_##name]=tmp_##name;};
 
 #define overload5(a,b,c,d,e,f,...) f
 #define VVC4(type,name,sizeN,sizeM) vvc<type> name(sizeN,vc<type>(sizeM));
@@ -167,32 +172,34 @@ ostream& operator<<(ostream&os,const tuple<Args...>&t){
 	return os<<"}";
 }
 
-ll read(){
-	ll i;
-	cin>>i;
-	return i;
-}
-
-vi readvi(int n,int off=0){
-	vi v(n);
-	rep(i,n)v[i]=read()+off;
-	return v;
-}
-
-pi readpi(int off=0){
-	int a,b;cin>>a>>b;
-	return pi(a+off,b+off);
+void printsuc(int suc){
+	#ifdef USE_FAST_IO
+		if(suc==1)pr.write('\n');
+		if(suc==2)pr.write(' ');
+	#else
+		if(suc==1){
+			if(dbg)cout<<endl;
+			else{
+				#ifdef LOCAL
+				cout<<endl;
+				#else
+				cout<<"\n";
+				#endif
+			}
+		}
+		if(suc==2)
+			cout<<" ";
+	#endif
 }
 
 template<class t>
 void print_single(t x,int suc=1){
+	#ifdef USE_FAST_IO
+	pr.write(x);
+	#else
 	cout<<x;
-	if(suc==1){
-		if(dbg)cout<<endl;
-		else cout<<"\n";
-	}
-	if(suc==2)
-		cout<<" ";
+	#endif
+	printsuc(suc);
 }
 
 template<class t,class u>
@@ -204,19 +211,15 @@ void print_single(const pair<t,u>&p,int suc=1){
 template<class T>
 void print_single(const vector<T>&v,int suc=1){
 	rep(i,v.size())
-		print_single(v[i],i==int(v.size())-1?suc:2);
-}
-
-template<class T>
-void print_offset(const vector<T>&v,ll off,int suc=1){
-	rep(i,v.size())
-		print_single(v[i]+off,i==int(v.size())-1?suc:2);
+		print_single(v[i],i==int(v.size())-1?3:2);
+	printsuc(suc);
 }
 
 template<class T,size_t N>
 void print_single(const array<T,N>&v,int suc=1){
 	rep(i,N)
-		print_single(v[i],i==int(N)-1?suc:2);
+		print_single(v[i],i==int(N)-1?3:2);
+	printsuc(suc);
 }
 
 template<class T>
@@ -392,6 +395,17 @@ template<class t> bool isuni(vc<t> v){
 	return si(v)==s;
 }
 
+bool isperm(const vi&p){
+	int n=si(p);
+	vc<bool> used(n);
+	for(auto v:p){
+		if(!inc(0,v,n-1))return false;
+		if(used[v])return false;
+		used[v]=true;
+	}
+	return true;
+}
+
 template<class t>
 void myshuffle(vc<t>&a){
 	rep(i,si(a))swap(a[i],a[rand_int(0,i)]);
@@ -473,6 +487,17 @@ vvc<int> readTree(int n){
 	}else{
 		return readGraph(n,n-1);
 	}
+}
+
+vi readRooted(int n){
+	assert(!dbg);
+	vi par(n,-1);
+	rng(i,1,n){
+		input(par[i]);
+		par[i]--;
+		assert(inc(0,par[i],i-1));
+	}
+	return par;
 }
 
 void printTree(const vvc<int> t){
@@ -666,6 +691,28 @@ istream&operator>>(istream&is,pair<t,u>&a){
 }
 }
 
+template<class t,size_t n>
+array<t,n>&operator+=(array<t,n>&a,const array<t,n>&b){
+	rep(i,n)a[i]+=b[i];
+	return a;
+}
+template<class t,size_t n>
+array<t,n>&operator-=(array<t,n>&a,const array<t,n>&b){
+	rep(i,n)a[i]-=b[i];
+	return a;
+}
+template<class t,size_t n,class v>
+array<t,n>&operator*=(array<t,n>&a,v b){
+	rep(i,n)a[i]*=b;
+	return a;
+}
+template<class t,size_t n>
+array<t,n> operator+(array<t,n> a,const array<t,n>&b){return a+=b;}
+template<class t,size_t n>
+array<t,n> operator-(array<t,n> a,const array<t,n>&b){return a-=b;}
+template<class t,size_t n,class v>
+array<t,n> operator*(array<t,n> a,v b){return a*=b;}
+
 template<class t>
 t gpp(vc<t>&vs){
 	assert(si(vs));
@@ -717,17 +764,31 @@ vc<t>& operator-=(vc<t>&a,u x){
 	return a;
 }
 template<class t,class u>
-vc<t>& operator-(vc<t> a,u x){
+vc<t> operator-(vc<t> a,u x){
 	return a-=x;
 }
-
+template<class t>
+vc<t>& operator-=(vc<t>&a,const vc<t>&b){
+	a.resize(max(si(a),si(b)));
+	rep(i,si(b))a[i]-=b[i];
+	return a;
+}
+/*
+template<class t>
+vc<t> operator-(const vc<t>&a,const vc<t>&b){
+	vc<t> c(max(si(a),si(b)));
+	rep(i,si(a))c[i]+=a[i];
+	rep(i,si(b))c[i]-=b[i];
+	return c;
+}
+*/
 template<class t,class u>
 vc<t>& operator*=(vc<t>&a,u x){
 	for(auto&v:a)v*=x;
 	return a;
 }
 template<class t,class u>
-vc<t>& operator*(vc<t> a,u x){
+vc<t> operator*(vc<t> a,u x){
 	return a*=x;
 }
 
@@ -737,8 +798,30 @@ vc<t>& operator/=(vc<t>&a,u x){
 	return a;
 }
 template<class t,class u>
-vc<t>& operator/(vc<t> a,u x){
+vc<t> operator/(vc<t> a,u x){
 	return a/=x;
+}
+
+template<class t>
+vc<t>& operator<<=(vc<t>&a,int k){
+	assert(k>=0);
+	a.insert(a.bg,k,t(0));
+	return a;
+}
+template<class t>
+vc<t> operator<<(vc<t> a,int k){
+	return a<<=k;
+}
+
+template<class t>
+vc<t>& operator>>=(vc<t>&a,int k){
+	if(si(a)<=k)a.clear();
+	else a.erase(a.bg,a.bg+k);
+	return a;
+}
+template<class t>
+vc<t> operator>>(vc<t> a,int k){
+	return a>>=k;
 }
 
 template<class t,class u>
@@ -753,6 +836,11 @@ int remif(vc<t>&a,F f){
 	int res=a.ed-itr;
 	a.erase(itr,a.ed);
 	return res;
+}
+template<class t>
+void rempos(vc<t>&a,int i){
+	assert(inc(0,i,si(a)-1));
+	a.erase(a.bg+i);
 }
 
 template<class VS,class u>
@@ -800,7 +888,6 @@ template<class t> using pqmax=priority_queue<t>;
 using T=tuple<int,int,int>;
 
 void slv(){
-	
 }
 
 signed main(signed argc,char*argv[]){
@@ -819,7 +906,7 @@ signed main(signed argc,char*argv[]){
 			current_run_id++;
 		}
 	}else{
-		//int t;cin>>t;rep(_,t)
+		//INT(t);rep(_,t)
 		slv();
 	}
 }

@@ -64,3 +64,13 @@ vc<mint> stirling_second(int n){
 	c.resize(n+1);
 	return c;
 }
+
+//fixed K です
+vc<mint> stirling_second_fixedK(int k,int n){
+	assert(k<=n);
+	Poly<mint> a(finv,finv+n+1);
+	a[0]=0;
+	auto b=a.pow(n+1,k,invs);
+	rep(i,n+1)b[i]*=fact[i]*finv[k];
+	return b;
+}

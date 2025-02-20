@@ -43,3 +43,34 @@ struct trie{
 		}
 	}
 };
+
+//UCUP 3-23-M
+	vc<node> t(tot);
+	int head=0;
+	auto nn=[&](){
+		return head++;
+	};
+	auto nx=[&](int i,int c){
+		if(t[i].to[c]==-1){
+			t[i].to[c]=nn();
+		}
+		return t[i].to[c];
+	};
+	
+	int root=nn();
+	
+	vi ansbuf;
+	for(auto s:ss){
+		int len=si(s);
+		vi idx(len+1);
+		idx[0]=root;
+		rep(i,len){
+			idx[i+1]=nx(idx[i],s[i]-'a');
+		}
+		rng(i,1,len+1){
+			int z=++t[idx[i]].s;
+			work(z);
+		}
+		
+		ansbuf.pb(ans);
+	}

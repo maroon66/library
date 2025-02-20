@@ -53,6 +53,50 @@ void array_rec(int n,int m,F f){
 	};
 	rec(0);
 }
+int getid(const vi&a,int base){
+	int res=0,w=1;
+	rep(i,si(a)){
+		res+=w*a[i];
+		w*=base;
+	}
+	return res;
+}
+//NOT VERIFIED
+template<class F>
+void array_rec_id(int n,int m,F f){
+	int s=1;
+	rep(i,n)s*=m;
+	vi a(n);
+	rep(idx,s){
+		f(idx,a);
+		rep(j,n){
+			if(a[j]<m-1){
+				a[j]++;
+				break;
+			}else{
+				a[j]=0;
+			}
+		}
+	}
+}
+
+//全部 true か否かを判定
+template<class F>
+bool array_rec_2(int n,int m,F f){
+	vi a(n);
+	auto rec=[&](auto self,int i)->bool{
+		if(i==n){
+			return f(a);	
+		}else{
+			rep(nx,m){
+				a[i]=nx;
+				if(!self(self,i+1))return false;
+			}
+			return true;
+		}
+	};
+	return rec(rec,0);
+}
 
 //辞書順に呼ばれる
 template<class F>

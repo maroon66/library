@@ -9,6 +9,7 @@
 //Petrozavodsk Camp 2020S Day2 C
 //TCO2020 Wildcard Hard
 //CF CodeTON Round I
+//UCUP3-3-L cactus のとき tr の頂点は cactus のサイクル順に並んでいて便利
 template<class E>
 struct articulation{
 	const int n;

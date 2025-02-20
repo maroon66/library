@@ -185,6 +185,7 @@ void half_fmt(vector<mint>&f){
 
 template<class mint>
 vc<mint> multiply(vc<mint> x,const vc<mint>&y,bool same=false){
+	if(x.empty()||y.empty())return {};
 	int n=si(x)+si(y)-1;
 	int s=1;
 	while(s<n)s*=2;

@@ -1,3 +1,5 @@
+//push で clear するな!! (UCUP3-17-L)
+
 //GCJ2022 Round2 D
 //range add, find by len, find by val
 struct N{

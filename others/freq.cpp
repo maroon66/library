@@ -8,15 +8,6 @@ vc<pair<t,int>> to_freq(vc<t> a){
 	}
 	return res;
 }
-vc<pi> to_freq(vi a){
-	sort(all(a));
-	vc<pi> res;
-	for(auto v:a){
-		if(res.empty()||res.back().a!=v)res.eb(v,0);
-		res.back().b++;
-	}
-	return res;
-}
 template<class F>
 void do_freq(vi a,F f){
 	int n=si(a);
@@ -35,7 +26,7 @@ void unique_freq(vc<pair<t,u>>&a){
 	int s=0;
 	rep(i,si(a)){
 		auto [p,c]=a[i];
-		if(i==0||a[s-1].a<p){
+		if(i==0||a[s-1].a!=p){
 			a[s++]=a[i];
 		}else{
 			a[s-1].b+=c;

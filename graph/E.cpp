@@ -10,6 +10,9 @@ struct E{
 	int to,cost;
 	operator int()const{return to;}
 };
+ostream&operator<<(ostream&os,const E&e){
+	return os<<"E{"<<e.to<<","<<e.cost<<"}";
+}
 
 struct Edge{
 	int a,b,c;

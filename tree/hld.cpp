@@ -104,6 +104,7 @@ struct HLD{
 	//辺は ch->par の順
 	//virtual tree は行き掛け順で番号がついている
 	//特に，頂点 0 が根になるようにできている
+	//vsは頂点が行きがけ順に並ぶ
 	//pair<vi,vc<pi>> tree_compress(vi vs){
 	void tree_compress(vi&vs,vc<pi>&es){
 		if(si(index)==0)index.resize(n);
@@ -198,6 +199,19 @@ struct HLD{
 			}
 		}
 		assert(false);
+	}
+	//CF969E
+	void upddia(int&a,int&b,int&d,int v){
+		int x=len(a,v);
+		int y=len(b,v);
+		if(x<y){
+			swap(x,y);
+			swap(a,b);
+		}
+		if(d<x){
+			b=v;
+			d=x;
+		}
 	}
 };
 

@@ -25,3 +25,11 @@ vi divisors_easy(int n){
 	sort(all(ls));
 	return ls;
 }
+
+bool isprime(ll p){
+	if(p==1)return false;
+	for(ll n=2;n*n<=p;n++){
+		if(p%n==0)return false;
+	}
+	return true;
+}

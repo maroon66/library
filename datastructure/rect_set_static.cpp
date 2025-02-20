@@ -6,7 +6,7 @@ struct MaxNode{
 	}
 };
 
-//区間の追加（ついでに index v を使ける，v が distinct でないとだめ）
+//区間の追加（ついでに index v をつける，v が distinct でないとだめ）
 //区間でクエリ，共通部分が正の区間 があればいずれかの v を返す
 //UCUP 2-20-O
 struct range_set{

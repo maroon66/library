@@ -53,3 +53,18 @@ pair<bool,B> lineareq(vc<B> a,int w,B b){
 	return mp(true,res);
 }
 
+//ls の subset であって xor=tar になるものを発見して返す
+vc<ull> find_subset(vc<ull> ls,ull tar){
+	assert(si(ls)+1<=S);
+	const int n=64;
+	vc<B> a(n);
+	rep(i,n){
+		rep(j,si(ls))if((ls[j]>>i)&1)a[i][j]=1;
+	}
+	B b=tar;
+	auto [ok,sol]=lineareq(a,si(ls),b);
+	assert(ok);
+	vc<ull> res;
+	rep(i,si(ls))if(sol[i])res.pb(ls[i]);
+	return res;
+}

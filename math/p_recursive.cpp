@@ -69,11 +69,13 @@ vc<mint> extend_sequence(const vc<mint>&a,const vvc<mint>& f,int n){
 	return res;
 }
 
-vc<mint> check_and_extend_sequence(const vc<mint>&a,int d,int n){
+vc<mint> check_and_extend_sequence(vc<mint> a,int d,int n){
 	int s=si(a);
-	auto f=p_recursive(vc<mint>(a.bg,a.ed-1),d);
+	mint v=a.back();
+	a.pop_back();
+	auto f=p_recursive(a,d);
 	vc<mint> res=extend_sequence(a,f,max(s,n));
-	if(a[s-1]!=res[s-1]){
+	if(v!=res[s-1]){
 		cerr<<"Fail to extend!"<<endl;
 		return {};
 	}

@@ -51,6 +51,10 @@ pair<ld,ld> clltf(ln a,ln b){
 pt cll(ln a,ln b){
 	return eval(a,crs(b.a,b.b,a.a)/crs(dir(a),dir(b)));
 }
+//UCUP3-4-H
+bool isp(ln a,pt b){
+	return ccw(a,b)==0&&inc(-1,bet(a.a,a.b,b),1);
+}
 #ifdef GEOF
 //AOJ2201
 ld dlp(ln a,pt b){

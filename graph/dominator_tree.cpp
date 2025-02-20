@@ -1,5 +1,6 @@
 //CCPC Finals 2021 H
 //Multiuni2023-3 E
+//UCUP 3-20-A (not dag, has multiple edges)
 struct dominator_tree{
 	int n;
 	vvc<int> g,rG,bct;

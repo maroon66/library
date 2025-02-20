@@ -33,9 +33,10 @@ struct MinNode{
 	}
 };
 
+template<class t>
 struct SumNode{
-	int v;
-	SumNode(int vv=0):v(vv){}
+	t v;
+	SumNode(t vv=0):v(vv){}
 	static SumNode merge(const SumNode&a,const SumNode&b){
 		return SumNode(a.v+b.v);
 	}
@@ -186,6 +187,20 @@ struct N{
 	}
 	bool okmax(int v){
 		return maxa<v;
+	}
+};
+
+//ハッシュを取る
+//UCUP 3-21-M
+struct N{
+	mint val,w;
+	N():val(0),w(1){}
+	N(int v):val(v),w(B){}
+	static N merge(const N&a,const N&b){
+		N res;
+		res.val=a.val+b.val*a.w;
+		res.w=a.w*b.w;
+		return res;
 	}
 };
 

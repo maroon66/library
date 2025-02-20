@@ -7,8 +7,8 @@
 //各 i について，(n/i) 以下の素数の 0,1,...,K-1 乗和を求める
 //O(K N^(2/3))
 //https://min-25.hatenablog.com/entry/2018/11/11/172216
-template<int K>
 struct min25_sieve{
+	static constexpr int K=2;
 	using A=array<mint,K>;
 	void add(A&a,const A&b){rep(i,K)a[i]+=b[i];}
 	void sub(A&a,const A&b){rep(i,K)a[i]-=b[i];}
@@ -48,7 +48,7 @@ struct min25_sieve{
 		for(int j=i;cur*ps[j]<=vs[n3];j++)
 			upd(j,cur*ps[j],false);
 	}
-	min25_sieve(int nn):n(nn),n2(isqrt(n)),n3(icbrt(n)),n6(kth_root_integer(n,6)){
+	min25_sieve(int nn):n(nn),n2(isqrt(n)),n3(icbrt(n)),n6(icbrt(n2)){
 		{
 			int v=n;
 			while(v){
@@ -108,6 +108,9 @@ struct min25_sieve{
 	int getidx(int a){
 		return a<=n2?s-a:n/a-1;
 	}
+	int lim2idx(int lim){
+		return lim<=n2?lim-1:s-n/lim;
+	}
 	
 	//f(v)=f(p^c)
 	//p is prime
@@ -117,31 +120,65 @@ struct min25_sieve{
 	//h(n) = sum p<=n, p is prime f(p)
 	//f(p) が p の多項式だとして，sum を用い buf[i]=h(vs[i]) を初期化する
 	mint f(int v,int p,int c){
-		return p^c;
+		return v/p*(p-1);
 	}
 	vc<mint> buf;
-	mint ans;
-	mint multiplicative_sum(){
+	//mint ans;
+	vc<mint> ans;
+	//単なる sum じゃなくて，各 n/i について prefix sum を求めている
+	//10^9 で 0.3sec くらい
+	//10^10 で 2 sec くらい
+	//遅くね？
+	auto multiplicative_sum(){
 		buf.resize(s);
 		rep(i,s){
 			buf[i]=sum[i][1]-sum[i][0];
-			if(vs[i]>=2)buf[i]+=2;
 		}
 		
 		//f(1),f(p) の分
-		ans=1+buf[0];
+		//ans=1+buf[0];
+		ans.resize(s);
+		rep(i,s)ans[i]=1+buf[i];
+		
+		rep(i,s-1)ans[i]-=ans[i+1];
 		
 		//f(n) (n は重複込みで 2 個以上の素因数を持つ) の分
-		rep(i,si(ps))if(sq(ps[i])<=n)dfs(i,1,ps[i],n/ps[i],1);else break;
+		rep(i,si(ps))if(sq(ps[i])<=n)dfs(i,n,1);else break;
+		
+		per(i,s-1)ans[i]+=ans[i+1];
 		
 		return ans;
 	}
-	void dfs(int i,int c,int v,int lim,mint cur){
-		ans+=cur*f(v*ps[i],ps[i],c+1);
-		if(lim>=sq(ps[i]))dfs(i,c+1,v*ps[i],lim/ps[i],cur);
-		cur*=f(v,ps[i],c);
-		ans+=cur*(buf[getidx(lim)]-buf[getidx(ps[i])]);
-		for(int j=i+1;sq(ps[j])<=lim;j++)
-			dfs(j,1,ps[j],lim/ps[j],cur);
+	//ps[i] を1個以上使う
+	//ps[i] 以上を 2 個以上使う
+	//これから使う数の積は lim 以下
+	//いままで使った分の f の積は cur
+	void dfs(int i,int lim,mint cur){
+		assert(sq(ps[i])<=lim);
+		int c=1,v=ps[i];
+		lim/=ps[i];
+		while(1){
+			mint nx=cur*f(v,ps[i],c);
+			if(c>=2){
+				//ans+=nx;
+				ans[lim2idx(lim)]+=nx;
+			}
+			if(lim<ps[i])break;
+			//ans+=nx*(buf[getidx(lim)]-buf[getidx(ps[i])]);
+			mint cut=buf[getidx(ps[i])];
+			int z=lim,last=-1;
+			while(z>=ps[i]){
+				mint w=nx*(buf[getidx(z)]-cut);
+				int t=lim/z;
+				if(last!=-1)ans[last]-=w;
+				ans[last=lim2idx(t)]+=w;
+				z=lim/(t+1);
+			}
+			for(int j=i+1;sq(ps[j])<=lim;j++)
+				dfs(j,lim,nx);
+			c++;
+			v*=ps[i];
+			lim/=ps[i];
+		}
 	}
 };

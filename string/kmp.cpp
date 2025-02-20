@@ -1,6 +1,8 @@
 //Petrozavodsk 2019w Day9 G
 //CF Pinely3-G
-vi kmp(const string&s){
+//CF980C
+template<class S>
+vi kmp(const S&s){
 	int n=s.size();
 	vi v(n+1);
 	v[0]=-1;
@@ -11,6 +13,23 @@ vi kmp(const string&s){
 		v[i]=j+1;
 	}
 	return v;
+}
+
+//CF980C
+template<class S>
+vi matchtable(const S&a,const S&b){
+	assert(si(a)>=si(b));
+	vi x=kmp(b);
+	vi res;
+	
+	int cur=0;
+	rng(i,1,si(a)+1){
+		auto c=a[i-1];
+		while(cur==si(b)||(cur>=0&&b[cur]!=c))cur=x[cur];
+		cur++;
+		if(i>=si(b))res.pb(cur==si(b));
+	}
+	return res;
 }
 
 //2020 Multi-Uni Contest Day8 H

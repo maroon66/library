@@ -27,14 +27,20 @@ const auto imin=[](int a,int b){
 	return min(a,b);
 };
 using minst=sparsetable<int,decltype(imin)>;
+auto getminst(vi a){return minst(a,imin,inf);}
 const auto imax=[](int a,int b){
 	return max(a,b);
 };
 using maxst=sparsetable<int,decltype(imax)>;
+auto getmaxst(vi a){return maxst(a,imax,-inf);}
 const auto pimax=[](pi a,pi b){
 	return max(a,b);
 };
 using pimaxst=sparsetable<pi,decltype(pimax)>;
+const auto pimin=[](pi a,pi b){
+	return min(a,b);
+};
+using piminst=sparsetable<pi,decltype(pimin)>;
 
 SA sa(t);
 sparsetable<int,decltype(imin)> st(sa.lcp,imin,inf);

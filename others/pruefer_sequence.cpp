@@ -28,3 +28,21 @@ auto restore(vi a){
 	//return g;
 	return es;
 }
+
+
+vc<ull> get_trees(int n){
+	assert(n>0);
+	if(n==1)return vc<ull>{0};
+	vc<ull> ls;
+	array_rec(n-2,n,[&](vi a){
+		auto es=restore(a);
+		ull z=0;
+		for(auto [i,j]:es){
+			z|=1ull<<(i*n+j);
+			z|=1ull<<(j*n+i);
+		}
+		ls.pb(z);
+	});
+	soin(ls);
+	return ls;
+}

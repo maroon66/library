@@ -1,4 +1,5 @@
 //veryfi yosupo
+//return a(x+c)
 vc<mint> taylor_shift(vc<mint> a,mint c){
 	int n=si(a);
 	rep(i,n)a[i]*=fact[i];

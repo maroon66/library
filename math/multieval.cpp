@@ -164,3 +164,89 @@ Poly<mint> product_linear(const vc<pair<mint,mint>>&rw){
 	res.resize(si(rw)+1);
 	return res;
 }
+
+//UCUP 3-11-G
+//kind 0: ax+b
+//kind 1: eval at a
+//kind 1 がないと壊れます
+struct Query{
+	int kind;
+	mint a,b;
+};
+vc<mint> prefix_multieval(vc<Query> qs){
+	int s=si(qs);
+	int d=0;
+	for(auto [kind,a,b]:qs)if(kind==0)d++;
+	assert(d<s);
+	
+	using P=pair<F,F>;
+	vc<P> buf(2*s);
+	auto getid=[&](int l,int r){
+		if(r-l==1)return l+r;
+		else return (l+r)/2*2;
+	};
+	{
+		auto dfs=[&](auto self,int l,int r)->void{
+			auto&[a,b]=buf[getid(l,r)];
+			if(r-l==1){
+				if(qs[l].kind==1){
+					a={1,-qs[l].a};
+					b={1,-qs[l].a};
+				}else{
+					a={qs[l].a,qs[l].b};
+					b={0,1};
+				}
+			}else{
+				int m=(l+r)/2;
+				self(self,l,m);
+				self(self,m,r);
+				auto&[al,bl]=buf[getid(l,m)];
+				auto&[ar,br]=buf[getid(m,r)];
+				a=al*ar;
+				b=bl*br;
+				
+				ar.freememory();
+				bl.freememory();
+			}
+		};
+		dfs(dfs,0,s);
+	}
+	F ini;
+	{
+		vc<pair<mint,mint>> dens;
+		for(auto [kind,a,b]:qs)if(kind==1)dens.eb(-a,1);
+		Poly<mint> den=product_linear(dens);
+		den=den.inv(d+1);
+		assert(d+1<=s);
+		den.resize(s);
+		rotate(den.bg,den.bg+d+1,den.ed);
+		ini=den;
+	}
+	vc<mint> ans;
+	{
+		auto dfs=[&](auto self,int l,int r,F&z)->void{
+			z.middle_shrink(r-l);
+			{
+				auto&[a,b]=buf[getid(l,r)];
+				a.freememory();
+				b.freememory();
+			}
+			if(r-l==1){
+				mint val=z.getrw()[0];
+				if(qs[l].kind==1)ans.pb(val);
+				z.freememory();
+			}else{
+				int m=(l+r)/2;
+				auto&[al,bl]=buf[getid(l,m)];
+				auto&[ar,br]=buf[getid(m,r)];
+				
+				F zl=z.middle(br),zr=z.middle(al);
+				z.freememory();
+				self(self,l,m,zl);
+				self(self,m,r,zr);
+			}
+		};
+		dfs(dfs,0,s,ini);
+	}
+	return ans;
+}
