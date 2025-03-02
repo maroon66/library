@@ -89,16 +89,14 @@ struct segtree{
 	N getall(){
 		return x[1];
 	}
-	//UTPC2020E
-	//n 超えるかもしれない
+	//used in namori-bisect
 	template <class F,class... Args> 
-	pair<int,N> max_right(int l,F f,Args&&... args){
-		assert((N().*f)(forward<Args>(args)...));
+	pair<int,N> max_right_withinit(int l,N sm,F f,Args&&... args){
+		assert((sm.*f)(forward<Args>(args)...));
 		assert(0<=l&&l<=n);
-		if(l==n)return mp(n,N());
+		if(l==n)return mp(n,sm);
 		l+=s;
 		
-		N sm;
 		assert((sm.*f)(forward<Args>(args)...));
 		do {
 			while (l % 2 == 0) l >>= 1;
@@ -143,6 +141,12 @@ struct segtree{
         } while ((r & -r) != r);
         return mp(0,sm);
     }
+	//UTPC2020E
+	//n 超えるかもしれない
+	template <class F,class... Args> 
+	pair<int,N> max_right(int l,F f,Args&&... args){
+		return max_right_withinit(l,N(),f,forward<Args>(args)...);
+	}
 	//UTPC2020E
 	template <class F,class... Args> 
 	pair<int,N> min_left(int r,F f,Args&&... args){

@@ -1,29 +1,54 @@
+//UCUP 3-31-F
 template<class t>
 struct range_set{
 	const t none;
-	range_set(t val):none(val){}
+	template<class u>
+	range_set(u val):none(val){}
 	map<pi,t> s;
-	void set(int l,int r,t val){
+	template<class F>
+	void del(int l,int r,F f){
 		assert(l<=r);
 		if(l>=r)return;
-		auto itr=s.lower_bound(pi(r,-inf));
-		while(itr!=s.bg){
-			--itr;
+		auto itr=s.lower_bound(pi(l,-inf));
+		if(itr!=s.bg){
+			itr--;
 			auto [x,y]=itr->a;
-			assert(x<r);
-			if(y<=l)break;
-			t z=itr->b;
-			itr=s.erase(itr);
-			//common
-			int u=max(l,x);
-			int v=min(r,y);
-			if(v<y)itr=s.emplace(pi(v,y),z).a;
-			if(x<u){
-				s[pi(x,u)]=z;
+			assert(x<l);
+			if(l<y){
+				t val=itr->b;
+				if(r<y){
+					f(l,r,val);
+					itr=s.erase(itr);
+					add(x,l,val);
+					add(r,y,val);
+					return;
+				}else{
+					f(l,y,val);
+					itr=s.erase(itr);
+					add(x,l,val);
+				}
+			}else{
+				itr++;
+			}
+		}
+		while(itr!=s.ed){
+			auto [x,y]=itr->a;
+			if(r<=x)break;
+			t val=itr->b;
+			if(y<=r){
+				f(x,y,val);
+				itr=s.erase(itr);
+			}else{
+				f(x,r,val);
+				itr=s.erase(itr);
+				add(r,y,val);
 				break;
 			}
 		}
-		s[pi(l,r)]=val;
+	}
+	void add(int l,int r,t val){
+		assert(l<=r);
+		if(l<r)s[pi(l,r)]=val;
 	}
 	t get(int i){
 		auto itr=s.lower_bound(pi(i+1,-inf));

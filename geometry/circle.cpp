@@ -177,6 +177,83 @@ vc<C> simplify_circle_sets(const vc<C>&rw){
 	return cs;
 }
 
+//極小な円だけ残す，重複も消す
+//UCUP3-31-H
+//verifyできているかは怪しい
+vc<C> simplify_circle_sets(const vc<C>&rw){
+	vc<C> cs;
+	for(auto cur:rw){
+		bool ok=true;
+		rep(j,si(cs)){
+			int w=icc(cs[j],cur);
+			if(w==1||w==2||w==3){
+				ok=false;
+			}
+		}
+		if(ok){
+			rep(j,si(cs)){
+				int w=icc(cs[j],cur);
+				if(w==1||w==4||w==5){
+					cs.erase(cs.bg+j--);
+				}
+			}
+			cs.pb(cur);
+		}
+	}
+	return cs;
+}
+
+//UCUP3-31-H
+//verifyできているかは怪しい
+pair<vc<ld>,vi> range_freq_list(vc<pair<ld,ld>> lr){
+	int cur=0;
+	vc<pair<ld,int>> qs;
+	for(auto [l,r]:lr){
+		l=normarg_nonnegative(l);
+		r=normarg_nonnegative(r);
+		qs.eb(l,1);
+		qs.eb(r,-1);
+		if(l>r)cur++;
+	}
+	sort(all(qs));
+	vc<ld> pos{0};
+	vi val{cur};
+	for(auto [p,v]:qs){
+		pos.pb(p);
+		val.pb(val.back()+v);
+	}
+	pos.pb(2*PI);
+	return mp(pos,val);
+}
+
+//UCUP3-31-H
+//verifyできているかは怪しい
+ld common_area_cs(vc<C> cs){
+	assert(si(cs));
+	cs=simplify_circle_sets(cs);
+	int n=si(cs);
+	rep(i,n)rng(j,i+1,n){
+		int w=icc(cs[i],cs[j]);
+		if(w!=7)return 0;
+	}
+	if(n==1)return cs[0].area();
+	ld ans=0;
+	rep(i,n){
+		vc<pair<ld,ld>> ls;
+		rep(j,n)if(i!=j){
+			ls.eb(ccc(cs[i],cs[j]));
+		}
+		auto [pos,val]=range_freq_list(ls);
+		rep(j,si(val)){
+			if(val[j]==n-1){
+				ld l=pos[j],r=pos[j+1];
+				ans+=cutareaarg(cs[i],l,r);
+			}
+		}
+	}
+	return ans;
+}
+
 //ByteCamp 2022 Day3 A
 //原点中心,半径 r の円の x 座標 a 以下の領域の面積
 ld cutarea_sub(ld r,ld a){

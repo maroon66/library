@@ -11,16 +11,13 @@ struct FastSet {
     static constexpr uint B = 64;
     int n, lg;
     vvc<ull> seg;
-    FastSet(int _n,ull val=0) : n(_n) {
+    FastSet(int _n) : n(_n) {
         do {
-            seg.push_back(vc<ull>((_n + B - 1) / B,val));
+            seg.push_back(vc<ull>((_n + B - 1) / B));
             _n = (_n + B - 1) / B;
         } while (_n > 1);
         lg = seg.size();
     }
-    void fillone(){
-		for(auto&vs:seg)fill(all(vs),ull(-1));
-	}
 	void fillzero(){
 		for(auto&vs:seg)fill(all(vs),ull(0));
 	}
