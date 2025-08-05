@@ -12,12 +12,14 @@ vi factors(int x){
 	return res;
 }
 
-const int vmax=ten(5)+10;
-const int L=20;
-vi fs;
+//extgcd を貼って modint の inv を書き換える!
+//luogu MX-X10 E
+const int vmax=2*ten(5)+10;
+const vi fs=factors(base.mod);
+const int L=5; //si(fs)
 mint fact[vmax],finv[vmax];
 int cnt[vmax][L],waf[vmax];
-mint ps[L][vmax*10];
+mint ps[L][vmax];
 void initfact(){
 	fact[0]=1;
 	rng(i,1,vmax){
@@ -38,46 +40,11 @@ void initfact(){
 	}
 	rep(i,si(fs)){
 		ps[i][0]=1;
-		rng(j,1,vmax*10)ps[i][j]=ps[i][j-1]*fs[i];
+		rng(j,1,vmax)ps[i][j]=ps[i][j-1]*fs[i];
 	}
 }
 mint choose(int n,int k){
 	mint res=fact[n]*finv[n-k]*finv[k];
 	rep(i,si(fs))res*=ps[i][cnt[n][i]-cnt[n-k][i]-cnt[k][i]];
 	return res;
-}
-
-ll fdiv(ll a, ll b) { // floored division
-	return a / b - ((a ^ b) < 0 && a % b); }
-		
-mint slv(int n,int r){
-	mint res;
-	rep(i,n+1){
-		mint w;
-		int lim=(i%2==0)?min(r/2*2,i):min(fdiv(r-1,2)*2+1,i);
-		w+=choose(i,i/2);
-		if(lim<i){
-			w-=choose(i,(i-lim)/2-1);
-		}
-		res+=choose(n,i)*w;
-	}
-	dmp(res);
-	return res;
-}
-
-signed main(){
-	cin.tie(0);
-	ios::sync_with_stdio(0);
-	cout<<fixed<<setprecision(20);
-	
-	int n;cin>>n;
-	cin>>base.mod;
-	fs=factors(base.mod);
-	int l,r;cin>>l>>r;
-	
-	initfact();
-	
-	mint ans=slv(n,r);
-	if(l)ans-=slv(n,l-1);
-	print(ans);
 }

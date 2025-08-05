@@ -1,4 +1,5 @@
 #define USE_GOOD_MOD
+//#define USE_MOD64
 
 //size of input must be a power of 2
 //output of forward fmt is bit-reversed
@@ -223,6 +224,8 @@ vc<mint> multiply_givenlength(vc<mint> x,const vc<mint>&y,bool same=false){
 
 #else
 
+#ifndef USE_MOD64
+
 //59501818244292734739283969-1=5.95*10^25 までの値を正しく計算
 //最終的な列の大きさが 2^24 までなら動く
 //最終的な列の大きさが 2^20 以下のときは，下の 3 つの素数を使ったほうが速い（は？）
@@ -321,6 +324,62 @@ namespace arbitrary_convolution{
 }
 using arbitrary_convolution::multiply;
 using arbitrary_convolution::multiply_givenlength;
+
+#else
+
+//multiuni-2025-1-D
+//mod 10^10 くらいで使用
+//列の長さは 10^5 くらいかな
+namespace arbitrary_convolution_64{
+	constexpr modinfo base0{1045430273,3};//2^20 * 997 + 1
+	constexpr modinfo base1{1051721729,6};//2^20 * 1003 + 1
+	constexpr modinfo base2{1053818881,7};//2^20 * 1005 + 1
+	using mint0=modular<base0>;
+	using mint1=modular<base1>;
+	using mint2=modular<base2>;
+	template<class t,class mint>
+	vc<t> sub(const vc<mint>&x,const vc<mint>&y,bool same=false){
+		int n=si(x)+si(y)-1;
+		int s=1;
+		while(s<n)s*=2;
+		vc<t> z(s);rep(i,si(x))z[i]=x[i].val();
+		inplace_fmt(z,false);
+		if(!same){
+			vc<t> w(s);rep(i,si(y))w[i]=y[i].val();
+			inplace_fmt(w,false);
+			rep(i,s)z[i]*=w[i];
+		}else{
+			rep(i,s)z[i]*=z[i];
+		}
+		inplace_fmt(z,true);z.resize(n);
+		return z;
+	}
+	template<class mint>
+	vc<mint> multiply(const vc<mint>&x,const vc<mint>&y,bool same=false){
+		auto d0=sub<mint0>(x,y,same);
+		auto d1=sub<mint1>(x,y,same);
+		auto d2=sub<mint2>(x,y,same);
+		int n=si(d0);
+		vc<mint> res(n);
+		static const mint1 r01=mint1(mint0::mod).inv();
+		static const mint2 r02=mint2(mint0::mod).inv();
+		static const mint2 r12=mint2(mint1::mod).inv();
+		static const mint2 r02r12=r02*r12;
+		using D=__int128;
+		static const D w1=mint0::mod;
+		static const D w2=(D)mint0::mod*mint1::mod%mint::mod;
+		rep(i,n){
+			ull a=d0[i].v;
+			ull b=(d1[i].v+mint1::mod-a)*r01.v%mint1::mod;
+			ull c=((d2[i].v+mint2::mod-a)*r02r12.v+(mint2::mod-b)*r12.v)%mint2::mod;
+			res[i]=(a+b*w1+c*w2)%mint::mod;
+		}
+		return res;
+	}
+}
+using arbitrary_convolution_64::multiply;
+
+#endif
 
 #endif
 

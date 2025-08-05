@@ -1,20 +1,20 @@
 //empty という概念を導入したら必ず clone を作ること
 
 //Range add,max
-struct N{
+struct AddMax{
 	int lz,mx;
-	N(int v=-inf):lz(0),mx(v){}
+	AddMax(int v=-inf):lz(0),mx(v){}
 	void add(int v){
 		mx+=v;
 		lz+=v;
 	}
-	void push(N&x,N&y){
+	void push(AddMax&x,AddMax&y){
 		x.add(lz);
 		y.add(lz);
 		lz=0;
 	}
-	static N merge(N x,N y){
-		return N(max(x.getm(),y.getm()));
+	static AddMax merge(AddMax x,AddMax y){
+		return AddMax(max(x.getm(),y.getm()));
 	}
 	int getm(){return mx;}
 	bool ok(int v){
@@ -40,7 +40,34 @@ struct AddMin{
 	}
 	int getm(){return mn;}
 	bool ok(int v){
-		return mn>v;
+		return mn>=v;
+	}
+};
+
+//Range add,min,max
+struct AddMinMax{
+	int lz,mn,mx;
+	AddMinMax():lz(0),mn(inf),mx(-inf){}
+	AddMinMax(int v):lz(0),mn(v),mx(v){}
+	AddMinMax(int a,int b):lz(0),mn(a),mx(b){}
+	void add(int v){
+		mn+=v;
+		mx+=v;
+		lz+=v;
+	}
+	void push(AddMinMax&x,AddMinMax&y){
+		x.add(lz);
+		y.add(lz);
+		lz=0;
+	}
+	static AddMinMax merge(AddMinMax x,AddMinMax y){
+		return AddMinMax(min(x.mn,y.mn),max(x.mx,y.mx));
+	}
+	bool okmax(int v){
+		return mx<=v;
+	}
+	bool okmin(int v){
+		return mn>=v;
 	}
 };
 

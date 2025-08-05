@@ -69,3 +69,49 @@ struct N{
 		return val<rhs.val;
 	}
 };
+
+//CF Teza Round 1
+//sorted 列を持つ
+//一次関数の足し込みが可能
+//ソート順は降順です！！
+struct N{
+	void pushl(N&cnode){
+		cnode.add(lza,lzb);
+	}
+	void pushr(N&cnode){
+		cnode.add(lza,lza*(ls+1)+lzb);
+	}
+	void updatel(const N&cnode){
+		len+=cnode.len;
+		ls=cnode.len;
+	}
+	void updater(const N&cnode){
+		len+=cnode.len;
+	}
+	void reverse(){assert(false);}
+	
+	int lza,lzb,len,ls,val;
+	N():lza(0),lzb(0),len(0),ls(0),val(0){}
+	N(int v):lza(0),lzb(0),len(1),ls(0),val(v){}
+	void add(int a,int b){
+		lza+=a;
+		lzb+=b;
+		val+=a*ls+b;
+	}
+	void clear(){
+		lza=0;
+		lzb=0;
+	}
+	void single(){
+		assert(lza==0);
+		assert(lzb==0);
+		len=1;
+		ls=0;
+	}
+	bool ok_len(int x){
+		return len<=x;
+	}
+	bool operator<(const N&rhs)const{
+		return val>rhs.val;
+	}
+};

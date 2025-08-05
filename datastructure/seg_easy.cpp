@@ -8,6 +8,49 @@ void segeasy(int s,int l,int r,F f){
 	}
 }
 
+//segeasy 的に各ノードに F を適用
+//その上のノードに G を適用
+//verify: range_detector
+template<class F,class G>
+void segeasy2(int s,int l,int r,F f,G g){
+	assert(0<=l&&l<=r&&r<=s);
+	if (l == r) return;
+	l+=s;
+	r+=s;
+	
+	static int buf[2][30];
+	int cnt[2]{};
+	{
+		int l2 = l, r2 = r;
+		while (l < r) {
+			if (l & 1){
+				buf[0][cnt[0]++]=l++;
+			}
+			if (r & 1){
+				buf[1][cnt[1]++]=--r;
+			}
+			l >>= 1;
+			r >>= 1;
+		}
+		l = l2;
+		r = r2;
+	}
+	rep(i,cnt[0])f(buf[0][i]);
+	per(i,cnt[1])f(buf[1][i]);
+
+	for (int i = 1; (s>>i); i++) {
+		int x=-1;
+		if (((l >> i) << i) != l){
+			x=l>>i;
+			g(x);
+		}
+		if (((r >> i) << i) != r){
+			int y=(r-1)>>i;
+			if(x!=y)g(y);
+		}
+	}
+}
+
 //UOJ Goodbye Renyin C
 //range chmax,point get
 struct segeasy{

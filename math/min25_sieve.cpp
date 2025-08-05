@@ -182,3 +182,7 @@ struct min25_sieve{
 		}
 	}
 };
+
+
+//CF1010G
+//ちょっとdfsをいじったverがあるよ

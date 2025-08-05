@@ -70,22 +70,34 @@ void extend_polys(vvc<mint>&as,int m){
 	for(auto&a:as)rep(i,m)a[i]*=fact[i];
 }
 
+//multiuni 2025-1-D
 struct large_factorial{
-	int s;
-	vc<mint> x;
-	large_factorial():s(1),x(1,1){
-		while(sq(s)<mint::mod-1){
+	vvc<mint> xs;
+	large_factorial():xs{vc<mint>{1}}{
+		while(sq<ull>(si(xs.back()))<mint::mod-1){
+			auto x=xs.back();
+			int s=si(x);
 			extend_poly(x,4*s);
 			rep(i,2*s)x[i]=x[i*2]*(s*(2*i+1)+1)*x[i*2+1];
 			x.resize(s*=2);
+			xs.pb(x);
 		}
-		rep(i,s)x[i]*=i*s+1;
+		for(auto&x:xs){
+			int s=si(x);
+			rep(i,s)x[i]*=i*s+1;
+		}
 	}
 	mint getfact(int i){
-		int p=i/s;
-		mint res=1;
-		rep(j,p)res*=x[j];
-		rng(j,p*s,i)res*=j+1;
-		return res;
+		rep(k,si(xs)){
+			const auto&x=xs[k];
+			int s=si(x);
+			int p=i/s;
+			if(p>si(x))continue;
+			mint res=1;
+			rep(j,p)res*=x[j];
+			rng(j,p*s,i)res*=j+1;
+			return res;
+		}
+		assert(false);
 	}
 };

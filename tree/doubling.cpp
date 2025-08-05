@@ -65,3 +65,6 @@ struct doubling{
 		return v;
 	}
 };
+
+//UCUP 3-32-C
+//重み付きで jump

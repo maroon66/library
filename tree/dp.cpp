@@ -78,6 +78,22 @@ struct N{
 	}
 };
 
+//luogu MX-X10 B
+//各頂点から，全頂点への距離の総和を求める
+struct N{
+	int vs,sum;
+	void init(int){
+		vs=1;
+		sum=0;
+	}
+	N up(E e)const{
+		return N{vs,sum+vs*e.cost};
+	}
+	N operator+(const N&r)const{
+		return N{vs+r.vs,sum+r.sum};
+	}
+};
+
 //usage
 vi cnt;
 struct N{

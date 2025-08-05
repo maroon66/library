@@ -34,6 +34,20 @@ struct seglazy{
 		x.assign(s*2,N());
 		gnr(i,1,s)upd(i);
 	}
+	template<class t>
+	void init(const vc<t>&a){
+		n=a.size();
+		L=0;
+		while((1<<L)<n)L++;
+		s=1<<L;
+		x.resize(s*2);
+		rep(i,n)
+			x[s+i]=N(a[i]);
+		rng(i,n,s)
+			x[s+i]=N();
+		gnr(i,1,s)
+			x[i]=N::merge(x[i*2],x[i*2+1]);
+	}
 	void upd(int i){
 		x[i]=N::merge(x[i*2],x[i*2+1]);
 	}
@@ -99,6 +113,7 @@ struct seglazy{
 				if(i==ini)break;
 				i++;
 			}else{
+				assert(i<s);
 				push(i);
 				i*=2;
 			}

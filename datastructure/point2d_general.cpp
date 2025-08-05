@@ -1,4 +1,5 @@
 //XXII Opencup GP of Daejeon
+//Paken-2024-Day3-E
 template<class N>
 struct point2d{
 	vc<pi> xy,yx;

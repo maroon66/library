@@ -231,6 +231,60 @@ struct N{
 	}
 };
 
+//UCUP 3-39-P
+//2進数を管理 (各桁は非負)
+//carry:繰り上がり
+//nxt:次の繰り上がりまでいくつ必要か
+//cyc:繰り上がりサイクル
+struct N{
+	int carry,nxt,cyc;
+	bool all0;
+	N():carry(0),nxt(1),cyc(1),all0(true){}
+	N(int v){init_leaf(v);}
+	void init_leaf(int v){
+		assert(v>=0);
+		carry=v/2;
+		nxt=2-v%2;
+		cyc=2;
+		all0=v%2==0;
+	}
+	int val_leaf()const{
+		return carry*2+(2-nxt);
+	}
+	void add_leaf(int v){
+		init_leaf(val_leaf()+v);
+	}
+	void work(int v){
+		assert(v>=0);
+		if(v==0)return;
+		if(v<nxt){
+			nxt-=v;
+			all0=false;
+		}else{
+			int k=(v-nxt)/cyc;
+			carry+=k+1;
+			int r=v-nxt-cyc*k;
+			nxt=cyc-r;
+			all0=r==0;
+		}
+	}
+	static N merge(const N&lw,const N&up){
+		N res=up;
+		res.work(lw.carry);
+		res.nxt=min<ll>(lw.nxt+(ll)(res.nxt-1)*lw.cyc,inf);
+		res.cyc=min<ll>((ll)res.cyc*lw.cyc,inf);
+		res.all0=res.all0&&lw.all0;
+		return res;
+	}
+	static N meld_leaf(const N&x,const N&y){
+		return N(x.val_leaf()+y.val_leaf());
+	}
+	bool ok()const{
+		return all0;
+	}
+};
+
+
 template<class N>
 struct Point1D{
 	segtree<N> seg;

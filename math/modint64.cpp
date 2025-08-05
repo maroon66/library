@@ -1,9 +1,9 @@
 //Montgomery
 //Ucup1-10 G (モンゴメリじゃないとTLE)
-struct modinfo{
+struct modinfo64{
 	using u128=__uint128_t;
 	ull n,n2,r,t,e;
-	modinfo(ull nn){
+	void set_mod(ull nn){
 		n=nn;
         assert(n<(1ull<<62));
         assert(n%2==1);
@@ -15,29 +15,30 @@ struct modinfo{
         t=-ull(n)%n;
         e=-u128(n)%n;
 	}
+	modinfo64(ull nn){set_mod(nn);}
 	ull add(ull x,ull y)const{x+=y;return x<n2?x:x-n2;}
 	ull re(u128 x)const{return (x+u128(ull(x)*r)*n)>>64;}
 	ull mult(ull x,ull y)const{return re(u128(x)*y);}
 	ull en(ull x)const{return mult(x,e);}
 	ull de(ull x)const{x=re(x);return x<n?x:x-n;}
 };
-template<modinfo const&ref>
-struct modular{
+template<modinfo64 const&ref>
+struct modular64{
 	static constexpr ull const &mod=ref.n;
 	static constexpr ull const &mod2=ref.n2;
 	ull v;
-	modular(ll vv=0){v=ref.en(vv%(ll)mod+mod);}
-	modular operator-()const{return modular()-*this;}
-	modular&operator+=(const modular&rhs){v=ref.add(v,rhs.v);return *this;}
-	modular&operator-=(const modular&rhs){v=ref.add(v,mod2-rhs.v);return *this;}
-	modular&operator*=(const modular&rhs){v=ref.mult(v,rhs.v);return *this;}
-	modular&operator/=(const modular&rhs){return *this*=rhs.inv();}
-	modular operator+(const modular&rhs)const{return modular(*this)+=rhs;}
-	modular operator-(const modular&rhs)const{return modular(*this)-=rhs;}
-	modular operator*(const modular&rhs)const{return modular(*this)*=rhs;}
-	modular operator/(const modular&rhs)const{return modular(*this)/=rhs;}
-	modular pow(ll n)const{
-		modular res(1),x(*this);
+	modular64(ll vv=0){v=ref.en(vv%(ll)mod+mod);}
+	modular64 operator-()const{return modular64()-*this;}
+	modular64&operator+=(const modular64&rhs){v=ref.add(v,rhs.v);return *this;}
+	modular64&operator-=(const modular64&rhs){v=ref.add(v,mod2-rhs.v);return *this;}
+	modular64&operator*=(const modular64&rhs){v=ref.mult(v,rhs.v);return *this;}
+	modular64&operator/=(const modular64&rhs){return *this*=rhs.inv();}
+	modular64 operator+(const modular64&rhs)const{return modular64(*this)+=rhs;}
+	modular64 operator-(const modular64&rhs)const{return modular64(*this)-=rhs;}
+	modular64 operator*(const modular64&rhs)const{return modular64(*this)*=rhs;}
+	modular64 operator/(const modular64&rhs)const{return modular64(*this)/=rhs;}
+	modular64 pow(ll n)const{
+		modular64 res(1),x(*this);
 		while(n){
 			if(n&1)res*=x;
 			x*=x;
@@ -45,31 +46,31 @@ struct modular{
 		}
 		return res;
 	}
-	modular inv()const{return pow(mod-2);}
-	friend modular operator+(ll x,const modular&y){
-		return modular(x)+y;
+	modular64 inv()const{return pow(mod-2);}
+	friend modular64 operator+(ll x,const modular64&y){
+		return modular64(x)+y;
 	}
-	friend modular operator-(ll x,const modular&y){
-		return modular(x)-y;
+	friend modular64 operator-(ll x,const modular64&y){
+		return modular64(x)-y;
 	}
-	friend modular operator*(ll x,const modular&y){
-		return modular(x)*y;
+	friend modular64 operator*(ll x,const modular64&y){
+		return modular64(x)*y;
 	}
-	friend modular operator/(ll x,const modular&y){
-		return modular(x)/y;
+	friend modular64 operator/(ll x,const modular64&y){
+		return modular64(x)/y;
 	}
 	ull val()const{return ref.de(v);}
-	friend ostream& operator<<(ostream&os,const modular&m){
+	friend ostream& operator<<(ostream&os,const modular64&m){
 		return os<<m.val();
 	}
-	friend istream& operator>>(istream&is,modular&m){
+	friend istream& operator>>(istream&is,modular64&m){
 		ll x;is>>x;
-		m=modular(x);
+		m=modular64(x);
 		return is;
 	}
-	bool operator<(const modular&r)const{return val()<r.val();}
-	bool operator==(const modular&r)const{return val()==r.val();}
-	bool operator!=(const modular&r)const{return val()!=r.val();}
+	bool operator<(const modular64&r)const{return val()<r.val();}
+	bool operator==(const modular64&r)const{return val()==r.val();}
+	bool operator!=(const modular64&r)const{return val()!=r.val();}
 	explicit operator bool()const{
 		return val();
 	}
@@ -82,9 +83,9 @@ ll m2l(mint a){
 }
 
 //2^62 未満での最大の素数
-const modinfo base(4611686018427387847ll);
-//modinfo base(1);
-using mint=modular<base>;
+const modinfo64 base(4611686018427387847ll);
+//modinfo64 base(1);
+using mint=modular64<base>;
 
 //random primitive root
 //3277392570379474389

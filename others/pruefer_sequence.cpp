@@ -29,6 +29,14 @@ auto restore(vi a){
 	return es;
 }
 
+template<class F>
+void tree_rec(int n,F f){
+	assert(n>=2);
+	array_rec(n-2,n,[&](const vi&a){
+		auto g=restore(a);
+		f(g);
+	});
+}
 
 vc<ull> get_trees(int n){
 	assert(n>0);

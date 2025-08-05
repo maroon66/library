@@ -35,6 +35,45 @@ struct Kinetic{
 	}
 };
 
+//UCUP 3-36-K
+//y+=x をする
+//あと add_const もする
+//min を計算している
+struct Kinetic{
+	int x,y,i,t,lztilt,lzconst;
+	Kinetic():x(inf),y(inf),i(-1),t(inf),lztilt(0),lzconst(0){}
+	Kinetic(int xx,int yy,int ii):x(xx),y(yy),i(ii),t(inf),lztilt(0),lzconst(0){}
+	bool add_tilt(int v){
+		assert(0<=v);
+		if(t<v)return false;
+		if(i!=-1)y+=x*v;
+		t-=v;
+		lztilt+=v;
+		return true;
+	}
+	bool add_const(int v){
+		if(i!=-1)y+=v;
+		lzconst+=v;
+		return true;
+	}
+	void push(Kinetic&a,Kinetic&b){
+		bool tmp=true;
+		tmp=a.add_tilt(lztilt);assert(tmp);
+		tmp=b.add_tilt(lztilt);assert(tmp);
+		lztilt=0;
+		tmp=a.add_const(lzconst);assert(tmp);
+		tmp=b.add_const(lzconst);assert(tmp);
+		lzconst=0;
+	}
+	static Kinetic merge(Kinetic a,Kinetic b){
+		if(pi(a.y,a.x)>pi(b.y,b.x))swap(a,b);
+		Kinetic res(a.x,a.y,a.i);
+		res.t=min(a.t,b.t);
+		if(a.x>b.x)chmin(res.t,(b.y-a.y)/(a.x-b.x));
+		return res;
+	}
+};
+
 //Japan Mirror Camp 2022 Day2 F
 //range chmax,add,getmax
 struct N{
@@ -78,5 +117,47 @@ struct N{
 		if(res.mn<y.mn)chmin(res.sec,y.mn);
 		res.lzset=-inf;
 		res.lzadd=0;
+	}
+};
+
+
+//range chmin,sum
+//もともと ull のコードを ll に直しただけなので，負の値の verify はない
+//UCUP-3-37-J
+struct N{
+	ll mx,cnt,sec,sum,lz;
+	N(ll v):mx(v),cnt(1),sec(-inf),sum(v),lz(inf){}
+	N():mx(-inf),cnt(0),sec(-inf),sum(0),lz(inf){}
+	bool setlim(ll v){
+		if(mx<=v){
+			chmin(lz,v);
+			return true;
+		}
+		if(sec<v){
+			chmin(lz,v);
+			sum-=(mx-v)*cnt;
+			mx=v;
+			return true;
+		}
+		return false;
+	}
+	void push(N&x,N&y){
+		bool tmp=x.setlim(lz);
+		assert(tmp);
+		tmp=y.setlim(lz);
+		assert(tmp);
+		lz=inf;
+	}
+	static N merge(N x,N y){
+		N res;
+		res.mx=max(x.mx,y.mx);
+		res.sec=max(x.sec,y.sec);
+		res.cnt=0;
+		if(res.mx==x.mx)res.cnt+=x.cnt;
+		else chmax(res.sec,x.mx);
+		if(res.mx==y.mx)res.cnt+=y.cnt;
+		else chmax(res.sec,y.mx);
+		res.sum=x.sum+y.sum;
+		return res;
 	}
 };

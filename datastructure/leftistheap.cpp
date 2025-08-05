@@ -129,6 +129,7 @@ int hu_tucker(vi a){
 }
 
 //verify: yosupo k shortest path
+//S_ bytes 消費
 template<class T,class F,int S_>
 struct persistent_heap{
 	struct N{

@@ -133,7 +133,7 @@ template <class TreeDP> struct StaticTopTree {
 				}
 			}
 		}
-		build_compress(r);
+		points[n]=dp.to_point(build_compress(r));
 	}
 
 	// compress / rake

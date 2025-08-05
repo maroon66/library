@@ -44,8 +44,15 @@ ld cllt(ln a,ln b){
 	return crs(b.a,b.b,a.a)/crs(dir(a),dir(b));
 }
 //ICPC Yokohama 2022 J
+//ICPC Yokohama 2024 J (分母を正に統一)
 pair<ld,ld> clltf(ln a,ln b){
-	return mp(crs(b.a,b.b,a.a),crs(dir(a),dir(b)));
+	ld num=crs(b.a,b.b,a.a);
+	ld den=crs(dir(a),dir(b));
+	if(den<0){
+		num=-num;
+		den=-den;
+	}
+	return mp(num,den);
 }
 //AOJ1033
 pt cll(ln a,ln b){

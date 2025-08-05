@@ -1,5 +1,5 @@
 //strictly increasing sequence
-int getlis(vi x){
+int getlis(const vi&x){
 	int n=si(x),ans=0;
 	vi buf(n,inf);
 	for(auto v:x){

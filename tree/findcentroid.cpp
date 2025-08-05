@@ -107,8 +107,9 @@ int findc(int v,int p,int s){
 		return ret;
 }
 
+//CF 1024 E (t を const ref にした)
 template<class E>
-int find_center(vvc<E> t){
+int find_center(const vvc<E>&t){
 	int n=si(t);
 	auto rec=[&](auto self,int v,int p)->int{
 		int ret=1,mx=0;
@@ -129,6 +130,9 @@ int find_center(vvc<E> t){
 	};
 	return -rec(rec,0,-1);
 }
+//CF1024 E には木の辺を 2 つに分けて分割統治する例のコードがある
+//TLE したためいろいろな変数を static にして定数倍が速い感じになっている
+//速いか？遅くはないくらい
 
 template<class E>
 int find_center(const vvc<E>&t,const vi&w){

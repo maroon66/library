@@ -2,6 +2,8 @@
 //ByteCamp 2022 Day4 I
 //IOI2022 1C
 //UCUP 2-11-J
+//UCUP 3-39-P
+//meld,max_right_simple
 template<class N>
 struct psegtree{
 	struct N2{
@@ -32,10 +34,26 @@ struct psegtree{
 		L=0;
 		while((1<<L)<n)L++;
 		s=1<<L;
-		int a=nl(N());
+		int a=nl(N(0));
 		rep(i,L)a=nn(a,a);
 		return a;
 	}
+	//assume initialized
+	//not verified
+	/*int load(const vc<N>&raw){
+		vi ls(si(raw));
+		rep(i,si(raw))ls[i]=nl(raw[i]);
+		rep(lv,L){
+			if(si(ls)%2==1)ls.pb(lv);
+			int len=si(ls);
+			rep(i,len/2){
+				ls[i]=nn(ls[i*2],ls[i*2+1])
+			}
+			ls.resize(len/2);
+		}
+		assert(si(ls)==1);
+		return ls[0];
+	}*/
 	int nl(const N&val){
 		x.pb({val,-1,-1});
 		return si(x)-1;
@@ -80,6 +98,27 @@ struct psegtree{
 		}
 		return res;
 	}
+	template<class F,class...Args>
+	int point_change(int root,int i,F f,Args&&...args){
+		static int buf[40];
+		rep(lv,L){
+			buf[lv]=root;
+			if((i>>(L-1-lv))&1)root=x[root].r;
+			else root=x[root].l;
+		}
+		N tmp=x[root].v;
+		(tmp.*f)(forward<Args>(args)...);
+		int res=nl(tmp);
+		per(lv,L){
+			int j=buf[lv];
+			if((i>>(L-1-lv))&1){
+				res=nn(x[j].l,res);
+			}else{
+				res=nn(res,x[j].r);
+			}
+		}
+		return res;
+	}
 	N compositedfs(int root,int l,int r,int b,int e){
 		if(e<=l||r<=b)return N();
 		if(b<=l&&r<=e)return x[root].v;
@@ -99,4 +138,32 @@ struct psegtree{
 		}
 		return x[cur].v;
 	}
+	int melddfs(int a,int b,int lv){
+		if(a<=L)return b;
+		if(b<=L)return a;
+		if(lv==L)return nl(N::meld_leaf(x[a].v,x[b].v));
+		return nn(melddfs(x[a].l,x[b].l,lv+1),melddfs(x[a].r,x[b].r,lv+1));
+	}
+	int meld(int a,int b){
+		return melddfs(a,b,0);
+	}
+	int max_right_simple(int root){
+		N w=N();
+		assert(N().ok());
+		assert(!x[root].v.ok());
+		int res=0;
+		rep(lv,L){
+			int l=x[root].l,r=x[root].r;
+			N tmp=N::merge(w,x[l].v);
+			if(tmp.ok()){
+				res+=1<<(L-1-lv);
+				root=r;
+				w=tmp;
+			}else{
+				root=l;
+			}
+		}
+		return res;
+	}
 };
+//init の初期値注意!

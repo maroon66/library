@@ -2,9 +2,38 @@
 //壊れても知りません！
 //UCUP 1-16 C (lazyなし)
 //コメントアウトしてあるところは全く試してない
+
 //CF887F (lazy)
+//set::set iterator の要領で各ノードから erase/next/prev が呼べるようになった
+//p==(np)-1 で delete 済みかどうか確認できる
+//itr を保存しておいて後で呼び出すときは prep を忘れないように
+//p のリンクをどうやって管理してしまうか考えたときに,upd を利用することにした
+//特に upd 直後は p==nullptr であることに注意!
+
 //TOKI35G (lazy)
+//beats っぽい怪しい updateを走らせた
+//ある部分木全体を更新できないとき，もちろんその下に潜るのだが，
+//根のノード単体に対する更新を忘れないようにする
+
+//UCUP 2-24-H
+//emplace_new, insert などを更新
+//insert_cmp も更新，balance(x) の戻り値は x とは限らないね
+
+//ノード同士の比較関数でも split 可能(TODO)
+//TODO 細かい実装の違いによる定数倍を検証
+
+//max_right をverify
+//oeprable(root or null) を至るところでチェック
+//cut_by_index, insert by value, leftmost,rightmost を導入
+
+//CF Teza Round 1
+//operatable じゃなくて operable だったことに気づいたので修正
+
+//CF 1028 F  (lazy,rev)
+//rev,lazy を同時に使用
+
 #define AVLLAZY
+#define AVLREV
 //https://qiita.com/QCFium/items/3cf26a6dc2d49ef490d7
 template<class N>
 struct avl{
@@ -15,8 +44,21 @@ struct avl{
 		int h;
 		//h は葉までの最長パスのノード数
 		//null node で 0
-		//v has no lazy data
+		#ifdef AVLREV
+		bool rev=false;
+		void reverse(){
+			rev^=true;
+			swap(l,r);
+			v.reverse();
+		}
+		void no_rev()const{assert(!rev);}
+		#else
+		void no_rev()const{}
+		#endif
+		
 		np upd(){
+			no_rev();
+			//assume v has no lazy data
 			v.single();
 			h=0;
 			if(l){
@@ -34,6 +76,13 @@ struct avl{
 			return this;
 		}
 		np push(){
+			#ifdef AVLREV
+			if(rev){
+				if(l)l->reverse();
+				if(r)r->reverse();
+				rev=false;
+			}
+			#endif
 			#ifdef AVLLAZY
 			if(l)v.pushl(l->v);
 			if(r)v.pushr(r->v);
@@ -41,24 +90,26 @@ struct avl{
 			#endif
 			return this;
 		}
-		np L(np x){l=x;return upd();}
-		np R(np x){r=x;return upd();}
-		np LR(np x,np y){l=x;r=y;return upd();}
+		np L(np x){no_rev();l=x;return upd();}
+		np R(np x){no_rev();r=x;return upd();}
+		np LR(np x,np y){no_rev();l=x;r=y;return upd();}
 		np leftmost(){
 			np x=this;
-			while(x->l){
+			while(x){
 				x->push();
-				x=x->l;
+				if(x->l)x=x->l;
+				else break;
 			}
-			return x->push();
+			return x;
 		}
 		np rightmost(){
 			np x=this;
-			while(x->r){
+			while(x){
 				x->push();
-				x=x->r;
+				if(x->r)x=x->r;
+				else break;
 			}
-			return x->push();
+			return x;
 		}
 	};
 	using np=N2*;
@@ -88,7 +139,7 @@ struct avl{
 			}
 		}
 	}*/
-	bool operatable(np x){return x==nullptr||x->p==nullptr;}
+	bool operable(np x){return x==nullptr||x->p==nullptr;}
 	//a is not null
 	int hei(np x){return x?x->h:0;}
 	N val(np x){return x?x->v:N();}
@@ -98,6 +149,7 @@ struct avl{
 	//hei(res)==max(hei(x->l),hei(x->r))+(0 or 1)
 	//O(|hei(x->r)-hei(x->r)|)
 	np balance(np x){
+		x->no_rev();
 		np a=x->l;
 		np b=x->r;
 		int dif=hei(a)-hei(b);
@@ -125,9 +177,9 @@ struct avl{
 			}
 		}else assert(false);
 	}
-	np Lb(np x,np a){x->l=a;return balance(x);}
-	np Rb(np x,np a){x->r=a;return balance(x);}
-	np LRb(np x,np a,np b){x->l=a;x->r=b;return balance(x);}
+	np Lb(np x,np a){x->no_rev();x->l=a;return balance(x);}
+	np Rb(np x,np a){x->no_rev();x->r=a;return balance(x);}
+	np LRb(np x,np a,np b){x->no_rev();x->l=a;x->r=b;return balance(x);}
 	//hei(res)==max(hei(a),hei(b))+(0 or 1)
 	//O(hei(a)+hei(b))
 	//a,b は基本的にはちゃんとした木なのだが，p に変な情報が入っているかもしれないので消しておく
@@ -154,7 +206,7 @@ struct avl{
 	np merge(Args...args){
 		np res=0;
 		for(auto x:{args...}){
-			assert(operatable(x));
+			assert(operable(x));
 			res=mergedfs(res,x);
 		}
 		return res;
@@ -178,8 +230,8 @@ struct avl{
 	//Lazyなし
 	//CF CodeTon3-H
 	np meld(np a,np b){
-		assert(operatable(a));
-		assert(operatable(b));
+		assert(operable(a));
+		assert(operable(b));
 		return melddfs(a,b);
 	}
 	template <class F,class... Args> 
@@ -200,7 +252,7 @@ struct avl{
 	}
 	template <class F,class... Args> 
 	pair<np,np> max_right(np x,F f,Args&&... args){
-		assert(operatable(x));
+		assert(operable(x));
 		assert((N().*f)(forward<Args>(args)...));
 		return max_right(x,N(),f,forward<Args>(args)...);
 	}
@@ -223,7 +275,7 @@ struct avl{
 	//CF CodeTON 3-H
 	template <class F,class... Args> 
 	pair<np,np> min_left(np x,F f,Args&&... args){
-		assert(operatable(x));
+		assert(operable(x));
 		assert((N().*f)(forward<Args>(args)...));
 		return min_left(x,N(),f,forward<Args>(args)...);
 	}
@@ -334,9 +386,15 @@ struct avl{
 	//TOKI35G
 	template <class F,class... Args>
 	void chroot(np x,F f,Args&&... args){
-		assert(operatable(x));
+		assert(operable(x));
 		if(!x)return;
 		(x->v.*f)(forward<Args>(args)...);
+	}
+	//CF1028F
+	void revroot(np x){
+		assert(operable(x));
+		if(!x)return;
+		x->reverse();
 	}
 	/*//lower_bound の位置を erase
 	//erase が実際に走ったかどうかが bool で返る
@@ -380,26 +438,27 @@ struct avl{
 	}*/
 	//TOKI35G
 	pair<np,np> split(np&x,const N&v){
-		assert(operatable(x));
+		assert(operable(x));
 		auto res=split_by_cmp(x,less<N>(),v);
 		x=nullptr;//invalidate
 		return res;
 	}
 	//TOKI35G
 	np insert(np&x,const N&v){
-		assert(operatable(x));
+		assert(operable(x));
 		np z=nn(v);
 		insert_cmp(x,less<N>(),z);
 		return z;
 	}
 	//UCUP 2-24-H
 	void insert(np&x,np v){
-		assert(operatable(x));
+		assert(operable(x));
 		return insert_cmp(x,less<N>(),v);
 	}
 	//pair<bool,np> erase(np x,const N&v){return erase_by_cmp(x,less<N>(),v);}
 	//pair<bool,N> lower_bound(np x,const N&v){return lower_bound_by_cmp(x,less<N>(),v);}
-	/*template<class T>
+	//stress-test
+	template<class T>
 	np build(const T&rw){
 		auto dfs=[&](auto self,int l,int r)->np{
 			if(l==r)return 0;
@@ -408,10 +467,10 @@ struct avl{
 			return x->LR(self(self,l,m),self(self,m+1,r));
 		};
 		return dfs(dfs,0,si(rw));
-	}*/
+	}
 	//CF887F
 	vc<N> listup(np root){
-		assert(operatable(root));
+		assert(operable(root));
 		vc<N> res;
 		auto dfs=[&](auto self,np x)->void{
 			if(x==0)return;
@@ -437,6 +496,26 @@ struct avl{
 		auto [ab,c]=tuple_pop_front(cut_by_index(x,args...));
 		return tuple_cat(max_right(ab,&N::ok_len,pos),c);
 	}
+	//左から k 番目のノードを取得
+	//CF1028F
+	//stress-tested
+	np kth(np x,int k){
+		assert(operable(x));
+		assert(inc(0,k,x->v.len-1));
+		while(x){
+			x->push();
+			int llen=val(x->l).len;
+			if(k<llen){
+				x=x->l;
+			}else if(k==llen){
+				return x;
+			}else{
+				k-=llen+1;
+				x=x->r;
+			}
+		}
+		assert(false);
+	}
 };
 template<class N>typename avl<N>::np avl<N>::vs[100];
 //デフォルトコンストラクターが null node になっているべき (例えば len=0)
@@ -451,26 +530,3 @@ template<class N>typename avl<N>::np avl<N>::vs[100];
 //N::updatel,updater
 //N::ok
 //max_right のノリで split をする
-
-//CF887F
-//set::set iterator の要領で各ノードから erase/next/prev が呼べるようになった
-//p==(np)-1 で delete 済みかどうか確認できる
-//itr を保存しておいて後で呼び出すときは prep を忘れないように
-//p のリンクをどうやって管理してしまうか考えたときに,upd を利用することにした
-//特に upd 直後は p==nullptr であることに注意!
-
-//TOKI35G
-//beats っぽい怪しい updateを走らせた
-//ある部分木全体を更新できないとき，もちろんその下に潜るのだが，
-//根のノード単体に対する更新を忘れないようにする
-
-//UCUP 2-24-H
-//emplace_new, insert などを更新
-//insert_cmp も更新，balance(x) の戻り値は x とは限らないね
-
-//ノード同士の比較関数でも split 可能(TODO)
-//TODO 細かい実装の違いによる定数倍を検証
-
-//max_right をverify
-//oeprable(root or null) を至るところでチェック
-//cut_by_index, insert by value, leftmost,rightmost を導入

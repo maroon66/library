@@ -3,6 +3,7 @@
 using int128=__int128_t;
 using uint128=unsigned __int128_t;
 
+namespace std{
 istream& operator>>(istream&is,int128&res){
 	res=0;
 	string s;is>>s;
@@ -28,7 +29,7 @@ ostream& operator<<(ostream&os,int128 i){
 	}
 	int p=0;
 	while(i){
-		buf[p++]='0'+i%10;
+		buf[p++]=char('0'+i%10);
 		i/=10;
 	}
 	reverse(buf,buf+p);
@@ -41,12 +42,13 @@ ostream& operator<<(ostream&os,uint128 i){
 	static char buf[100];
 	int p=0;
 	while(i){
-		buf[p++]='0'+i%10;
+		buf[p++]=char('0'+i%10);
 		i/=10;
 	}
 	reverse(buf,buf+p);
 	buf[p]=0;
 	return os<<buf;
+}
 }
 int128 abs128(int128 a){
 	return a<0?-a:a;

@@ -57,6 +57,8 @@ struct HLD_seg{
 		return seg.getall();
 	}
 	//UCUP 2-22-K
+	//UCUP 3-39-A
+	//[v,res) (v-res 間の辺の値と思っていい) が false になる最も根に近い res を返す
 	template <class F,class... Args> 
 	pair<int,N> find_lowest_false(int v,F f,Args&&... args){
 		//v より strict に下なノードの sum

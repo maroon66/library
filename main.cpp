@@ -1,5 +1,5 @@
 #ifndef LOCAL
-#pragma GCC optimize ("Ofast")
+#pragma GCC optimize ("O3")
 #pragma GCC optimize ("unroll-loops")
 #endif
 
@@ -467,6 +467,15 @@ vvc<int> readGraph(int n,int m){
 	return g;
 }
 
+vvc<int> initUG(int n,const vc<pi>&es){
+	vvc<int> g(n);
+	for(auto [a,b]:es){
+		g[a].pb(b);
+		g[b].pb(a);
+	}
+	return g;
+}
+
 vvc<int> rand_tree(int n){
 	vvc<int> t(n);
 	unionfind uf(n);
@@ -773,7 +782,6 @@ vc<t>& operator-=(vc<t>&a,const vc<t>&b){
 	rep(i,si(b))a[i]-=b[i];
 	return a;
 }
-/*
 template<class t>
 vc<t> operator-(const vc<t>&a,const vc<t>&b){
 	vc<t> c(max(si(a),si(b)));
@@ -781,7 +789,6 @@ vc<t> operator-(const vc<t>&a,const vc<t>&b){
 	rep(i,si(b))c[i]-=b[i];
 	return c;
 }
-*/
 template<class t,class u>
 vc<t>& operator*=(vc<t>&a,u x){
 	for(auto&v:a)v*=x;
@@ -824,9 +831,14 @@ vc<t> operator>>(vc<t> a,int k){
 	return a>>=k;
 }
 
+//消した要素の個数を返してくれる
+//not verified
 template<class t,class u>
-void remval(vc<t>&a,const u&v){
-	a.erase(remove(all(a),v),a.ed);
+int remval(vc<t>&a,const u&v){
+	auto itr=remove(all(a),v);
+	int res=a.ed-itr;
+	a.erase(itr,a.ed);
+	return res;
 }
 //消した要素の個数を返してくれる
 //UCUP 2-8-F

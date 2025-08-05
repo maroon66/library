@@ -10,10 +10,19 @@ ostream&operator<<(ostream&os,const ln&v){
 //https://www.codechef.com/problems/OUTOFBRACKET?tab=statement
 //stress-tested
 struct autocht{
-	const bool ismax;
+	bool ismax;
 	int lineinc=-1,queryinc=-1,head=0;
 	//0 inc, 1 dec
 	autocht(bool ismax_):ismax(ismax_){}
+	//multiuni2025-1-D
+	void init(bool ismax_){
+		ismax=ismax_;
+		lineinc=-1;
+		queryinc=-1;
+		head=0;
+		ls.clear();
+		prex=LLONG_MIN,preres=LLONG_MIN;
+	}
 	ll fdiv(ll a,ll b){
 		return a/b-((a^b)<0&&a%b);
 	}

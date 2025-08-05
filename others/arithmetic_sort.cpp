@@ -1,4 +1,5 @@
 //UCUP 2-27-F
+//a[i]+d*j をソートし，最初の k を返す
 
 vi arithmetic_sort(vi a,int d,int k){
 	int n=si(a);

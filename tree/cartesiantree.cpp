@@ -119,3 +119,6 @@ void maximal_rectangle(const vvc<int>&avail,F f){
 		dfs(dfs,root,0,n);
 	}
 }
+
+//cartesian tree 上で deque を持ってマージテクする問題，あるよね
+//USACO 2022 US Open A をチェック

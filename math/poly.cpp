@@ -34,17 +34,21 @@ struct Poly:public vc<mint>{
 		reverse(all(r));
 		return r;
 	}
-	Poly operator>>(int x)const{
-		assert(x<size());
-		Poly res(size()-x);
-		rep(i,size()-x)res[i]=(*this)[i+x];
-		return res;
+	Poly& operator>>=(int x){
+		if(x>=size()){
+			this->resize(1);
+			(*this)[0]=0;
+		}else{
+			this->erase(this->bg,this->bg+x);
+		}
+		return *this;
 	}
-	Poly operator<<(int x)const{
-		Poly res(size()+x);
-		rep(i,size())res[i+x]=(*this)[i];
-		return res;
+	Poly operator>>(int x)const{return Poly(*this)>>=x;}
+	Poly&operator<<=(int x){
+		this->insert(this->bg,x,0);
+		return *this;
 	}
+	Poly operator<<(int x)const{return Poly(*this)<<=x;}
 	mint freq(int i)const{
 		return i<size()?(*this)[i]:0;
 	}
@@ -167,6 +171,8 @@ struct Poly:public vc<mint>{
 	}
 	template<class T>
 	Poly operator*(T t)const{return Poly(*this)*=t;}
+	template<class T>
+	friend Poly operator*(const T&t,const Poly&f){return f*t;}
 	Poly operator*(const Poly&r)const{return Poly(*this)*=r;}
 	template<class T>
 	Poly operator/(T t)const{return Poly(*this)/=t;}

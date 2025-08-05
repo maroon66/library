@@ -149,9 +149,9 @@ int argcmp(const pt&a,const pt&b){
 bool argless(const pt&a,const pt&b){return argcmp(a,b)<0;}
 //c の位置を聞く関数です，b じゃないです
 //(-2)[a,-1](0)[b,1](2)
-//a==c のケースで変な挙動をしたのでassertを入れた
+//a==b のケースで変な挙動をしたのでassertを入れた
 int bet(pt a,pt b,pt c){
-	assert(a!=c);
+	assert(a!=b);
 	pt d=b-a;
 	ld e=dot(d,c-a);
 	if(sgn(e)<=0)return sgn(e)-1;

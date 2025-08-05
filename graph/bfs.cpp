@@ -57,3 +57,21 @@ vi getpath(const vvc<int>&g,int s,int t){
 	auto [dist,from,use]=bfs(g,vi{s});
 	return getpath(from,t);
 }
+
+template<class E>
+auto getpath(const vvc<E>&g,int s,int t){
+	auto [dist,from,use]=bfs2(g,vi{s});
+	
+	int x=t;
+	vi vs{x};
+	vc<E> es;
+	while(from[x]!=-1){
+		es.pb(use[x]);
+		x=from[x];
+		vs.pb(x);
+	}
+	rein(vs);
+	rein(es);
+	
+	return mp(vs,es);
+}
