@@ -88,6 +88,20 @@ void initphi(){
 		}
 	}
 }
+//CF1046E2(TLE)
+int divnext[vmax],divcnt[vmax],divsum[vmax];
+void initdivcntsum(){
+	divcnt[1]=1;
+	divsum[1]=1;
+	rng(i,2,vmax){
+		const int p=sf[i];
+		int j=i/p;
+		if(sf[j]==p)j=divnext[j];
+		divnext[i]=j;
+		divcnt[i]=divcnt[i/p]+divcnt[j];
+		divsum[i]=divsum[i/p]+divsum[j]*(i/j);
+	}
+}
 
 vc<mint> getpowers(int n,int p){
 	vc<mint> res(1+n);

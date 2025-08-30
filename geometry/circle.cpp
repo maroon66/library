@@ -9,6 +9,7 @@ struct C{
 	bool operator==(const C&rhs)const{
 		return c==rhs.c&&sgn(r,rhs.r)==0;
 	}
+	ld area()const{return sq(r)*PI;}
 };
 istream& operator>>(istream& is,C& c){
 	return is>>c.c>>c.r;
@@ -309,6 +310,8 @@ C mindisc(vc<pt> p){
 //CF773F
 //p の中で k 点以上含むような円の最小半径
 
+//円と多角形の共通部分の面積を求める
+//normarg が [-PI,PI) なのが必要だろうな
 //https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_7_H&lang=ja
 ld common_area_cp(C c,vc<pt> ps){
 	ld ans=0;
@@ -339,6 +342,65 @@ ld common_area_cp(C c,vc<pt> ps){
 		}
 	}
 	return ans/2;
+}
+
+//極大な円だけ残す，重複も消す
+//AOJ1047
+//Contest 4, PTZ 2022 Winter Day 6 (ICPC Camp Day 1) J
+//Contest 5, PTZ 2021 Summer Day 2, NAC 2021 B
+vc<C> simplify_circle_sets_maximal(const vc<C>&rw){
+	vc<C> cs;
+	for(auto cur:rw){
+		bool ok=true;
+		rep(j,si(cs)){
+			int w=icc(cs[j],cur);
+			if(w==1||w==4||w==5){
+				ok=false;
+			}
+		}
+		if(ok){
+			rep(j,si(cs)){
+				int w=icc(cs[j],cur);
+				if(w==1||w==2||w==3){
+					cs.erase(cs.bg+j--);
+				}
+			}
+			cs.pb(cur);
+		}
+	}
+	return cs;
+}
+//multiuni2025-8-K
+//高速な ver がおいてある
+//benq の 3D geometry を使用
+ld circle_union_n2(const vc<pt>&ps,const vc<ld>&rs){
+	if(!dbg)return 0;
+	
+	int n=si(ps);
+	vc<C> cs(n);
+	rep(i,n)cs[i]=C{ps[i],rs[i]};
+	cs=simplify_circle_sets_maximal(cs);
+	n=si(cs);
+	
+	ld ans=0;
+	rep(i,n){
+		vc<pair<ld,ld>> ls;
+		rep(j,n)if(i!=j){
+			int w=icc(cs[i],cs[j]);
+			if(w==7)ls.eb(ccc(cs[i],cs[j]));
+		}
+		if(ls.empty())ans+=cs[i].area();
+		else{
+			auto [pos,val]=range_freq_list(ls);
+			rep(j,si(val)){
+				if(val[j]==0){
+					ld l=pos[j],r=pos[j+1];
+					ans+=cutareaarg(cs[i],l,r);
+				}
+			}
+		}
+	}
+	return ans;
 }
 
 //ABC314H

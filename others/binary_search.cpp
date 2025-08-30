@@ -33,7 +33,7 @@ ld find_max_true_ld(ld lw,ld up,F f){
 }
 //ABC314H
 template<int L,class F>
-ld find_min_true(ld lw,ld up,F f){
+ld find_min_true_ld(ld lw,ld up,F f){
 	rep(_,L){
 		const ld mid=(lw+up)/2;
 		if(f(mid))up=mid;

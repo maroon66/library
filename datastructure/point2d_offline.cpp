@@ -11,7 +11,14 @@ struct point2d{
 	};
 	vi ys,ans;
 	vc<query> qs;
-	point2d(const vc<pi>&ps){
+	point2d(){}
+	point2d(const vc<pi>&ps){init(ps);}
+	//multiuni 2025-8-H
+	void init(const vc<pi>&ps){
+		ys.clear();
+		ans.clear();
+		qs.clear();
+		
 		for(auto p:ps)
 			ys.pb(p.b);
 		mkuni(ys);
