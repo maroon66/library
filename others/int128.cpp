@@ -73,6 +73,7 @@ int128 gcd(int128 a,int128 b){
 	return a<<s;
 }
 const int128 inf128=int128(1)<<122;
+
 //UCUP 2-Prime-97
 int128 fld(int128 a,int128 b) { // floored division
 	return a / b - ((a ^ b) < 0 && a % b); }

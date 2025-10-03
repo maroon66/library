@@ -192,10 +192,14 @@ struct N{
 
 //ハッシュを取る
 //UCUP 3-21-M
+//CF1046-F
 struct N{
 	mint val,w;
 	N():val(0),w(1){}
 	N(int v):val(v),w(B){}
+	void increment(){
+		val+=1;
+	}
 	static N merge(const N&a,const N&b){
 		N res;
 		res.val=a.val+b.val*a.w;

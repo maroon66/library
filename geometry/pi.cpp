@@ -91,6 +91,12 @@ bool argless(pi a,pi b){
 	return argcmp(a,b)<0;
 }
 
+//(a,b) を結ぶ直線を考え，x 座標との交点の y 座標を求める
+//(分子,分母)を返す
+pi xcut(const pi&a,const pi&b,int x){
+	return mp(a.b*(b.a-x)-b.b*(a.a-x),b.a-a.a);
+}
+
 
 //ここから下 verify してない
 int dot(pi a,pi b){

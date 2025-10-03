@@ -122,3 +122,21 @@ pair<T, ll> fibonacci_search(F f, ll L, ll R) {
   if (MINIMIZE) return {y, x};
   return {-y, x};
 }
+
+//https://codeforces.com/blog/entry/135892
+//UCUP 4-0-L
+template<class F>
+auto uso_ternary_max(F f,int lini,int rini){
+	int ans=0;
+	for (int C = 2; C < 100; C++) {
+		int l = lini, r = rini;
+		while (r - l > C) {
+			int midl = l + (r - l) / C;
+			int midr = r - (r - l) / C;
+			if (f(midl) < f(midr)) l = midl;
+			else r = midr;
+		}
+		for (int i = l; i <= r; i++) ans = max(ans, f(i));
+	}
+	return ans;
+}
