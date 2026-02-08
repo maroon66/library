@@ -109,6 +109,47 @@ ll kstepmin(int n,int k,ll dif,F cost,vi*sol=nullptr){
 	return ans;
 }
 
+//int128 ver
+//CF Hello 2026
+template<class F>
+int128 kstepmin(int n,int k,int128 dif,F cost,vi*sol=nullptr){
+	assert(inc(1,k,n-1));
+	int128 lw=-1,up=dif+1,ans=inf128;
+	vc<pair<int128,int>> buf(n);
+	while(up-lw>1){
+		int128 mid=(lw+up)/2;
+		auto&dp=larsch(n,[&](int i,int j){
+			return pair<int128,int>(cost(i,j)+mid,1);
+		});
+		if(dp[n-1].b<=k){
+			up=mid;
+			ans=dp[n-1].a-k*mid;
+			copy(all(dp),buf.bg);
+		}else lw=mid;
+	}
+	assert(ans<inf128);
+	if(sol){
+		sol->clear();
+		int cur=n-1;
+		sol->pb(cur);
+		while(cur){
+			assert(k);
+			k--;
+			int nx=cur;
+			while(nx--){
+				if(buf[nx].b<=k&&buf[nx].a+cost(nx,cur)+up==buf[cur].a){
+					sol->pb(cur=nx);
+					break;
+				}
+			}
+			assert(nx>=0);
+		}
+		assert(k==0);
+		reverse(sol->bg,sol->ed);
+	}
+	return ans;
+}
+
 //cost(i,j) が monge
 //O(N log N) で DP する
 //stress-tested

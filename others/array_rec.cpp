@@ -150,6 +150,30 @@ void given_sum_array_rec(int n,F f){
 	dfs(dfs,0,n);
 }
 
+
+//長さ n で和が m の非負整数列すべてを試す
+//ソートとかはされていない
+//true を見つけたらすぐに終わる
+template<class F>
+bool given_sum_array_rec(int n,int m,F f){
+	assert(n>0);
+	vi a(n);
+	auto dfs=[&](auto self,int i,int rem)->bool{
+		if(i==n-1){
+			a[i]=rem;
+			return f(a);
+		}else{
+			rep(v,rem+1){
+				a[i]=v;
+				if(self(self,i+1,rem-v))return true;
+			}
+			return false;
+		}
+	};
+	return dfs(dfs,0,m);
+}
+
+
 template<class F> void permrep(int n,F f){
 	vi p(n);iota(all(p),0);
 	do{

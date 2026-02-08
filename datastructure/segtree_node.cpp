@@ -13,7 +13,7 @@ struct MaxNode{
 	static MaxNode merge(const MaxNode&a,const MaxNode&b){
 		return MaxNode(max(a.v,b.v));
 	}
-	bool ok(int x){return v<x;}
+	bool ok(int x){return v<=x;}
 };
 
 struct MaxNode{

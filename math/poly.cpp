@@ -68,6 +68,7 @@ struct Poly:public vc<mint>{
 	}
 	template<class T>
 	Poly& operator+=(T t){
+		ups(1);
 		(*this)[0]+=t;
 		return *this;
 	}
@@ -82,6 +83,7 @@ struct Poly:public vc<mint>{
 	}
 	template<class T>
 	Poly& operator-=(T t){
+		ups(1);
 		(*this)[0]-=t;
 		return *this;
 	}

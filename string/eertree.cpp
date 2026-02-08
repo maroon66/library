@@ -49,6 +49,30 @@ struct eertree{
 	N& operator[](int i){
 		return x[i];
 	}
+	//node v が pos i で終了している
+	//ここから 1 個右に伸ばしたときの最大回文を返す
+	//UCUP4-9-I
+	int right(int v,int i){
+		assert(i<si(s));
+		while(1){
+			assert(v>=0);
+			int l=i-x[v].len();
+			if(l>0&&s[l-1]==s[i])return x[v].ch[s[i]];
+			v=x[v].suf;
+		}
+	}
+	//node v が pos i から始まっている
+	//ここから 1 個左に伸ばしたときの最大回文を返す
+	//UCUP4-9-I
+	int left(int v,int i){
+		assert(i>0);
+		while(1){
+			assert(v>=0);
+			int r=i+x[v].len();
+			if(r<si(s)&&s[i-1]==s[r])return x[v].ch[s[i-1]];
+			v=x[v].suf;
+		}
+	}
 };
 
 //文字列をpalindromicなsubstringに分解する方法を数える例

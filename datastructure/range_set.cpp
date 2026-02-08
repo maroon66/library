@@ -1,4 +1,7 @@
 //UCUP 3-31-F
+//MITIT 2025-26 Winter D
+//コンストラクタに渡す val というのは get のときに使う無を表す要素
+//del とかでは検出されないからね
 template<class t>
 struct range_set{
 	const t none;

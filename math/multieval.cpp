@@ -128,7 +128,7 @@ struct subproduct_tree{
 };
 
 template<class mint>
-vc<mint> multieval(const Poly<mint>&f,const vc<mint>&x){
+vc<mint> multieval(const vc<mint>&f,const vc<mint>&x){
 	return subproduct_tree<mint>(x).multieval(f);
 }
 

@@ -94,4 +94,49 @@ struct mergetree{
 		}
 		return x[cur].v;
 	}
+	//ここより下，未verify
+	pi splitdfs(int root,int lv,int cut){
+		if(root<=L)return pi(root,root);
+		int len=1<<(L-lv);
+		if(cut==0){
+			return pi(lv,root);
+		}else if(cut==len){
+			return pi(root,lv);
+		}
+		push(root);
+		if(cut<=len/2){
+			auto [a,b]=splitdfs(x[root].l,lv+1,cut);
+			a=nn(a,lv+1);
+			nni(b,x[root].r,root); b=root;
+			return pi(a,b);
+		}else{
+			auto [a,b]=splitdfs(x[root].r,lv+1,cut-len/2);
+			b=nn(lv+1,b);
+			nni(x[root].l,a,root); a=root;
+			return pi(a,b);
+		}
+	}
+	pi split(int root,int cut){
+		assert(inc(0,cut,1<<L));
+		return splitdfs(root,0,cut);
+	}
+	template<class F,class... Args>
+	void chall(int root,F f,Args&&... args){
+		if(root<=L)return;
+		(x[root].v.*f)(forward<Args>(args)...);
+	}
+	template<class F>
+	void enumerate_dfs(int root,int l,int r,F f){
+		if(root<=L)return;
+		if(r-l==1){
+			f(l,x[root].v);
+		}else{
+			enumerate_dfs(x[root].l,l,(l+r)/2,f);
+			enumerate_dfs(x[root].r,(l+r)/2,r,f);
+		}
+	}
+	template<class F>
+	void enumerate(int root,F f){
+		enumerate_dfs(root,0,s,f);
+	}
 };

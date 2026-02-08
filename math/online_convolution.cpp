@@ -40,3 +40,37 @@ vc<mint> relaxed_convolution(const vc<mint>&in,const vc<mint>&wei,const vc<mint>
 	
 	return res;
 }
+
+
+//UCUP4-15-F
+	auto work=[&](const vc<mint>&x,int xl,int xr,const vc<mint>&y,int yl,int yr,vc<mint>&z,int zl,int zr)->void{
+		vc<mint> a(x.bg+xl,x.bg+xr);
+		vc<mint> b(y.bg+yl,y.bg+yr);
+		auto c=multiply(a,b);
+		rep(i,si(c)){
+			int j=xl+yl+i+1;
+			if(zl<=j&&j<zr){
+				z[j]+=c[i];
+			}
+		}
+	};
+	
+	int s=minp2(n+2);
+	vc<mint> c(s),d(s);
+	c[0]=1;
+	auto dfs=[&](auto self,int l,int r)->void{
+		if(r-l==1){
+			d[l]=c[l]*q.pow(l);
+		}else{
+			int m=(l+r)/2;
+			self(self,l,m);
+			if(l==0){
+				work(c,0,m,d,0,m,c,m,r);
+			}else{
+				work(c,l,m,d,0,(r-l),c,m,r);
+				work(d,l,m,c,0,(r-l),c,m,r);
+			}
+			self(self,m,r);
+		}
+	};
+	dfs(dfs,0,s);

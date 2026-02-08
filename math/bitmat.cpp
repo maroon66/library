@@ -68,3 +68,31 @@ vc<ull> find_subset(vc<ull> ls,ull tar){
 	rep(i,si(ls))if(sol[i])res.pb(ls[i]);
 	return res;
 }
+
+//ax=b という制約を追加していく
+//v[0,n)=a,v[n]=b ね
+//制約を追加できたか否かを返してくれる
+struct Solver{
+	int n;
+	vc<bool> has;
+	vc<B> x;
+	Solver(int nn):n(nn),has(n),x(n){}
+	bool add(B v){
+		rep(i,n)if(has[i]&&v[i]){
+			v^=x[i];
+		}
+		int f=v._Find_first();
+		if(f<n){
+			assert(!has[f]);
+			rep(i,n)if(has[i]&&x[i][f])
+				x[i]^=v;
+			has[f]=true;
+			x[f]=v;
+			return true;
+		}else if(f==n){
+			return false;
+		}else{
+			return true;
+		}
+	}
+};

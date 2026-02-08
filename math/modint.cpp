@@ -213,4 +213,12 @@ void showpoly(const vc<mint>&a){
 	cerr<<tmp<<endl;
 }
 
+void showpolyf(const vc<mint>&a){
+	vc<pi> tmp(si(a));
+	rep(i,si(a)){
+		tmp[i]=m2f(a[i]);
+	}
+	cerr<<tmp<<endl;
+}
+
 struct initfactp2{initfactp2(){initfact();initp2();}}initfactp2_;

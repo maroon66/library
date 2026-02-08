@@ -1,11 +1,13 @@
-void make_rooted(vvc<int>&t,int r){
+vi make_rooted(vvc<int>&t,int r){
+	vi par(si(t),-1);
 	auto dfs=[&](auto self,int v,int p)->void{
+		par[v]=p;
 		t[v].erase(remove(all(t[v]),p),t[v].ed);
 		for(auto ch:t[v])self(self,ch,v);
 	};
 	dfs(dfs,r,-1);
+	return par;
 }
-
 
 //assume rooted
 template<class E>

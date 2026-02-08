@@ -617,6 +617,9 @@ template<class t,class s=t>
 s SUM(const vc<t>&a){
 	return accumulate(all(a),s(0));
 }
+ll SUM(const vi&a){
+	return accumulate(all(a),ll(0));
+}
 template<class t,size_t K,class s=t>
 s SUM(const array<t,K>&a){
 	return accumulate(all(a),s(0));
@@ -918,7 +921,7 @@ signed main(signed argc,char*argv[]){
 			current_run_id++;
 		}
 	}else{
-		//INT(t);rep(_,t)
+		INT(t);rep(_,t)
 		slv();
 	}
 }

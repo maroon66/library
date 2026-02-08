@@ -253,6 +253,73 @@ struct MatroidIntersection{
 //2. all (x,y) s.t. del x & add y is possible (y is not a src)
 //practically it runs with low constants (why?)
 
+//Graphic Matroid やね
+//Yandex 2025 Final G
+struct MST{
+	int n;
+	vc<pi> es;
+	vvc<pi> g;
+	vi t,dep,par,pe;
+	unionfind uf;
+	MST(int nn,vc<pi> ee):uf(nn){
+		n=nn;
+		es=ee;
+		g.resize(n);
+	}
+	int size(){
+		return es.size();
+	}
+	pair<vi,vc<pi>> Get(const vi&cur){
+		uf.clear();
+		rep(i,n)g[i].clear();
+		t.assign(size(),0);
+		for(auto i:cur){
+			auto [a,b]=es[i];
+			g[a].eb(b,i);
+			g[b].eb(a,i);
+			t[i]=1;
+			uf.unite(a,b);
+		}
+		dep.assign(n,-1);
+		par.assign(n,-1);
+		pe.assign(n,-1);
+		{
+			auto dfs=[&](auto self,int v,int p,int e,int d)->void{
+				dep[v]=d;
+				par[v]=p;
+				pe[v]=e;
+				for(auto [ch,use]:g[v])if(ch!=p){
+					self(self,ch,v,use,d+1);
+				}
+			};
+			rep(i,n)if(dep[i]==-1){
+				dfs(dfs,i,-1,-1,0);
+			}
+		}
+		vi src;
+		vc<pi> res;
+		rep(i,size())if(!t[i]){
+			if(!uf.same(es[i].first,es[i].second)){
+				src.pb(i);
+				t[i]=2;
+			}else{
+				auto [a,b]=es[i];
+				auto adv=[&](int&v){
+					res.eb(pe[v],i);
+					v=par[v];
+				};
+				if(dep[a]<dep[b])swap(a,b);
+				while(dep[a]>dep[b])adv(a);
+				while(a!=b){
+					adv(a);
+					adv(b);
+				}
+			}
+		}
+		return mp(src,res);
+	}
+};
+
 //CF Deltix Summer 2021 H
 //全域木のマトロイド，ただし必ず使う辺をいくつか指定されている．
 //disjoint な頂点の次数制約のマトロイドは欲しければ当該コンテストの提出を参照

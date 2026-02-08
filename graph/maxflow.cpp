@@ -144,6 +144,14 @@ struct maxflow{
 		es.pb({s,pret,c2});
 		return head[s];
 	}
+	//aeの戻り値を i として与える
+	//辺容量をリセット
+	//同じグラフで容量変えて何度かフロー求めたい，というケースで使う
+	//UCUP4-14-E
+	void set_cap(int i,int c){
+		es[i].cap=c;
+		es[i+1].cap=0;
+	}
 	void bfs(int s,int t=-1){
 		lv[s]=pi(0,curt);
 		int l=0,r=0;

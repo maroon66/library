@@ -122,6 +122,9 @@ struct avl{
 		buf[used]=N2{v,0,0,0,1};
 		return &buf[used++];
 	}
+	//UCUP4-1-K
+	np id2np(int i){return buf.get()+i;}
+	int np2id(np x){return x-buf.get();}
 	void emplace_new(np x,N v){
 		*x=N2{v,0,0,0,1};
 	}
@@ -477,6 +480,20 @@ struct avl{
 			push(x);
 			self(self,x->l);
 			res.pb(x->v);
+			self(self,x->r);
+		};
+		dfs(dfs,root);
+		return res;
+	}
+	//UCUP4-1-K
+	vc<np> listup_ptr(np root){
+		assert(operable(root));
+		vc<np> res;
+		auto dfs=[&](auto self,np x)->void{
+			if(x==0)return;
+			push(x);
+			self(self,x->l);
+			res.pb(x);
 			self(self,x->r);
 		};
 		dfs(dfs,root);
