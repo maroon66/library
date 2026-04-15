@@ -3,6 +3,7 @@
 
 struct modinfo{uint mod,root;
 #ifdef DYNAMIC_MOD
+//barret redunction なのでどんな値でもいい
 constexpr modinfo(uint m,uint r):mod(m),root(r),im(0){set_mod(m);}
 ull im;
 constexpr void set_mod(uint m){
@@ -92,7 +93,8 @@ struct modular{
 
 #ifndef DYNAMIC_MOD
 extern constexpr modinfo base{998244353,3};
-//extern constexpr modinfo base{1000000007,0};
+//extern constexpr modinfo base{1000000007,5};
+//extern constexpr modinfo base{1000000009,13};
 //extern constexpr modinfo base{2147483579,1689685080};//2^31 未満の最大の安全素数
 //modinfo base{1,0};
 #ifdef USE_GOOD_MOD

@@ -1,11 +1,11 @@
 //XXII Opencup GP of Daejeon H,D
 //lower right
-struct LR{
+struct LowerRight{
 	static const int none=inf;
 	int mn,vis;
-	LR(int v=none):mn(v),vis(v&1?v:none){}
-	static LR merge(const LR&x,const LR&y){
-		LR res(min(x.mn,y.mn));
+	LowerRight(int v=none):mn(v),vis(v&1?v:none){}
+	static LowerRight merge(const LowerRight&x,const LowerRight&y){
+		LowerRight res(min(x.mn,y.mn));
 		if(x.vis<y.mn)res.vis=x.vis;
 		else res.vis=y.vis;
 		return res;
@@ -13,25 +13,25 @@ struct LR{
 };
 //CGR20 I
 //upper left
-struct UL{
+struct UpperLeft{
 	static const int none=-inf;
 	int mx,vis;
-	UL(int v=none):mx(v),vis(v&1?v:none){}
-	static UL merge(const UL&x,const UL&y){
-		UL res(max(x.mx,y.mx));
+	UpperLeft(int v=none):mx(v),vis(v&1?v:none){}
+	static UpperLeft merge(const UpperLeft&x,const UpperLeft&y){
+		UpperLeft res(max(x.mx,y.mx));
 		if(x.mx<y.vis)res.vis=y.vis;
 		else res.vis=x.vis;
 		return res;
 	}
 };
-ARC165F 2023 09 17
+//ARC165F
 //lower left
-struct LL{
+struct LowerLeft{
 	static const int none=inf;
 	int mn,vis;
-	LL(int v=none):mn(v),vis(v&1?v:none){}
-	static LL merge(const LL&x,const LL&y){
-		LL res(min(x.mn,y.mn));
+	LowerLeft(int v=none):mn(v),vis(v&1?v:none){}
+	static LowerLeft merge(const LowerLeft&x,const LowerLeft&y){
+		LowerLeft res(min(x.mn,y.mn));
 		if(x.mn>y.vis)res.vis=y.vis;
 		else res.vis=x.vis;
 		return res;

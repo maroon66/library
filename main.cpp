@@ -80,11 +80,18 @@ ll rand_int(ll l, ll r) { //[l, r]
 	/*#else
 	static mt19937_64 gen(chrono::steady_clock::now().time_since_epoch().count());
 	#endif*/
+	assert(l<=r); //最適化していると↓が l>r でも動いてしまうという事故があったので
 	return uniform_int_distribution<ll>(l, r)(gen);
 }
-
 ll rand_int(ll k){ //[0,k)
 	return rand_int(0,k-1);
+}
+pi rand_range(int n){
+	int l=rand_int(n);
+	int r=rand_int(n);
+	if(l>r)swap(l,r);
+	r++;
+	return pi(l,r);
 }
 string rand_string(int n,char lw,char up){
 	string s(n,'?');
@@ -143,6 +150,8 @@ rep(i_##name,sizeN)rep(j_##name,sizeM)input(name[i_##name][j_##name]);
 #define VVC4(type,name,sizeN,sizeM) vvc<type> name(sizeN,vc<type>(sizeM));
 #define VVC5(type,name,sizeN,sizeM,ini) vvc<type> name(sizeN,vc<type>(sizeM,ini));
 #define VVC(...) overload5(__VA_ARGS__,VVC5,VVC4)(__VA_ARGS__)
+
+#define VRANGE(name,size) VPI(name,size);for(auto&[l,r]:name)l--;
 
 template<class T>
 T vvvc(T v){
@@ -372,8 +381,11 @@ bool ispow2(int i){
 ll mask(int i){
 	return (ll(1)<<i)-1;
 }
-ull umask(int i){
+inline ull umask(int i){
 	return (ull(1)<<i)-1;
+}
+inline ull umask(int l,int r){
+	return l==64?0:r-l==64?-1:umask(r-l)<<l;
 }
 ll minp2(ll n){
 	if(n<=1)return 1;

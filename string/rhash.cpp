@@ -73,4 +73,28 @@ namespace rhash{
 			return res;
 		}
 	};
+	//ハッシュを取る
+	//KeioPC2025R
+	struct N{
+		P val;
+		array<mint,k> w;
+		N(){
+			fila(val.a,0);
+			val.b=0;
+			fila(w,1);
+		}
+		N(const P&p):val(p){
+			rep(i,k)w[i]=a[val.b][i];
+		}
+		static N merge(const N&x,const N&y){
+			N res;
+			rep(i,k)res.val.a[i]=x.val.a[i]+y.val.a[i]*x.w[i];
+			rep(i,k)res.w[i]=x.w[i]*y.w[i];
+			res.val.b=x.val.b+y.val.b;
+			return res;
+		}
+		bool ok(int x){
+			return val.b<=x;
+		}
+	};
 }

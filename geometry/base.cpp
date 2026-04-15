@@ -25,14 +25,14 @@ struct pt {
     //pt(ld _x = ld(0), ld _y = ld(0)) : x(_x), y(_y) {}
     pt():x(0),y(0){}
     pt(ld xx,ld yy):x(xx),y(yy){}
-    pt operator+(const pt& r) const { return {x + r.x, y + r.y}; }
-    pt operator-(const pt& r) const { return {x - r.x, y - r.y}; }
+    pt operator+(const pt& r) const { return pt(x + r.x, y + r.y); }
+    pt operator-(const pt& r) const { return pt(x - r.x, y - r.y); }
     pt operator*(const pt& r) const {
-        return {x * r.x - y * r.y, x * r.y + y * r.x};
+        return pt(x * r.x - y * r.y, x * r.y + y * r.x);
     }
     pt inv()const{
 		ld d=norm();
-		return {x/d,-y/d};
+		return pt(x/d,-y/d);
 	}
     pt operator/(const pt&r)const{
 		return operator*(r.inv());
@@ -74,7 +74,7 @@ struct pt {
     #ifdef GEOF
     ld abs() const { return sqrt(norm()); }
     ld arg() const { return atan2(y, x); }
-    static pt polar(ld le, ld th) { return {le * cos(th), le * sin(th)}; }
+    static pt polar(ld le, ld th) { return pt(le * cos(th), le * sin(th)); }
 	#endif
 };
 istream& operator>>(istream& is, pt& p){

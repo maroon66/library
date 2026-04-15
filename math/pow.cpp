@@ -19,3 +19,33 @@ vc<mint> powsum(int m,int n){
 	rep(i,n)res[i]*=fact[i];
 	return res;
 }
+vc<mint> expVx(mint v,int n){
+	auto res=pows(v,n);
+	rep(i,n+1)res[i]*=finv[i];
+	return res;
+}
+//[x^deg(a)] a*b^i を i=0,...,n で計算
+vc<mint> power_projection_with_const(const vc<mint>&a,vc<mint> b,int n){
+	assert(si(a)==si(b));
+	mint c=b[0];
+	b[0]=0;
+	auto f=power_projection(a,b);
+	rep(i,si(f))f[i]*=finv[i];
+	chmult(f,expVx(c,n),n+1);
+	rep(i,n+1)f[i]*=fact[i];
+	return f;
+}
+//composition の結果
+//deg(b) まで
+vc<mint> composition_with_const(vc<mint> a,vc<mint> b){
+	mint c=b[0];
+	b[0]=0;
+	int n=si(a)-1,m=si(b)-1;
+	rep(i,n+1)a[i]*=fact[i];
+	rein(a);
+	chmult(a,expVx(c,n),n+1);
+	rein(a);
+	rep(i,n+1)a[i]*=finv[i];
+	a.resize(m+1);
+	return composition(a,b);
+}

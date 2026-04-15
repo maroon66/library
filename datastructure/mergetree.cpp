@@ -27,7 +27,7 @@ struct mergetree{
 		x.pb({val,-1,-1});
 		return si(x)-1;
 	}
-	int nn(int l,int r){
+	int nn(int l,int r){//l,r<=L のときに空ノードを返すとかするとメモリ節約できるシーンがあるかもしれないし，ないかもしれない
 		x.pb({N::merge(x[l].v,x[r].v),l,r});
 		return si(x)-1;
 	}
@@ -89,5 +89,51 @@ struct mergetree{
 			else cur=x[cur].l;
 		}
 		return x[cur].v;
+	}
+	//UOJ Easy 13 B
+	template <class F,class... Args> 
+	pi split(int root,F f,Args&&... args){
+		if((x[root].v.*f)(forward<Args>(args)...)){
+			return pi(root,0);
+		}
+		N sum;
+		static bool goright[30];
+		static int other[30];
+		int i=root,done=0;
+		rep(lv,L){
+			if(i<=L)break;
+			if(x[i].v.v==0)break; //tokusyu
+			N tmp=N::merge(sum,x[x[i].l].v);
+			if((tmp.*f)(forward<Args>(args)...)){
+				goright[lv]=true;
+				other[lv]=x[i].l;
+				i=x[i].r;
+				sum=tmp;
+			}else{
+				goright[lv]=false;
+				other[lv]=x[i].r;
+				i=x[i].l;
+			}
+			done++;
+		}
+		int a=done,b=i;
+		per(lv,L){
+			if(goright[lv]){
+				a=nn(other[lv],a),b=nn(lv+1,b);
+			}else{
+				a=nn(a,lv+1),b=nn(b,other[lv]);
+			}
+		}
+		
+		return pi(a,b);
+	}
+	void dumpdfs(int i,int lv,int pos,vi&dst){
+		if(x[i].v.v==0)return;
+		if(lv==L)return dst.pb(pos);
+		dumpdfs(x[i].l,lv+1,pos,dst);
+		dumpdfs(x[i].r,lv+1,pos+(1<<(L-1-lv)),dst);
+	}
+	void dump(int root,vi&dst){
+		dumpdfs(root,0,0,dst);
 	}
 };
