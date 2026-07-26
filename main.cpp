@@ -44,6 +44,31 @@ ostream& operator<<(ostream& os,const pair<t,u>& p){
 	return os<<"{"<<p.a<<","<<p.b<<"}";
 }
 
+template<int i,class T>
+void print_tuple(ostream&,const T&){
+}
+
+template<int i,class T,class H,class ...Args>
+void print_tuple(ostream&os,const T&t){
+	if(i)os<<",";
+	os<<get<i>(t);
+	print_tuple<i+1,T,Args...>(os,t);
+}
+
+template<class ...Args>
+ostream& operator<<(ostream&os,const tuple<Args...>&t){
+	os<<"{";
+	print_tuple<0,tuple<Args...>,Args...>(os,t);
+	return os<<"}";
+}
+
+template<class t,size_t n>
+ostream& operator<<(ostream&os,const array<t,n>&a){
+	os<<"{";
+	for(auto e:a)os<<e<<",";
+	return os<<"}";
+}
+
 template<class t> ostream& operator<<(ostream& os,const vc<t>& v){
 	os<<"{";
 	for(auto e:v)os<<e<<",";
@@ -68,11 +93,6 @@ void dmpr(ostream&os,const T&t,const Args&... args){
 
 using uint=unsigned;
 using ull=unsigned long long;
-
-template<class t,size_t n>
-ostream& operator<<(ostream&os,const array<t,n>&a){
-	return os<<vc<t>(all(a));
-}
 
 ll rand_int(ll l, ll r) { //[l, r]
 	//#ifdef LOCAL
@@ -161,24 +181,6 @@ T vvvc(T v){
 template<class T,class...Args>
 auto vvvc(int n,T v,Args...args){
 	return vector(n,vvvc(v,args...));
-}
-
-template<int i,class T>
-void print_tuple(ostream&,const T&){
-}
-
-template<int i,class T,class H,class ...Args>
-void print_tuple(ostream&os,const T&t){
-	if(i)os<<",";
-	os<<get<i>(t);
-	print_tuple<i+1,T,Args...>(os,t);
-}
-
-template<class ...Args>
-ostream& operator<<(ostream&os,const tuple<Args...>&t){
-	os<<"{";
-	print_tuple<0,tuple<Args...>,Args...>(os,t);
-	return os<<"}";
 }
 
 void printsuc(int suc){

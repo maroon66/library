@@ -146,6 +146,7 @@ pqueue2stack<P,V,F,G> pq2sgen(F f,G g,bool a=true){
 //できることは時系列 segtree と同じだがメモリが線形
 //https://codeforces.com/gym/100551/problem/A (A なし)
 //https://judge.yosupo.jp/problem/dynamic_graph_vertex_add_component_sum
+//CF1105E
 template<class Q,class A>
 struct offline_query{
 	vi x,d;
