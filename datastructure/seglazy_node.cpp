@@ -371,3 +371,39 @@ struct N{
 		return res;
 	}
 };
+
+//i -> p[i] の合成
+//multiuni 2026-8-L
+template<int k>
+struct Sk{
+	array<int,k> p;
+	Sk(){
+		rep(i,k)p[i]=i;
+	}
+	Sk(const array<int,k>&pp):p(pp){}
+	static Sk merge(const Sk&a,const Sk&b){
+		Sk res;
+		rep(i,k)res.p[i]=b.p[a.p[i]];
+		return res;
+	}
+};
+
+//シンプルに N の区間 add を持っておく
+//multiuni 2026-8-L
+template<class N>
+struct Aggregator{
+	N v;
+	Aggregator():v(){}
+	Aggregator(const N&nn):v(nn){}
+	void add(const N&a){
+		v=N::merge(v,a);
+	}
+	void push(Aggregator&x,Aggregator&y){
+		x.add(v);
+		y.add(v);
+		v=N();
+	}
+	static Aggregator merge(const Aggregator&,const Aggregator&){
+		return Aggregator();
+	}
+};
