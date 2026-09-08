@@ -79,3 +79,51 @@ mint get_kth_div_fast(Poly<mint> a,Poly<mint> b,int k){
 	auto d=a*b.inv(s);
 	return d[k];
 }
+
+
+//1/a(x) の x^L,...,x^{R-1} を返す
+//stress-tested
+vc<mint> get_inv_window(const Poly<mint>&a,int L,int R){
+	assert(0<=L&&L<R);
+	int n=si(a);
+	assert(n>0);
+	assert(a[0]!=0);
+
+	if(L<=n){
+		auto ans=a.inv(R);
+		ans>>=L;
+		return ans;
+	}
+	if(n==1){
+		return vc<mint>(R-L,0);
+	}
+
+	F buf[2];
+	rep(k,2){
+		vc<mint> tmp((n+1-k)/2);
+		rep(i,si(tmp))tmp[i]=a[i*2+k];
+		buf[k]=tmp;
+	}
+
+	Poly<mint> den(n);
+	rep(k,2){
+		auto d=(buf[k]*buf[k]).getrw();
+		rep(i,si(d))den[i+k]+=d[i]*parity(k);
+	}
+
+	int nxR=(R-1)/2+1;
+	int nxL=(L-n)/2+1;
+
+	vc<mint> res(R-L);
+	F w(get_inv_window(den,nxL,nxR));
+
+	rep(k,2){
+		auto d=(buf[k]*w).getrw();
+		rep(i,si(d)){
+			int j=(nxL*2+k)+i*2;
+			if(inc(L,j,R-1))res[j-L]+=d[i]*parity(k);
+		}
+	}
+
+	return res;
+}
