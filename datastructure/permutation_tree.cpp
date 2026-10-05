@@ -16,7 +16,7 @@ struct permutation_tree{
 	np root;
 	permutation_tree(vi p):n(si(p)),w(new Node[n*2]){
 		vi tmp(n);iota(all(tmp),0);
-		seglazy<N> seg(tmp);
+		seglazy<AddMin> seg(tmp);
 		vc<np> s;
 		vi x{-1},y{-1};
 		rep(i,n){
@@ -24,13 +24,13 @@ struct permutation_tree{
 				int j=x.back();
 				if(j==-1||p[j]<p[i])break;
 				x.pop_back();
-				seg.ch(x.back()+1,j+1,&N::add,p[j]-p[i]);
+				seg.ch(x.back()+1,j+1,&AddMin::add,p[j]-p[i]);
 			}
 			while(1){
 				int j=y.back();
 				if(j==-1||p[j]>p[i])break;
 				y.pop_back();
-				seg.ch(y.back()+1,j+1,&N::add,p[i]-p[j]);
+				seg.ch(y.back()+1,j+1,&AddMin::add,p[i]-p[j]);
 			}
 			x.pb(i);
 			y.pb(i);
