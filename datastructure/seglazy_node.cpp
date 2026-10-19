@@ -201,7 +201,7 @@ struct Count0{
 	t val;
 	Count0():mn(inf),lz(0),val(0){}
 	//Count0(P rw=P(inf,0)):mn(rw.a),lz(0),val(rw.b){}
-	Count0(int m,mint v):mn(m),lz(0),val(v){}
+	Count0(int m,t v):mn(m),lz(0),val(v){}
 	void add(int v){
 		mn+=v;
 		lz+=v;

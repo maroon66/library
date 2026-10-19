@@ -1,3 +1,4 @@
+//https://github.com/maroon66/library
 #ifndef LOCAL
 #pragma GCC optimize ("O3")
 #pragma GCC optimize ("unroll-loops")

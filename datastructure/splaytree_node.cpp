@@ -65,16 +65,20 @@ struct N{
 };
 
 //range add,sum
-struct N{
-	int lz,len,val,sum;
-	N(int v=0):lz(0),len(1),val(v),sum(v){}
+struct AddSum{
+	int lz,val,c,len,sum;
+	AddSum():lz(0),val(0),c(0){single();}
+	AddSum(int v,int cc):lz(0),val(v*cc),c(cc){single();}
 	void add(int v){
 		lz+=v;
 		val+=v;
 		sum+=len*v;
 	}
-	void reverse(){}
-	void push(N&x){
+	void reverse(){assert(false);}
+	void pushl(AddSum&x){
+		x.add(lz);
+	}
+	void pushr(AddSum&x){
 		x.add(lz);
 	}
 	void clear(){
@@ -82,24 +86,19 @@ struct N{
 	}
 	void single(){
 		assert(lz==0);
-		len=1;
-		sum=val;
+		len=c;
+		sum=val*c;
 	}
-	void upd(const N&x){
+	void upd(const AddSum&x){
 		assert(lz==0);
 		len+=x.len;
 		sum+=x.sum;
 	}
-	void updatel(const N&x){
+	void updatel(const AddSum&x){
 		upd(x);
 	}
-	void updater(const N&x){
+	void updater(const AddSum&x){
 		upd(x);
-	}
-	bool find(int&x){
-		if(x<len)return true;
-		x-=len;
-		return false;
 	}
 };
 

@@ -47,6 +47,9 @@ struct linkcut{
 	N&operator[](int i){
 		return x[i].x;
 	}
+	void update(int i){
+		x[i].update();
+	}
 };
 
 struct N{
