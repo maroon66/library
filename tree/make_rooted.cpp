@@ -23,3 +23,23 @@ void make_hld(vvc<E>&t,int root){
 	};
 	dfs(dfs,root);
 }
+
+//assume rooted
+//Repovive Premier 10 D
+template<class E>
+void make_height_decreasing(vvc<E>&t,int root){
+	auto dfs=[&](auto self,int v)->int{
+		if(t[v].empty())return 0;
+
+		vc<pi> ls;
+		for(auto&ch:t[v]){
+			ls.eb(self(self,ch),ch);
+		}
+		soin(ls,greater<pi>());
+		
+		rep(i,si(t[v]))t[v][i]=ls[i].b;
+
+		return ls[0].a+1;
+	};
+	dfs(dfs,root);
+}
